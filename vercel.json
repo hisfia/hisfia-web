@@ -1,13 +1,5 @@
 {
   "version": 2,
-  "name": "hisfia-web",
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/privacidad", "dest": "/privacidad.html" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ],
   "headers": [
     {
       "source": "/assets/(.*)",
@@ -27,5 +19,8 @@
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/privacidad", "destination": "/privacidad.html" }
   ]
 }
