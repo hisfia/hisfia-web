@@ -1,0 +1,42 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Screenshots de debug (no parte del sitio)
+actual-hero.png
+hero-check.png
+hero-check.jpg
+dolor-check.png
+pasos-check.png
+pedro-check.png
+quienes-check.png
+soluciones-check.png
+marquee-check.jpg
+marquee-check2.jpg
+mobile-dolor.jpg
+mobile-dolor-fixed.jpg
+mobile-hero.jpg
+mobile-team.jpg
+mobile-team-fixed.jpg
+desktop-diferencia.jpg
+desktop-soluciones.jpg
+dots-dolor.jpg
+dots-faq.jpg
+dots-garantia.jpg
+dots-hero.jpg
+dots-quienes.jpg
+v2-diferencia.png
+v2-diferencia2.png
+v2-faq.png
+v2-hero.png
+
+# Otro proyecto
+TrifaniLandig/
+
+# Claude Code
+.claude/
+.playwright-mcp/
+CLAUDE.md
+
+# Node
+node_modules/

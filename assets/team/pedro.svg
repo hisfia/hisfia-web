@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg-p" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0d0d1a"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="200" r="198" fill="url(#bg-p)" stroke="#00b4d8" stroke-width="2"/>
+  <!-- Body/bust silhouette -->
+  <ellipse cx="200" cy="340" rx="90" ry="50" fill="#00b4d8" opacity="0.8"/>
+  <rect x="130" y="260" width="140" height="90" rx="10" fill="#00b4d8" opacity="0.8"/>
+  <!-- Head silhouette -->
+  <circle cx="200" cy="210" r="65" fill="#00b4d8" opacity="0.8"/>
+  <!-- Neck -->
+  <rect x="180" y="268" width="40" height="22" fill="#00b4d8" opacity="0.8"/>
+  <!-- Initial -->
+  <text x="200" y="355" font-family="Arial,sans-serif" font-weight="700" font-size="70" fill="white" text-anchor="middle" dominant-baseline="middle" opacity="0.9">P</text>
+</svg>

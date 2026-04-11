@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — HisfIA</title>
+<meta name="description" content="Política de privacidad y protección de datos de HisfIA conforme al RGPD y la LOPDGDD.">
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#F7F5F0;
+  --bg2:#EEEAE0;
+  --border:#D8D4C8;
+  --text:#0E0D0B;
+  --sub:#6A6760;
+  --muted:#9E9B92;
+  --dark:#0E0D0B;
+  --c:#00B8CC;
+  --cg:rgba(0,184,204,.07);
+  --cb:rgba(0,184,204,.16);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden}
+::-webkit-scrollbar{width:2px}
+::-webkit-scrollbar-thumb{background:var(--c)}
+::selection{background:var(--c);color:#000}
+
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:radial-gradient(circle,rgba(0,184,204,.1) 1px,transparent 1px);
+  background-size:28px 28px;
+  pointer-events:none;z-index:0;
+}
+
+/* NAV */
+nav{
+  position:sticky;top:0;left:0;right:0;z-index:900;
+  height:62px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 44px;
+  background:rgba(247,245,240,.93);border-bottom:1px solid var(--border);
+  backdrop-filter:blur(20px);
+}
+.logo-text{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem;color:var(--text);letter-spacing:-.04em;line-height:1;text-decoration:none}
+.logo-ia{color:var(--c)}
+.nav-back{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color .2s}
+.nav-back:hover{color:var(--c)}
+
+/* HERO */
+.priv-hero{
+  position:relative;z-index:1;
+  padding:72px 0 56px;
+  border-bottom:1px solid var(--border);
+  background:var(--bg2);
+}
+.priv-hero .container{max-width:800px;margin:0 auto;padding:0 44px}
+.priv-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--c);letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px;display:block}
+.priv-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.4rem,4vw,3.6rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+.priv-meta{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;display:flex;gap:24px;flex-wrap:wrap}
+
+/* CONTENT */
+.priv-content{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:64px 44px 96px}
+
+.priv-section{margin-bottom:52px}
+.priv-section:last-child{margin-bottom:0}
+
+h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;letter-spacing:-.03em;color:var(--text);margin-bottom:14px;padding-top:4px}
+h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:-.02em;color:var(--text);margin-bottom:10px;margin-top:20px}
+
+p{font-family:'DM Sans',sans-serif;font-weight:400;font-size:.97rem;color:#4a4845;line-height:1.82;margin-bottom:14px}
+p:last-child{margin-bottom:0}
+
+ul,ol{padding-left:20px;margin-bottom:14px}
+li{font-family:'DM Sans',sans-serif;font-weight:400;font-size:.97rem;color:#4a4845;line-height:1.82;margin-bottom:6px}
+li:last-child{margin-bottom:0}
+
+.priv-section-num{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--c);letter-spacing:.2em;text-transform:uppercase;margin-bottom:10px;display:block}
+
+.info-box{
+  padding:20px 24px;border:1px solid var(--border);border-left:3px solid var(--c);
+  border-radius:4px;background:var(--cg);margin-bottom:20px;
+}
+.info-box p{font-size:.9rem;margin-bottom:0}
+.info-box strong{color:var(--text);font-weight:600}
+
+.rights-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:20px}
+.right-item{background:var(--bg);padding:20px 22px}
+.right-item h3{font-size:.95rem;margin-top:0;margin-bottom:6px}
+.right-item p{font-size:.87rem;margin-bottom:0}
+
+/* FOOTER */
+.priv-footer{
+  position:relative;z-index:1;
+  background:var(--dark);padding:32px 44px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.ft-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:rgba(247,245,240,.35);text-decoration:none;letter-spacing:-.04em}
+.ft-logo .logo-ia{color:rgba(0,184,204,.45)}
+.ft-copy{font-family:'JetBrains Mono',monospace;font-size:8px;color:rgba(247,245,240,.2);letter-spacing:.08em}
+
+a{color:var(--c);text-decoration:none}
+a:hover{text-decoration:underline}
+
+@media(max-width:768px){
+  nav{padding:0 24px}
+  .priv-hero .container,.priv-content{padding-left:24px;padding-right:24px}
+  .rights-grid{grid-template-columns:1fr}
+  .priv-footer{padding:24px}
+}
+@media(max-width:480px){
+  .priv-hero .container,.priv-content{padding-left:18px;padding-right:18px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo-text">Hisf<span class="logo-ia">IA</span></a>
+  <a href="/" class="nav-back">← Volver al inicio</a>
+</nav>
+
+<div class="priv-hero">
+  <div class="container">
+    <span class="priv-label">Legal · RGPD</span>
+    <h1 class="priv-title">Política de<br>Privacidad</h1>
+    <div class="priv-meta">
+      <span>Última actualización: abril 2026</span>
+      <span>Versión 1.0</span>
+      <span>Aplicable a hisfia.com</span>
+    </div>
+  </div>
+</div>
+
+<div class="priv-content">
+
+  <div class="priv-section">
+    <div class="info-box">
+      <p>Esta política explica qué datos recogemos cuando visitas <strong>hisfia.com</strong>, para qué los usamos y cuáles son tus derechos. Cumplimos el <strong>Reglamento General de Protección de Datos (RGPD)</strong> y la <strong>Ley Orgánica 3/2018 (LOPDGDD)</strong>.</p>
+    </div>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">01 — Responsable del tratamiento</span>
+    <h2>¿Quién es responsable de tus datos?</h2>
+    <p><strong>Denominación:</strong> HisfIA<br>
+    <strong>Actividad:</strong> Agencia de automatización con sistemas automáticos para empresas<br>
+    <strong>Web:</strong> hisfia.com<br>
+    <strong>Contacto:</strong> <a href="mailto:hola@hisfia.com">hola@hisfia.com</a></p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">02 — Qué datos recogemos</span>
+    <h2>Datos que tratamos</h2>
+    <p>Únicamente recogemos los datos que tú nos proporcionas de forma activa a través de los formularios de contacto de esta web:</p>
+    <ul>
+      <li><strong>Nombre:</strong> para identificarte y dirigirnos a ti correctamente</li>
+      <li><strong>Teléfono:</strong> para contactar contigo para la demo solicitada</li>
+      <li><strong>Nombre de empresa u negocio (opcional):</strong> para contextualizar la conversación</li>
+    </ul>
+    <p>No recogemos datos sensibles (salud, ideología, religión, etc.). No usamos cookies de seguimiento ni píxeles de terceros. No instalamos herramientas de analítica que recojan datos personales.</p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">03 — Para qué usamos tus datos</span>
+    <h2>Finalidad del tratamiento</h2>
+    <p>Los datos que nos facilitas a través del formulario de contacto se utilizan exclusivamente para:</p>
+    <ul>
+      <li>Contactarte para concertar la llamada o demo gratuita que has solicitado</li>
+      <li>Enviarte información comercial relacionada con los servicios de HisfIA que hayas solicitado</li>
+      <li>Gestionar la relación comercial si decides contratar nuestros servicios</li>
+    </ul>
+    <p>No utilizamos tus datos para ninguna otra finalidad distinta a las indicadas.</p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">04 — Base legal</span>
+    <h2>¿Por qué podemos tratar tus datos?</h2>
+    <p>El tratamiento de tus datos se basa en:</p>
+    <ul>
+      <li><strong>Tu consentimiento expreso</strong> (art. 6.1.a RGPD): al enviar el formulario marcas que aceptas esta política</li>
+      <li><strong>Ejecución de un contrato</strong> (art. 6.1.b RGPD): cuando la relación comercial se formaliza, el tratamiento es necesario para prestar el servicio</li>
+      <li><strong>Interés legítimo</strong> (art. 6.1.f RGPD): para el seguimiento comercial inicial de la demo solicitada</li>
+    </ul>
+    <p>Puedes retirar tu consentimiento en cualquier momento enviando un email a <a href="mailto:hola@hisfia.com">hola@hisfia.com</a>.</p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">05 — Conservación</span>
+    <h2>¿Cuánto tiempo guardamos tus datos?</h2>
+    <p>Conservamos tus datos durante el tiempo necesario para la finalidad para la que fueron recogidos:</p>
+    <ul>
+      <li><strong>Contactos que no se convierten en clientes:</strong> máximo 12 meses desde el último contacto</li>
+      <li><strong>Clientes activos:</strong> durante la vigencia del contrato y 5 años adicionales por obligaciones legales y fiscales</li>
+    </ul>
+    <p>Transcurrido ese plazo, los datos se eliminan de forma segura.</p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">06 — Destinatarios</span>
+    <h2>¿Compartimos tus datos con terceros?</h2>
+    <p>Tus datos no se venden ni ceden a terceros con fines comerciales. Únicamente se comunican a los siguientes proveedores de servicio, que actúan como encargados del tratamiento bajo contrato:</p>
+    <ul>
+      <li><strong>Formspree Inc.</strong> (EE.UU.): procesador del formulario de contacto. Adherido al marco EU-US Data Privacy Framework. <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Ver su política</a></li>
+    </ul>
+    <p>No realizamos transferencias internacionales de datos fuera de las mencionadas y con las garantías indicadas.</p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">07 — Tus derechos</span>
+    <h2>Derechos que puedes ejercer</h2>
+    <p>En virtud del RGPD y la LOPDGDD, puedes ejercer los siguientes derechos enviando un email a <a href="mailto:hola@hisfia.com">hola@hisfia.com</a> con el asunto «Derechos RGPD» e indicando tu nombre y el derecho que deseas ejercer:</p>
+    <div class="rights-grid">
+      <div class="right-item">
+        <h3>Acceso</h3>
+        <p>Saber qué datos tenemos sobre ti y cómo los usamos.</p>
+      </div>
+      <div class="right-item">
+        <h3>Rectificación</h3>
+        <p>Corregir datos inexactos o incompletos.</p>
+      </div>
+      <div class="right-item">
+        <h3>Supresión</h3>
+        <p>Solicitar que eliminemos tus datos personales.</p>
+      </div>
+      <div class="right-item">
+        <h3>Oposición</h3>
+        <p>Oponerte a un tratamiento basado en interés legítimo.</p>
+      </div>
+      <div class="right-item">
+        <h3>Limitación</h3>
+        <p>Solicitar que limitemos el uso de tus datos.</p>
+      </div>
+      <div class="right-item">
+        <h3>Portabilidad</h3>
+        <p>Recibir tus datos en formato estructurado y legible.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px">Responderemos en el plazo máximo de <strong>30 días</strong> desde la recepción de la solicitud. Si consideras que tu solicitud no ha sido atendida correctamente, puedes reclamar ante la <a href="https://www.aepd.es" target="_blank" rel="noopener">Agencia Española de Protección de Datos (aepd.es)</a>.</p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">08 — Seguridad</span>
+    <h2>Cómo protegemos tus datos</h2>
+    <p>Aplicamos medidas técnicas y organizativas proporcionales al riesgo del tratamiento:</p>
+    <ul>
+      <li>Transmisión cifrada mediante HTTPS/TLS en todas las comunicaciones</li>
+      <li>Acceso restringido a los datos únicamente al personal que necesita conocerlos</li>
+      <li>Uso de proveedores de servicio con garantías contractuales de seguridad</li>
+    </ul>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">09 — Cookies</span>
+    <h2>Política de cookies</h2>
+    <p>Esta web no utiliza cookies propias de analítica ni cookies de terceros con fines publicitarios o de seguimiento. Únicamente pueden estar presentes cookies técnicas estrictamente necesarias para el funcionamiento del formulario de contacto (Formspree), que no requieren consentimiento bajo la LSSI.</p>
+  </div>
+
+  <div class="priv-section">
+    <span class="priv-section-num">10 — Cambios</span>
+    <h2>Actualizaciones de esta política</h2>
+    <p>Podemos actualizar esta política cuando sea necesario por cambios normativos o en nuestros servicios. La fecha de última actualización figura en el encabezado. Te recomendamos revisarla periódicamente. Los cambios sustanciales te serán notificados si tenemos tu email de contacto.</p>
+  </div>
+
+  <div class="priv-section">
+    <div class="info-box">
+      <p>¿Preguntas sobre privacidad? Escríbenos a <a href="mailto:hola@hisfia.com"><strong>hola@hisfia.com</strong></a> — respondemos en menos de 48 horas.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer class="priv-footer">
+  <a href="/" class="ft-logo">Hisf<span class="logo-ia">IA</span></a>
+  <span class="ft-copy">© 2026 HisfIA · Automatización para negocios españoles · hisfia.com</span>
+</footer>
+
+</body>
+</html>
