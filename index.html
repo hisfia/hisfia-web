@@ -1188,6 +1188,134 @@ section{padding:88px 0}
   .hero-form-trust{justify-content:center;gap:6px;font-size:8px}
 }
 
+/* ══════════════════════════════════════════════════════
+   BLOQUE DE MEJORAS UI — v3
+   ══════════════════════════════════════════════════════ */
+
+/* ─── 1. VIDEO: ELIMINAR FONDO BLANCO ──────────────── */
+/* multiply hace que el blanco del vídeo se funda con el fondo crema */
+.hero-r video{mix-blend-mode:multiply}
+/* Fade lateral derecho (desktop) para eliminar el borde cuadrado */
+.hero-r-fade-r{
+  position:absolute;right:0;top:0;bottom:0;width:240px;
+  background:linear-gradient(to left,var(--bg) 0%,transparent 100%);
+  z-index:4;pointer-events:none
+}
+
+/* ─── 2. MOBILE HERO: VÍDEO VISIBLE ──────────────── */
+@media(max-width:900px){
+  .hero-r-fade-r{display:none}
+  /* Aumentar altura para que el vídeo sea protagonista */
+  .hero-r{height:46svh!important;min-height:200px}
+  /* Reducir gradiente superior para que se vea el sujeto */
+  .hero-r::before{height:50px!important}
+  .hero-r::after{height:40px!important}
+}
+@media(max-width:560px){
+  .hero-r{height:42svh!important}
+}
+
+/* ─── 3. SECCIONES: RITMO DE PADDING UNIFICADO ───── */
+/* Aumentamos ligeramente de 80 → 96px para más respiración */
+section{padding:96px 0}
+@media(max-width:900px){section{padding:64px 0}}
+@media(max-width:560px){section{padding:52px 0}}
+/* Overrides específicos */
+#garantia{padding-top:96px;padding-bottom:0}
+#soluciones{padding:96px 0}
+#sectores{padding:96px 0;border-top:1px solid var(--border)}
+#numeros{border-top:1px solid var(--border)}
+#casos{border-top:1px solid var(--border)}
+#quienes{border-top:1px solid var(--border)}
+#diferencia{border-top:1px solid var(--border)}
+#resenas{border-top:1px solid var(--border)}
+@media(max-width:900px){
+  #calculadora,#sectores{padding:64px 0}
+  #resenas{padding-top:64px;padding-bottom:64px}
+}
+@media(max-width:560px){
+  #calculadora,#sectores{padding:52px 0}
+  #resenas{padding-top:52px;padding-bottom:52px}
+}
+
+/* ─── 4. TRANSICIÓN HERO → SCROLL STORY ────────── */
+/* Social proof bar: z-index alto para que se vea encima */
+#social-proof-bar{position:relative;z-index:2}
+/* Fade suave al entrar en la sección oscura */
+.ss-sticky::before{
+  content:'';position:absolute;top:0;left:0;right:0;
+  height:110px;
+  background:linear-gradient(to bottom,rgba(247,245,240,.14) 0%,transparent 100%);
+  z-index:20;pointer-events:none
+}
+/* Grilla de puntos + separadores visuales en el sticky */
+.ss-sticky::after{
+  content:'';position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.18) 1px,transparent 1px);
+  background-size:48px 48px;
+  pointer-events:none;z-index:0;opacity:.35
+}
+/* Transición de vuelta a claro */
+#dolor{border-top:none}
+#marquee+section,#marquee~#dolor{
+  position:relative
+}
+
+/* ─── 5. SCROLL STORY: FONDO VISUAL RICO ──────── */
+.ss-panel{position:relative;overflow:hidden}
+
+/* Ghost number decorativo por panel (usa data-deco attr) */
+.ss-panel::before{
+  content:attr(data-deco);
+  position:absolute;right:-0.06em;bottom:-0.18em;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:clamp(130px,20vw,240px);
+  color:transparent;
+  -webkit-text-stroke:1px rgba(255,255,255,.042);
+  pointer-events:none;user-select:none;
+  white-space:nowrap;letter-spacing:-.05em;line-height:1;
+  z-index:1
+}
+/* Spot de color por panel */
+.ss-panel:nth-child(1)::after{
+  content:'';position:absolute;
+  width:60vmax;height:60vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(239,68,68,.07) 0%,transparent 65%);
+  top:50%;right:-20vmax;transform:translateY(-50%);
+  pointer-events:none;z-index:0
+}
+.ss-panel:nth-child(2)::after{
+  content:'';position:absolute;
+  width:60vmax;height:60vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(251,146,60,.065) 0%,transparent 65%);
+  top:50%;right:-15vmax;transform:translateY(-50%);
+  pointer-events:none;z-index:0
+}
+.ss-panel:nth-child(3)::after{
+  content:'';position:absolute;
+  width:55vmax;height:55vmax;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,184,204,.09) 0%,transparent 65%);
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  pointer-events:none;z-index:0
+}
+/* El contenido del panel siempre por encima de los decorativos */
+.ss-content{position:relative;z-index:5}
+.ss-time{position:relative;z-index:5}
+.ss-bubble-wrap{position:relative;z-index:5}
+/* Icono SVG decorativo flotante */
+.ss-icon{
+  position:absolute;right:min(6vw,96px);top:50%;transform:translateY(-50%);
+  pointer-events:none;user-select:none;
+  opacity:.055;
+  width:clamp(120px,16vw,200px);height:clamp(120px,16vw,200px);
+  color:#fff;z-index:2
+}
+.ss-icon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:768px){
+  .ss-icon{display:none}
+  .ss-panel::before{font-size:clamp(80px,20vw,120px);right:-.05em}
+}
+
 /* ─── AURORA BACKGROUND ─── */
 #hero{position:relative;overflow:hidden}
 .aurora-layer{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
@@ -1349,6 +1477,7 @@ section{padding:88px 0}
     <video id="hero-vid" autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true">
       <source src="assets/Chica.mp4" type="video/mp4">
     </video>
+    <div class="hero-r-fade-r" aria-hidden="true"></div>
     <div class="corner corner-tl" aria-hidden="true"></div>
     <div class="corner corner-tr" aria-hidden="true"></div>
     <div class="corner corner-bl" aria-hidden="true"></div>
@@ -1396,7 +1525,11 @@ section{padding:88px 0}
 <section id="scroll-story" aria-label="El problema en tres momentos">
   <div class="ss-sticky" id="ss-sticky">
     <div class="ss-track" id="ss-track">
-      <div class="ss-panel">
+      <div class="ss-panel" data-deco="20:14">
+        <!-- Icono decorativo: teléfono sin respuesta -->
+        <div class="ss-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/><line x1="23" y1="1" x2="17" y2="7"/><line x1="17" y1="1" x2="23" y2="7"/></svg>
+        </div>
         <div class="ss-content">
           <div class="ss-time" data-ss="time">Viernes. 20:14.</div>
           <div class="ss-bubble-wrap">
@@ -1408,7 +1541,11 @@ section{padding:88px 0}
           </div>
         </div>
       </div>
-      <div class="ss-panel">
+      <div class="ss-panel" data-deco="11:30">
+        <!-- Icono decorativo: calendario sin cita -->
+        <div class="ss-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="9" y1="16" x2="15" y2="16"/></svg>
+        </div>
         <div class="ss-content">
           <div class="ss-time" data-ss="time">Sábado. 11:30.</div>
           <div class="ss-bubble-wrap">
@@ -1420,7 +1557,11 @@ section{padding:88px 0}
           </div>
         </div>
       </div>
-      <div class="ss-panel">
+      <div class="ss-panel" data-deco="22:47">
+        <!-- Icono decorativo: check / IA responde -->
+        <div class="ss-icon" aria-hidden="true" style="opacity:.08;color:rgba(0,184,204,1)">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/><circle cx="12" cy="12" r="10"/></svg>
+        </div>
         <div class="ss-content">
           <div class="ss-time" data-ss="time">Domingo. 22:47.</div>
           <div class="ss-bubble-wrap">
