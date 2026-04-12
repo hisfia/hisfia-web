@@ -1316,6 +1316,57 @@ section{padding:96px 0}
   .ss-panel::before{font-size:clamp(80px,20vw,120px);right:-.05em}
 }
 
+/* ─── SECCIÓN ASISTENTE PERSONAL ───────────────────── */
+#asistente{background:var(--bg2)}
+.asis-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.asis-examples{display:flex;flex-direction:column;gap:16px;margin-top:36px}
+.asis-ex{display:flex;gap:16px;align-items:flex-start;padding:16px 18px;background:rgba(255,255,255,0.65);border:1px solid var(--border);border-radius:6px;transition:border-color .25s,box-shadow .25s,transform .25s;cursor:default}
+.asis-ex:hover{border-color:var(--c);box-shadow:0 4px 24px rgba(0,184,204,.08);transform:translateX(4px)}
+.asis-ex-icon{font-size:1.3rem;flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--cg);border-radius:8px}
+.asis-ex-text{display:flex;flex-direction:column;gap:4px}
+.asis-ex-text strong{font-family:'DM Sans',sans-serif;font-weight:600;font-size:.9rem;color:var(--text);line-height:1.4}
+.asis-ex-text span{font-family:'JetBrains Mono',monospace;font-size:.73rem;color:var(--c);letter-spacing:.03em}
+/* Mockup */
+.asis-mock{background:var(--dark);border-radius:16px;overflow:hidden;box-shadow:0 32px 80px rgba(14,13,11,.18),0 4px 20px rgba(0,184,204,.1);border:1px solid rgba(255,255,255,.08)}
+.asis-mock-bar{background:rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.07);padding:14px 18px;display:flex;align-items:center;gap:12px}
+.asis-mock-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--c),#0090a0);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:#000;flex-shrink:0}
+.asis-mock-name{font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:500;color:rgba(247,245,240,.9)}
+.asis-mock-status{font-family:'JetBrains Mono',monospace;font-size:8px;color:var(--c);letter-spacing:.06em}
+.asis-mock-badge{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.15em;color:rgba(247,245,240,.25);border:1px solid rgba(255,255,255,.1);padding:3px 7px;border-radius:2px}
+.asis-mock-msgs{padding:20px 16px;display:flex;flex-direction:column;gap:10px;min-height:260px;overflow:hidden}
+.asis-msg-out,.asis-msg-in{max-width:82%;padding:10px 14px;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:.82rem;line-height:1.5;opacity:0;transform:translateY(8px);transition:opacity .4s cubic-bezier(.16,1,.3,1),transform .4s cubic-bezier(.16,1,.3,1)}
+.asis-msg-out.show,.asis-msg-in.show{opacity:1;transform:translateY(0)}
+.asis-msg-out{background:rgba(0,184,204,.15);color:rgba(247,245,240,.85);align-self:flex-end;border-radius:12px 2px 12px 12px}
+.asis-msg-in{background:rgba(255,255,255,.08);color:rgba(247,245,240,.9);align-self:flex-start;border-radius:2px 12px 12px 12px}
+.asis-msg-in strong{color:var(--c);font-weight:600}
+.asis-typing{align-self:flex-start;display:flex;gap:4px;align-items:center;padding:12px 14px;background:rgba(255,255,255,.06);border-radius:2px 12px 12px 12px}
+.asis-typing span{width:5px;height:5px;border-radius:50%;background:rgba(247,245,240,.3);animation:hcm-dot 1.2s ease-in-out infinite}
+.asis-typing span:nth-child(2){animation-delay:.2s}
+.asis-typing span:nth-child(3){animation-delay:.4s}
+.asis-mock-input{padding:14px 16px;border-top:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:10px}
+.asis-mock-input-box{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:10px 14px;font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(247,245,240,.25)}
+.asis-mock-mic{width:36px;height:36px;background:var(--c);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.asis-mock-footer{padding:10px 16px;background:rgba(0,184,204,.06);border-top:1px solid rgba(0,184,204,.1);font-family:'JetBrains Mono',monospace;font-size:8px;color:rgba(0,184,204,.5);letter-spacing:.1em;text-align:center;text-transform:uppercase}
+@media(max-width:900px){
+  .asis-layout{grid-template-columns:1fr;gap:48px}
+  .asis-mock{border-radius:12px}
+}
+
+/* ─── SOL-CARD TAG + HOVER MEJORADO ─── */
+.sol-card-tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.18em;text-transform:uppercase;color:var(--c);background:var(--cg);border:1px solid var(--cb);padding:3px 8px;border-radius:2px;margin-bottom:10px}
+.sol-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s,border-color .25s}
+.sol-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,184,204,.1);border-color:var(--c)}
+
+/* ─── MOBILE 480px ─── */
+@media(max-width:480px){
+  h1#hh1{font-size:2.2rem!important}
+  .section-title{font-size:1.85rem!important}
+  .container{padding:0 20px!important}
+  .sol-cards{grid-template-columns:1fr!important}
+  .asis-layout{gap:32px}
+  .asis-examples{gap:12px}
+}
+
 /* ─── AURORA BACKGROUND ─── */
 #hero{position:relative;overflow:hidden}
 .aurora-layer{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
@@ -1433,11 +1484,11 @@ section{padding:96px 0}
   <div class="hero-l">
     <div id="hrec"><img src="assets/claudecode-color.png" alt="" aria-hidden="true" style="height:10px;width:auto;vertical-align:middle;image-rendering:pixelated"> Construido con Claude AI · Operativo en 7 días · <strong style="color:var(--c)">2 plazas este mes</strong></div>
     <h1 id="hh1">
-      <span class="hero-line" style="animation-delay:0ms">Mientras duermes,</span><br>
-      <span class="hero-line" style="animation-delay:120ms">tu negocio</span><br>
-      <span class="hero-line" style="animation-delay:240ms"><span class="hero-h1-accent">trabaja.</span></span>
+      <span class="hero-line" style="animation-delay:0ms">Lo que ahora</span><br>
+      <span class="hero-line" style="animation-delay:120ms">apuntas en papel,</span><br>
+      <span class="hero-line" style="animation-delay:240ms"><span class="hero-h1-accent">lo hace solo.</span></span>
     </h1>
-    <p id="hsub">Mientras tu equipo descansa, HisfIA atiende clientes, organiza tu negocio, publica contenido y genera informes. El primer empleado de IA para pymes españolas.</p>
+    <p id="hsub">HisfIA instala inteligencia artificial en tu negocio: responde WhatsApps, gestiona citas, manda recordatorios y genera informes — mientras tú haces lo que importa. Operativo en 7 días.</p>
     <div class="hero-cta-block">
       <div class="hero-form-ok" id="hero-form-ok">✓ Recibido — te llamamos en menos de 24h</div>
       <form class="hero-form" id="hero-form" action="https://formspree.io/f/TU_ID_REAL" method="POST" novalidate>
@@ -1683,29 +1734,30 @@ section{padding:96px 0}
 <section id="dolor" aria-labelledby="dolor-h" class="has-pdots">
   <div class="pdots" aria-hidden="true"></div>
   <div class="container">
-    <span class="section-label">El problema real</span>
-    <h2 class="section-title" id="dolor-h">No es solo lo que no contestas.<br><span class="mark-u">Es todo lo que no llegas a hacer.</span></h2>
+    <span class="section-label">Lo reconoces, ¿verdad?</span>
+    <h2 class="section-title" id="dolor-h">Sigues gestionando<br><span class="mark-u">todo a mano.</span></h2>
+    <p class="section-sub" style="margin-top:16px;margin-bottom:52px">WhatsApp sin responder desde anoche. Citas apuntadas en papel que luego pierdes. Facturas que mandas cuando te acuerdas. Clientes que no vuelven porque nadie les dio seguimiento. Esto no es culpa tuya — es que no tienes el sistema.</p>
 
     <div class="pain-stats">
       <div class="pst reveal">
-        <div class="pst-num">78<span class="pst-sfx">%</span></div>
-        <p class="pst-label">de los clientes contratan con la primera empresa que les responde</p>
+        <div class="pst-num">67<span class="pst-sfx">%</span></div>
+        <p class="pst-label">de los leads no reciben respuesta antes de que el cliente se vaya con otro</p>
         <div class="pst-src">Harvard Business Review</div>
       </div>
       <div class="pst reveal r1">
-        <div class="pst-num">30<span class="pst-sfx">min</span></div>
-        <p class="pst-label">es el tiempo máximo antes de que la probabilidad de cierre caiga un 80%</p>
-        <div class="pst-src">Lead Response Management Study</div>
+        <div class="pst-num">4<span class="pst-sfx">h</span></div>
+        <p class="pst-label">pierde de media un empresario al día en tareas que una IA puede hacer sola</p>
+        <div class="pst-src">McKinsey Global Institute 2024</div>
       </div>
       <div class="pst reveal r2">
-        <div class="pst-num">8<span class="pst-sfx">–15</span></div>
-        <p class="pst-label">oportunidades pierde tu negocio cada mes sin saberlo</p>
-        <div class="pst-src">Media estimada · Pymes españolas</div>
+        <div class="pst-num">3<span class="pst-sfx">x</span></div>
+        <p class="pst-label">más conversiones cuando se responde en menos de 5 minutos vs. más de 1 hora</p>
+        <div class="pst-src">Lead Response Management Study</div>
       </div>
       <div class="pst reveal r3">
-        <div class="pst-num">8<span class="pst-sfx">h</span></div>
-        <p class="pst-label">semanales pierde de media una pyme en tareas manuales que la IA puede ejecutar sola</p>
-        <div class="pst-src">McKINSEY 2024</div>
+        <div class="pst-num">0<span class="pst-sfx">€</span></div>
+        <p class="pst-label">cuesta que HisfIA responda mientras duermes — y trabaja aunque seas de 3 personas</p>
+        <div class="pst-src">Precio base desde 297€/mes</div>
       </div>
     </div>
 
@@ -1842,6 +1894,80 @@ section{padding:96px 0}
   </div>
 </section>
 
+<!-- ─── ASISTENTE PERSONAL ──────────────────── -->
+<section id="asistente" aria-labelledby="asistente-h" class="has-pdots">
+  <div class="pdots" aria-hidden="true" data-speed="0.07"></div>
+  <div class="container">
+    <div class="asis-layout">
+
+      <!-- LEFT: explicación -->
+      <div class="asis-copy reveal">
+        <span class="section-label">Tu IA personal</span>
+        <h2 class="section-title" id="asistente-h">
+          Díselo.<br>
+          <span class="mark-u">Él lo hace.</span>
+        </h2>
+        <p class="section-sub">
+          Imagina tener un asistente que nunca olvida nada,
+          trabaja 24 horas y ejecuta cualquier tarea de tu negocio
+          con un mensaje de voz o de texto desde tu móvil.
+        </p>
+        <div class="asis-examples">
+          <div class="asis-ex reveal r1">
+            <div class="asis-ex-icon">📞</div>
+            <div class="asis-ex-text">
+              <strong>"Avisa a todos los del martes que hay un cambio de hora"</strong>
+              <span>→ HisfIA manda el WhatsApp a todos. Tú no tocas nada.</span>
+            </div>
+          </div>
+          <div class="asis-ex reveal r2">
+            <div class="asis-ex-icon">📅</div>
+            <div class="asis-ex-text">
+              <strong>"Recuérdame mandar la factura de López el viernes"</strong>
+              <span>→ El viernes te llega el aviso con la factura lista.</span>
+            </div>
+          </div>
+          <div class="asis-ex reveal r3">
+            <div class="asis-ex-icon">📊</div>
+            <div class="asis-ex-text">
+              <strong>"¿Cuánto hemos facturado esta semana?"</strong>
+              <span>→ En 3 segundos tienes el resumen en tu móvil.</span>
+            </div>
+          </div>
+          <div class="asis-ex reveal r3">
+            <div class="asis-ex-icon">💬</div>
+            <div class="asis-ex-text">
+              <strong>"Dile al 612 345 678 que su cita es mañana a las 10"</strong>
+              <span>→ Enviado. Con tu nombre. Con tu tono.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: mockup chat con asistente -->
+      <div class="asis-mock reveal r1">
+        <div class="asis-mock-bar">
+          <div class="asis-mock-av">IA</div>
+          <div>
+            <div class="asis-mock-name">Tu asistente HisfIA</div>
+            <div class="asis-mock-status">● Disponible 24h</div>
+          </div>
+          <div class="asis-mock-badge">PRIVADO</div>
+        </div>
+        <div class="asis-mock-msgs" id="asis-msgs"></div>
+        <div class="asis-mock-input">
+          <div class="asis-mock-input-box">Escribe una orden a tu IA...</div>
+          <div class="asis-mock-mic">🎤</div>
+        </div>
+        <div class="asis-mock-footer">
+          Contrólalo desde WhatsApp · Telegram · o la app web
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ─── SOLUCIONES ──────────────────────────── -->
 <section id="soluciones" class="has-pdots">
   <div class="pdots" aria-hidden="true" data-speed="0.08"></div>
@@ -1854,13 +1980,13 @@ section{padding:96px 0}
 
     <div class="sol-cards reveal">
 
-      <div class="sol-card">
+      <div class="sol-card reveal">
         <div class="sol-card-icon">
           <img src="assets/icons/icon-chat.svg" alt="" aria-hidden="true">
         </div>
         <span class="sol-card-n">01</span>
-        <h3 class="sol-card-title">Atención al cliente 24/7</h3>
-        <p class="sol-card-body">WhatsApp, Instagram, web — responde en menos de 60 segundos con tu tono y tu información. A las 3am. En domingo. Sin que nadie en tu equipo toque nada.</p>
+        <h3 class="sol-card-title">WhatsApp, email y llamadas respondidas en 60 segundos</h3>
+        <p class="sol-card-body">Un cliente escribe a las 11 de la noche. A las 11:01 tiene respuesta con tu tono, tu información y, si quiere, su cita reservada. Sin que tú muevas un dedo.</p>
         <div class="sol-card-tools">
           <img src="assets/logos/whatsapp.svg" alt="WhatsApp" class="sol-tool-logo">
           <img src="assets/logos/instagram.png" alt="Instagram" class="sol-tool-logo">
@@ -1868,39 +1994,39 @@ section{padding:96px 0}
         </div>
       </div>
 
-      <div class="sol-card">
+      <div class="sol-card reveal">
         <div class="sol-card-icon">
           <img src="assets/icons/icon-calendar.svg" alt="" aria-hidden="true">
         </div>
         <span class="sol-card-n">02</span>
-        <h3 class="sol-card-title">Agenda y seguimientos</h3>
-        <p class="sol-card-body">Confirma citas, manda recordatorios, recupera leads fríos a D+1, D+3 y D+7. Sin que tu equipo toque nada. Cero no-shows.</p>
+        <h3 class="sol-card-title">Las citas se confirman, recuerdan y reorganizan solas</h3>
+        <p class="sol-card-body">El sistema envía recordatorios 24h antes, gestiona cancelaciones y rellena huecos automáticamente. Tu agenda siempre llena, los no-shows reducidos a la mitad.</p>
         <div class="sol-card-tools">
           <img src="assets/logos/airtable.svg" alt="Airtable" class="sol-tool-logo">
           <img src="assets/logos/make.svg" alt="Make" class="sol-tool-logo">
         </div>
       </div>
 
-      <div class="sol-card">
+      <div class="sol-card reveal">
         <div class="sol-card-icon">
           <img src="assets/icons/icon-chart.svg" alt="" aria-hidden="true">
         </div>
         <span class="sol-card-n">03</span>
-        <h3 class="sol-card-title">Reportes y visibilidad</h3>
-        <p class="sol-card-body">Dashboard en tiempo real con todos tus contactos, citas y conversiones. Siempre actualizado. Desde tu móvil. Sin hojas de cálculo.</p>
+        <h3 class="sol-card-title">Cada mañana sabes exactamente qué ha pasado</h3>
+        <p class="sol-card-body">Informe diario en tu móvil: leads recibidos, citas agendadas, mensajes respondidos, ingresos del día. Como tener un jefe de operaciones que trabaja mientras duermes.</p>
         <div class="sol-card-tools">
           <img src="assets/logos/airtable.svg" alt="Airtable" class="sol-tool-logo">
           <img src="assets/logos/hubspot.svg" alt="HubSpot" class="sol-tool-logo">
         </div>
       </div>
 
-      <div class="sol-card">
+      <div class="sol-card reveal">
         <div class="sol-card-icon">
           <img src="assets/icons/icon-social.svg" alt="" aria-hidden="true">
         </div>
         <span class="sol-card-n">04</span>
-        <h3 class="sol-card-title">Contenido en redes</h3>
-        <p class="sol-card-body">Genera y publica posts automáticamente según tu negocio, tu tono y tu calendario. Sin community manager. Sin brief. Sin aprobaciones.</p>
+        <h3 class="sol-card-title">Tu negocio publica en redes aunque no tengas tiempo</h3>
+        <p class="sol-card-body">Publicaciones creadas, programadas y publicadas en Instagram, Facebook y Google automáticamente. Con tu imagen de marca, tu tono y adaptadas a tu sector.</p>
         <div class="sol-card-tools">
           <img src="assets/logos/instagram.png" alt="Instagram" class="sol-tool-logo">
           <img src="assets/logos/make.svg" alt="Make" class="sol-tool-logo">
@@ -1908,17 +2034,27 @@ section{padding:96px 0}
         </div>
       </div>
 
-      <div class="sol-card">
+      <div class="sol-card reveal">
         <div class="sol-card-icon">
           <img src="assets/icons/icon-invoice.svg" alt="" aria-hidden="true">
         </div>
         <span class="sol-card-n">05</span>
-        <h3 class="sol-card-title">Facturación e informes</h3>
-        <p class="sol-card-body">Genera facturas, informes semanales y documentos automáticamente. Integrado con Holded y Airtable. Sin horas extras. Sin errores humanos.</p>
+        <h3 class="sol-card-title">Nadie se olvida de pagar. Nadie se queda sin seguimiento.</h3>
+        <p class="sol-card-body">Recordatorios automáticos de facturas pendientes, seguimiento de presupuestos enviados y alertas cuando un cliente lleva más de X días sin responder. El dinero que se pierde por olvido, recuperado.</p>
         <div class="sol-card-tools">
           <img src="assets/logos/holded.svg" alt="Holded" class="sol-tool-logo">
           <img src="assets/logos/airtable.svg" alt="Airtable" class="sol-tool-logo">
         </div>
+      </div>
+
+      <div class="sol-card reveal">
+        <div class="sol-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 8h.01M10 8h4"/></svg>
+        </div>
+        <span class="sol-card-tag">Nuevo</span>
+        <span class="sol-card-n">06</span>
+        <h3 class="sol-card-title">Una web nueva que vende mientras duermes</h3>
+        <p class="sol-card-body">Diseñamos y construimos tu nueva web: rápida, visualmente impactante y conectada desde el primer día con tu sistema de IA. Tu escaparate digital que trabaja 24h, no solo un catálogo bonito.</p>
       </div>
 
     </div><!-- /.sol-cards -->
@@ -1965,8 +2101,8 @@ section{padding:96px 0}
         <div class="paso-l">
           <div class="paso-n">01</div>
           <div class="paso-label">Respuesta instantánea</div>
-          <h3 class="paso-title">Alguien contesta.<br>Aunque tú estés ocupado.</h3>
-          <p class="paso-body">WhatsApp, Instagram, web — en menos de 60 segundos. Con tu tono, tu información, y el siguiente paso propuesto. Solo.</p>
+          <h3 class="paso-title">Son las 3 de la mañana. Un cliente pregunta por tu servicio.</h3>
+          <p class="paso-body">HisfIA responde en 8 segundos. Con tu información. Con tu tono. El cliente ni nota que es automático. Tú te enteras por la mañana.</p>
           <span class="paso-pill">Respuesta &lt;60s · 24h · 7 días</span>
         </div>
         <div class="paso-r">
@@ -1997,8 +2133,8 @@ section{padding:96px 0}
         <div class="paso-l">
           <div class="paso-n">02</div>
           <div class="paso-label">Seguimiento automático</div>
-          <h3 class="paso-title">Nadie se olvida.<br>Nadie se enfría.</h3>
-          <p class="paso-body">D+1, D+3, D+7 — el sistema recupera cada contacto sin que tu equipo toque nada. Recordatorios de cita incluidos.</p>
+          <h3 class="paso-title">El cliente dijo que llamaría. Pasaron 3 días. Nadie le dio seguimiento.</h3>
+          <p class="paso-body">HisfIA lo recuerda por ti. Le manda un mensaje al día 2. Si no responde, otro al 5. El 60% de los leads perdidos se recuperan así.</p>
           <span class="paso-pill">Recuperación automática de leads fríos</span>
         </div>
         <div class="paso-r">
@@ -2059,8 +2195,8 @@ section{padding:96px 0}
         <div class="paso-l">
           <div class="paso-n">03</div>
           <div class="paso-label">Visibilidad total</div>
-          <h3 class="paso-title">Por primera vez,<br>sabes qué pasa.</h3>
-          <p class="paso-body">Cuántos contactos llegaron, cuántos tienen cita, cuántos se fueron. En tiempo real desde tu móvil. Sin hojas de cálculo.</p>
+          <h3 class="paso-title">Quieres saber cuánto has facturado esta semana. Tardas 20 minutos.</h3>
+          <p class="paso-body">Con HisfIA, es un mensaje de voz. "Dame el resumen de la semana." En 4 segundos lo tienes en el móvil. Cada día, sin pedirlo.</p>
           <span class="paso-pill">Dashboard en tiempo real</span>
         </div>
         <div class="paso-r">
@@ -2121,8 +2257,8 @@ section{padding:96px 0}
         <div class="paso-l">
           <div class="paso-n">04</div>
           <div class="paso-label">Contenido automático</div>
-          <h3 class="paso-title">Tu contenido,<br>publicado solo.</h3>
-          <p class="paso-body">El sistema genera y publica posts en redes sociales según tu negocio, tu tono y tu calendario. Sin que toques nada. Sin community manager.</p>
+          <h3 class="paso-title">Son las 6pm del jueves. Tienes que publicar en Instagram.</h3>
+          <p class="paso-body">HisfIA ya lo publicó el martes. Y el miércoles. Y tiene programados los del mes completo. Con tu imagen y tu tono. Sin que toques nada.</p>
           <span class="paso-pill">Instagram · LinkedIn · Facebook</span>
         </div>
         <div class="paso-r">
@@ -2150,8 +2286,8 @@ section{padding:96px 0}
         <div class="paso-l">
           <div class="paso-n">05</div>
           <div class="paso-label">Informes y facturación</div>
-          <h3 class="paso-title">Tus números,<br>siempre al día.</h3>
-          <p class="paso-body">Facturas, informes de rendimiento, resúmenes semanales. El sistema los genera y los envía solos. Sin hojas de cálculo. Sin horas extras.</p>
+          <h3 class="paso-title">Una factura de hace 3 semanas sigue sin pagarse. No te has acordado.</h3>
+          <p class="paso-body">HisfIA mandó el recordatorio amable al día 7, uno más firme al día 15 y te avisó a ti al día 21. El dinero que se pierde por olvido, recuperado.</p>
           <span class="paso-pill">Holded · Airtable · Email automático</span>
         </div>
         <div class="paso-r">
@@ -3477,6 +3613,54 @@ window.addEventListener('scroll',function(){
     if(!raf){requestAnimationFrame(update);raf=true}
   },{passive:true});
   update();
+})();
+
+/* ─── ASISTENTE CHAT ANIMATION ──────────────────────── */
+(function(){
+  const msgs=document.getElementById('asis-msgs');
+  if(!msgs)return;
+  const conversation=[
+    {type:'out',text:'¿Cuánto hemos facturado esta semana?'},
+    {type:'in', text:'📊 Esta semana: <strong>4.380€</strong> en 12 operaciones. Un 18% más que la semana pasada.'},
+    {type:'out',text:'Avisa al cliente López que su cita del jueves se pasa al viernes a las 11h'},
+    {type:'in', text:'✅ Hecho. Le he mandado WhatsApp a López con el cambio. Confirmó en 4 minutos.'},
+    {type:'out',text:'Recuérdame mandar la factura de Martínez el próximo lunes'},
+    {type:'in', text:'🔔 Anotado. El lunes a las 9h te aviso con la factura preparada para enviar.'},
+  ];
+  let step=0,started=false;
+  function addMsg(msg,cb){
+    const div=document.createElement('div');
+    div.className=msg.type==='out'?'asis-msg-out':'asis-msg-in';
+    if(msg.type==='in')div.innerHTML=msg.text;
+    else div.textContent=msg.text;
+    msgs.appendChild(div);
+    msgs.scrollTop=msgs.scrollHeight;
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      div.classList.add('show');
+      setTimeout(()=>cb&&cb(),600);
+    }));
+  }
+  function addTyping(cb){
+    const div=document.createElement('div');
+    div.className='asis-typing';
+    div.innerHTML='<span></span><span></span><span></span>';
+    msgs.appendChild(div);
+    msgs.scrollTop=msgs.scrollHeight;
+    setTimeout(()=>{if(div.parentNode)msgs.removeChild(div);cb&&cb();},1400);
+  }
+  function next(){
+    if(step>=conversation.length){
+      setTimeout(()=>{msgs.innerHTML='';step=0;setTimeout(next,600);},4000);
+      return;
+    }
+    const msg=conversation[step++];
+    if(msg.type==='out')addMsg(msg,()=>setTimeout(()=>addTyping(()=>next()),400));
+    else addMsg(msg,()=>setTimeout(next,1200));
+  }
+  const obs=new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting&&!started){started=true;setTimeout(next,600);obs.disconnect();}
+  },{threshold:0.3});
+  obs.observe(msgs);
 })();
 
 </script>
