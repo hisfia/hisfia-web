@@ -1,45 +1,33 @@
-# Sistema
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+._*
 
-# Screenshots de debug (no parte del sitio)
-actual-hero.png
-hero-check.png
-hero-check.jpg
-dolor-check.png
-pasos-check.png
-pedro-check.png
-quienes-check.png
-soluciones-check.png
-marquee-check.jpg
-marquee-check2.jpg
-mobile-dolor.jpg
-mobile-dolor-fixed.jpg
-mobile-hero.jpg
-mobile-team.jpg
-mobile-team-fixed.jpg
-desktop-diferencia.jpg
-desktop-soluciones.jpg
-dots-dolor.jpg
-dots-faq.jpg
-dots-garantia.jpg
-dots-hero.jpg
-dots-quienes.jpg
-v2-diferencia.png
-v2-diferencia2.png
-v2-faq.png
-v2-hero.png
+# Screenshots de desarrollo (generados por Playwright/tests)
+hero.png
+hero-top.png
+full-page.png
+.playwright-mcp/
 
-# Otro proyecto
+# Trifani (repo ajeno, no pertenece a este proyecto)
 TrifaniLandig/
 
-# Claude Code
-.claude/
-.playwright-mcp/
-CLAUDE.md
+# Editor / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Node
+# Logs
+*.log
+
+# Env files — NUNCA subir credenciales
+.env
+.env.local
+.env.*.local
+
+# Node (si se añade build en el futuro)
 node_modules/
-
-# Vercel
-.vercel/
+dist/
+.cache/
