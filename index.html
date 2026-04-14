@@ -946,6 +946,150 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
   .sec-grid{grid-template-columns:1fr}
   .cap-grid{grid-template-columns:1fr}
 }
+
+/* ═══════════════════════════════════════
+   FOMO NOTIFICATION
+═══════════════════════════════════════ */
+#fomo-wrap{
+  position:fixed;bottom:24px;left:24px;z-index:8000;
+  display:flex;flex-direction:column;gap:8px;pointer-events:none;
+}
+.fomo-card{
+  display:flex;align-items:center;gap:12px;
+  background:rgba(247,245,240,.97);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:12px 16px;
+  box-shadow:0 8px 32px rgba(14,13,11,.12),0 2px 8px rgba(14,13,11,.08);
+  pointer-events:auto;
+  max-width:280px;
+  transform:translateX(-120%);
+  opacity:0;
+  transition:transform .5s cubic-bezier(.16,1,.3,1),opacity .4s ease;
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+}
+.fomo-card.show{transform:translateX(0);opacity:1}
+.fomo-av{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--dark);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.7rem;
+  color:var(--bg);flex-shrink:0;
+}
+.fomo-content{flex:1;min-width:0}
+.fomo-name{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.82rem;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fomo-action{font-size:.76rem;color:var(--sub);line-height:1.35;margin-top:1px}
+.fomo-time{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.06em;color:var(--muted);display:flex;align-items:center;gap:4px;margin-top:4px}
+.fomo-dot{width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0}
+.fomo-close{
+  position:absolute;top:8px;right:10px;
+  background:none;border:none;cursor:pointer;
+  font-size:.75rem;color:var(--muted);padding:2px;line-height:1;
+}
+@media(max-width:480px){
+  #fomo-wrap{bottom:80px;left:12px;right:12px}
+  .fomo-card{max-width:100%}
+}
+
+/* ═══════════════════════════════════════
+   SOCIAL PROOF TICKER
+═══════════════════════════════════════ */
+#proof-ticker{
+  background:var(--bg);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:10px 0;
+  overflow:hidden;
+  position:relative;
+}
+#proof-ticker::before,#proof-ticker::after{
+  content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none;
+}
+#proof-ticker::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
+#proof-ticker::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
+.proof-track{
+  display:flex;align-items:center;gap:0;
+  width:max-content;
+  animation:proof-run 30s linear infinite;
+}
+.proof-track:hover{animation-play-state:paused}
+@keyframes proof-run{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.proof-item{
+  display:flex;align-items:center;gap:8px;
+  padding:0 32px;
+  font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--sub);white-space:nowrap;flex-shrink:0;
+}
+.proof-item::before{
+  content:'';width:5px;height:5px;border-radius:50%;
+  background:var(--c);flex-shrink:0;
+}
+.proof-sep{
+  width:1px;height:16px;background:var(--border);flex-shrink:0;
+}
+
+/* ═══════════════════════════════════════
+   VIDEO SECTION — loading fallback
+═══════════════════════════════════════ */
+.vid-loading{
+  position:absolute;inset:0;
+  background:#0a0a0a;
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:12px;
+  transition:opacity .4s;
+}
+.vid-loading-spinner{
+  width:32px;height:32px;border-radius:50%;
+  border:2px solid rgba(0,184,204,.2);
+  border-top-color:var(--c);
+  animation:spin .8s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.vid-loading-txt{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.3)}
+.vid-main{position:relative}
+
+/* ═══════════════════════════════════════
+   SECTION SEPARATORS — accent lines
+═══════════════════════════════════════ */
+#vid-section{border-top:1px solid rgba(255,255,255,.04)}
+#sectores{border-top:1px solid rgba(255,255,255,.04)}
+
+/* ═══════════════════════════════════════
+   CAPACIDADES — icon pulse on hover
+═══════════════════════════════════════ */
+.cap-icon{transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .3s}
+.cap-card:hover .cap-icon{transform:scale(1.18) rotate(-6deg);box-shadow:0 0 20px rgba(0,184,204,.2)}
+
+/* ═══════════════════════════════════════
+   HERO — scarcity badge pulse
+═══════════════════════════════════════ */
+.hero-badge.live{position:relative}
+@keyframes badge-glow{
+  0%,100%{box-shadow:0 0 0 0 rgba(0,184,204,.0)}
+  50%{box-shadow:0 0 0 6px rgba(0,184,204,.08)}
+}
+.hero-badge.live{animation:badge-glow 2.5s ease infinite}
+
+/* ═══════════════════════════════════════
+   STEP CONNECTOR LINE (desktop)
+═══════════════════════════════════════ */
+@media(min-width:861px){
+  .steps-grid{position:relative}
+  .steps-grid::before{
+    content:'';position:absolute;top:26px;left:calc(33.33% - 0px);right:calc(33.33%);
+    height:1px;background:linear-gradient(to right,var(--border),var(--c),var(--border));
+    opacity:.5;pointer-events:none;z-index:0;
+  }
+}
+
+/* ═══════════════════════════════════════
+   HERO STAT — hover pop
+═══════════════════════════════════════ */
+.hero-stat{transition:transform .25s}
+.hero-stat:hover{transform:translateY(-3px)}
+.hero-stat-num{transition:color .25s}
+.hero-stat:hover .hero-stat-num{color:var(--c)}
 </style>
 </head>
 <body>
@@ -953,6 +1097,9 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
 <div id="cur-d" aria-hidden="true"></div>
 <div id="cur-r" aria-hidden="true"></div>
 <div id="prog" aria-hidden="true"></div>
+
+<!-- FOMO NOTIFICATIONS -->
+<div id="fomo-wrap" aria-live="polite" aria-label="Actividad reciente"></div>
 
 <!-- STICKY CTA (solo mobile) -->
 <div id="sticky-cta">
@@ -999,6 +1146,8 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
 
   <!-- Full-bleed background: Chica.mp4 -->
   <video class="hero-bg-vid" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="assets/hf_20260413_201808_1e72ec84-a9cb-4239-84af-23f301384991.mp4" type="video/mp4">
+    <source src="assets/Chica.mp4" type="video/mp4">
     <source src="http://178.104.88.233:8080/videos/hf_20260413_201808_1e72ec84-a9cb-4239-84af-23f301384991.mp4" type="video/mp4">
   </video>
 
@@ -1017,8 +1166,8 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
     <div class="hero-text">
 
       <div class="hero-eyebrow hero-fade-item">
-        <span class="hero-badge live">2 plazas este mes</span>
-        <span class="hero-badge ai">100% construido con IA</span>
+        <span class="hero-badge live">Solo 2 plazas este mes</span>
+        <span class="hero-badge ai">Operativo en 7 días · Garantía real</span>
       </div>
 
       <h1>
@@ -1092,6 +1241,29 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- ══════════ SOCIAL PROOF TICKER ══════════ -->
+<div id="proof-ticker" aria-hidden="true">
+  <div class="proof-track">
+    <span class="proof-item">+150 negocios automatizados</span><span class="proof-sep"></span>
+    <span class="proof-item">Media de respuesta: 42 segundos</span><span class="proof-sep"></span>
+    <span class="proof-item">Operativo en 7 días garantizado</span><span class="proof-sep"></span>
+    <span class="proof-item">Garantía 30 días sin preguntas</span><span class="proof-sep"></span>
+    <span class="proof-item">+23 citas nuevas al mes de media</span><span class="proof-sep"></span>
+    <span class="proof-item">Cero consultas sin responder</span><span class="proof-sep"></span>
+    <span class="proof-item">3x más leads convertidos</span><span class="proof-sep"></span>
+    <span class="proof-item">WhatsApp · Instagram · Web · Email</span><span class="proof-sep"></span>
+    <!-- duplicate for seamless loop -->
+    <span class="proof-item">+150 negocios automatizados</span><span class="proof-sep"></span>
+    <span class="proof-item">Media de respuesta: 42 segundos</span><span class="proof-sep"></span>
+    <span class="proof-item">Operativo en 7 días garantizado</span><span class="proof-sep"></span>
+    <span class="proof-item">Garantía 30 días sin preguntas</span><span class="proof-sep"></span>
+    <span class="proof-item">+23 citas nuevas al mes de media</span><span class="proof-sep"></span>
+    <span class="proof-item">Cero consultas sin responder</span><span class="proof-sep"></span>
+    <span class="proof-item">3x más leads convertidos</span><span class="proof-sep"></span>
+    <span class="proof-item">WhatsApp · Instagram · Web · Email</span><span class="proof-sep"></span>
   </div>
 </div>
 
@@ -1272,8 +1444,13 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
           <div class="vid-chrome-url">hisfia.com · sistema activo</div>
           <span class="vid-chrome-label">en vivo</span>
         </div>
-        <div class="vid-main">
-          <video autoplay muted loop playsinline preload="auto">
+        <div class="vid-main" id="vid-main-wrap">
+          <div class="vid-loading" id="vid-loading">
+            <div class="vid-loading-spinner"></div>
+            <span class="vid-loading-txt">Cargando sistema…</span>
+          </div>
+          <video id="sec-video" autoplay muted loop playsinline preload="auto" style="opacity:0;transition:opacity .5s">
+            <source src="assets/HisfIA%20Automatiza%20tu%20negocio%20.mp4" type="video/mp4">
             <source src="http://178.104.88.233:8080/videos/HisfIA%20Automatiza%20tu%20negocio%20.mp4" type="video/mp4">
           </video>
         </div>
@@ -1559,10 +1736,11 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
       <p class="section-sub" style="margin:16px auto 0">Cuéntanos tu negocio. En 24 horas te decimos exactamente qué montaríamos, cuánto cuesta y qué resultados puedes esperar. Sin compromiso. Sin venta agresiva.</p>
       <form class="gar-form" id="g-form" action="https://formspree.io/f/TU_ID" method="POST" novalidate>
         <div class="gar-row">
-          <input class="g-in" type="text" name="nombre" placeholder="Tu nombre" required>
-          <input class="g-in" type="tel" name="telefono" placeholder="Tu WhatsApp" required>
+          <input class="g-in" type="text" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+          <input class="g-in" type="tel" name="telefono" placeholder="Tu WhatsApp" required autocomplete="tel">
         </div>
-        <select class="g-in g-select" name="sector">
+        <input class="g-in" type="email" name="email" placeholder="Tu email (te enviamos el diagnóstico aquí)" autocomplete="email">
+        <select class="g-in g-select" name="sector" required>
           <option value="" disabled selected>¿A qué se dedica tu negocio?</option>
           <option>Clínica / Consulta médica o sanitaria</option>
           <option>Inmobiliaria</option>
@@ -1574,8 +1752,8 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
           <option>E-commerce / Tienda online</option>
           <option>Otro</option>
         </select>
-        <button type="submit" class="g-btn">Quiero ver qué puede hacer por mi negocio →</button>
-        <p class="g-micro">Gratis · Sin compromiso · Respuesta en menos de 24h</p>
+        <button type="submit" class="g-btn">Solicitar diagnóstico gratuito →</button>
+        <p class="g-micro">Gratis · Sin compromiso · Te contactamos en menos de 24h</p>
       </form>
       <div class="g-ok" id="g-ok">✓ Recibido — te llamamos antes de 24h</div>
       <div class="gar-points">
@@ -1620,7 +1798,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
       </div>
     </div>
     <div class="foot-bottom">
-      <span class="foot-copy">© 2025 HisfIA · Construido con <em>Claude AI</em></span>
+      <span class="foot-copy">© 2026 HisfIA · Construido con <em>Claude AI</em></span>
       <span class="foot-copy">hisfia.com</span>
     </div>
   </div>
@@ -1697,6 +1875,78 @@ if(gForm){
 
 /* ─── UPDATE observer to include blur variant ─── */
 document.querySelectorAll('.reveal-blur').forEach(el=>obs.observe(el));
+
+/* ─── VIDEO SECTION: fade in when loaded ─── */
+(function(){
+  var secVid = document.getElementById('sec-video');
+  var loader  = document.getElementById('vid-loading');
+  if (!secVid) return;
+  function showVideo(){
+    secVid.style.opacity='1';
+    if(loader) loader.style.opacity='0';
+    setTimeout(function(){if(loader)loader.style.display='none';},400);
+  }
+  if(secVid.readyState >= 3){
+    showVideo();
+  } else {
+    secVid.addEventListener('canplay', showVideo, {once:true});
+    secVid.addEventListener('loadeddata', showVideo, {once:true});
+    // Fallback: si en 6s no cargó, intenta forzar reproducción y muestra igual
+    setTimeout(function(){
+      showVideo();
+      secVid.play().catch(function(){});
+    }, 6000);
+  }
+})();
+
+/* ─── FOMO NOTIFICATIONS ─── */
+(function(){
+  var fomoData = [
+    {initials:'AC', name:'Ana C.', action:'acaba de solicitar su diagnóstico gratuito', loc:'Barcelona', delay:12000},
+    {initials:'JL', name:'Javier L.', action:'activó su sistema de citas automáticas', loc:'Madrid', delay:28000},
+    {initials:'MR', name:'Marta R.', action:'cerró 3 citas nuevas esta mañana con HisfIA', loc:'Valencia', delay:44000},
+    {initials:'RS', name:'Roberto S.', action:'acaba de reservar su primera llamada', loc:'Sevilla', delay:62000},
+    {initials:'LP', name:'Laura P.', action:'activa su automatización de WhatsApp', loc:'Bilbao', delay:82000},
+  ];
+  var wrap = document.getElementById('fomo-wrap');
+  if (!wrap) return;
+
+  function showFomo(data){
+    var card = document.createElement('div');
+    card.className = 'fomo-card';
+    card.setAttribute('role','status');
+    card.innerHTML =
+      '<div class="fomo-av">'+data.initials+'</div>'+
+      '<div class="fomo-content">'+
+        '<div class="fomo-name">'+data.name+' · '+data.loc+'</div>'+
+        '<div class="fomo-action">'+data.action+'</div>'+
+        '<div class="fomo-time"><span class="fomo-dot"></span>Ahora mismo</div>'+
+      '</div>';
+
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'fomo-close';
+    closeBtn.setAttribute('aria-label','Cerrar');
+    closeBtn.textContent = '×';
+    closeBtn.addEventListener('click', function(){ dismiss(card); });
+    card.appendChild(closeBtn);
+
+    wrap.appendChild(card);
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){ card.classList.add('show'); });
+    });
+
+    var autoTimer = setTimeout(function(){ dismiss(card); }, 5500);
+    function dismiss(c){
+      clearTimeout(autoTimer);
+      c.classList.remove('show');
+      setTimeout(function(){ if(c.parentNode) c.parentNode.removeChild(c); }, 500);
+    }
+  }
+
+  fomoData.forEach(function(d){
+    setTimeout(function(){ showFomo(d); }, d.delay);
+  });
+})();
 
 /* ─── COUNTER ANIMATION — count up numbers when they enter viewport ─── */
 function animateCounter(el){
@@ -1878,8 +2128,7 @@ function createStarField(container) {
     setTimeout(function(){ if (heroCtas)  heroCtas.classList.add('in');  }, 2400);
     setTimeout(function(){ if (heroStats) heroStats.classList.add('in'); }, 2700);
 
-    /* 5 — Pausa: video se congela cuando todo está asentado */
-    setTimeout(function(){ if (vid) vid.pause(); }, 3400);
+    /* 5 — El video sigue en loop (sin pausar) */
   }
 
   /* Disparar a los 4s (ajusta si la niebla se despeja antes/después) */
