@@ -1090,6 +1090,398 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
 .hero-stat:hover{transform:translateY(-3px)}
 .hero-stat-num{transition:color .25s}
 .hero-stat:hover .hero-stat-num{color:var(--c)}
+
+/* ═══════════════════════════════════════
+   BENTO GRID — simulated UI cards
+═══════════════════════════════════════ */
+.cap-intro{font-size:1.05rem;color:var(--sub);margin-bottom:10px;line-height:1.7}
+.cap-intro-sub{font-size:.88rem;color:var(--muted);margin-bottom:36px}
+
+/* Bento layout */
+.bento{display:grid;grid-template-columns:1.5fr 1fr;grid-template-rows:auto auto;gap:14px;margin-bottom:40px}
+.bento-card{
+  border-radius:18px;padding:0;position:relative;overflow:hidden;
+  transition:transform .4s cubic-bezier(.16,1,.3,1),box-shadow .4s;
+  cursor:default;
+}
+.bento-card:hover{transform:translateY(-4px)}
+
+/* ── Card 1: WhatsApp chat (dark, spans 1 row) ── */
+.bento-chat{
+  background:#0b1419;border:1px solid rgba(255,255,255,.08);
+  padding:24px;grid-column:1;grid-row:1;
+  box-shadow:0 8px 40px rgba(0,0,0,.18);
+}
+.bento-chat:hover{box-shadow:0 16px 56px rgba(0,0,0,.28),0 0 0 1px rgba(0,184,204,.15)}
+.bento-chat-head{
+  display:flex;align-items:center;gap:10px;margin-bottom:20px;
+  padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.06);
+}
+.bento-chat-wa{width:28px;height:28px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.bento-chat-wa svg{width:16px;height:16px;fill:#fff}
+.bento-chat-hname{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.88rem;color:rgba(247,245,240,.85);letter-spacing:-.02em}
+.bento-chat-time{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;color:rgba(247,245,240,.25)}
+
+/* Chat bubbles */
+.chat-row{display:flex;margin-bottom:10px}
+.chat-row.client{justify-content:flex-end}
+.chat-row.ai{justify-content:flex-start}
+.chat-bubble{
+  max-width:75%;padding:10px 14px;border-radius:14px;font-size:.82rem;line-height:1.5;
+  position:relative;
+}
+.chat-row.client .chat-bubble{
+  background:rgba(0,184,204,.12);color:rgba(247,245,240,.8);
+  border-bottom-right-radius:4px;
+}
+.chat-row.ai .chat-bubble{
+  background:rgba(255,255,255,.07);color:rgba(247,245,240,.7);
+  border-bottom-left-radius:4px;
+}
+.chat-ts{font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.06em;color:rgba(247,245,240,.2);margin-top:4px;text-align:right}
+.chat-ai-badge{
+  display:inline-flex;align-items:center;gap:4px;
+  background:var(--c);color:#000;border-radius:20px;
+  padding:3px 10px;font-family:'JetBrains Mono',monospace;
+  font-size:8px;font-weight:700;letter-spacing:.06em;
+  margin-top:8px;
+}
+.chat-ai-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:#000;animation:blink 1.4s infinite}
+.bento-chat-label{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.78rem;
+  color:rgba(247,245,240,.45);margin-top:16px;letter-spacing:-.01em;
+}
+.bento-chat-label span{color:var(--c)}
+
+/* ── Card 2: Calendar (light) ── */
+.bento-cal{
+  background:var(--card);border:1px solid var(--border);
+  padding:20px;grid-column:2;grid-row:1;
+  box-shadow:var(--sh);
+}
+.bento-cal:hover{box-shadow:var(--sh-md),0 0 0 1px var(--c-border)}
+.bento-cal-head{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:16px;
+}
+.bento-cal-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:-.02em;color:var(--text)}
+.bento-cal-badge{
+  font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--c);background:var(--c-bg);
+  border:1px solid var(--c-border);border-radius:12px;padding:3px 10px;
+}
+/* Calendar grid */
+.cal-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.cal-day-label{
+  font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);text-align:center;padding:0 0 6px;
+}
+.cal-slot{
+  height:14px;border-radius:4px;transition:transform .2s,opacity .2s;
+}
+.cal-slot:hover{transform:scaleY(1.3)}
+.cal-slot.c1{background:rgba(0,184,204,.25)}
+.cal-slot.c2{background:rgba(99,102,241,.2)}
+.cal-slot.c3{background:rgba(244,63,94,.18)}
+.cal-slot.c4{background:rgba(34,197,94,.2)}
+.cal-slot.c5{background:rgba(251,146,60,.22)}
+.cal-slot.empty{background:var(--bg)}
+.bento-cal-footer{
+  margin-top:14px;padding-top:12px;border-top:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.bento-cal-stat{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.3rem;
+  letter-spacing:-.04em;color:var(--text);
+}
+.bento-cal-stat span{color:var(--c)}
+.bento-cal-desc{font-size:.72rem;color:var(--muted)}
+
+/* ── Card 3: Invoice (light) ── */
+.bento-invoice{
+  background:var(--card);border:1px solid var(--border);
+  padding:20px;grid-column:1;grid-row:2;
+  box-shadow:var(--sh);
+}
+.bento-invoice:hover{box-shadow:var(--sh-md),0 0 0 1px var(--c-border)}
+.bento-inv-head{
+  display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;
+}
+.bento-inv-label{font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.bento-inv-status{
+  display:flex;align-items:center;gap:4px;
+  font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--green);
+}
+.bento-inv-status::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--green);animation:blink 1.4s infinite}
+.bento-inv-amount{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:clamp(1.8rem,3.5vw,2.6rem);letter-spacing:-.06em;color:var(--text);line-height:1;
+  margin-bottom:4px;
+}
+.bento-inv-amount span{color:var(--c)}
+.bento-inv-sub{font-size:.78rem;color:var(--muted);margin-bottom:16px}
+/* Mini sparkline */
+.bento-spark{
+  width:100%;height:40px;position:relative;
+}
+.bento-spark svg{width:100%;height:100%}
+.spark-line{fill:none;stroke:var(--c);stroke-width:2;stroke-linecap:round}
+.spark-area{fill:url(#sparkGrad);opacity:.3}
+.bento-inv-footer{
+  margin-top:12px;display:flex;align-items:center;gap:16px;
+}
+.bento-inv-mini{display:flex;flex-direction:column}
+.bento-inv-mini-num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.95rem;letter-spacing:-.03em;color:var(--text)}
+.bento-inv-mini-label{font-size:.68rem;color:var(--muted)}
+.bento-inv-sep{width:1px;height:28px;background:var(--border)}
+
+/* ── Card 4: Content (dark gradient) ── */
+.bento-content{
+  background:linear-gradient(145deg,#0b1419 0%,#0a1628 100%);
+  border:1px solid rgba(255,255,255,.06);
+  padding:20px;grid-column:2;grid-row:2;
+  box-shadow:0 8px 40px rgba(0,0,0,.18);
+}
+.bento-content:hover{box-shadow:0 16px 56px rgba(0,0,0,.28),0 0 0 1px rgba(0,184,204,.12)}
+.bento-cont-head{
+  display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;
+}
+.bento-cont-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:-.02em;color:rgba(247,245,240,.85)}
+.bento-cont-badge{
+  font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--c);background:rgba(0,184,204,.1);
+  border:1px solid rgba(0,184,204,.2);border-radius:12px;padding:3px 10px;
+}
+/* Post mock items */
+.cont-posts{display:flex;flex-direction:column;gap:8px}
+.cont-post{
+  display:flex;align-items:center;gap:10px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);
+  border-radius:10px;padding:10px 12px;
+  transition:background .2s,border-color .2s;
+}
+.cont-post:hover{background:rgba(0,184,204,.05);border-color:rgba(0,184,204,.15)}
+.cont-post-icon{
+  width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-size:.85rem;flex-shrink:0;
+}
+.cont-post-icon.ig{background:linear-gradient(135deg,#833AB4,#FD1D1D,#F77737)}
+.cont-post-icon.li{background:#0A66C2}
+.cont-post-icon.bl{background:var(--c)}
+.cont-post-info{flex:1;min-width:0}
+.cont-post-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.76rem;color:rgba(247,245,240,.7);letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cont-post-meta{font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.06em;color:rgba(247,245,240,.25);margin-top:2px}
+.cont-post-status{
+  font-family:'JetBrains Mono',monospace;font-size:7px;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 8px;border-radius:8px;flex-shrink:0;
+}
+.cont-post-status.pub{background:rgba(34,197,94,.12);color:var(--green)}
+.cont-post-status.sched{background:rgba(251,146,60,.12);color:#fb923c}
+.bento-cont-label{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.76rem;
+  color:rgba(247,245,240,.4);margin-top:14px;letter-spacing:-.01em;
+}
+.bento-cont-label span{color:var(--c)}
+
+/* Quiz trigger CTA */
+.cap-quiz-wrap{text-align:center;margin-bottom:56px}
+.cap-quiz-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;
+  letter-spacing:-.01em;
+  background:var(--c);color:#000;
+  padding:16px 36px;border-radius:40px;border:none;cursor:pointer;
+  text-decoration:none;
+  box-shadow:0 8px 32px rgba(0,184,204,.25);
+  transition:all .25s;position:relative;overflow:hidden;
+  animation:quiz-pulse 3s ease infinite;
+}
+@keyframes quiz-pulse{
+  0%,100%{box-shadow:0 8px 32px rgba(0,184,204,.25)}
+  50%{box-shadow:0 12px 44px rgba(0,184,204,.4),0 0 0 6px rgba(0,184,204,.08)}
+}
+.cap-quiz-btn::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  background-size:200% auto;background-position:-100% center;
+  transition:background-position .55s;
+}
+.cap-quiz-btn:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(0,184,204,.4)}
+.cap-quiz-btn:hover::before{background-position:200% center}
+.cap-quiz-sub{
+  margin-top:12px;
+  font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted);
+}
+
+/* Responsive bento */
+@media(max-width:860px){
+  .bento{grid-template-columns:1fr 1fr;grid-template-rows:auto auto auto}
+  .bento-chat{grid-column:1/-1;grid-row:1}
+  .bento-cal{grid-column:1;grid-row:2}
+  .bento-invoice{grid-column:2;grid-row:2}
+  .bento-content{grid-column:1/-1;grid-row:3}
+}
+@media(max-width:520px){
+  .bento{grid-template-columns:1fr;gap:12px}
+  .bento-chat,.bento-cal,.bento-invoice,.bento-content{grid-column:1;grid-row:auto}
+  .cap-quiz-btn{width:100%;justify-content:center;padding:15px 24px;font-size:.93rem}
+  .bento-inv-amount{font-size:1.6rem}
+}
+
+/* ═══════════════════════════════════════
+   QUIZ MODAL
+═══════════════════════════════════════ */
+.quiz-overlay{
+  position:fixed;inset:0;z-index:10000;
+  background:rgba(2,6,23,.75);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transition:opacity .4s ease;
+}
+.quiz-overlay.open{opacity:1;pointer-events:auto}
+
+.quiz-container{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:20px;box-shadow:0 40px 120px rgba(0,0,0,.3);
+  width:min(580px,92vw);max-height:90vh;overflow-y:auto;
+  position:relative;
+  transform:translateY(24px) scale(.97);
+  transition:transform .4s cubic-bezier(.16,1,.3,1);
+}
+.quiz-overlay.open .quiz-container{transform:translateY(0) scale(1)}
+
+/* close */
+.quiz-close{
+  position:absolute;top:16px;right:18px;z-index:2;
+  background:none;border:1px solid var(--border);border-radius:50%;
+  width:34px;height:34px;display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;color:var(--sub);cursor:pointer;
+  transition:border-color .2s,color .2s;
+}
+.quiz-close:hover{border-color:var(--text);color:var(--text)}
+
+/* progress */
+.quiz-progress{height:3px;background:var(--border);border-radius:20px 20px 0 0;overflow:hidden}
+.quiz-progress-bar{height:100%;background:var(--c);border-radius:0;transition:width .5s cubic-bezier(.16,1,.3,1);width:25%}
+
+/* header */
+.quiz-header{padding:36px 36px 0;text-align:center}
+.quiz-step-label{
+  font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--c);margin-bottom:10px;display:block;
+}
+.quiz-title{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:1.5rem;letter-spacing:-.04em;color:var(--text);line-height:1.15;
+}
+
+/* body */
+.quiz-body{padding:28px 36px 36px}
+
+/* steps */
+.quiz-step{display:none}
+.quiz-step.active{display:block}
+
+/* options grid */
+.quiz-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.quiz-option{
+  display:flex;align-items:center;gap:10px;
+  padding:14px 16px;border:1.5px solid var(--border);border-radius:var(--r);
+  background:var(--bg);cursor:pointer;
+  font-family:'DM Sans',sans-serif;font-size:.88rem;color:var(--text);
+  transition:border-color .2s,background .2s,box-shadow .2s;
+  user-select:none;-webkit-user-select:none;
+}
+.quiz-option:hover{border-color:var(--c-border);background:var(--c-bg)}
+.quiz-option.selected{
+  border-color:var(--c);background:var(--c-bg);
+  box-shadow:0 0 0 3px rgba(0,184,204,.1);
+}
+.quiz-option-icon{font-size:1.1rem;flex-shrink:0;width:24px;text-align:center}
+.quiz-option-check{
+  width:18px;height:18px;border-radius:50%;
+  border:1.5px solid var(--border);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  transition:border-color .2s,background .2s;
+  margin-left:auto;
+}
+.quiz-option.selected .quiz-option-check{
+  border-color:var(--c);background:var(--c);
+}
+.quiz-option.selected .quiz-option-check::after{
+  content:'✓';font-size:.6rem;color:#000;font-weight:700;
+}
+
+/* single select variant */
+.quiz-options.single .quiz-option.selected{border-color:var(--c)}
+
+/* form fields inside quiz */
+.quiz-field{margin-bottom:14px}
+.quiz-field label{
+  display:block;font-family:'Space Grotesk',sans-serif;font-weight:600;
+  font-size:.82rem;color:var(--text);margin-bottom:6px;
+}
+.quiz-input{
+  width:100%;font-family:'DM Sans',sans-serif;font-size:.93rem;
+  background:var(--bg);border:1.5px solid var(--border);border-radius:var(--r);
+  padding:13px 16px;color:var(--text);outline:none;transition:border-color .2s;
+}
+.quiz-input::placeholder{color:var(--muted)}
+.quiz-input:focus{border-color:var(--c)}
+
+/* nav */
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px}
+.quiz-back{
+  font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:.88rem;
+  color:var(--sub);background:none;border:none;cursor:pointer;
+  padding:10px 0;transition:color .2s;
+}
+.quiz-back:hover{color:var(--text)}
+.quiz-back:disabled{opacity:0;pointer-events:none}
+.quiz-next{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.93rem;
+  background:var(--text);color:var(--bg);border:none;border-radius:var(--r);
+  padding:13px 28px;cursor:pointer;transition:all .22s;margin-left:auto;
+}
+.quiz-next:hover{background:var(--c);color:#000;transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,184,204,.25)}
+.quiz-next:disabled{opacity:.4;pointer-events:none}
+.quiz-submit{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.97rem;
+  background:var(--c);color:#000;border:none;border-radius:var(--r);
+  padding:15px 32px;cursor:pointer;transition:all .22s;width:100%;
+  box-shadow:0 8px 28px rgba(0,184,204,.2);
+}
+.quiz-submit:hover{transform:translateY(-1px);box-shadow:0 14px 40px rgba(0,184,204,.35)}
+.quiz-submit:disabled{opacity:.5;pointer-events:none}
+
+/* success state */
+.quiz-success{text-align:center;padding:48px 36px;display:none}
+.quiz-success.active{display:block}
+.quiz-success-icon{font-size:3rem;margin-bottom:16px}
+.quiz-success-title{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.4rem;
+  letter-spacing:-.03em;color:var(--text);margin-bottom:10px;
+}
+.quiz-success-text{font-size:.9rem;color:var(--sub);line-height:1.7;margin-bottom:24px}
+.quiz-success-close{
+  font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.88rem;
+  color:var(--sub);background:none;border:1px solid var(--border);
+  border-radius:var(--r);padding:10px 24px;cursor:pointer;transition:all .2s;
+}
+.quiz-success-close:hover{border-color:var(--text);color:var(--text)}
+
+/* responsive quiz */
+@media(max-width:520px){
+  .quiz-container{border-radius:16px;width:96vw}
+  .quiz-header{padding:28px 24px 0}
+  .quiz-body{padding:20px 24px 28px}
+  .quiz-title{font-size:1.25rem}
+  .quiz-options{grid-template-columns:1fr}
+  .quiz-success{padding:36px 24px}
+}
 </style>
 </head>
 <body>
@@ -1303,10 +1695,134 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
 <!-- ══════════ CAPACIDADES ══════════ -->
 <section id="capacidades" aria-labelledby="cap-h">
   <div class="container">
-    <div class="section-head reveal-up">
+    <div class="section-head reveal-up" style="margin-bottom:12px">
       <span class="label">Qué hace HisfIA</span>
       <h2 class="section-title" id="cap-h">Tu negocio<br>trabajando solo.<br><span class="ac">Las 24 horas.</span></h2>
-      <p class="section-sub">Imagina irte a dormir y que cuando despiertes, tu negocio haya respondido clientes, agendado citas, enviado facturas y publicado contenido. Eso es HisfIA.</p>
+      <p class="cap-intro">Imagina irte a dormir y que cuando despiertes, tu negocio haya hecho todo esto solo:</p>
+    </div>
+
+    <!-- ── BENTO GRID — Simulated UI ── -->
+    <div class="bento reveal-up rd2">
+
+      <!-- CARD 1: WhatsApp Chat -->
+      <div class="bento-card bento-chat">
+        <div class="bento-chat-head">
+          <div class="bento-chat-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="none" stroke="#fff" stroke-width="1.5"/></svg></div>
+          <div class="bento-chat-hname">WhatsApp Business</div>
+          <div class="bento-chat-time">Viernes · 23:47</div>
+        </div>
+
+        <div class="chat-row client">
+          <div class="chat-bubble">Hola, buenas noches. Me gustaría pedir cita para la semana que viene, ¿tienen disponibilidad?<div class="chat-ts">23:47</div></div>
+        </div>
+        <div class="chat-row ai">
+          <div class="chat-bubble">¡Hola! 👋 Claro que sí. Tenemos hueco el martes a las 10:00 y el jueves a las 16:30. ¿Cuál te viene mejor? Te lo reservo ahora mismo.<div class="chat-ts">23:47</div></div>
+        </div>
+        <div class="chat-ai-badge">IA · RESPONDIDO EN 42s</div>
+        <div class="bento-chat-label">Nunca más pierdas un cliente por <span>no responder</span></div>
+      </div>
+
+      <!-- CARD 2: Calendar -->
+      <div class="bento-card bento-cal">
+        <div class="bento-cal-head">
+          <div class="bento-cal-title">Agenda automática</div>
+          <div class="bento-cal-badge">Esta semana</div>
+        </div>
+        <div class="cal-grid">
+          <div class="cal-day-label">Lun</div>
+          <div class="cal-day-label">Mar</div>
+          <div class="cal-day-label">Mié</div>
+          <div class="cal-day-label">Jue</div>
+          <div class="cal-day-label">Vie</div>
+          <!-- Row 1 -->
+          <div class="cal-slot c1"></div><div class="cal-slot c2"></div><div class="cal-slot empty"></div><div class="cal-slot c4"></div><div class="cal-slot c1"></div>
+          <!-- Row 2 -->
+          <div class="cal-slot c3"></div><div class="cal-slot c1"></div><div class="cal-slot c5"></div><div class="cal-slot c2"></div><div class="cal-slot c4"></div>
+          <!-- Row 3 -->
+          <div class="cal-slot empty"></div><div class="cal-slot c4"></div><div class="cal-slot c1"></div><div class="cal-slot c3"></div><div class="cal-slot c2"></div>
+          <!-- Row 4 -->
+          <div class="cal-slot c5"></div><div class="cal-slot empty"></div><div class="cal-slot c2"></div><div class="cal-slot c1"></div><div class="cal-slot c3"></div>
+          <!-- Row 5 -->
+          <div class="cal-slot c1"></div><div class="cal-slot c3"></div><div class="cal-slot c4"></div><div class="cal-slot empty"></div><div class="cal-slot c5"></div>
+        </div>
+        <div class="bento-cal-footer">
+          <div>
+            <div class="bento-cal-stat"><span>23</span> citas</div>
+            <div class="bento-cal-desc">agendadas esta semana</div>
+          </div>
+          <div style="text-align:right">
+            <div class="bento-cal-stat" style="font-size:.95rem">0</div>
+            <div class="bento-cal-desc">llamadas tuyas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: Invoice -->
+      <div class="bento-card bento-invoice">
+        <div class="bento-inv-head">
+          <div class="bento-inv-label">Facturación automática</div>
+          <div class="bento-inv-status">Activo</div>
+        </div>
+        <div class="bento-inv-amount">€<span>12.450</span></div>
+        <div class="bento-inv-sub">cobrados este mes — sin que toques nada</div>
+        <div class="bento-spark">
+          <svg viewBox="0 0 200 40" preserveAspectRatio="none">
+            <defs><linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="var(--c)" stop-opacity=".4"/><stop offset="100%" stop-color="var(--c)" stop-opacity="0"/></linearGradient></defs>
+            <path class="spark-area" d="M0 40 L0 32 10 28 25 30 40 22 55 24 70 18 85 20 100 14 115 16 130 10 145 12 160 6 175 8 190 4 200 2 200 40Z"/>
+            <path class="spark-line" d="M0 32 10 28 25 30 40 22 55 24 70 18 85 20 100 14 115 16 130 10 145 12 160 6 175 8 190 4 200 2"/>
+          </svg>
+        </div>
+        <div class="bento-inv-footer">
+          <div class="bento-inv-mini"><div class="bento-inv-mini-num">34</div><div class="bento-inv-mini-label">facturas enviadas</div></div>
+          <div class="bento-inv-sep"></div>
+          <div class="bento-inv-mini"><div class="bento-inv-mini-num">97%</div><div class="bento-inv-mini-label">cobradas</div></div>
+          <div class="bento-inv-sep"></div>
+          <div class="bento-inv-mini"><div class="bento-inv-mini-num">0</div><div class="bento-inv-mini-label">errores</div></div>
+        </div>
+      </div>
+
+      <!-- CARD 4: Content -->
+      <div class="bento-card bento-content">
+        <div class="bento-cont-head">
+          <div class="bento-cont-title">Contenido publicado</div>
+          <div class="bento-cont-badge">3 posts hoy</div>
+        </div>
+        <div class="cont-posts">
+          <div class="cont-post">
+            <div class="cont-post-icon ig">📸</div>
+            <div class="cont-post-info">
+              <div class="cont-post-title">5 señales de que necesitas automatizar tu negocio</div>
+              <div class="cont-post-meta">Instagram · Reel · Hoy 09:00</div>
+            </div>
+            <div class="cont-post-status pub">Publicado</div>
+          </div>
+          <div class="cont-post">
+            <div class="cont-post-icon li">💼</div>
+            <div class="cont-post-info">
+              <div class="cont-post-title">Cómo respondemos 200 mensajes al día sin personal</div>
+              <div class="cont-post-meta">LinkedIn · Post · Hoy 12:00</div>
+            </div>
+            <div class="cont-post-status pub">Publicado</div>
+          </div>
+          <div class="cont-post">
+            <div class="cont-post-icon bl">✍️</div>
+            <div class="cont-post-info">
+              <div class="cont-post-title">Guía: automatiza tu negocio en 7 días</div>
+              <div class="cont-post-meta">Blog · Artículo SEO · Hoy 18:00</div>
+            </div>
+            <div class="cont-post-status sched">Programado</div>
+          </div>
+        </div>
+        <div class="bento-cont-label">Tu marca presente <span>todos los días</span>, sin esfuerzo</div>
+      </div>
+
+    </div>
+
+    <div class="cap-quiz-wrap reveal-up rd3">
+      <button class="cap-quiz-btn" id="quiz-trigger" type="button">
+        🔍 Descubre qué puedes automatizar →
+      </button>
+      <p class="cap-quiz-sub">Gratis · 2 minutos · Recibe tu diagnóstico por email</p>
     </div>
 
     <div class="cap-grid">
@@ -1804,12 +2320,134 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
   </div>
 </footer>
 
+<!-- ══════════ QUIZ MODAL ══════════ -->
+<div class="quiz-overlay" id="quiz-overlay" aria-modal="true" role="dialog" aria-label="Diagnóstico de automatización">
+  <div class="quiz-container">
+    <button class="quiz-close" id="quiz-close" aria-label="Cerrar">✕</button>
+    <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-prog-bar"></div></div>
+
+    <div id="quiz-steps-wrap">
+      <div class="quiz-header">
+        <span class="quiz-step-label" id="quiz-step-num">Paso 1 de 4</span>
+        <h3 class="quiz-title" id="quiz-title">¿A qué se dedica tu negocio?</h3>
+      </div>
+
+      <div class="quiz-body">
+        <!-- STEP 0: Sector -->
+        <div class="quiz-step active" id="quiz-step-0">
+          <div class="quiz-options single">
+            <div class="quiz-option" data-val="Clínica / Consulta médica">
+              <span class="quiz-option-icon">🏥</span>Clínica / Consulta médica<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Inmobiliaria">
+              <span class="quiz-option-icon">🏠</span>Inmobiliaria<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Centro de belleza">
+              <span class="quiz-option-icon">💇</span>Centro de belleza<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Academia / Formación">
+              <span class="quiz-option-icon">📚</span>Academia / Formación<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Restaurante / Hostelería">
+              <span class="quiz-option-icon">🍽️</span>Restaurante / Hostelería<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Despacho / Asesoría">
+              <span class="quiz-option-icon">⚖️</span>Despacho / Asesoría<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="E-commerce / Tienda online">
+              <span class="quiz-option-icon">🛒</span>E-commerce / Tienda online<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Otro">
+              <span class="quiz-option-icon">🏢</span>Otro<span class="quiz-option-check"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 1: Tareas -->
+        <div class="quiz-step" id="quiz-step-1">
+          <div class="quiz-options">
+            <div class="quiz-option" data-val="Responder mensajes">
+              <span class="quiz-option-icon">💬</span>Responder mensajes<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Agendar citas">
+              <span class="quiz-option-icon">📅</span>Agendar citas<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Facturar y cobrar">
+              <span class="quiz-option-icon">🧾</span>Facturar y cobrar<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Crear contenido">
+              <span class="quiz-option-icon">✍️</span>Crear contenido<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Seguimiento de leads">
+              <span class="quiz-option-icon">🔁</span>Seguimiento de leads<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Informes y métricas">
+              <span class="quiz-option-icon">📊</span>Informes y métricas<span class="quiz-option-check"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: Volumen -->
+        <div class="quiz-step" id="quiz-step-2">
+          <div class="quiz-options single">
+            <div class="quiz-option" data-val="Menos de 10">
+              <span class="quiz-option-icon">👤</span>Menos de 10<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="10–30">
+              <span class="quiz-option-icon">👥</span>10 – 30<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="30–60">
+              <span class="quiz-option-icon">👥</span>30 – 60<span class="quiz-option-check"></span>
+            </div>
+            <div class="quiz-option" data-val="Más de 60">
+              <span class="quiz-option-icon">🏭</span>Más de 60<span class="quiz-option-check"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: Datos -->
+        <div class="quiz-step" id="quiz-step-3">
+          <form id="quiz-form">
+            <div class="quiz-field">
+              <label for="quiz-nombre">Tu nombre</label>
+              <input class="quiz-input" type="text" id="quiz-nombre" placeholder="Ej: María García" required autocomplete="name">
+            </div>
+            <div class="quiz-field">
+              <label for="quiz-email">Tu email <span style="color:var(--muted);font-weight:400">(aquí enviamos el diagnóstico)</span></label>
+              <input class="quiz-input" type="email" id="quiz-email" placeholder="tu@email.com" required autocomplete="email">
+            </div>
+            <div class="quiz-field">
+              <label for="quiz-wa">WhatsApp <span style="color:var(--muted);font-weight:400">(opcional)</span></label>
+              <input class="quiz-input" type="tel" id="quiz-wa" placeholder="+34 600 000 000" autocomplete="tel">
+            </div>
+            <button type="submit" class="quiz-submit">Enviar diagnóstico gratis →</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <div class="quiz-nav" id="quiz-nav-row" style="padding:0 36px 28px">
+        <button class="quiz-back" id="quiz-back" type="button" disabled>← Anterior</button>
+        <button class="quiz-next" id="quiz-next" type="button" disabled>Siguiente →</button>
+      </div>
+    </div>
+
+    <!-- Success -->
+    <div class="quiz-success" id="quiz-success">
+      <div class="quiz-success-icon">🎉</div>
+      <h3 class="quiz-success-title">¡Diagnóstico en camino!</h3>
+      <p class="quiz-success-text">En menos de 24 horas recibirás en tu email un análisis personalizado con todo lo que puedes automatizar en tu negocio.<br><br>Si dejaste tu WhatsApp, también te contactaremos por ahí.</p>
+      <button class="quiz-success-close" id="quiz-success-close" type="button">Cerrar</button>
+    </div>
+  </div>
+</div>
+
 <script>
 /* CURSOR */
 const cd=document.getElementById('cur-d'),cr=document.getElementById('cur-r');
 let mx=-100,my=-100,rx=-100,ry=-100;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
-document.querySelectorAll('a,button,.cap-card,.rese-card,.res-card,.sec-card,.step,.faq-q').forEach(el=>{
+document.querySelectorAll('a,button,.cap-card,.rese-card,.res-card,.sec-card,.step,.faq-q,.quiz-option,.bento-card,.cont-post,.cap-quiz-btn').forEach(el=>{
   el.addEventListener('mouseenter',()=>cr.classList.add('x'));
   el.addEventListener('mouseleave',()=>cr.classList.remove('x'));
 });
@@ -2000,6 +2638,7 @@ function addTilt(selector,maxDeg){
   });
 }
 addTilt('.cap-card',4);
+addTilt('.bento-card',3);
 addTilt('.rese-card',3);
 addTilt('.res-card',3);
 
@@ -2135,6 +2774,189 @@ function createStarField(container) {
   setTimeout(startReveal, 4000);
   /* Fallback de seguridad */
   setTimeout(function(){ if (!triggered) startReveal(); }, 7000);
+})();
+/* ═══════════════════════════════════════
+   QUIZ — Multi-step modal logic
+═══════════════════════════════════════ */
+(function(){
+  var overlay   = document.getElementById('quiz-overlay');
+  var trigger   = document.getElementById('quiz-trigger');
+  var closeBtn  = document.getElementById('quiz-close');
+  var progBar   = document.getElementById('quiz-prog-bar');
+  var steps     = document.querySelectorAll('.quiz-step');
+  var backBtn   = document.getElementById('quiz-back');
+  var nextBtn   = document.getElementById('quiz-next');
+  var stepLabel = document.getElementById('quiz-step-num');
+  var titleEl   = document.getElementById('quiz-title');
+  var successEl = document.getElementById('quiz-success');
+  var stepsWrap = document.getElementById('quiz-steps-wrap');
+  var navRow    = document.getElementById('quiz-nav-row');
+
+  if (!overlay || !trigger) return;
+
+  var current = 0;
+  var total = steps.length;
+  var answers = {sector:'', tareas:[], volumen:'', nombre:'', email:'', whatsapp:''};
+
+  var titles = [
+    '¿A qué se dedica tu negocio?',
+    '¿Qué te quita más tiempo cada semana?',
+    '¿Cuántos clientes o consultas recibes a la semana?',
+    '¿Dónde te mandamos tu diagnóstico?'
+  ];
+
+  function openQuiz(){
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    goTo(0);
+  }
+  function closeQuiz(){
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    // reset after animation
+    setTimeout(function(){
+      current = 0;
+      answers = {sector:'', tareas:[], volumen:'', nombre:'', email:'', whatsapp:''};
+      // reset selections
+      overlay.querySelectorAll('.quiz-option.selected').forEach(function(o){o.classList.remove('selected')});
+      // reset inputs
+      overlay.querySelectorAll('.quiz-input').forEach(function(i){i.value=''});
+      // reset visibility
+      successEl.classList.remove('active');
+      stepsWrap.style.display = '';
+      navRow.style.display = '';
+      goTo(0);
+    }, 400);
+  }
+
+  function goTo(idx){
+    current = idx;
+    steps.forEach(function(s,i){s.classList.toggle('active', i===idx)});
+    progBar.style.width = ((idx+1)/total*100) + '%';
+    stepLabel.textContent = 'Paso ' + (idx+1) + ' de ' + total;
+    titleEl.textContent = titles[idx];
+    backBtn.disabled = idx === 0;
+    // toggle next vs submit
+    if (idx === total - 1) {
+      nextBtn.style.display = 'none';
+    } else {
+      nextBtn.style.display = '';
+    }
+    updateNextState();
+  }
+
+  function updateNextState(){
+    if (current === 0) {
+      nextBtn.disabled = !answers.sector;
+    } else if (current === 1) {
+      nextBtn.disabled = answers.tareas.length === 0;
+    } else if (current === 2) {
+      nextBtn.disabled = !answers.volumen;
+    }
+  }
+
+  // Step 1: sector (single select)
+  document.querySelectorAll('#quiz-step-0 .quiz-option').forEach(function(opt){
+    opt.addEventListener('click', function(){
+      document.querySelectorAll('#quiz-step-0 .quiz-option').forEach(function(o){o.classList.remove('selected')});
+      opt.classList.add('selected');
+      answers.sector = opt.getAttribute('data-val');
+      updateNextState();
+    });
+  });
+
+  // Step 2: tareas (multi select)
+  document.querySelectorAll('#quiz-step-1 .quiz-option').forEach(function(opt){
+    opt.addEventListener('click', function(){
+      opt.classList.toggle('selected');
+      // rebuild array
+      answers.tareas = [];
+      document.querySelectorAll('#quiz-step-1 .quiz-option.selected').forEach(function(o){
+        answers.tareas.push(o.getAttribute('data-val'));
+      });
+      updateNextState();
+    });
+  });
+
+  // Step 3: volumen (single select)
+  document.querySelectorAll('#quiz-step-2 .quiz-option').forEach(function(opt){
+    opt.addEventListener('click', function(){
+      document.querySelectorAll('#quiz-step-2 .quiz-option').forEach(function(o){o.classList.remove('selected')});
+      opt.classList.add('selected');
+      answers.volumen = opt.getAttribute('data-val');
+      updateNextState();
+    });
+  });
+
+  // Nav
+  trigger.addEventListener('click', openQuiz);
+  closeBtn.addEventListener('click', closeQuiz);
+  overlay.addEventListener('click', function(e){ if(e.target===overlay) closeQuiz(); });
+
+  backBtn.addEventListener('click', function(){
+    if (current > 0) goTo(current - 1);
+  });
+  nextBtn.addEventListener('click', function(){
+    if (current < total - 1) goTo(current + 1);
+  });
+
+  // Submit
+  var quizForm = document.getElementById('quiz-form');
+  if (quizForm) {
+    quizForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var nombre = document.getElementById('quiz-nombre').value.trim();
+      var email  = document.getElementById('quiz-email').value.trim();
+      var wa     = document.getElementById('quiz-wa').value.trim();
+
+      if (!nombre || !email) return;
+
+      answers.nombre = nombre;
+      answers.email = email;
+      answers.whatsapp = wa;
+
+      var submitBtn = quizForm.querySelector('.quiz-submit');
+      submitBtn.textContent = 'Enviando…';
+      submitBtn.disabled = true;
+
+      // Build FormData
+      var fd = new FormData();
+      fd.append('nombre', answers.nombre);
+      fd.append('email', answers.email);
+      fd.append('whatsapp', answers.whatsapp);
+      fd.append('sector', answers.sector);
+      fd.append('tareas', answers.tareas.join(', '));
+      fd.append('volumen', answers.volumen);
+      fd.append('tipo', 'Quiz diagnóstico IA');
+
+      fetch('https://formspree.io/f/TU_ID', {
+        method:'POST',
+        body:fd,
+        headers:{'Accept':'application/json'}
+      }).then(function(res){
+        if (res.ok) {
+          stepsWrap.style.display = 'none';
+          navRow.style.display = 'none';
+          successEl.classList.add('active');
+        } else {
+          submitBtn.textContent = 'Error — inténtalo de nuevo';
+          submitBtn.disabled = false;
+        }
+      }).catch(function(){
+        submitBtn.textContent = 'Error — inténtalo de nuevo';
+        submitBtn.disabled = false;
+      });
+    });
+  }
+
+  // Close success
+  var successClose = document.getElementById('quiz-success-close');
+  if (successClose) successClose.addEventListener('click', closeQuiz);
+
+  // ESC to close
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeQuiz();
+  });
 })();
 </script>
 </body>
