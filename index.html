@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HisfIA — Automatización con IA para tu negocio</title>
-<meta name="description" content="HisfIA instala sistemas de IA en tu negocio: responde clientes, gestiona citas, genera contenido, automatiza facturas y hace crecer tu empresa — 24h/7 días. Operativo en 7 días.">
+<meta name="description" content="HisfIA instala sistemas de IA en tu negocio: responde clientes, gestiona citas, genera contenido, automatiza facturas y hace crecer tu empresa — 24h/7 días. Sin que toques nada.">
 <meta property="og:title" content="HisfIA — Automatización con IA para tu negocio" />
-<meta property="og:description" content="Sistemas de IA que responden, gestionan, facturan y crean contenido por ti. 24h/7 días. Operativo en 7 días." />
+<meta property="og:description" content="Sistemas de IA que responden, gestionan, facturan y crean contenido por ti. 24h/7 días. Sin que toques nada." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hisfia.com" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -524,7 +524,7 @@ section > .container{position:relative;z-index:2}
 /* ═══════════════════════════════════════
    CÓMO FUNCIONA
 ═══════════════════════════════════════ */
-#como{background:var(--card-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+#como{/* dark bg set via inline style on section */}
 .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
 .step{background:var(--bg);padding:36px 28px;transition:background .2s}
 .step:hover{background:var(--card)}
@@ -1482,6 +1482,114 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
   .quiz-options{grid-template-columns:1fr}
   .quiz-success{padding:36px 24px}
 }
+
+/* ═══════════════════════════════════════
+   PROCESO — nueva sección visual
+═══════════════════════════════════════ */
+.proceso-grid{
+  display:flex;flex-direction:column;gap:2px;
+  border:1px solid rgba(255,255,255,.06);border-radius:var(--r-lg);overflow:hidden;
+}
+.proceso-card{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  background:rgba(255,255,255,.02);
+  border-bottom:1px solid rgba(255,255,255,.05);
+  transition:background .3s;
+}
+.proceso-card:last-child{border-bottom:none}
+.proceso-card:hover{background:rgba(0,184,204,.03)}
+.proceso-phase-line{
+  display:flex;flex-direction:column;align-items:center;
+  padding:40px 20px;
+  border-right:1px solid rgba(255,255,255,.05);
+  position:relative;
+}
+.proceso-num{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:clamp(2.2rem,4vw,3.8rem);
+  letter-spacing:-.08em;line-height:1;
+  color:rgba(255,255,255,.12);
+  transition:color .3s;
+}
+.proceso-num.active{color:var(--c)}
+.proceso-card:hover .proceso-num{color:rgba(255,255,255,.3)}
+.proceso-card:hover .proceso-num.active{color:var(--c)}
+.proceso-connector{
+  width:1px;flex:1;
+  background:linear-gradient(to bottom,rgba(0,184,204,.3),rgba(0,184,204,.05));
+  margin-top:16px;min-height:60px;
+}
+.proceso-body{
+  padding:40px 48px 40px 40px;
+}
+.proceso-tag{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(247,245,240,.35);
+  margin-bottom:18px;
+}
+.proceso-tag.active{color:var(--c)}
+.proceso-tag-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:rgba(247,245,240,.25);flex-shrink:0;
+}
+.proceso-tag.active .proceso-tag-dot{background:var(--c);box-shadow:0 0 8px var(--c)}
+.proceso-title{
+  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-size:clamp(1.2rem,2.2vw,1.6rem);
+  letter-spacing:-.04em;line-height:1.15;
+  color:#fff;margin-bottom:16px;
+}
+.proceso-text{
+  font-size:.9rem;color:rgba(247,245,240,.45);
+  line-height:1.8;max-width:560px;margin-bottom:24px;
+}
+.proceso-deliverables{
+  display:flex;flex-direction:column;gap:8px;
+}
+.proceso-del{
+  display:flex;align-items:center;gap:8px;
+  font-size:.83rem;color:rgba(247,245,240,.5);
+  line-height:1.4;
+}
+.proceso-del svg{color:var(--c);flex-shrink:0}
+
+/* Footer strip */
+.proceso-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;flex-wrap:wrap;
+  margin-top:48px;
+  padding:32px 40px;
+  background:rgba(0,184,204,.04);
+  border:1px solid rgba(0,184,204,.12);
+  border-radius:var(--r);
+}
+.proceso-footer-label{
+  font-family:'Space Grotesk',sans-serif;font-weight:600;
+  font-size:1.05rem;color:#fff;letter-spacing:-.02em;
+  margin-bottom:4px;
+}
+.proceso-footer-sub{
+  font-family:'JetBrains Mono',monospace;font-size:9px;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(247,245,240,.3);
+}
+
+@media(max-width:860px){
+  .proceso-card{grid-template-columns:80px 1fr}
+  .proceso-body{padding:28px 24px}
+  .proceso-phase-line{padding:28px 12px}
+  .proceso-footer{flex-direction:column;align-items:flex-start;gap:16px;padding:24px}
+}
+@media(max-width:600px){
+  .proceso-card{grid-template-columns:56px 1fr}
+  .proceso-num{font-size:1.6rem}
+  .proceso-phase-line{padding:24px 8px}
+  .proceso-body{padding:24px 20px}
+  .proceso-title{font-size:1.1rem}
+  .proceso-footer{padding:20px}
+}
 </style>
 </head>
 <body>
@@ -1495,7 +1603,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
 
 <!-- STICKY CTA (solo mobile) -->
 <div id="sticky-cta">
-  <p class="sticky-text"><strong>HisfIA trabaja por ti.</strong> Operativo en 7 días.</p>
+  <p class="sticky-text"><strong>HisfIA trabaja por ti.</strong> Sin que toques nada.</p>
   <a href="#garantia" class="btn btn-primary btn-sm">Empezar →</a>
 </div>
 
@@ -1559,7 +1667,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
 
       <div class="hero-eyebrow hero-fade-item">
         <span class="hero-badge live">Solo 2 plazas este mes</span>
-        <span class="hero-badge ai">Operativo en 7 días · Garantía real</span>
+        <span class="hero-badge ai">Garantía 30 días · Sin letra pequeña</span>
       </div>
 
       <h1>
@@ -1591,8 +1699,8 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
         </div>
         <div class="hero-stat-sep"></div>
         <div class="hero-stat">
-          <div class="hero-stat-num">7<span>d</span></div>
-          <div class="hero-stat-label">Listo en<br>7 días</div>
+          <div class="hero-stat-num">+<span>ROI</span></div>
+          <div class="hero-stat-label">Implementación<br>rápida</div>
         </div>
         <div class="hero-stat-sep"></div>
         <div class="hero-stat">
@@ -1641,7 +1749,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
   <div class="proof-track">
     <span class="proof-item">+150 negocios automatizados</span><span class="proof-sep"></span>
     <span class="proof-item">Media de respuesta: 42 segundos</span><span class="proof-sep"></span>
-    <span class="proof-item">Operativo en 7 días garantizado</span><span class="proof-sep"></span>
+    <span class="proof-item">Implementación rápida y sin complicaciones</span><span class="proof-sep"></span>
     <span class="proof-item">Garantía 30 días sin preguntas</span><span class="proof-sep"></span>
     <span class="proof-item">+23 citas nuevas al mes de media</span><span class="proof-sep"></span>
     <span class="proof-item">Cero consultas sin responder</span><span class="proof-sep"></span>
@@ -1650,7 +1758,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
     <!-- duplicate for seamless loop -->
     <span class="proof-item">+150 negocios automatizados</span><span class="proof-sep"></span>
     <span class="proof-item">Media de respuesta: 42 segundos</span><span class="proof-sep"></span>
-    <span class="proof-item">Operativo en 7 días garantizado</span><span class="proof-sep"></span>
+    <span class="proof-item">Implementación rápida y sin complicaciones</span><span class="proof-sep"></span>
     <span class="proof-item">Garantía 30 días sin preguntas</span><span class="proof-sep"></span>
     <span class="proof-item">+23 citas nuevas al mes de media</span><span class="proof-sep"></span>
     <span class="proof-item">Cero consultas sin responder</span><span class="proof-sep"></span>
@@ -1807,7 +1915,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
           <div class="cont-post">
             <div class="cont-post-icon bl">✍️</div>
             <div class="cont-post-info">
-              <div class="cont-post-title">Guía: automatiza tu negocio en 7 días</div>
+              <div class="cont-post-title">Guía: automatiza tu negocio con IA</div>
               <div class="cont-post-meta">Blog · Artículo SEO · Hoy 18:00</div>
             </div>
             <div class="cont-post-status sched">Programado</div>
@@ -1903,34 +2011,134 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
   </div>
 </section>
 
-<!-- ══════════ CÓMO FUNCIONA ══════════ -->
-<section id="como" aria-labelledby="como-h">
-  <div class="container">
-    <div class="section-head reveal-up">
-      <span class="label">El proceso</span>
-      <h2 class="section-title" id="como-h">De cero a automatizado<br>en 7 días.<br><span class="ac">Garantizado.</span></h2>
-      <p class="section-sub">No hace falta que entiendas de tecnología. Solo cuéntanos cómo funciona tu negocio. Del resto nos encargamos nosotros.</p>
+<!-- ══════════ CÓMO FUNCIONA — REDISEÑO ══════════ -->
+<section id="como" aria-labelledby="como-h" style="background:var(--dark2);padding:96px 0;overflow:hidden;position:relative;border-top:1px solid rgba(255,255,255,.04)">
+
+  <!-- Stars -->
+  <div class="shoot-wrap" aria-hidden="true">
+    <div class="shoot-star" style="top:20%;right:10%;animation-duration:5.2s;animation-delay:0.4s"></div>
+    <div class="shoot-star" style="top:65%;right:55%;animation-duration:4.6s;animation-delay:2s"></div>
+    <div class="shoot-star" style="top:40%;right:80%;animation-duration:6s;animation-delay:0.9s"></div>
+  </div>
+
+  <!-- Ambient glow -->
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(0,184,204,.06) 0%,transparent 65%);pointer-events:none;z-index:0" aria-hidden="true"></div>
+
+  <div class="container" style="position:relative;z-index:2">
+
+    <!-- Header -->
+    <div style="text-align:center;margin-bottom:72px" class="reveal-up">
+      <span class="label" style="opacity:.8">El proceso</span>
+      <h2 class="section-title" id="como-h" style="color:#fff;margin-top:12px">Así se instala<br>en tu negocio.<br><span class="ac">Sin complicaciones.</span></h2>
+      <p class="section-sub" style="color:rgba(247,245,240,.45);margin:16px auto 0">No hace falta que entiendas de tecnología. Cuéntanos cómo funciona tu negocio y nosotros construimos todo. Tú solo ves los resultados.</p>
     </div>
-    <div class="steps-grid">
-      <div class="step reveal">
-        <div class="step-n">01</div>
-        <h3 class="step-title">Encontramos el dinero que se escapa</h3>
-        <p class="step-text">Una conversación de 30 minutos. Te preguntamos cómo entran los clientes, qué mensajes recibes, cómo facturas. Identificamos exactamente qué está costándote dinero ahora mismo.</p>
-        <span class="step-day">Día 1</span>
+
+    <!-- 3 phases — visual cards -->
+    <div class="proceso-grid">
+
+      <!-- Fase 01 -->
+      <div class="proceso-card reveal" id="fase-01">
+        <div class="proceso-phase-line">
+          <div class="proceso-num">01</div>
+          <div class="proceso-connector" aria-hidden="true"></div>
+        </div>
+        <div class="proceso-body">
+          <div class="proceso-tag">
+            <span class="proceso-tag-dot"></span>
+            Diagnóstico
+          </div>
+          <h3 class="proceso-title">Encontramos exactamente<br>lo que te está costando dinero</h3>
+          <p class="proceso-text">Una conversación sin compromiso. Nos cuentas cómo te llegan los clientes, qué mensajes recibes, cómo gestionas las citas y las facturas. Nosotros identificamos las fugas de ingresos — y te decimos qué módulos necesitas realmente, sin sobrevenderte nada.</p>
+          <div class="proceso-deliverables">
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Diagnóstico gratuito de tu negocio
+            </div>
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Propuesta personalizada con ROI estimado
+            </div>
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Sin compromiso ni venta agresiva
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="step reveal rd2">
-        <div class="step-n">02</div>
-        <h3 class="step-title">Construimos tu sistema a medida</h3>
-        <p class="step-text">Entrenamos cada módulo con tu negocio: tus servicios, tu tono, tus precios, tus flujos. Lo integramos con las herramientas que ya usas. Sin que toques absolutamente nada.</p>
-        <span class="step-day">Días 2–5</span>
+
+      <!-- Fase 02 -->
+      <div class="proceso-card reveal rd2" id="fase-02">
+        <div class="proceso-phase-line">
+          <div class="proceso-num active">02</div>
+          <div class="proceso-connector" aria-hidden="true"></div>
+        </div>
+        <div class="proceso-body">
+          <div class="proceso-tag active">
+            <span class="proceso-tag-dot" style="animation:blink 1s infinite"></span>
+            Construcción
+          </div>
+          <h3 class="proceso-title">Construimos tu sistema.<br>Entrenado con tu negocio.</h3>
+          <p class="proceso-text">Configuramos cada módulo con tus datos reales: tus servicios, tus precios, tu tono, tus flujos. Lo integramos con las herramientas que ya usas — sin que cambies nada de lo que tienes. Tú nos das acceso una vez, y del resto nos encargamos nosotros.</p>
+          <div class="proceso-deliverables">
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Integración con WhatsApp, Calendar, CRM, facturación
+            </div>
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              IA entrenada con tu voz y tu marca
+            </div>
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Pruebas exhaustivas antes de lanzar
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="step reveal rd4">
-        <div class="step-n">03</div>
-        <h3 class="step-title">Lo encendemos. Tú solo ves cómo crece.</h3>
-        <p class="step-text">El sistema entra en marcha. Supervisamos los primeros días y afinamos cada respuesta. Cada semana recibes un informe con todo lo que ha hecho por ti — mientras trabajabas, o dormías.</p>
-        <span class="step-day">Día 7 en adelante</span>
+
+      <!-- Fase 03 -->
+      <div class="proceso-card reveal rd4" id="fase-03">
+        <div class="proceso-phase-line">
+          <div class="proceso-num">03</div>
+        </div>
+        <div class="proceso-body">
+          <div class="proceso-tag">
+            <span class="proceso-tag-dot"></span>
+            Lanzamiento
+          </div>
+          <h3 class="proceso-title">Lo encendemos.<br>Tú solo ves cómo crece.</h3>
+          <p class="proceso-text">Supervisamos el lanzamiento, afinamos cada respuesta y resolvemos cualquier ajuste. A partir de ese momento, el sistema trabaja solo. Cada semana recibes por WhatsApp un informe de todo lo que ha hecho por ti — citas agendadas, leads atendidos, facturas enviadas.</p>
+          <div class="proceso-deliverables">
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Lanzamiento supervisado y afinado
+            </div>
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Informe semanal automático por WhatsApp
+            </div>
+            <div class="proceso-del">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Soporte continuo incluido siempre
+            </div>
+          </div>
+        </div>
       </div>
+
+    </div><!-- /.proceso-grid -->
+
+    <!-- Bottom CTA strip -->
+    <div class="proceso-footer reveal">
+      <div class="proceso-footer-txt">
+        <div class="proceso-footer-label">Empieza con una llamada gratuita</div>
+        <div class="proceso-footer-sub">Sin compromiso · Sin venta agresiva · Te contamos exactamente qué haríamos</div>
+      </div>
+      <a href="#garantia" class="btn-hero-primary">
+        <span>Solicitar diagnóstico gratuito</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
+
   </div>
 </section>
 
@@ -1998,8 +2206,8 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
       <div class="vid-badge">
         <span class="vid-badge-icon">🚀</span>
         <div>
-          <div class="vid-badge-text">Listo en 7 días</div>
-          <div class="vid-badge-sub">De cero a operativo esta semana</div>
+          <div class="vid-badge-text">Implementación ágil</div>
+          <div class="vid-badge-sub">Sin cambiar tus herramientas</div>
         </div>
       </div>
     </div>
@@ -2154,10 +2362,10 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
     <div class="faq-list">
 
       <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">¿De verdad en 7 días? ¿No es demasiado rápido?
+        <button class="faq-q" aria-expanded="false">¿Cuánto tiempo tarda la implementación?
           <span class="faq-chevron"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
         </button>
-        <div class="faq-a"><div class="faq-a-in">Es lo que tardamos. Día 1: analizamos tu negocio. Días 2–5: configuramos y entrenamos cada módulo con tus datos reales. Días 6–7: lanzamiento supervisado en producción. Al séptimo día funciona solo. Si por complejidad técnica necesitamos más tiempo, te avisamos antes de empezar.</div></div>
+        <div class="faq-a"><div class="faq-a-in">Depende de la complejidad de tu negocio. El proceso arranca con una primera llamada de diagnóstico, tras la cual te damos un calendario realista. Trabajamos en fases y no lanzamos hasta que todo esté afinado. Te mantenemos informado en cada paso, y siempre priorizamos que funcione bien sobre hacerlo rápido.</div></div>
       </div>
 
       <div class="faq-item reveal rd1">
@@ -2235,7 +2443,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
     <div class="urg-cta-wrap reveal">
       <a href="#garantia" class="urg-cta">Quiero que mi negocio trabaje solo →</a>
       <div class="urg-meta">
-        <span>Operativo en 7 días</span><span class="urg-meta-dot"></span>
+        <span>Implementación sin fricción</span><span class="urg-meta-dot"></span>
         <span>Garantía 30 días</span><span class="urg-meta-dot"></span>
         <span>Sin riesgo para ti</span>
       </div>
@@ -2248,7 +2456,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
   <div class="container">
     <div class="gar-inner reveal-scale">
       <div class="gar-badge"><span>🛡️</span><span>Sin riesgo · Garantía <strong>30 días</strong> o te devolvemos el dinero</span></div>
-      <h2 class="section-title" id="gar-h">7 días para cambiarlo<br>todo. Sin riesgo<br><span class="ac">para ti.</span></h2>
+      <h2 class="section-title" id="gar-h">Empieza hoy.<br>Sin riesgo,<br><span class="ac">para ti.</span></h2>
       <p class="section-sub" style="margin:16px auto 0">Cuéntanos tu negocio. En 24 horas te decimos exactamente qué montaríamos, cuánto cuesta y qué resultados puedes esperar. Sin compromiso. Sin venta agresiva.</p>
       <form class="gar-form" id="g-form" action="https://formspree.io/f/TU_ID" method="POST" novalidate>
         <div class="gar-row">
@@ -2273,7 +2481,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding
       </form>
       <div class="g-ok" id="g-ok">✓ Recibido — te llamamos antes de 24h</div>
       <div class="gar-points">
-        <span class="gar-point">Operativo en 7 días</span>
+        <span class="gar-point">Implementación a medida</span>
         <span class="gar-point">Sin cambiar tus herramientas</span>
         <span class="gar-point">Garantía 30 días real</span>
         <span class="gar-point">Soporte incluido siempre</span>
