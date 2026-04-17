@@ -31,3 +31,4 @@ TrifaniLandig/
 node_modules/
 dist/
 .cache/
+assets/*.mp4
