@@ -2707,8 +2707,13 @@ if(gForm){
     const btn=gForm.querySelector('.g-btn');
     btn.textContent='Enviando…';btn.disabled=true;
     try{
-      const res=await fetch(gForm.action,{method:'POST',body:new FormData(gForm),headers:{'Accept':'application/json'}});
-      if(res.ok){gForm.style.display='none';gOk.style.display='block'}else throw new Error();
+      const fd=new FormData(gForm);
+      const res=await fetch('https://hisfia-booking.vercel.app/api/lead',{
+        method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({nombre:fd.get('nombre'),email:fd.get('email'),telefono:fd.get('telefono'),sector:fd.get('sector'),source:'web-form'})
+      });
+      const d=await res.json();
+      if(d.ok){gForm.style.display='none';gOk.style.display='block'}else throw new Error();
     }catch{btn.textContent='Error — inténtalo de nuevo';btn.disabled=false}
   });
 }
@@ -3131,12 +3136,17 @@ function createStarField(container) {
       fd.append('volumen', answers.volumen);
       fd.append('tipo', 'Quiz diagnóstico IA');
 
-      fetch('https://formspree.io/f/TU_ID', {
+      fetch('https://hisfia-booking.vercel.app/api/lead', {
         method:'POST',
-        body:fd,
-        headers:{'Accept':'application/json'}
-      }).then(function(res){
-        if (res.ok) {
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({
+          nombre: answers.nombre, email: answers.email,
+          telefono: answers.whatsapp, sector: answers.sector,
+          source: 'web-quiz',
+          quiz_answers: {sector: answers.sector, tareas: answers.tareas, volumen: answers.volumen}
+        })
+      }).then(function(res){ return res.json(); }).then(function(d){
+        if (d.ok) {
           stepsWrap.style.display = 'none';
           navRow.style.display = 'none';
           successEl.classList.add('active');
