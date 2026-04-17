@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.npmjs.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:api.github.com)",
+      "Read(//private/tmp/**)",
+      "Bash(gh api:*)",
+      "Read(//Users/ElVanidoso/.claude/plugins/marketplaces/claude-plugins-official/plugins/frontend-design/skills/**)",
+      "Read(//Users/ElVanidoso/.claude/plugins/marketplaces/claude-plugins-official/plugins/frontend-design/skills/frontend-design/**)",
+      "Bash(head -100 /tmp/repo-audit/.claude/skills/ui-ux-pro-max/SKILL.md echo \"...\" grep -n \"search.py\\\\|scripts/\\\\|python\" /tmp/repo-audit/.claude/skills/ui-ux-pro-max/SKILL.md)",
+      "WebFetch(domain:getdesign.md)",
+      "Bash(curl:*)",
+      "Bash(vercel --version)",
+      "Bash(npm install:*)",
+      "Bash(vercel:*)",
+      "WebSearch",
+      "Bash(claude mcp:*)",
+      "Bash(wait)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_evaluate",
+      "Bash(lsof -ti:8767)",
+      "Bash(xargs kill:*)",
+      "mcp__playwright__browser_resize",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git rm:*)",
+      "Bash(git push:*)",
+      "Read(//Users/ElVanidoso/Desktop/**)",
+      "Bash(npx claude-mem:*)",
+      "Bash(bash)",
+      "Bash(export BUN_INSTALL=\"$HOME/.bun\")",
+      "Bash(export PATH=\"$BUN_INSTALL/bin:$PATH\")",
+      "Bash(open:*)",
+      "Bash(pkill -f \"python3 -m http.server 8899\")",
+      "Bash(ls:*)",
+      "Bash(node:*)"
+    ]
+  }
+}
