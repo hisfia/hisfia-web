@@ -5435,6 +5435,139 @@
         font-size: 2rem
       }
     }
+  /* ═══════════════════════════════════════
+   URGENCY TOP BAR
+═══════════════════════════════════════ */
+  #urgency-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1001;
+    background: linear-gradient(90deg, #0E0D0B 0%, #0a1628 50%, #0E0D0B 100%);
+    border-bottom: 1px solid rgba(0,184,204,.25);
+    padding: 9px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .78rem;
+    color: rgba(255,255,255,.85);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #urgency-bar .ub-pulse {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: #ef4444;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 0 rgba(239,68,68,.6);
+    animation: ub-blink 1.6s ease infinite;
+  }
+  @keyframes ub-blink {
+    0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,.6) }
+    50%      { box-shadow: 0 0 0 5px rgba(239,68,68,0) }
+  }
+  #urgency-bar strong { color: #fff }
+  #urgency-bar .ub-sep { color: rgba(255,255,255,.2); margin: 0 4px }
+  #urgency-bar a.ub-cta {
+    background: rgba(0,184,204,.15);
+    border: 1px solid rgba(0,184,204,.4);
+    color: var(--c);
+    font-weight: 600;
+    font-size: .76rem;
+    padding: 3px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background .2s;
+    flex-shrink: 0;
+  }
+  #urgency-bar a.ub-cta:hover { background: rgba(0,184,204,.28) }
+  @media(max-width:600px) {
+    #urgency-bar .ub-hide { display: none }
+    #urgency-bar { font-size: .73rem; gap: 8px; padding: 8px 12px }
+  }
+
+  /* Desplazar contenido para dejar espacio a la barra de urgencia */
+  body.has-ub #nav         { top: 37px }
+  body.has-ub #hero        { padding-top: calc(68px + 37px) }
+  body.has-ub              { scroll-padding-top: calc(68px + 37px) }
+  body.has-ub #sticky-cta  { bottom: calc(env(safe-area-inset-bottom) + 66px) }
+  @media(max-width:600px) {
+    body.has-ub #urgency-bar { padding: 7px 12px }
+    body.has-ub #nav         { top: 33px }
+    body.has-ub #hero        { padding-top: calc(60px + 33px) }
+  }
+
+  /* ═══════════════════════════════════════
+   SLOTS INDICATOR (near form)
+═══════════════════════════════════════ */
+  .slots-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(239,68,68,.06);
+    border: 1px solid rgba(239,68,68,.18);
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin-bottom: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .slots-dots {
+    display: flex; gap: 5px; flex-shrink: 0;
+  }
+  .slots-dots span {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: rgba(255,255,255,.12);
+  }
+  .slots-dots span.taken { background: var(--c) }
+  .slots-dots span.last  { background: #ef4444; animation: ub-blink 1.4s ease infinite }
+  .slots-text { font-size: .8rem; color: rgba(255,255,255,.75) }
+  .slots-text strong { color: #fff }
+
+  /* ═══════════════════════════════════════
+   COHORT DEADLINE CARD (urgency section)
+═══════════════════════════════════════ */
+  .cohort-card {
+    background: rgba(239,68,68,.06);
+    border: 1px solid rgba(239,68,68,.22);
+    border-radius: 14px;
+    padding: 22px 28px;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto 0;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .cohort-label {
+    font-size: .7rem; font-weight: 700; letter-spacing: .1em;
+    text-transform: uppercase; color: #ef4444; margin-bottom: 8px;
+  }
+  .cohort-headline {
+    font-size: 1.05rem; font-weight: 700; color: #fff;
+    margin-bottom: 6px; line-height: 1.35;
+  }
+  .cohort-sub {
+    font-size: .82rem; color: rgba(255,255,255,.55); margin-bottom: 14px;
+  }
+  .cohort-countdown {
+    display: flex; justify-content: center; gap: 12px;
+  }
+  .cd-box {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 8px;
+    padding: 8px 14px;
+    min-width: 58px;
+  }
+  .cd-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem; font-weight: 700; color: #fff;
+    line-height: 1;
+  }
+  .cd-label {
+    font-size: .65rem; color: rgba(255,255,255,.4);
+    text-transform: uppercase; letter-spacing: .07em;
+    margin-top: 3px;
+  }
   </style>
 </head>
 
@@ -5444,13 +5577,22 @@
   <div id="cur-r" aria-hidden="true"></div>
   <div id="prog" aria-hidden="true"></div>
 
+  <!-- TOP URGENCY BAR -->
+  <div id="urgency-bar" role="banner">
+    <span class="ub-pulse"></span>
+    <span>Solo quedan <strong>2 plazas</strong> disponibles para <strong id="ub-month">mayo</strong></span>
+    <span class="ub-sep ub-hide">·</span>
+    <span class="ub-hide">El precio sube el <strong id="ub-deadline">1 de junio</strong></span>
+    <a href="#garantia" class="ub-cta">Reservar mi plaza →</a>
+  </div>
+
   <!-- FOMO NOTIFICATIONS -->
   <div id="fomo-wrap" aria-live="polite" aria-label="Actividad reciente"></div>
 
   <!-- STICKY CTA (solo mobile) -->
   <div id="sticky-cta">
-    <p class="sticky-text"><strong>Tu oficina virtual te espera.</strong> 24/7, sin que toques nada.</p>
-    <a href="#garantia" class="btn btn-primary btn-sm">Empezar →</a>
+    <p class="sticky-text">⚡ <strong>2 plazas</strong> disponibles para mayo.</p>
+    <a href="#garantia" class="btn btn-primary btn-sm">Reservar →</a>
   </div>
 
   <!-- ══════════ NAV ══════════ -->
@@ -5514,7 +5656,7 @@
       <div class="hero-text">
 
         <div class="hero-eyebrow hero-fade-item">
-          <span class="hero-badge live">Oficinas virtuales activas 24/7</span>
+          <span class="hero-badge live" style="color:#ef4444;border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.08)">🔴 Solo 2 plazas para mayo</span>
           <span class="hero-badge ai">Garantía 30 días · Sin letra pequeña</span>
         </div>
 
@@ -6808,10 +6950,22 @@
             mientras tú duermes.</p>
         </div>
       </div>
+      <!-- Cohort deadline card -->
+      <div class="cohort-card reveal">
+        <div class="cohort-label">⏳ Incorporaciones de <span class="cohort-month">mayo</span> — cierre de plazas</div>
+        <div class="cohort-headline">Cerramos las 2 plazas restantes<br>el <span class="cohort-deadline">31 de mayo</span></div>
+        <div class="cohort-sub">Solo aceptamos 5 clientes nuevos por mes para garantizar una implementación perfecta.<br>El siguiente lote no abre hasta julio y el precio sube un 15%.</div>
+        <div class="cohort-countdown" id="cohort-cd">
+          <div class="cd-box"><div class="cd-num" id="cd-days">--</div><div class="cd-label">días</div></div>
+          <div class="cd-box"><div class="cd-num" id="cd-hours">--</div><div class="cd-label">horas</div></div>
+          <div class="cd-box"><div class="cd-num" id="cd-mins">--</div><div class="cd-label">min</div></div>
+        </div>
+      </div>
+
       <div class="urg-cta-wrap reveal">
-        <a href="#garantia" class="urg-cta">Quiero mi oficina virtual →</a>
+        <a href="#garantia" class="urg-cta">Quiero mi plaza de mayo →</a>
         <div class="urg-meta">
-          <span>Implementación sin fricción</span><span class="urg-meta-dot"></span>
+          <span>Solo 2 plazas libres</span><span class="urg-meta-dot"></span>
           <span>Garantía 30 días</span><span class="urg-meta-dot"></span>
           <span>Sin riesgo para ti</span>
         </div>
@@ -6828,6 +6982,24 @@
         <h2 class="section-title" id="gar-h">Monta tu oficina<br>virtual.<br><span class="ac">Sin riesgo.</span></h2>
         <p class="section-sub" style="margin:16px auto 0">Cuéntanos tu negocio. En 24 horas te decimos exactamente qué
           agentes montaríamos, cuánto cuesta y qué resultados puedes esperar. Sin compromiso. Sin venta agresiva.</p>
+        <!-- Slots indicator -->
+        <div class="slots-wrap">
+          <div class="slots-dots">
+            <span class="taken"></span>
+            <span class="taken"></span>
+            <span class="taken"></span>
+            <span class="last"></span>
+            <span></span>
+          </div>
+          <div class="slots-text">
+            <strong>2 de 5 plazas libres</strong> para incorporaciones de <span id="slots-month">mayo</span> — se cierran el <span id="slots-deadline">30 de mayo</span>
+          </div>
+        </div>
+        <!-- Recent activity -->
+        <div id="recent-activity" style="display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:.78rem;color:rgba(255,255,255,.5);font-family:'Space Grotesk',sans-serif">
+          <span style="width:6px;height:6px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:ub-blink 2s ease infinite"></span>
+          <span id="recent-text">Hace 23 min · Una clínica dental de Sevilla reservó su plaza</span>
+        </div>
         <form class="gar-form" id="g-form" action="https://formspree.io/f/TU_ID" method="POST" novalidate>
           <div class="gar-row">
             <input class="g-in" type="text" name="nombre" placeholder="Tu nombre" required autocomplete="name">
@@ -7149,11 +7321,13 @@
     /* ─── FOMO NOTIFICATIONS ─── */
     (function () {
       var fomoData = [
-        { initials: 'AC', name: 'Ana C.', action: 'acaba de solicitar su diagnóstico gratuito', loc: 'Barcelona', delay: 12000 },
-        { initials: 'JL', name: 'Javier L.', action: 'activó su sistema de citas automáticas', loc: 'Madrid', delay: 28000 },
-        { initials: 'MR', name: 'Marta R.', action: 'cerró 3 citas nuevas esta mañana con HisfIA', loc: 'Valencia', delay: 44000 },
-        { initials: 'RS', name: 'Roberto S.', action: 'acaba de reservar su primera llamada', loc: 'Sevilla', delay: 62000 },
-        { initials: 'LP', name: 'Laura P.', action: 'activa su automatización de WhatsApp', loc: 'Bilbao', delay: 82000 },
+        { initials: 'AC', name: 'Ana C.', action: '🔴 reservó la última plaza disponible', loc: 'Barcelona', delay: 10000 },
+        { initials: 'JL', name: 'Javier L.', action: 'activó su oficina virtual esta semana', loc: 'Madrid', delay: 25000 },
+        { initials: 'MR', name: 'Marta R.', action: '📅 cerró 3 citas nuevas esta mañana', loc: 'Valencia', delay: 42000 },
+        { initials: 'RS', name: 'Roberto S.', action: '🔴 pidió plaza antes de que suba el precio', loc: 'Sevilla', delay: 60000 },
+        { initials: 'LP', name: 'Laura P.', action: 'automatizó su WhatsApp y agenda en 48h', loc: 'Bilbao', delay: 80000 },
+        { initials: 'CF', name: 'Carlos F.', action: '⚡ se incorporó este mes — ya hay resultados', loc: 'Zaragoza', delay: 100000 },
+        { initials: 'SG', name: 'Sara G.', action: '🔴 reservó la penúltima plaza de mayo', loc: 'Málaga', delay: 125000 },
       ];
       var wrap = document.getElementById('fomo-wrap');
       if (!wrap) return;
@@ -7193,6 +7367,76 @@
       fomoData.forEach(function (d) {
         setTimeout(function () { showFomo(d); }, d.delay);
       });
+    })();
+
+    /* ─── URGENCY: dynamic month/deadline + countdown ─── */
+    (function () {
+      var MONTHS_ES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      var now = new Date();
+      var month = now.getMonth(); // 0-indexed
+      var year  = now.getFullYear();
+
+      // Deadline = último día del mes actual a las 23:59:59
+      var deadline = new Date(year, month + 1, 0, 23, 59, 59);
+      var monthName = MONTHS_ES[month];
+      var nextMonthName = MONTHS_ES[(month + 1) % 12];
+      var deadlineDay = deadline.getDate();
+
+      // Actualizar textos
+      document.querySelectorAll('#ub-month, .cohort-month, #slots-month').forEach(function(el){ el.textContent = monthName });
+      var nextPriceDate = '1 de ' + nextMonthName;
+      var ubDeadline = document.getElementById('ub-deadline');
+      if (ubDeadline) ubDeadline.textContent = nextPriceDate;
+      document.querySelectorAll('.cohort-deadline').forEach(function(el){ el.textContent = deadlineDay + ' de ' + monthName });
+      var slotsDeadline = document.getElementById('slots-deadline');
+      if (slotsDeadline) slotsDeadline.textContent = deadlineDay + ' de ' + monthName;
+
+      // Countdown
+      function updateCd() {
+        var diff = deadline - new Date();
+        if (diff <= 0) {
+          document.getElementById('cd-days').textContent  = '0';
+          document.getElementById('cd-hours').textContent = '0';
+          document.getElementById('cd-mins').textContent  = '0';
+          return;
+        }
+        var days  = Math.floor(diff / 86400000);
+        var hours = Math.floor((diff % 86400000) / 3600000);
+        var mins  = Math.floor((diff % 3600000) / 60000);
+        var dEl = document.getElementById('cd-days');
+        var hEl = document.getElementById('cd-hours');
+        var mEl = document.getElementById('cd-mins');
+        if (dEl) dEl.textContent  = days;
+        if (hEl) hEl.textContent  = hours;
+        if (mEl) mEl.textContent  = ('0'+mins).slice(-2);
+      }
+      updateCd();
+      setInterval(updateCd, 60000);
+
+      // Añadir clase al body para empujar el nav
+      document.body.classList.add('has-ub');
+    })();
+
+    /* ─── RECENT ACTIVITY — rotación de mensajes en el form ─── */
+    (function () {
+      var msgs = [
+        'Hace 8 min · Una clínica dental de Sevilla reservó su plaza',
+        'Hace 14 min · Una inmobiliaria de Barcelona pidió su diagnóstico',
+        'Hace 31 min · Una academia de Valencia se incorporó este mes',
+        'Hace 47 min · Un despacho de asesoría de Madrid reservó su plaza',
+        'Hace 1h · Un centro de estética de Málaga solicitó información',
+        'Hace 2h · Un restaurante de Zaragoza activó su oficina virtual',
+      ];
+      var el = document.getElementById('recent-text');
+      if (!el) return;
+      var i = 0;
+      // Cambia cada 12 segundos con fade
+      setInterval(function () {
+        i = (i + 1) % msgs.length;
+        el.style.opacity = '0';
+        setTimeout(function () { el.textContent = msgs[i]; el.style.opacity = '1'; }, 400);
+      }, 12000);
+      el.style.transition = 'opacity .4s';
     })();
 
     /* ─── COUNTER ANIMATION — count up numbers when they enter viewport ─── */
