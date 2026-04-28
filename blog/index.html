@@ -64,13 +64,15 @@
     .blog-hero .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
     .blog-hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.06em;line-height:.93;color:var(--text);margin-bottom:16px}
     .blog-hero p{font-size:1.05rem;color:var(--sub);max-width:520px;margin:0 auto}
-    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;padding:0 0 96px}
-    .blog-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,box-shadow .2s,transform .2s;text-decoration:none}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;padding:0 0 96px}
+    .blog-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,box-shadow .2s,transform .2s;text-decoration:none}
     .blog-card:hover{border-color:var(--c-border);box-shadow:0 4px 24px rgba(0,184,204,.1);transform:translateY(-2px)}
+    .blog-card-img{width:100%;height:200px;object-fit:cover;display:block;background:var(--card-alt)}
+    .blog-card-body{padding:24px;display:flex;flex-direction:column;flex:1;gap:8px}
     .blog-card-date{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
     .blog-card-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.03em;color:var(--text);line-height:1.3;flex:1}
     .blog-card-desc{font-size:.9rem;color:var(--sub);line-height:1.65}
-    .blog-card-link{font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:600;color:var(--c)}
+    .blog-card-link{font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:600;color:var(--c);margin-top:4px}
     @media(max-width:768px){.blog-hero{padding:100px 0 48px}.blog-grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -98,28 +100,40 @@
 <div class="container">
   <div class="blog-grid">
     <a class="blog-card" href="/blog/agente-de-voz-ia-para-negocios-hisfia/">
-      <div class="blog-card-date">28 de abril de 2026</div>
-      <h2 class="blog-card-title">Agente de Voz IA para Negocios | HisfIA</h2>
-      <p class="blog-card-desc">Descubre cómo un agente de voz IA puede transformar tu negocio: atiende clientes 24/7, automatiza llamadas y aumenta ventas. Soluciones HisfIA para PYMEs.</p>
-      <span class="blog-card-link">Leer artículo →</span>
+      <img class="blog-card-img" src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80" alt="Agente de Voz IA para Negocios | HisfIA" loading="lazy">
+      <div class="blog-card-body">
+        <div class="blog-card-date">28 de abril de 2026</div>
+        <h2 class="blog-card-title">Agente de Voz IA para Negocios | HisfIA</h2>
+        <p class="blog-card-desc">Descubre cómo un agente de voz IA puede transformar tu negocio: atiende clientes 24/7, automatiza llamadas y aumenta ventas. Soluciones HisfIA para PYMEs.</p>
+        <span class="blog-card-link">Leer artículo →</span>
+      </div>
     </a>
     <a class="blog-card" href="/blog/chatbot-para-empresas-pequenas-guia-completa-2025/">
-      <div class="blog-card-date">28 de abril de 2026</div>
-      <h2 class="blog-card-title">Chatbot para empresas pequeñas: guía completa 2025</h2>
-      <p class="blog-card-desc">Descubre cómo un chatbot para empresas pequeñas puede automatizar atención al cliente, generar leads y ahorrar costes. Guía práctica con ejemplos reales.</p>
-      <span class="blog-card-link">Leer artículo →</span>
+      <img class="blog-card-img" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80" alt="Chatbot para empresas pequeñas: guía completa 2025" loading="lazy">
+      <div class="blog-card-body">
+        <div class="blog-card-date">28 de abril de 2026</div>
+        <h2 class="blog-card-title">Chatbot para empresas pequeñas: guía completa 2025</h2>
+        <p class="blog-card-desc">Descubre cómo un chatbot para empresas pequeñas puede automatizar atención al cliente, generar leads y ahorrar costes. Guía práctica con ejemplos reales.</p>
+        <span class="blog-card-link">Leer artículo →</span>
+      </div>
     </a>
     <a class="blog-card" href="/blog/automatizacion-con-inteligencia-artificial-en-espana/">
-      <div class="blog-card-date">28 de abril de 2026</div>
-      <h2 class="blog-card-title">Automatización con Inteligencia Artificial en España</h2>
-      <p class="blog-card-desc">Descubre cómo la automatización con inteligencia artificial está transformando las empresas españolas. Casos reales, herramientas y cómo aplicarla en tu PYME.</p>
-      <span class="blog-card-link">Leer artículo →</span>
+      <img class="blog-card-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80" alt="Automatización con Inteligencia Artificial en España" loading="lazy">
+      <div class="blog-card-body">
+        <div class="blog-card-date">28 de abril de 2026</div>
+        <h2 class="blog-card-title">Automatización con Inteligencia Artificial en España</h2>
+        <p class="blog-card-desc">Descubre cómo la automatización con inteligencia artificial está transformando las empresas españolas. Casos reales, herramientas y cómo aplicarla en tu PYME.</p>
+        <span class="blog-card-link">Leer artículo →</span>
+      </div>
     </a>
     <a class="blog-card" href="/blog/agentes-de-ia-para-empresas-guia-completa-2025/">
-      <div class="blog-card-date">28 de abril de 2026</div>
-      <h2 class="blog-card-title">Agentes de IA para Empresas: Guía Completa 2025</h2>
-      <p class="blog-card-desc">Descubre qué son los agentes de IA para empresas, cómo funcionan, qué beneficios aportan y cómo HisfIA puede implementarlos en tu negocio.</p>
-      <span class="blog-card-link">Leer artículo →</span>
+      <img class="blog-card-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80" alt="Agentes de IA para Empresas: Guía Completa 2025" loading="lazy">
+      <div class="blog-card-body">
+        <div class="blog-card-date">28 de abril de 2026</div>
+        <h2 class="blog-card-title">Agentes de IA para Empresas: Guía Completa 2025</h2>
+        <p class="blog-card-desc">Descubre qué son los agentes de IA para empresas, cómo funcionan, qué beneficios aportan y cómo HisfIA puede implementarlos en tu negocio.</p>
+        <span class="blog-card-link">Leer artículo →</span>
+      </div>
     </a></div>
 </div>
 <footer>
