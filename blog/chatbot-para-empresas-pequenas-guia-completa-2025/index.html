@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Chatbot para empresas pequeñas: guía completa 2025 — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo un chatbot para empresas pequeñas puede automatizar atención al cliente, generar leads y ahorrar costes. Guía práctica con ejemplos reales."/>
+  <meta property="og:title" content="Chatbot para empresas pequeñas: guía completa 2025"/>
+  <meta property="og:description" content="Descubre cómo un chatbot para empresas pequeñas puede automatizar atención al cliente, generar leads y ahorrar costes. Guía práctica con ejemplos reales."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/chatbot-para-empresas-pequenas-guia-completa-2025/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/chatbot-para-empresas-pequenas-guia-completa-2025/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Chatbot para empresas pequeñas: guía completa 2025", "description": "Descubre cómo un chatbot para empresas pequeñas puede automatizar atención al cliente, generar leads y ahorrar costes. Guía práctica con ejemplos reales.", "datePublished": "2026-04-28", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 28 de abril de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot para empresas pequeñas: guía completa 2025</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a1a; line-height: 1.75; max-width: 860px; margin: 0 auto; padding: 24px 20px; background: #fff; }
+    h1 { font-size: 2rem; color: #0d0d0d; margin-bottom: 8px; }
+    h2 { font-size: 1.45rem; color: #111; margin-top: 48px; border-left: 4px solid #4A3AFF; padding-left: 14px; }
+    h3 { font-size: 1.15rem; color: #222; margin-top: 28px; }
+    p.intro { font-size: 1.08rem; background: #F5F4FF; border-radius: 12px; padding: 20px 24px; border-left: 4px solid #4A3AFF; }
+    .faq { background: #F9F9F9; border-radius: 16px; padding: 28px 32px; margin-top: 48px; border: 1px solid #E0DDD6; }
+    .faq h2 { border-left: 4px solid #FF6B35; color: #111; }
+    .faq details { margin-bottom: 18px; }
+    .faq summary { font-weight: 700; cursor: pointer; font-size: 1.03rem; color: #0d0d0d; padding: 6px 0; }
+    .faq summary:hover { color: #4A3AFF; }
+    .faq p { margin: 10px 0 0 0; color: #333; }
+    .cta-box { background: linear-gradient(135deg, #4A3AFF 0%, #7B6FFF 100%); color: #fff; border-radius: 16px; padding: 28px 32px; margin-top: 48px; text-align: center; }
+    .cta-box h2 { color: #fff; border-left: none; padding-left: 0; font-size: 1.35rem; margin-top: 0; }
+    .cta-box p { color: #EEE; margin-bottom: 20px; }
+    .cta-box a { background: #fff; color: #4A3AFF; font-weight: 700; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-size: 1rem; display: inline-block; }
+    .cta-box a:hover { background: #F0EEFF; }
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 0.97rem; }
+    th { background: #4A3AFF; color: #fff; padding: 11px 14px; text-align: left; }
+    td { padding: 10px 14px; border-bottom: 1px solid #E0DDD6; }
+    tr:nth-child(even) { background: #F9F9F9; }
+    ul, ol { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    .badge { display: inline-block; background: #E8E5FF; color: #4A3AFF; font-weight: 700; font-size: 0.82rem; border-radius: 50px; padding: 3px 12px; margin-bottom: 10px; letter-spacing: 0.03em; }
+  </style>
+</head>
+<body>
+
+<span class="badge">Automatización · IA para PYMEs · Atención al cliente</span>
+
+<h1>Chatbot para empresas pequeñas: guía completa 2025</h1>
+
+<p class="intro">
+  Tener un chatbot para empresas pequeñas ya no es un lujo reservado a las grandes corporaciones. En 2025, cualquier negocio con presencia digital puede desplegar un asistente virtual inteligente que atienda consultas las 24 horas, cualifique leads automáticamente y libere a su equipo de tareas repetitivas. Según datos de Salesforce, el 69 % de los consumidores prefiere resolver dudas sencillas con un chatbot antes que esperar a un agente humano. Para una PYME con recursos limitados, esto supone una ventaja competitiva enorme: reducir costes operativos, mejorar la experiencia de usuario y no perder ninguna oportunidad de venta por fuera de horario. En esta guía encontrarás todo lo que necesitas saber para elegir, implementar y sacar el máximo partido a un chatbot en tu empresa, con ejemplos prácticos y criterios claros de selección.
+</p>
+
+<h2>¿Qué es un chatbot y por qué lo necesita tu pequeña empresa?</h2>
+
+<h3>Definición sencilla de chatbot</h3>
+<p>
+  Un chatbot es un programa de software que simula una conversación humana a través de texto o voz. Puede funcionar en tu web, en WhatsApp, en Instagram o en cualquier otro canal digital. Los chatbots modernos, impulsados por inteligencia artificial generativa (IA), van mucho más allá de responder preguntas predefinidas: entienden el contexto, aprenden de cada interacción y ofrecen respuestas naturales y personalizadas.
+</p>
+<p>
+  Existen dos grandes tipos de chatbots: los <strong>basados en reglas</strong>, que siguen flujos de conversación predeterminados, y los <strong>basados en IA</strong>, que utilizan modelos de lenguaje natural (NLP/LLM) para comprender intenciones y responder de forma flexible. Para la mayoría de las PYMEs, la mejor opción en 2025 es un chatbot híbrido que combine ambas tecnologías.
+</p>
+
+<h3>El problema real que resuelve en una PYME</h3>
+<p>
+  Las empresas pequeñas suelen enfrentarse a los mismos cuellos de botella: el equipo dedica demasiado tiempo a responder siempre las mismas preguntas (horarios, precios, disponibilidad), los leads que llegan fuera de horario quedan sin atender y la gestión manual de citas o pedidos genera errores y frustración. Un chatbot bien configurado automatiza todos estos procesos, permitiendo que el equipo humano se enfoque en tareas de mayor valor como cerrar ventas o mejorar el producto.
+</p>
+
+<img src='https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=860&q=80' alt='Chatbot para empresas pequeñas respondiendo consultas automáticamente' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Beneficios concretos de un chatbot para pequeñas empresas</h2>
+
+<h3>Atención al cliente 24/7 sin coste adicional</h3>
+<p>
+  Un asistente virtual no tiene horarios, no se toma vacaciones y no pierde la paciencia. Esto es especialmente valioso para negocios que venden a clientes en diferentes zonas horarias o que reciben la mayoría de sus consultas fuera del horario laboral. Cada interacción que el chatbot resuelve sin intervención humana es tiempo y dinero ahorrado. Algunos estudios estiman que un chatbot puede gestionar hasta el 80 % de las consultas rutinarias sin necesidad de escalado.
+</p>
+
+<h3>Generación y cualificación automática de leads</h3>
+<p>
+  En lugar de dejar que los visitantes abandonen tu web sin dejar rastro, un chatbot puede iniciar conversaciones proactivas, recoger el nombre, el email y las necesidades del potencial cliente, y pasarlos directamente a tu CRM o a tu equipo de ventas con un resumen detallado. Desde <strong>HisfIA</strong>, configuramos agentes de IA que no solo capturan el lead, sino que evalúan su nivel de interés y priorizan los contactos con mayor probabilidad de conversión.
+</p>
+
+<h3>Reducción de costes operativos medibles</h3>
+<p>
+  Según IBM, las empresas que implementan chatbots ahorran de media hasta 30 % en costes de atención al cliente. Para una PYME, esto puede traducirse en no necesitar contratar un agente de soporte adicional o en redirigir a ese profesional hacia tareas comerciales de mayor impacto.
+</p>
+
+<img src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=860&q=80' alt='Gráfico de reducción de costes con chatbot en empresas pequeñas' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo elegir el chatbot adecuado para tu negocio</h2>
+
+<h3>Criterios de selección clave</h3>
+<p>A la hora de evaluar una solución de chatbot, ten en cuenta estos factores:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Criterio</th>
+      <th>Qué buscar</th>
+      <th>Por qué importa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Facilidad de configuración</td>
+      <td>Interfaz visual, sin código</td>
+      <td>Ahorra tiempo y dinero en desarrollo</td>
+    </tr>
+    <tr>
+      <td>Integraciones</td>
+      <td>CRM, WhatsApp, email, calendarios</td>
+      <td>Conecta con tus herramientas actuales</td>
+    </tr>
+    <tr>
+      <td>Capacidades de IA</td>
+      <td>NLP, LLM, entrenamiento propio</td>
+      <td>Respuestas más naturales y precisas</td>
+    </tr>
+    <tr>
+      <td>Escalabilidad</td>
+      <td>Planes que crecen con tu negocio</td>
+      <td>No pagues más de lo necesario hoy</td>
+    </tr>
+    <tr>
+      <td>Soporte en español</td>
+      <td>Interfaz y atención en castellano</td>
+      <td>Fundamental para el mercado español</td>
+    </tr>
+    <tr>
+      <td>Precio</td>
+      <td>Modelo freemium o pay-as-you-go</td>
+      <td>Ajustado al presupuesto de una PYME</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Tipos de chatbot según el sector de tu negocio</h3>
+<ul>
+  <li><strong>Comercio y e-commerce:</strong> chatbots de seguimiento de pedidos, recomendaciones de producto y gestión de devoluciones.</li>
+  <li><strong>Hostelería y restauración:</strong> reservas automáticas, carta interactiva y encuestas de satisfacción post-visita.</li>
+  <li><strong>Servicios profesionales:</strong> cualificación de leads, programación de reuniones y envío de presupuestos iniciales.</li>
+  <li><strong>Salud y bienestar:</strong> confirmación de citas, recordatorios y preguntas frecuentes sobre tratamientos.</li>
+  <li><strong>Educación y formación:</strong> admisiones automáticas, resolución de dudas sobre cursos y seguimiento de alumnos.</li>
+</ul>
+
+<img src='https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?w=860&q=80' alt='Diferentes sectores que usan chatbots para pequeñas empresas' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Pasos para implementar un chatbot en tu empresa paso a paso</h2>
+
+<h3>Paso 1: Define el objetivo principal</h3>
+<p>
+  Antes de elegir ninguna herramienta, responde esta pregunta: ¿qué problema concreto quieres resolver primero? Atención al cliente, captación de leads, reservas o soporte postventa. Empezar con un objetivo único y medible es la clave para que la implementación sea rápida y exitosa. Un chatbot que intenta hacer demasiadas cosas a la vez acaba siendo mediocre en todo.
+</p>
+
+<h3>Paso 2: Mapea las conversaciones más frecuentes</h3>
+<p>
+  Revisa los emails, chats y llamadas de los últimos tres meses y extrae las diez preguntas más repetidas. Ese será el núcleo de tu chatbot. Después, diseña flujos de conversación que guíen al usuario desde la pregunta inicial hasta la resolución o la derivación al equipo humano cuando sea necesario.
+</p>
+
+<h3>Paso 3: Elige la plataforma e intégrala</h3>
+<p>
+  Conecta el chatbot con tu web, tu WhatsApp Business y tu CRM. Asegúrate de que los datos recogidos en cada conversación se sincronizan automáticamente con tus sistemas. En <strong>HisfIA</strong> nos encargamos de toda la integración técnica para que no tengas que tocar una sola línea de código: desde la conexión con Salesforce o HubSpot hasta la configuración de flujos en WhatsApp y Telegram.
+</p>
+
+<h3>Paso 4: Entrena y optimiza de forma continua</h3>
+<p>
+  Un chatbot no es una solución de configurar y olvidar. Revisa semanalmente las conversaciones donde el bot no supo responder o derivó incorrectamente. Usa esos datos para mejorar las respuestas y añadir nuevos flujos. En los primeros tres meses de uso, la mayoría de las PYMEs consiguen mejorar la tasa de resolución autónoma del 40 % al 75 %.
+</p>
+
+<img src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=860&q=80' alt='Proceso de implementación de chatbot en pequeña empresa' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Errores más comunes al implantar un chatbot en una PYME</h2>
+
+<h3>No definir cuándo debe intervenir un humano</h3>
+<p>
+  Uno de los fallos más frecuentes es crear un chatbot sin un protocolo claro de escalado. El bot debe saber reconocer cuándo el usuario está frustrado, cuándo la consulta supera su capacidad y cuándo es el momento de transferir la conversación a un agente real. Sin este mecanismo, el cliente abandona y la experiencia empeora en lugar de mejorar.
+</p>
+
+<h3>Ignor
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
