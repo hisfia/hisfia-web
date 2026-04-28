@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050d1a"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <filter id="bl"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <rect width="800" height="420" fill="url(#bg)"/>
+  <circle cx="200" cy="180" r="180" fill="#00b8cc" opacity="0.07" filter="url(#bl)"/>
+  <circle cx="620" cy="280" r="150" fill="#0066ff" opacity="0.07" filter="url(#bl)"/>
+  <g stroke="#00b8cc" stroke-width="0.4" opacity="0.1"><line x1="0" y1="84" x2="800" y2="84"/><line x1="0" y1="168" x2="800" y2="168"/><line x1="0" y1="252" x2="800" y2="252"/><line x1="0" y1="336" x2="800" y2="336"/><line x1="160" y1="0" x2="160" y2="420"/><line x1="320" y1="0" x2="320" y2="420"/><line x1="480" y1="0" x2="480" y2="420"/><line x1="640" y1="0" x2="640" y2="420"/></g>
+  
+  <rect x="320" y="100" width="160" height="220" rx="22" fill="none" stroke="#00b8cc" stroke-width="2.5" opacity="0.8"/>
+  <rect x="330" y="112" width="140" height="178" rx="12" fill="#00b8cc" opacity="0.06"/>
+  <circle cx="400" cy="302" r="10" fill="none" stroke="#00b8cc" stroke-width="2" opacity="0.7"/>
+  <path d="M260 195 Q240 210 240 220 Q240 230 260 245" fill="none" stroke="#00b8cc" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M238 178 Q205 205 205 220 Q205 235 238 262" fill="none" stroke="#00b8cc" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  <path d="M540 195 Q560 210 560 220 Q560 230 540 245" fill="none" stroke="#00b8cc" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M562 178 Q595 205 595 220 Q595 235 562 262" fill="none" stroke="#00b8cc" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+  <circle cx="400" cy="205" r="18" fill="#00b8cc" opacity="0.15"/>
+  <circle cx="400" cy="205" r="8" fill="#00b8cc" opacity="0.9"/>
+  <text x="400" y="390" font-family="'Space Grotesk',sans-serif" font-size="11" fill="#00b8cc" opacity="0.45" text-anchor="middle" letter-spacing="3">MARKETING DIGITAL CON INTELIGENCIA ARTIF</text>
+</svg>
