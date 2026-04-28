@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CRM inteligente con inteligencia artificial | HisfIA — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo un CRM inteligente con IA automatiza la gestión de clientes, predice ventas y transforma tu negocio. Guía completa para PYMEs españolas."/>
+  <meta property="og:title" content="CRM inteligente con inteligencia artificial | HisfIA"/>
+  <meta property="og:description" content="Descubre cómo un CRM inteligente con IA automatiza la gestión de clientes, predice ventas y transforma tu negocio. Guía completa para PYMEs españolas."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/crm-inteligente-con-inteligencia-artificial-hisfia/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/crm-inteligente-con-inteligencia-artificial-hisfia/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "CRM inteligente con inteligencia artificial | HisfIA", "description": "Descubre cómo un CRM inteligente con IA automatiza la gestión de clientes, predice ventas y transforma tu negocio. Guía completa para PYMEs españolas.", "datePublished": "2026-04-28", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 28 de abril de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRM inteligente con inteligencia artificial | HisfIA</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; max-width: 860px; margin: 0 auto; padding: 24px 18px; background: #fff; }
+  h1 { font-size: 2.1em; color: #1a1a2e; margin-bottom: 18px; line-height: 1.2; }
+  h2 { font-size: 1.45em; color: #2d2d6b; margin-top: 48px; margin-bottom: 12px; border-left: 4px solid #6c63ff; padding-left: 14px; }
+  h3 { font-size: 1.12em; color: #3a3a6e; margin-top: 28px; margin-bottom: 8px; }
+  p { line-height: 1.78; margin-bottom: 16px; font-size: 1.05em; }
+  p.intro { background: #f4f3ff; border-left: 5px solid #6c63ff; padding: 20px 24px; border-radius: 10px; font-size: 1.07em; margin-bottom: 36px; }
+  ul { padding-left: 22px; margin-bottom: 18px; }
+  li { margin-bottom: 9px; line-height: 1.7; font-size: 1.03em; }
+  .faq { background: #f9f8ff; border: 1px solid #ddd9ff; border-radius: 14px; padding: 28px 32px; margin-top: 52px; }
+  .faq h2 { border-left: 4px solid #a78bfa; color: #2d2d6b; }
+  .faq-item { margin-bottom: 28px; }
+  .faq-item:last-child { margin-bottom: 0; }
+  .faq-item strong { display: block; font-size: 1.07em; color: #1a1a2e; margin-bottom: 7px; }
+  .faq-item p { margin: 0; color: #333; }
+  .cta-box { background: linear-gradient(135deg, #6c63ff 0%, #2d2d6b 100%); color: #fff; border-radius: 16px; padding: 32px 36px; margin-top: 52px; text-align: center; }
+  .cta-box p { color: #f0efff; font-size: 1.08em; margin-bottom: 20px; }
+  .cta-box a { display: inline-block; background: #fff; color: #6c63ff; font-weight: 700; padding: 13px 34px; border-radius: 30px; text-decoration: none; font-size: 1.05em; transition: background 0.2s; }
+  .cta-box a:hover { background: #ede9ff; }
+  .highlight { background: #ede9ff; border-radius: 8px; padding: 16px 20px; margin: 22px 0; font-size: 1.03em; }
+  table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.98em; }
+  th { background: #6c63ff; color: #fff; padding: 11px 16px; text-align: left; }
+  td { padding: 10px 16px; border-bottom: 1px solid #e8e6ff; }
+  tr:nth-child(even) td { background: #f7f5ff; }
+</style>
+</head>
+<body>
+
+<h1>CRM inteligente con inteligencia artificial</h1>
+
+<p class="intro">
+La gestión de las relaciones con los clientes ha cambiado radicalmente en los últimos años. Si hasta hace poco un CRM era simplemente una base de datos sofisticada donde almacenar contactos y registrar llamadas, hoy la inteligencia artificial ha convertido estas herramientas en auténticos motores de crecimiento empresarial. Un CRM inteligente con inteligencia artificial es capaz de predecir el comportamiento de los clientes, automatizar tareas repetitivas, personalizar comunicaciones a gran escala y ofrecer a los equipos comerciales información accionable en tiempo real. En esta guía completa exploramos qué es un CRM con IA, cómo funciona, qué beneficios aporta a las PYMEs españolas y cómo implantarlo con éxito en tu empresa para disparar tus ventas y mejorar la fidelización de clientes.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/87e59298_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>¿Qué es un CRM inteligente con inteligencia artificial?</h2>
+
+<p>
+Un CRM tradicional (Customer Relationship Management) es una plataforma que centraliza toda la información sobre clientes, prospectos e interacciones comerciales. Sin embargo, el CRM inteligente va mucho más allá: integra algoritmos de inteligencia artificial y machine learning que analizan los datos almacenados para extraer patrones, automatizar acciones y ofrecer recomendaciones predictivas a los equipos de ventas, marketing y atención al cliente.
+</p>
+
+<h3>Diferencias clave entre un CRM tradicional y un CRM con IA</h3>
+
+<p>
+La diferencia fundamental radica en la capacidad de aprender y anticiparse. Mientras que un CRM convencional te muestra lo que ocurrió, un CRM con inteligencia artificial te dice lo que va a ocurrir y sugiere la mejor acción para cada situación. Esto incluye identificar qué clientes están a punto de abandonar, qué oportunidades de venta tienen mayor probabilidad de cerrarse o cuándo es el mejor momento para contactar a un prospecto determinado.
+</p>
+
+<h3>Componentes principales de un CRM inteligente</h3>
+
+<ul>
+  <li><strong>Motor de análisis predictivo:</strong> anticipa el comportamiento de compra y el churn de clientes.</li>
+  <li><strong>Automatización de flujos de trabajo:</strong> dispara acciones automáticas basadas en eventos o datos del cliente.</li>
+  <li><strong>Procesamiento del lenguaje natural (NLP):</strong> analiza correos, chats y llamadas para extraer información relevante.</li>
+  <li><strong>Lead scoring inteligente:</strong> puntúa y prioriza automáticamente los leads según su potencial de conversión.</li>
+  <li><strong>Asistentes conversacionales integrados:</strong> chatbots y agentes de IA que gestionan consultas sin intervención humana.</li>
+  <li><strong>Personalización dinámica:</strong> adapta mensajes y ofertas en tiempo real según el perfil de cada cliente.</li>
+</ul>
+
+<h2>Beneficios del CRM con IA para PYMEs españolas</h2>
+
+<img src='https://office.hisfia.com/seo-images/19941709_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<p>
+Las PYMEs en España tienen una característica común: disponen de equipos reducidos que deben maximizar su productividad. La inteligencia artificial en el CRM actúa como un multiplicador de capacidades, permitiendo que un equipo pequeño opere con la eficiencia de uno mucho mayor.
+</p>
+
+<h3>Aumento de las ventas mediante predicción y priorización</h3>
+
+<p>
+Uno de los beneficios más tangibles es la mejora en las tasas de conversión. Gracias al lead scoring impulsado por IA, el equipo comercial puede concentrar su energía en los contactos con mayor probabilidad de convertirse en clientes, en lugar de dispersarse entre cientos de leads fríos. Estudios del sector muestran que las empresas que implementan CRM con IA reportan incrementos de hasta un 30% en sus tasas de conversión en los primeros seis meses.
+</p>
+
+<h3>Reducción del tiempo dedicado a tareas administrativas</h3>
+
+<p>
+El registro manual de llamadas, el envío de emails de seguimiento o la actualización de fichas de cliente consume una parte enorme de la jornada comercial. Un CRM inteligente automatiza todas estas tareas: transcribe llamadas, actualiza registros automáticamente, programa seguimientos y envía comunicaciones personalizadas sin que el comercial tenga que intervenir. Esto puede suponer un ahorro de entre 2 y 4 horas diarias por vendedor.
+</p>
+
+<div class="highlight">
+  <strong>Dato clave:</strong> según informes del sector, los equipos comerciales dedican hasta un 64% de su tiempo a tareas no directamente relacionadas con la venta. Un CRM con IA puede recuperar buena parte de ese tiempo y orientarlo hacia actividades de alto valor.
+</div>
+
+<h3>Mejora de la experiencia y fidelización del cliente</h3>
+
+<p>
+La personalización a escala es otra ventaja decisiva. La IA analiza el historial completo de cada cliente, sus preferencias, el canal de comunicación que prefiere y el momento del día en el que suele interactuar, para entregar el mensaje correcto en el momento y el canal adecuados. El resultado es una experiencia de cliente notablemente más satisfactoria, lo que se traduce directamente en mayor fidelización y mayor valor de vida del cliente (LTV).
+</p>
+
+<h2>Cómo funciona la inteligencia artificial dentro de un CRM</h2>
+
+<img src='https://office.hisfia.com/seo-images/45ed16a1_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h3>Análisis predictivo y machine learning</h3>
+
+<p>
+El núcleo tecnológico de un CRM inteligente son los modelos de machine learning entrenados con los datos históricos de la empresa. Estos modelos identifican patrones que serían imposibles de detectar manualmente: por ejemplo, que los clientes que abren tres emails seguidos pero no responden tienen un 70% de probabilidad de comprar si se les llama en los siguientes dos días. Esa inteligencia se convierte en reglas de actuación automáticas que el CRM ejecuta sin intervención humana.
+</p>
+
+<h3>Procesamiento del lenguaje natural para la gestión de comunicaciones</h3>
+
+<p>
+El NLP permite que el CRM entienda el contenido de correos electrónicos, transcripciones de llamadas y conversaciones de chat. Puede detectar automáticamente el sentimiento del cliente, identificar objeciones recurrentes, categorizar consultas y extraer compromisos y próximas acciones directamente de los registros de conversación. Esta capacidad elimina la necesidad de que los comerciales introduzcan manualmente la información tras cada interacción.
+</p>
+
+<h3>Agentes de IA y automatización de flujos comerciales</h3>
+
+<p>
+Los agentes de IA representan la evolución más avanzada dentro de los CRM modernos. Se trata de sistemas autónomos capaces de gestionar por sí solos la cualificación de leads, el seguimiento de oportunidades o la resolución de incidencias de soporte. En <strong>HisfIA</strong>, diseñamos e implementamos agentes de IA personalizados que se integran directamente con el CRM de tu empresa, adaptando su comportamiento a los procesos y la cultura comercial de tu negocio.
+</p>
+
+<h2>Casos de uso del CRM inteligente en diferentes áreas de negocio</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Área</th>
+      <th>Aplicación del CRM con IA</th>
+      <th>Resultado esperado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ventas</td>
+      <td>Lead scoring, predicción de cierre, próximos pasos automáticos</td>
+      <td>+25-30% en tasa de conversión</td>
+    </tr>
+    <tr>
+      <td>Marketing</td>
+      <td>Segmentación dinámica, personalización de campañas, atribución</td>
+      <td>Mayor ROI en campañas</td>
+    </tr>
+    <tr>
+      <td>Atención al cliente</td>
+      <td>Chatbots, resolución automática de incidencias, priorización</td>
+      <td>Reducción del tiempo de respuesta</td>
+    </tr>
+    <tr>
+      <td>Dirección comercial</td>
+      <td>Forecasting de ventas, análisis de pipeline, alertas de riesgo</td>
+      <td>Decisiones más informadas</td>
+    </tr>
+  </tbody>
+</table>
+
+<img src='https://office.hisfia.com/seo-images/26b06623_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo implantar un CRM inteligente en tu empresa paso a paso</h2>
+
+<h3>Paso 1: Diagnóstico y definición de objetivos</h3>
+
+<p>
+Antes de elegir cualquier herramienta, es fundamental entender qué problemas quieres resolver. ¿Pierdes demasiados leads por falta de seguimiento? ¿Tu equipo dedica demasiado tiempo a tareas administrativas? ¿No tienes visibilidad real sobre el estado del pipeline? Definir los objetivos con claridad determinará qué funcionalidades de IA necesitas realmente y evitará que pagues por capacidades que tu empresa no va a aprovechar en el corto plazo.
+</p>
+
+<h3>Paso 2: Selección de la plataforma y las integraciones</h3>
+
+<p>
+Existen múltiples opciones en el mercado: Salesforce Einstein, HubSpot con IA, Microsoft Dynamics 365 Copilot o plataformas más accesibles para PYMEs como Zoho CRM con Zia. La decisión debe tener en cuenta el tamaño de tu equipo, el volumen de datos disponibles, las integraciones con tu ecosistema actual (ERP, email, WhatsApp Business, redes sociales) y, por supuesto, el presupuesto disponible.
+</p>
+
+<h3>Paso 3: Migración de datos y limpieza</h3>
+
+<p>
+La inteligencia artificial es tan buena como los datos con los que trabaja. Una base de datos de clientes desactualizada, con duplicados o campos vacíos, generará predicciones poco fiables. La fase de limpieza y estructuración de los datos existentes es crítica y, aunque requiere esfuerzo inicial, garantiza que la IA tenga una base sólida desde la que aprender.
+</p>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
