@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Inteligencia Artificial para Autónomos en España 2025 — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo la inteligencia artificial puede ayudar a los autónomos en España a ahorrar tiempo, reducir costes y crecer. Guía práctica con herramientas reales."/>
+  <meta property="og:title" content="Inteligencia Artificial para Autónomos en España 2025"/>
+  <meta property="og:description" content="Descubre cómo la inteligencia artificial puede ayudar a los autónomos en España a ahorrar tiempo, reducir costes y crecer. Guía práctica con herramientas reales."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/inteligencia-artificial-para-autonomos-en-espana-2025/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/inteligencia-artificial-para-autonomos-en-espana-2025/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Inteligencia Artificial para Autónomos en España 2025", "description": "Descubre cómo la inteligencia artificial puede ayudar a los autónomos en España a ahorrar tiempo, reducir costes y crecer. Guía práctica con herramientas reales.", "datePublished": "2026-04-28", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 28 de abril de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inteligencia Artificial para Autónomos en España 2025</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #2D2D2D; background: #FAFAF8; margin: 0; padding: 0; }
+  .article-wrapper { max-width: 820px; margin: 0 auto; padding: 40px 24px; }
+  h1 { font-size: 2.1em; color: #1A1A2E; line-height: 1.25; margin-bottom: 18px; }
+  h2 { font-size: 1.45em; color: #1A1A2E; margin-top: 48px; margin-bottom: 12px; border-left: 4px solid #5B4FE8; padding-left: 14px; }
+  h3 { font-size: 1.13em; color: #3D3D5C; margin-top: 28px; margin-bottom: 8px; }
+  p { line-height: 1.8; margin-bottom: 16px; font-size: 1.04em; }
+  p.intro { background: #F0EEFF; border-radius: 12px; padding: 22px 26px; font-size: 1.07em; border-left: 5px solid #5B4FE8; margin-bottom: 36px; }
+  ul, ol { padding-left: 24px; margin-bottom: 18px; }
+  li { line-height: 1.85; margin-bottom: 6px; font-size: 1.02em; }
+  .faq { background: #F7F6FF; border-radius: 16px; padding: 32px 30px; margin-top: 52px; border: 1px solid #D8D4F7; }
+  .faq h2 { border-left: 4px solid #A78BFA; color: #2D2460; margin-top: 0; }
+  .faq-item { margin-bottom: 28px; }
+  .faq-item:last-child { margin-bottom: 0; }
+  .faq-item h3 { color: #3B2FAA; font-size: 1.08em; margin-bottom: 6px; margin-top: 0; }
+  .faq-item p { margin-bottom: 0; font-size: 1em; }
+  .highlight-box { background: #1A1A2E; color: #F0EEFF; border-radius: 14px; padding: 24px 28px; margin: 36px 0; }
+  .highlight-box p { color: #E8E4FF; margin-bottom: 0; font-size: 1.03em; }
+  .highlight-box strong { color: #A78BFA; }
+  .cta-box { background: linear-gradient(135deg, #5B4FE8 0%, #A78BFA 100%); border-radius: 16px; padding: 30px 28px; margin: 44px 0; text-align: center; }
+  .cta-box p { color: #ffffff; font-size: 1.1em; margin-bottom: 16px; font-weight: 600; }
+  .cta-box a { background: #fff; color: #5B4FE8; font-weight: 700; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-size: 1em; display: inline-block; }
+  .cta-box a:hover { background: #F0EEFF; }
+  table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.98em; }
+  th { background: #5B4FE8; color: #fff; padding: 11px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid #E0DDD6; }
+  tr:nth-child(even) td { background: #F5F4FF; }
+  .tag { display: inline-block; background: #EDE9FE; color: #5B4FE8; font-size: 0.82em; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-right: 6px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="article-wrapper">
+
+<h1>Inteligencia artificial para autónomos España</h1>
+
+<p class="intro">
+La inteligencia artificial para autónomos en España ha dejado de ser una promesa lejana para convertirse en una realidad accesible y rentable. En 2025, miles de trabajadores por cuenta propia ya utilizan herramientas de IA para automatizar tareas repetitivas, mejorar su marketing, gestionar su contabilidad y atender a clientes de forma más eficiente. Si eres autónomo y aún no has dado el salto, este artículo te explica exactamente qué puedes hacer, qué herramientas existen, cuánto puedes ahorrar y cómo empezar sin necesidad de conocimientos técnicos. La IA no es solo para grandes empresas: las soluciones actuales están diseñadas para adaptarse al ritmo, al presupuesto y a las necesidades reales de un profesional independiente en España.
+</p>
+
+<h2>¿Qué es la inteligencia artificial y por qué importa a los autónomos?</h2>
+
+<h3>Definición práctica para un profesional independiente</h3>
+<p>
+La inteligencia artificial (IA) es la capacidad de los sistemas informáticos para realizar tareas que normalmente requieren inteligencia humana: entender texto, generar contenido, tomar decisiones, clasificar información o mantener conversaciones. Para un autónomo, esto se traduce en una cosa muy concreta: <strong>delegar trabajo a una máquina que no cobra nómina, no se pone enferma y trabaja las 24 horas</strong>.
+</p>
+<p>
+No hablamos de robots de ciencia ficción. Hablamos de herramientas como ChatGPT, que redacta tus presupuestos; de sistemas que responden a clientes mientras duermes; o de plataformas que analizan tus facturas y te dicen en qué gastas de más. Todo ello ya existe, ya funciona y ya está al alcance de cualquier autónomo en España.
+</p>
+
+<h3>El contexto español: autónomos y digitalización</h3>
+<p>
+España cuenta con más de 3,3 millones de trabajadores autónomos, según datos de la Seguridad Social. Sin embargo, la adopción de IA entre los profesionales independientes sigue siendo baja: muchos desconocen las herramientas disponibles, temen el coste o simplemente no saben por dónde empezar. Esta brecha representa una ventaja competitiva enorme para quienes decidan actuar ahora.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/8ba2105b_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Casos de uso reales de IA para autónomos en España</h2>
+
+<h3>Automatización de tareas administrativas</h3>
+<p>
+La administración consume entre el 20 y el 30 % del tiempo de un autónomo medio. La IA puede reducir ese porcentaje drásticamente. Estas son las aplicaciones más inmediatas:
+</p>
+<ul>
+  <li><strong>Generación automática de presupuestos y facturas</strong> a partir de plantillas y datos del cliente.</li>
+  <li><strong>Clasificación y archivo de documentos</strong> fiscales mediante OCR e inteligencia artificial.</li>
+  <li><strong>Recordatorios automáticos de pago</strong> a clientes morosos sin intervención manual.</li>
+  <li><strong>Resumen de correos electrónicos</strong> y redacción de respuestas tipo.</li>
+</ul>
+<p>
+Herramientas como Holded, Suma, o integraciones personalizadas desarrolladas por agencias especializadas permiten automatizar estos flujos sin escribir una sola línea de código.
+</p>
+
+<h3>Atención al cliente con agentes de IA</h3>
+<p>
+Uno de los mayores problemas de un autónomo es la disponibilidad: los clientes escriben fuera del horario laboral y, si no hay respuesta, se van a la competencia. Los agentes de IA conversacionales resuelven este problema de raíz. Un chatbot bien configurado puede responder preguntas frecuentes, calificar leads, reservar citas y recopilar datos del cliente, todo de forma automática y personalizada.
+</p>
+<p>
+En <strong>HisfIA</strong> desarrollamos agentes de IA a medida para autónomos y PYMEs españolas, integrados con WhatsApp, webs o CRMs, que empiezan a trabajar desde el primer día y se adaptan al tono y la identidad de cada negocio.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/87e59298_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Herramientas de IA más útiles según el tipo de autónomo</h2>
+
+<h3>Para autónomos del sector servicios y consultoría</h3>
+<p>
+Si eres consultor, coach, abogado, psicólogo o asesor, la IA puede ayudarte a:
+</p>
+<ul>
+  <li>Crear contenido de valor para tu blog o redes sociales en minutos.</li>
+  <li>Analizar documentos y contratos buscando cláusulas clave.</li>
+  <li>Preparar propuestas comerciales personalizadas a partir de una ficha de cliente.</li>
+  <li>Gestionar tu agenda y recordatorios de seguimiento con clientes.</li>
+</ul>
+
+<h3>Para autónomos del comercio, la hostelería y los oficios</h3>
+<p>
+La IA también es para el fontanero, el fotógrafo, el restaurador o el electricista. En estos sectores las aplicaciones más prácticas son:
+</p>
+<ul>
+  <li><strong>Chatbots para reservas y citas</strong> integrados en Instagram o la web.</li>
+  <li><strong>Herramientas de presupuestación inteligente</strong> que calculan precios según historial y costes.</li>
+  <li><strong>Marketing automatizado</strong>: emails de seguimiento, campañas de temporada y reactivación de clientes inactivos.</li>
+  <li><strong>Gestión de reseñas</strong>: respuesta automática en Google Business con IA.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sector</th>
+      <th>Aplicación principal de IA</th>
+      <th>Ahorro estimado/semana</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Consultoría</td>
+      <td>Redacción de informes y propuestas</td>
+      <td>5-8 horas</td>
+    </tr>
+    <tr>
+      <td>Hostelería</td>
+      <td>Reservas y atención al cliente 24/7</td>
+      <td>4-6 horas</td>
+    </tr>
+    <tr>
+      <td>Oficios técnicos</td>
+      <td>Presupuestación y facturación automática</td>
+      <td>3-5 horas</td>
+    </tr>
+    <tr>
+      <td>Comercio online</td>
+      <td>Gestión de pedidos, emails y devoluciones</td>
+      <td>6-10 horas</td>
+    </tr>
+    <tr>
+      <td>Diseño y creativos</td>
+      <td>Generación de borradores y briefings</td>
+      <td>4-7 horas</td>
+    </tr>
+  </tbody>
+</table>
+
+<img src='https://office.hisfia.com/seo-images/5285a1fe_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Marketing digital con IA: visibilidad sin agencia cara</h2>
+
+<h3>Contenido y redes sociales automatizados</h3>
+<p>
+Una de las mayores barreras del autónomo en el marketing digital es el tiempo. Crear contenido de calidad, publicarlo con constancia y mantener la coherencia de marca requiere horas que muchos simplemente no tienen. La IA resuelve esto de forma elegante:
+</p>
+<ul>
+  <li>Generación de publicaciones para Instagram, LinkedIn o Facebook en segundos.</li>
+  <li>Redacción de artículos de blog optimizados para Google (SEO).</li>
+  <li>Creación de newsletters mensuales a partir de las novedades del negocio.</li>
+  <li>Diseño de imágenes y creatividades con herramientas como Midjourney o Adobe Firefly.</li>
+</ul>
+
+<h3>SEO e IA: posicionarse sin gastar en publicidad</h3>
+<p>
+Los buscadores de IA como Google AI Overviews, ChatGPT Search o Perplexity están transformando la forma en que los clientes encuentran a los profesionales. Optimizar tu presencia en estos canales ya no es opcional: es una ventaja competitiva crítica. Esto incluye tener una ficha de Google Business completa, reseñas actualizadas y contenido web estructurado que responda preguntas concretas de tus clientes potenciales.
+</p>
+
+<div class="highlight-box">
+  <p>En <strong>HisfIA</strong> ayudamos a autónomos y PYMEs españolas a posicionarse tanto en Google como en los nuevos buscadores de inteligencia artificial, combinando estrategia de contenidos, automatización y agentes de IA que trabajan por ti mientras tú te centras en tu negocio.</p>
+</div>
+
+<img src='https://office.hisfia.com/seo-images/19941709_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Costes, ayudas y cómo empezar con IA siendo autónomo en España</h2>
+
+<h3>¿Cuánto cuesta implementar IA en tu negocio?</h3>
+<p>
+El coste de adoptar IA como autónomo varía enormemente según el nivel de personalización. Estas son las opciones
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
