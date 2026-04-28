@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Agente de Voz IA para Negocios | HisfIA — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo un agente de voz IA puede transformar tu negocio: atiende clientes 24/7, automatiza llamadas y aumenta ventas. Soluciones HisfIA para PYMEs."/>
+  <meta property="og:title" content="Agente de Voz IA para Negocios | HisfIA"/>
+  <meta property="og:description" content="Descubre cómo un agente de voz IA puede transformar tu negocio: atiende clientes 24/7, automatiza llamadas y aumenta ventas. Soluciones HisfIA para PYMEs."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/agente-de-voz-ia-para-negocios-hisfia/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/agente-de-voz-ia-para-negocios-hisfia/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Agente de Voz IA para Negocios | HisfIA", "description": "Descubre cómo un agente de voz IA puede transformar tu negocio: atiende clientes 24/7, automatiza llamadas y aumenta ventas. Soluciones HisfIA para PYMEs.", "datePublished": "2026-04-28", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 28 de abril de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agente de Voz IA para Negocios | HisfIA</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; color: #1a1a1a; max-width: 860px; margin: 0 auto; padding: 24px 20px; line-height: 1.75; background: #fafaf8; }
+  h1 { font-size: 2.1em; color: #12100e; margin-bottom: 0.3em; line-height: 1.2; }
+  h2 { font-size: 1.45em; color: #1d1b18; margin-top: 2.4em; border-left: 4px solid #c8a96e; padding-left: 14px; }
+  h3 { font-size: 1.15em; color: #2e2b27; margin-top: 1.6em; }
+  p { margin: 1em 0; }
+  p.intro { font-size: 1.08em; background: #f2ede4; border-radius: 12px; padding: 20px 24px; border-left: 4px solid #c8a96e; color: #2a2724; }
+  ul, ol { padding-left: 1.6em; }
+  li { margin-bottom: 0.5em; }
+  div.faq { background: #f7f4ee; border-radius: 16px; padding: 28px 30px; margin-top: 2.8em; border: 1px solid #e0ddd6; }
+  div.faq h2 { border-left: none; padding-left: 0; margin-top: 0; }
+  div.faq details { margin-bottom: 1.2em; border-bottom: 1px solid #ddd8ce; padding-bottom: 1em; }
+  div.faq details:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  div.faq summary { font-weight: bold; cursor: pointer; font-size: 1.05em; color: #12100e; list-style: none; padding: 4px 0; }
+  div.faq summary::before { content: "▸ "; color: #c8a96e; }
+  div.faq p { margin: 0.6em 0 0 0; color: #3a3530; font-size: 0.97em; }
+  .cta-box { background: #12100e; color: #f5f0e8; border-radius: 16px; padding: 28px 32px; margin: 2.8em 0; text-align: center; }
+  .cta-box p { color: #e8e0d0; margin: 0.4em 0; }
+  .cta-box a { display: inline-block; margin-top: 16px; background: #c8a96e; color: #12100e; font-weight: bold; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-size: 1.05em; }
+  .highlight-box { background: #fff8ee; border: 1px solid #e8d9b8; border-radius: 12px; padding: 18px 22px; margin: 1.4em 0; }
+  table { width: 100%; border-collapse: collapse; margin: 1.4em 0; font-size: 0.96em; }
+  th { background: #12100e; color: #f5f0e8; padding: 10px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid #e0ddd6; }
+  tr:nth-child(even) td { background: #f7f4ee; }
+</style>
+</head>
+<body>
+
+<h1>Agente de voz IA para negocios</h1>
+
+<p class="intro">
+  Imagina que tu empresa atiende llamadas a las 3 de la madrugada, programa citas sin intervención humana y responde objeciones de ventas con la naturalidad de un agente experto. Eso ya no es ciencia ficción: los <strong>agentes de voz con inteligencia artificial</strong> están transformando la forma en que las PYMEs españolas se relacionan con sus clientes. En este artículo te explicamos qué es exactamente un agente de voz IA, cómo funciona, qué ventajas concretas aporta a tu negocio y cómo puedes implementarlo sin necesidad de un gran departamento tecnológico. Si todavía dependes de un equipo humano para gestionar cada llamada entrante, es el momento de conocer la alternativa que ya están adoptando las empresas más competitivas del mercado.
+</p>
+
+<h2>¿Qué es un agente de voz IA y cómo funciona?</h2>
+
+<img src='https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&q=80' alt='Colaboración y trabajo en equipo digital' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h3>Definición y tecnología detrás del agente de voz</h3>
+<p>
+  Un <strong>agente de voz IA</strong> es un sistema de inteligencia artificial conversacional capaz de mantener conversaciones telefónicas o por voz de forma autónoma, en tiempo real y en lenguaje natural. No se trata de un simple menú de voz automático (IVR) que te pide que «pulse 1 para ventas». Hablamos de un agente que escucha, comprende el contexto de la conversación, razona sobre lo que necesita el interlocutor y responde de forma coherente, todo en cuestión de milisegundos.
+</p>
+<p>
+  La tecnología que hace posible esto combina tres componentes principales: el reconocimiento de voz (<em>Speech-to-Text</em>), que transcribe el audio en texto con gran precisión; el modelo de lenguaje grande (LLM), que procesa la intención del usuario y genera una respuesta apropiada; y la síntesis de voz (<em>Text-to-Speech</em>), que convierte esa respuesta en audio con una entonación natural y, en muchos casos, localizable al acento español o latinoamericano.
+</p>
+
+<h3>Diferencias entre un agente de voz IA y un chatbot tradicional</h3>
+<p>
+  La confusión es frecuente, pero la diferencia es sustancial. Un chatbot tradicional opera por texto, sigue flujos predefinidos y se bloquea ante preguntas fuera de su guión. Un agente de voz IA, en cambio, gestiona la fluidez natural del habla: interrupciones, cambios de tema, preguntas inesperadas, silencios o incluso la ironía. Además, puede integrarse con tus sistemas internos —CRM, calendarios, bases de datos de productos— para dar respuestas completamente personalizadas en función del historial de cada cliente.
+</p>
+
+<h2>Casos de uso reales para PYMEs españolas</h2>
+
+<h3>Atención al cliente y resolución de consultas</h3>
+<p>
+  El caso de uso más inmediato es la atención inbound: el agente recibe llamadas, identifica la necesidad del cliente —una queja, una consulta sobre un pedido, un problema técnico— y la resuelve de forma autónoma o la escala al equipo humano cuando la situación lo requiere. El resultado es una reducción drástica del tiempo de espera y una disponibilidad total fuera del horario comercial.
+</p>
+
+<div class="highlight-box">
+  <strong>Dato clave:</strong> Según estudios del sector, el 67% de los clientes cuelgan tras esperar más de dos minutos. Un agente de voz IA elimina prácticamente las colas de espera al poder gestionar múltiples llamadas simultáneas sin límite de capacidad.
+</div>
+
+<h3>Captación de leads y llamadas de ventas outbound</h3>
+<p>
+  Un agente de voz IA no solo recibe llamadas: también las realiza. Las campañas outbound automatizadas permiten contactar a cientos de prospectos en cuestión de horas, calificar su interés, resolver objeciones básicas y transferir únicamente a los leads cualificados al equipo comercial humano. Esta capacidad multiplica exponencialmente la productividad del departamento de ventas sin incrementar la plantilla.
+</p>
+<p>
+  En <strong>HisfIA</strong> hemos implementado soluciones de agente de voz outbound para clínicas, academias y negocios de servicios que han reducido el coste de adquisición de cliente hasta en un 40%, al eliminar el tiempo que los comerciales dedicaban a llamadas de prospección fría.
+</p>
+
+<img src='https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80' alt='Inteligencia artificial y redes neuronales' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Ventajas de implementar un agente de voz IA en tu empresa</h2>
+
+<h3>Disponibilidad 24/7 sin costes adicionales de personal</h3>
+<p>
+  El beneficio más evidente es la disponibilidad continua. Tu negocio no duerme, pero tus empleados sí. Un agente de voz IA opera los 365 días del año, a cualquier hora, con la misma calidad de servicio en la primera llamada del lunes que en la última del domingo por la noche. Para negocios con clientes en distintas franjas horarias o con picos de demanda imprevisibles, esto supone una ventaja competitiva inmediata.
+</p>
+
+<h3>Consistencia, escalabilidad y datos accionables</h3>
+<p>
+  A diferencia de un agente humano que puede tener un mal día, el agente de voz IA mantiene el mismo tono, el mismo protocolo y la misma precisión en cada interacción. Además, cada conversación queda registrada, transcrita y analizada, lo que genera un volumen de datos sobre las necesidades reales de tus clientes que antes era imposible de obtener de forma sistemática.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>Equipo humano</th>
+      <th>Agente de voz IA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Disponibilidad</td>
+      <td>Horario laboral</td>
+      <td>24/7 sin interrupciones</td>
+    </tr>
+    <tr>
+      <td>Llamadas simultáneas</td>
+      <td>1 por agente</td>
+      <td>Ilimitadas</td>
+    </tr>
+    <tr>
+      <td>Coste por llamada</td>
+      <td>Alto (salario + RRHH)</td>
+      <td>Muy reducido</td>
+    </tr>
+    <tr>
+      <td>Consistencia del mensaje</td>
+      <td>Variable</td>
+      <td>100% uniforme</td>
+    </tr>
+    <tr>
+      <td>Registro de conversaciones</td>
+      <td>Manual e incompleto</td>
+      <td>Automático y completo</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Cómo implementar un agente de voz IA paso a paso</h2>
+
+<img src='https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80' alt='Robot y automatización empresarial' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h3>Fase 1: Definir el caso de uso y el flujo conversacional</h3>
+<p>
+  Antes de lanzar cualquier agente, es fundamental delimitar con claridad qué problema va a resolver. ¿Recepción de llamadas de soporte? ¿Confirmación de citas? ¿Seguimiento de presupuestos pendientes? Cuanto más acotado sea el objetivo inicial, más rápido se obtienen resultados. A partir de ahí se diseña el flujo conversacional: las preguntas que hará el agente, las respuestas posibles, los puntos de escalado humano y la integración con los sistemas existentes.
+</p>
+
+<h3>Fase 2: Integración, entrenamiento y puesta en marcha</h3>
+<p>
+  La integración con herramientas como tu CRM, Google Calendar, HubSpot o cualquier sistema de gestión propio es lo que convierte al agente de voz en una pieza realmente útil dentro de tu operativa. En esta fase se conectan las APIs necesarias y se entrena al agente con el vocabulario, los productos y el tono de comunicación específico de tu marca.
+</p>
+<p>
+  En <strong>HisfIA</strong> acompañamos a las empresas durante todo este proceso: desde el diseño del flujo hasta la monitorización de las primeras semanas de operación, ajustando el comportamiento del agente en función de los datos reales de las conversaciones.
+</p>
+
+<h3>Fase 3: Monitorización y mejora continua</h3>
+<p>
+  Un agente de voz IA no es un producto que se instala y se olvida. Las primeras semanas son clave para identificar patrones inesperados, preguntas no cubiertas o fricciones en el flujo. Con los dashboards de análisis adecuados, el agente mejora continuamente y su tasa de resolución autónoma crece de forma progresiva.
+</p>
+
+<div class="cta-box">
+  <p style="font-size:1.2em; font-weight:bold; color:#c8a96e;">¿Listo para implementar un agente de voz IA en tu negocio?</p>
+  <p>En HisfIA diseñamos, integramos y gestionamos agentes de voz personalizados para PYMEs españolas. Sin tecnicismos, sin grandes inversiones iniciales.</p>
+  <a href="https://hisfia.com/contacto" rel="noopener">Solicita una consulta gratuita</a>
+</div>
+
+<h2>Consideraciones legales y buenas prácticas en España</h2>
+
+<h3>RGPD y obligación de informar al interlocutor</h3>
+<p>
+  En España, el uso de agentes de voz IA en llamadas comerciales está sujeto al Reglamento General de Protección de Datos (RGPD) y a la Ley de Servicios de la Sociedad de la Información. La normativa exige que el interlocutor sea informado de que está hablando con un sistema automatizado cuando así lo requiera. Además, las grabaciones de llamadas deben contar con el con
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
