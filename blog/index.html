@@ -10,47 +10,131 @@
   <meta property="og:type" content="website"/>
   <meta name="robots" content="index,follow"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <style>
+    
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--bg:#090b11;--bg2:#0f1219;--text:#f1f5f9;--text-2:#94a3b8;--text-3:#64748b;--accent:#6c8fff;--border:rgba(255,255,255,.07)}
-    body{background:var(--bg);color:var(--text);font-family:'DM Sans',system-ui,sans-serif}
-    nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
-    .logo{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:var(--text);text-decoration:none}
-    .logo span{background:linear-gradient(135deg,#6c8fff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-    .nav-link{font-size:13px;color:var(--text-2);text-decoration:none;padding:6px 14px;border-radius:8px;border:1px solid var(--border);font-family:'Space Grotesk',sans-serif}
-    .hero{max-width:740px;margin:60px auto 40px;padding:0 24px;text-align:center}
-    .hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(28px,5vw,42px);font-weight:700;background:linear-gradient(135deg,#f1f5f9,#94a3b8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:14px}
-    .hero p{font-size:16px;color:var(--text-2)}
-    .grid{max-width:740px;margin:0 auto;padding:0 24px 96px;display:grid;gap:20px}
-    .card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:24px;transition:border-color .15s}
-    .card:hover{border-color:rgba(108,143,255,.3)}
-    .card-date{font-size:11px;color:var(--text-3);font-family:'Space Grotesk',sans-serif;margin-bottom:8px}
-    .card-title{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;margin-bottom:10px}
-    .card-title a{color:var(--text);text-decoration:none}
-    .card-title a:hover{color:var(--accent)}
-    .card-desc{font-size:14px;color:var(--text-2);margin-bottom:14px;line-height:1.6}
-    .card-link{font-size:13px;color:var(--accent);text-decoration:none;font-family:'Space Grotesk',sans-serif;font-weight:500}
-    footer{text-align:center;padding:32px;font-size:12px;color:var(--text-3);border-top:1px solid var(--border);font-family:'Space Grotesk',sans-serif}
-    footer a{color:var(--accent)}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* BLOG INDEX */
+    .blog-hero{padding:140px 0 64px;text-align:center}
+    .blog-hero .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .blog-hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.06em;line-height:.93;color:var(--text);margin-bottom:16px}
+    .blog-hero p{font-size:1.05rem;color:var(--sub);max-width:520px;margin:0 auto}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;padding:0 0 96px}
+    .blog-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,box-shadow .2s,transform .2s;text-decoration:none}
+    .blog-card:hover{border-color:var(--c-border);box-shadow:0 4px 24px rgba(0,184,204,.1);transform:translateY(-2px)}
+    .blog-card-date{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+    .blog-card-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.03em;color:var(--text);line-height:1.3;flex:1}
+    .blog-card-desc{font-size:.9rem;color:var(--sub);line-height:1.65}
+    .blog-card-link{font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:600;color:var(--c)}
+    @media(max-width:768px){.blog-hero{padding:100px 0 48px}.blog-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-<nav>
-  <a class="logo" href="https://hisfia.com">Hisf<span>IA</span></a>
-  <a class="nav-link" href="https://hisfia.com">← Inicio</a>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
 </nav>
-<div class="hero">
-  <h1>Blog HisfIA</h1>
-  <p>Guías y recursos sobre inteligencia artificial para empresas españolas</p>
+<section class="blog-hero">
+  <div class="container">
+    <span class="label">Blog</span>
+    <h1>Recursos e Ideas<br>para tu negocio</h1>
+    <p>Guías y artículos sobre inteligencia artificial y automatización para empresas españolas</p>
+  </div>
+</section>
+<div class="container">
+  <div class="blog-grid">
+    <a class="blog-card" href="/blog/agentes-de-ia-para-empresas-guia-completa-2025/">
+      <div class="blog-card-date">27 de abril de 2026</div>
+      <h2 class="blog-card-title">Agentes de IA para Empresas | Guía Completa 2025</h2>
+      <p class="blog-card-desc">Descubre cómo los agentes de IA pueden transformar tu empresa. Guía completa con casos de uso, beneficios y cómo implementarlos.</p>
+      <span class="blog-card-link">Leer artículo →</span>
+    </a></div>
 </div>
-<div class="grid">
-  <article class="card">
-    <div class="card-date">2026-04-27</div>
-    <h2 class="card-title"><a href="/blog/agentes-de-ia-para-empresas-guia-completa-2025/">Agentes de IA para empresas: guía completa 2025</a></h2>
-    <p class="card-desc">Descubre qué son los agentes de IA para empresas, cómo funcionan, casos de uso reales y cómo implantarlos en tu negocio con HisfIA.</p>
-    <a class="card-link" href="/blog/agentes-de-ia-para-empresas-guia-completa-2025/">Leer artículo →</a>
-  </article></div>
-<footer>© 2026 HisfIA · <a href="https://hisfia.com">hisfia.com</a></footer>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
