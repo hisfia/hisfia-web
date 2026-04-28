@@ -1744,9 +1744,67 @@
       }
     }
 
-    @media(max-width:480px) {
+    @media(max-width:520px) {
+      /* Tabs en grid 3 columnas en lugar de scroll horizontal */
+      .agent-sidebar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        overflow-x: visible;
+        padding: 8px;
+        gap: 5px;
+        flex-direction: unset;
+      }
+
+      .agent-tab {
+        min-width: unset;
+        padding: 9px 6px;
+        border-radius: 10px;
+        gap: 4px;
+      }
+
+      .agent-tab-icon {
+        font-size: 1.2rem
+      }
+
+      .agent-tab-name {
+        font-size: .6rem;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        line-height: 1.3;
+        max-width: 100%;
+      }
+
+      .agent-detail {
+        padding: 20px 16px
+      }
+
       .agent-detail-title {
-        font-size: 1.25rem
+        font-size: 1.15rem
+      }
+
+      .agent-detail-text {
+        font-size: .82rem
+      }
+
+      .agent-detail-feats {
+        grid-template-columns: 1fr
+      }
+
+      .agent-detail-feat {
+        padding: 10px 12px;
+        font-size: .78rem
+      }
+
+      /* Bento cards: padding reducido */
+      .bento-chat,
+      .bento-cal,
+      .bento-invoice,
+      .bento-content {
+        padding: 18px
       }
     }
 
@@ -3182,10 +3240,9 @@
       color: var(--text)
     }
 
-    @media(min-width:641px) {
-      #sticky-cta {
-        display: none !important
-      }
+    /* sticky-cta oculto siempre en móvil — el urgency-bar superior ya lo cubre */
+    #sticky-cta {
+      display: none !important
     }
 
     /* ╔══════════════════════════════════════════════════════════╗
@@ -3853,13 +3910,19 @@
 
     @media(max-width:480px) {
       #fomo-wrap {
-        bottom: 80px;
+        bottom: auto;
+        top: 93px;
         left: 12px;
         right: 12px
       }
 
       .fomo-card {
-        max-width: 100%
+        max-width: 100%;
+        transform: translateY(-120%);
+      }
+
+      .fomo-card.show {
+        transform: translateY(0);
       }
     }
 
@@ -5568,6 +5631,83 @@
     text-transform: uppercase; letter-spacing: .07em;
     margin-top: 3px;
   }
+  /* ══ BLOG ══════════════════════════════════════════════════════════════ */
+  #blog { padding: 96px 0; }
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .blog-card {
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: border-color .2s, transform .2s;
+    text-decoration: none;
+  }
+  .blog-card:hover {
+    border-color: rgba(108,143,255,.35);
+    transform: translateY(-2px);
+  }
+  .blog-card-date {
+    font-size: 11px;
+    color: rgba(255,255,255,.35);
+    font-family: 'Space Grotesk', sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  .blog-card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #f1f5f9;
+    line-height: 1.35;
+    margin-bottom: 10px;
+    flex: 1;
+  }
+  .blog-card-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,.45);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  .blog-card-link {
+    font-size: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #6c8fff;
+  }
+  .blog-skeleton {
+    background: rgba(255,255,255,.04);
+    border-radius: 8px;
+    height: 14px;
+    margin-bottom: 8px;
+    animation: sk-pulse 1.5s ease infinite;
+  }
+  @keyframes sk-pulse { 0%,100%{opacity:.4} 50%{opacity:.9} }
+  .blog-all-link {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 12px 28px;
+    border-radius: 10px;
+    border: 1px solid rgba(108,143,255,.35);
+    color: #6c8fff;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .2s;
+  }
+  .blog-all-link:hover { background: rgba(108,143,255,.08); }
+  @media(max-width:640px) {
+    #blog { padding: 64px 0; }
+    .blog-grid { grid-template-columns: 1fr; }
+  }
   </style>
 </head>
 
@@ -5591,7 +5731,7 @@
 
   <!-- STICKY CTA (solo mobile) -->
   <div id="sticky-cta">
-    <p class="sticky-text">⚡ <strong>2 plazas</strong> disponibles para mayo.</p>
+    <p class="sticky-text">⚡ <strong>2 plazas</strong> disponibles para <span class="cohort-month">mayo</span>.</p>
     <a href="#garantia" class="btn btn-primary btn-sm">Reservar →</a>
   </div>
 
@@ -5635,10 +5775,8 @@
 
     <!-- Full-bleed background: Chica.mp4 -->
     <video class="hero-bg-vid" autoplay muted loop playsinline preload="auto" aria-hidden="true">
-      <source src="assets/hf_20260413_201808_1e72ec84-a9cb-4239-84af-23f301384991.mp4" type="video/mp4">
       <source src="assets/Chica.mp4" type="video/mp4">
-      <source src="http://178.104.88.233:8080/videos/hf_20260413_201808_1e72ec84-a9cb-4239-84af-23f301384991.mp4"
-        type="video/mp4">
+      <source src="https://office.hisfia.com/videos/Chica.mp4" type="video/mp4">
     </video>
 
     <!-- Cream overlay (left readable, right shows woman) -->
@@ -5656,7 +5794,7 @@
       <div class="hero-text">
 
         <div class="hero-eyebrow hero-fade-item">
-          <span class="hero-badge live" style="color:#ef4444;border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.08)">🔴 Solo 2 plazas para mayo</span>
+          <span class="hero-badge live" style="color:#ef4444;border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.08)">🔴 Solo 2 plazas para <span class="cohort-month">mayo</span></span>
           <span class="hero-badge ai">Garantía 30 días · Sin letra pequeña</span>
         </div>
 
@@ -5801,11 +5939,9 @@
   <section id="capacidades" aria-labelledby="cap-h">
     <div class="container">
       <div class="section-head reveal-up" style="margin-bottom:12px">
-        <span class="label">Tu equipo de agentes IA</span>
-        <h2 class="section-title" id="cap-h">Conoce a tu equipo.<br><span class="ac">Cada agente, un
-            especialista.</span></h2>
-        <p class="cap-intro">Tu oficina virtual está formada por 6 agentes IA, cada uno entrenado para una función
-          crítica de tu negocio. Trabajan juntos, 24/7, sin descanso:</p>
+        <span class="label">Tu oficina virtual · 24/7</span>
+        <h2 class="section-title" id="cap-h">Como tener un equipo de 6 personas.<br><span class="ac">Sin contratar a nadie.</span></h2>
+        <p class="cap-intro">Tu oficina virtual HisfIA funciona como un equipo de trabajo completo que nunca descansa: atiende a tus clientes, llena tu agenda, cobra facturas y publica contenido — mientras tú duermes, descansas o te centras en lo que importa. Los 365 días del año.</p>
       </div>
 
       <!-- ── BENTO GRID — Simulated UI ── -->
@@ -6358,7 +6494,7 @@
             <video id="sec-video" autoplay muted loop playsinline preload="auto"
               style="width:100%; height:100%; object-fit:cover; transition:opacity .5s">
               <source src="assets/HisfIA%20Automatiza%20tu%20negocio%20.mp4" type="video/mp4">
-              <source src="http://178.104.88.233:8080/videos/HisfIA%20Automatiza%20tu%20negocio%20.mp4"
+              <source src="https://office.hisfia.com/videos/HisfIA%20Automatiza%20tu%20negocio%20.mp4"
                 type="video/mp4">
             </video>
           </div>
@@ -6909,6 +7045,23 @@
     </div>
   </section>
 
+  <!-- ══════════ BLOG ══════════ -->
+  <section id="blog" aria-labelledby="blog-h">
+    <div class="container">
+      <div class="section-label">Blog</div>
+      <h2 class="section-title" id="blog-h">Recursos e Ideas<br><span class="ac">para tu negocio</span></h2>
+      <p class="section-sub">Guías y artículos sobre inteligencia artificial y automatización para empresas españolas</p>
+      <div class="blog-grid" id="blog-grid">
+        <div class="blog-card"><div class="blog-skeleton" style="width:40%"></div><div class="blog-skeleton" style="width:90%"></div><div class="blog-skeleton" style="width:70%"></div></div>
+        <div class="blog-card"><div class="blog-skeleton" style="width:40%"></div><div class="blog-skeleton" style="width:85%"></div><div class="blog-skeleton" style="width:65%"></div></div>
+        <div class="blog-card"><div class="blog-skeleton" style="width:40%"></div><div class="blog-skeleton" style="width:92%"></div><div class="blog-skeleton" style="width:75%"></div></div>
+      </div>
+      <div style="text-align:center">
+        <a href="/blog/" class="blog-all-link">Ver todos los artículos →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ══════════ URGENCIA (al final, antes del CTA) ══════════ -->
   <section id="urgencia" aria-labelledby="urg-h">
     <div class="shoot-wrap" aria-hidden="true">
@@ -6963,7 +7116,7 @@
       </div>
 
       <div class="urg-cta-wrap reveal">
-        <a href="#garantia" class="urg-cta">Quiero mi plaza de mayo →</a>
+        <a href="#garantia" class="urg-cta">Quiero mi plaza de <span class="cohort-month">mayo</span> →</a>
         <div class="urg-meta">
           <span>Solo 2 plazas libres</span><span class="urg-meta-dot"></span>
           <span>Garantía 30 días</span><span class="urg-meta-dot"></span>
@@ -7265,7 +7418,7 @@
         btn.textContent = 'Enviando…'; btn.disabled = true;
         try {
           const fd = new FormData(gForm);
-          const res = await fetch('https://hisfia-booking.vercel.app/api/lead', {
+          const res = await fetch('https://booking.hisfia.com/api/lead', {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nombre: fd.get('nombre'), email: fd.get('email'), telefono: fd.get('telefono'), sector: fd.get('sector'), source: 'web-form' })
           });
@@ -7320,6 +7473,8 @@
 
     /* ─── FOMO NOTIFICATIONS ─── */
     (function () {
+      var _fMos = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      var _curM = _fMos[new Date().getMonth()];
       var fomoData = [
         { initials: 'AC', name: 'Ana C.', action: '🔴 reservó la última plaza disponible', loc: 'Barcelona', delay: 10000 },
         { initials: 'JL', name: 'Javier L.', action: 'activó su oficina virtual esta semana', loc: 'Madrid', delay: 25000 },
@@ -7327,7 +7482,7 @@
         { initials: 'RS', name: 'Roberto S.', action: '🔴 pidió plaza antes de que suba el precio', loc: 'Sevilla', delay: 60000 },
         { initials: 'LP', name: 'Laura P.', action: 'automatizó su WhatsApp y agenda en 48h', loc: 'Bilbao', delay: 80000 },
         { initials: 'CF', name: 'Carlos F.', action: '⚡ se incorporó este mes — ya hay resultados', loc: 'Zaragoza', delay: 100000 },
-        { initials: 'SG', name: 'Sara G.', action: '🔴 reservó la penúltima plaza de mayo', loc: 'Málaga', delay: 125000 },
+        { initials: 'SG', name: 'Sara G.', action: '🔴 reservó la penúltima plaza de ' + _curM, loc: 'Málaga', delay: 125000 },
       ];
       var wrap = document.getElementById('fomo-wrap');
       if (!wrap) return;
@@ -7782,7 +7937,7 @@
           fd.append('volumen', answers.volumen);
           fd.append('tipo', 'Quiz diagnóstico IA');
 
-          fetch('https://hisfia-booking.vercel.app/api/lead', {
+          fetch('https://booking.hisfia.com/api/lead', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -7815,6 +7970,32 @@
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && overlay.classList.contains('open')) closeQuiz();
       });
+    })();
+  </script>
+
+  <!-- Blog: cargar últimos artículos -->
+  <script>
+    (async () => {
+      const grid = document.getElementById('blog-grid');
+      if (!grid) return;
+      try {
+        const r = await fetch('/blog/articles.json');
+        if (!r.ok) throw new Error();
+        const articles = await r.json();
+        const latest = articles.slice(0, 3);
+        if (!latest.length) { grid.innerHTML = ''; return; }
+        grid.innerHTML = latest.map(a => {
+          const date = a.date ? new Date(a.date).toLocaleDateString('es-ES', {day:'numeric',month:'long',year:'numeric'}) : '';
+          return `<a class="blog-card" href="${a.url || '/blog/' + a.slug + '/'}">
+            <div class="blog-card-date">${date}</div>
+            <div class="blog-card-title">${a.title}</div>
+            <div class="blog-card-desc">${a.meta_desc || ''}</div>
+            <span class="blog-card-link">Leer artículo →</span>
+          </a>`;
+        }).join('');
+      } catch(e) {
+        grid.innerHTML = '<p style="color:rgba(255,255,255,.3);text-align:center;grid-column:1/-1;padding:32px 0">Próximamente...</p>';
+      }
     })();
   </script>
 </body>
