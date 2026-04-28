@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Marketing Digital con Inteligencia Artificial — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo el marketing digital con inteligencia artificial transforma la estrategia de las empresas españolas. Guía completa para PYMEs."/>
+  <meta property="og:title" content="Marketing Digital con Inteligencia Artificial"/>
+  <meta property="og:description" content="Descubre cómo el marketing digital con inteligencia artificial transforma la estrategia de las empresas españolas. Guía completa para PYMEs."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/marketing-digital-con-inteligencia-artificial/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/marketing-digital-con-inteligencia-artificial/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Marketing Digital con Inteligencia Artificial", "description": "Descubre cómo el marketing digital con inteligencia artificial transforma la estrategia de las empresas españolas. Guía completa para PYMEs.", "datePublished": "2026-04-28", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 28 de abril de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Marketing Digital con Inteligencia Artificial</title>
+</head>
+<body>
+
+<article>
+
+<h1>Marketing Digital con Inteligencia Artificial</h1>
+
+<p class='intro'>
+El marketing digital con inteligencia artificial ha dejado de ser una tendencia futura para convertirse en una realidad presente que las empresas no pueden ignorar. En España, miles de PYMEs están descubriendo que integrar la IA en sus estrategias de marketing no solo reduce costes operativos, sino que multiplica la eficacia de cada acción comercial. Desde la personalización masiva de campañas hasta la automatización de la atención al cliente, la inteligencia artificial redefine por completo cómo las marcas conectan con sus audiencias. En este artículo encontrarás una guía completa y práctica sobre cómo aplicar la IA en tu estrategia de marketing digital, qué herramientas existen, cuáles son los casos de uso más rentables y cómo empresas como HisfIA están ayudando a negocios españoles a dar ese salto tecnológico con éxito.
+</p>
+
+<h2>Qué es el marketing digital con inteligencia artificial</h2>
+
+<h3>Definición y alcance real para las empresas</h3>
+<p>
+El marketing digital con inteligencia artificial engloba el conjunto de técnicas, herramientas y estrategias que utilizan algoritmos de aprendizaje automático, procesamiento del lenguaje natural y análisis predictivo para planificar, ejecutar y optimizar acciones de marketing. A diferencia del marketing digital tradicional, donde las decisiones dependían exclusivamente del criterio humano y de datos históricos simples, la IA permite procesar millones de señales en tiempo real y tomar decisiones automatizadas con una precisión que ningún equipo humano podría alcanzar a esa escala.
+</p>
+<p>
+Para una PYME española, esto se traduce en campañas publicitarias que se autooptmizan, contenidos generados o sugeridos por IA, segmentaciones de audiencia hiperdetalladas y chatbots capaces de cerrar ventas a las tres de la madrugada. El alcance es enorme y el acceso, cada vez más asequible.
+</p>
+
+<h3>La diferencia entre automatización de marketing e IA aplicada al marketing</h3>
+<p>
+Es importante no confundir la automatización de marketing clásica con la inteligencia artificial aplicada al marketing. La automatización tradicional ejecuta secuencias predefinidas: si el usuario hace X, entonces ocurre Y. La IA, en cambio, aprende, predice y adapta su comportamiento en función de los datos. Un sistema de IA puede detectar que un usuario está a punto de abandonar el proceso de compra y lanzar una oferta personalizada en ese preciso instante, sin que ningún humano haya programado esa regla específica.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/8ba2105b_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Principales aplicaciones de la IA en marketing digital</h2>
+
+<h3>Personalización y segmentación avanzada de audiencias</h3>
+<p>
+Una de las aplicaciones más potentes de la inteligencia artificial en marketing es la personalización a escala. Los sistemas de IA analizan el comportamiento de cada usuario, sus interacciones previas, el dispositivo que usa, el momento del día y docenas de variables más para ofrecer el mensaje correcto en el momento preciso. Plataformas como Google Ads y Meta Ads ya incorporan IA en su núcleo, pero las empresas que van más allá e integran capas adicionales de inteligencia obtienen ventajas competitivas significativas.
+</p>
+<p>
+La segmentación predictiva permite identificar qué usuarios tienen más probabilidad de convertir antes de que ellos mismos lo sepan. Esto reduce el coste por adquisición y mejora el retorno de inversión publicitaria de forma medible.
+</p>
+
+<h3>Creación y optimización de contenidos con IA</h3>
+<p>
+Los modelos de lenguaje de gran escala han transformado radicalmente la producción de contenidos. Hoy es posible generar borradores de artículos, descripciones de producto, copys publicitarios, guiones para vídeo o posts para redes sociales en una fracción del tiempo que requería antes. Pero la IA no solo crea: también analiza qué contenidos funcionan mejor, en qué formato, para qué audiencia y en qué canal, y retroalimenta la estrategia de contenidos de forma continua.
+</p>
+<p>
+Desde HisfIA trabajamos con empresas españolas para implementar flujos de trabajo donde la IA asiste a los equipos de marketing en la creación de contenidos, manteniendo siempre la supervisión y el criterio humano en el proceso editorial final.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/87e59298_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>IA en publicidad digital y gestión de campañas</h2>
+
+<h3>Optimización automática de pujas y presupuestos</h3>
+<p>
+Los algoritmos de optimización de pujas en tiempo real son uno de los usos más maduros y rentables de la IA en marketing digital. Google Smart Bidding, por ejemplo, ajusta las pujas de cada subasta publicitaria en función de señales contextuales como la ubicación del usuario, su historial de búsqueda, el dispositivo o la hora. Esto permite maximizar conversiones o valor de conversión dentro de los presupuestos establecidos, algo imposible de gestionar manualmente a esa velocidad y escala.
+</p>
+<p>
+Para las PYMEs, esto significa que con presupuestos modestos se puede competir de forma más inteligente, concentrando la inversión donde mayor probabilidad de conversión existe.
+</p>
+
+<h3>Anuncios generativos y creatividades dinámicas</h3>
+<p>
+La IA generativa está revolucionando la producción de piezas publicitarias. Los anuncios de búsqueda adaptables de Google o los anuncios dinámicos de Meta son ejemplos de cómo la IA combina distintos titulares, descripciones e imágenes para construir la creatividad más eficaz para cada usuario en cada momento. A nivel más avanzado, herramientas especializadas permiten generar variantes visuales de anuncios a gran velocidad, realizar tests A/B masivos y escalar las versiones ganadoras sin intervención manual constante.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/5285a1fe_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Automatización del funnel de ventas con agentes de IA</h2>
+
+<h3>Chatbots y agentes conversacionales para captación y conversión</h3>
+<p>
+Los agentes de IA conversacionales han superado con creces a los chatbots basados en reglas de generaciones anteriores. Los actuales, basados en modelos de lenguaje avanzados, son capaces de mantener conversaciones naturales, resolver dudas complejas, calificar leads, recomendar productos y guiar al usuario a través del proceso de compra de forma autónoma. Esto amplía el horario de atención a las 24 horas del día, los 7 días de la semana, sin coste incremental por cada interacción adicional.
+</p>
+<p>
+En HisfIA desarrollamos e implantamos agentes de IA personalizados para empresas españolas que integran estos asistentes en sus sitios web, WhatsApp Business, CRM y plataformas de ecommerce, con resultados medibles en tasa de conversión y reducción del coste de atención.
+</p>
+
+<h3>Email marketing inteligente y nutrición automatizada de leads</h3>
+<p>
+El email marketing potenciado con IA permite enviar el mensaje adecuado a la persona correcta en el momento óptimo. Los sistemas predictivos determinan cuándo cada usuario tiene más probabilidad de abrir un correo, qué tipo de contenido le resulta más relevante y en qué punto del funnel se encuentra. La combinación de segmentación dinámica, personalización de contenido y optimización del horario de envío puede incrementar significativamente las tasas de apertura, clic y conversión respecto a las campañas de email tradicionales.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/74309d3e_dall-e_3_jan_24_artificial_intelligence_.png' alt='Dall e 3 (jan 24) artificial intelligence icon' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Analítica predictiva y toma de decisiones basada en datos</h2>
+
+<h3>De los datos históricos a la inteligencia predictiva</h3>
+<p>
+La analítica tradicional describe lo que ha ocurrido. La analítica predictiva basada en IA anticipa lo que va a ocurrir. Para un equipo de marketing, esto supone un cambio de paradigma: en lugar de reaccionar a los resultados, es posible anticiparse a ellos. Los modelos predictivos pueden estimar qué clientes van a abandonar (churn), qué productos tendrán mayor demanda en las próximas semanas o qué campañas tienen más probabilidad de alcanzar sus objetivos antes de lanzarlas.
+</p>
+
+<h3>Cuadros de mando inteligentes y reporting automatizado</h3>
+<p>
+La generación de informes de marketing es una tarea que consume una cantidad desproporcionada de tiempo en muchos departamentos. Los sistemas de inteligencia artificial permiten automatizar la recopilación de datos de múltiples fuentes, generar narrativas explicativas sobre los resultados y destacar automáticamente las anomalías o tendencias más relevantes. El equipo de marketing puede así dedicar su tiempo a la interpretación estratégica y la toma de decisiones, en lugar de a la construcción manual de tablas y gráficos.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/92ac9946_dall-e_3_jan_24_artificial_intelligence_.png' alt='Dall e 3 (jan 24) artificial intelligence icon' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo implementar una estrategia de marketing digital con IA en tu empresa</h2>
+
+<h3>Pasos para empezar sin caer en errores comunes</h3>
+<p>
+El mayor error que cometen las empresas al incorporar IA en su marketing es intentar implementarlo todo a la vez. La recomendación es identificar primero los cuellos de botella más dolorosos del proceso de marketing actual: ¿dónde se pierde más tiempo? ¿dónde los resultados son más impredecibles? ¿qué tarea repetitiva consume más recursos humanos? A partir de ahí, se priorizan los casos de uso de IA con mayor impacto y menor complejidad de implementación.
+</p>
+<p>
+Es igualmente esencial asegurarse de que la base de datos está ordenada y que los sistemas existentes están correctamente integrados antes de superponer capas de inteligencia artificial. La IA no corrige datos malos: los amplifica.
+</p>
+
+<h3>El papel de una agencia especializada en la transformación digital</h3>
+<p>
+Contar con un socio tecnológico especializado marca la diferencia entre una implementación exitosa y un proyecto que se abandona a los seis meses. Desde HisfIA acompañamos a las PYMEs españolas en todo el proceso: desde el diagnóstico inicial y la definición de casos de uso prioritarios hasta la implementación técnica, la formación de los equipos y el seguimiento de resultados. Nuestra especialización en agentes de IA, automatización de procesos y transformación digital nos permite ofrecer soluciones adaptadas a la realidad y el presupuesto de cada empresa.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/19941709_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<div class='faq'>
+
+<h2>Preguntas frecuentes sobre marketing digital con inteligencia artificial</h2>
+
+<h3>¿Qué es el marketing digital con inteligencia artificial?</h3>
+<p>
+El marketing digital con inteligencia artificial es la aplicación de tecnologías de aprendizaje automático, análisis predictivo y procesamiento del lenguaje natural a las estrategias y acciones de marketing. Permite personalizar campañas a escala, automatizar tareas repetitivas, optimizar la inversión publicitaria en tiempo real y tomar decisiones basadas en datos con mayor precisión y velocidad que los métodos tradicionales.
+</p>
+
+<h3>¿Pueden las PYMEs españolas permitirse implementar IA en su marketing?</h3>
+<p>
+Sí. Muchas de las herramientas de IA para marketing ya están integradas en plataformas que las PYMEs utilizan habitualmente, como Google Ads, Meta Ads, Mailchimp o HubSpot, sin coste adicional. Para implementaciones más avanzadas, como agentes conversacionales o automatizaciones personalizadas, existen soluciones escalables con inversiones iniciales asequibles y retorno medible a corto plazo.
+</p>
+
+<h3>¿La inteligencia artificial va a sustituir a los equipos de marketing?</h3>
+<p>
+No. La IA sustituye tareas, no personas. Los equipos de marketing que trabajan junto a la inteligencia artificial multiplican su capacidad operativa y pueden concentrarse en las actividades de mayor valor estratégico: la creatividad, la interpretación de datos, la construcción de marca y las relaciones con los clientes. Las empresas que combinan talento humano con herramientas de IA obtienen resultados significativamente superiores a las que dependen exclusivamente de uno u otro.
+</p>
+
+<h3>¿Por dónde debe empezar una empresa que quiere usar IA en su marketing digital?</h3>
+<p>
+El punto de partida recomendado es identificar la tarea de marketing que más tiempo consume o donde los resultados son menos predecibles. Los casos de uso más comunes para empezar son la automatización del email marketing, los chatbots de captación en la web y la optimización automatizada de campañas de pago. A partir de esos primeros casos exitosos, la integración de la IA en el resto del proceso de marketing se vuelve más natural y progresiva.
+</p>
+
+</div>
+
+</article>
+
+</body>
+</html>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
