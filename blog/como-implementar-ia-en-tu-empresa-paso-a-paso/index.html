@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cómo implementar IA en tu empresa paso a paso — HisfIA Blog</title>
+  <meta name="description" content="Guía práctica para implementar inteligencia artificial en tu empresa. Descubre los pasos clave, herramientas y errores a evitar para transformar tu negocio con IA."/>
+  <meta property="og:title" content="Cómo implementar IA en tu empresa paso a paso"/>
+  <meta property="og:description" content="Guía práctica para implementar inteligencia artificial en tu empresa. Descubre los pasos clave, herramientas y errores a evitar para transformar tu negocio con IA."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/como-implementar-ia-en-tu-empresa-paso-a-paso/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/como-implementar-ia-en-tu-empresa-paso-a-paso/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Cómo implementar IA en tu empresa paso a paso", "description": "Guía práctica para implementar inteligencia artificial en tu empresa. Descubre los pasos clave, herramientas y errores a evitar para transformar tu negocio con IA.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>Cómo implementar inteligencia artificial en tu empresa paso a paso</h1>
+
+<p class="intro">
+La inteligencia artificial ha dejado de ser una tecnología reservada para grandes corporaciones. Hoy, cualquier empresa, incluso una PYME con recursos limitados, puede implementar soluciones de IA que reduzcan costes, automaticen tareas repetitivas y mejoren la toma de decisiones. Sin embargo, muchos responsables de negocio no saben por dónde empezar. ¿Se necesita un equipo técnico especializado? ¿Cuánto cuesta realmente? ¿Qué procesos tiene sentido automatizar primero? En esta guía encontrarás un plan claro, ordenado y realista para llevar la inteligencia artificial a tu empresa sin caer en los errores más comunes. Desde el diagnóstico inicial hasta la medición de resultados, te explicamos cada fase con ejemplos prácticos aplicables a negocios de cualquier sector y tamaño.
+</p>
+
+<img src='https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80' alt='Inteligencia artificial implementada en empresa' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Paso 1: Diagnóstico y definición de objetivos</h2>
+
+<p>Antes de elegir ninguna herramienta ni contratar ningún servicio, el primer paso es entender qué problemas reales quieres resolver en tu empresa. La inteligencia artificial no es una solución genérica: es un conjunto de tecnologías que funcionan bien cuando se aplican a problemas concretos y medibles.</p>
+
+<h3>Identifica los cuellos de botella de tu negocio</h3>
+<p>Haz un inventario de los procesos que consumen más tiempo, generan más errores o resultan más costosos. Los candidatos habituales en empresas españolas incluyen la atención al cliente, la clasificación de correos electrónicos, la generación de presupuestos, la gestión de inventario o el análisis de ventas. Prioriza aquellos donde una mejora del 20 o 30 por ciento tendría un impacto directo en la rentabilidad.</p>
+
+<h3>Define métricas de éxito antes de empezar</h3>
+<p>Un proyecto de IA sin métricas claras es un proyecto sin rumbo. Antes de implementar nada, decide cómo vas a medir el éxito: tiempo ahorrado por semana, reducción del coste por lead, tasa de resolución automática en atención al cliente o incremento en la velocidad de generación de contenidos. Estas métricas serán las que justifiquen la inversión ante la dirección y orienten las decisiones técnicas del proyecto.</p>
+
+<h2>Paso 2: Formación y cultura interna</h2>
+
+<p>Uno de los mayores obstáculos en la adopción de IA no es técnico, sino humano. Los equipos que no entienden para qué sirve la tecnología tienden a resistirse a usarla o a usarla mal. La formación no es un lujo: es un requisito previo.</p>
+
+<h3>Formación básica para todo el equipo</h3>
+<p>No todos los empleados necesitan saber programar, pero sí deben entender qué es la IA, qué puede y qué no puede hacer, y cómo les afectará en su día a día. Existen recursos gratuitos y cursos breves que permiten nivelar el conocimiento del equipo en pocas semanas. Una sesión interna de una o dos horas explicando casos de uso reales en vuestro sector ya marca una diferencia significativa en la disposición del equipo.</p>
+
+<h3>Designa un responsable o champion de IA</h3>
+<p>En empresas pequeñas y medianas, conviene designar a una persona como referente interno del proyecto de transformación digital con IA. Esta figura no tiene por qué ser un técnico: puede ser alguien con curiosidad tecnológica, capacidad de comunicación y conocimiento profundo del negocio. Su rol es conectar las necesidades del equipo con las soluciones disponibles y mantener el impulso del proyecto.</p>
+
+<img src='https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80' alt='Equipo empresarial adoptando tecnología IA' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Paso 3: Selección de herramientas y casos de uso prioritarios</h2>
+
+<p>Con el diagnóstico hecho y el equipo alineado, llega el momento de elegir las soluciones tecnológicas adecuadas. El mercado ofrece cientos de herramientas de IA, y la clave está en elegir las que se integran con tus sistemas actuales y abordan los casos de uso que ya has priorizado.</p>
+
+<h3>Herramientas de IA más usadas por PYMEs en 2025</h3>
+<p>Entre las soluciones más adoptadas por empresas medianas en España destacan los asistentes de IA generativa para contenidos y comunicaciones, los chatbots inteligentes para atención al cliente, las herramientas de automatización de flujos de trabajo como n8n o Make con integración de modelos de lenguaje, y los sistemas de análisis predictivo para ventas e inventario. La elección dependerá de tu sector, el volumen de datos disponibles y el presupuesto asignado.</p>
+
+<h3>Empieza con un piloto pequeño y escalable</h3>
+<p>El error más frecuente es querer transformar toda la empresa de golpe. La estrategia más efectiva consiste en elegir un único caso de uso, implementarlo en un equipo o departamento reducido, medir resultados durante cuatro a ocho semanas y, solo si los resultados son positivos, expandir la solución al resto de la organización. Este enfoque reduce el riesgo, permite aprender rápido y genera evidencias internas que facilitan la aprobación de nuevas inversiones.</p>
+
+<h2>Paso 4: Implementación técnica y automatización de procesos</h2>
+
+<p>Una vez elegidas las herramientas y definido el piloto, comienza la fase de implementación. Aquí es donde muchas empresas buscan apoyo externo especializado, ya que la integración técnica requiere conocimientos que no siempre existen en el equipo interno.</p>
+
+<h3>Integración con los sistemas existentes</h3>
+<p>La mayoría de las empresas ya utilizan un CRM, un ERP o herramientas de comunicación como Microsoft Teams o Google Workspace. Una implementación de IA exitosa no sustituye estos sistemas, sino que se integra con ellos para potenciarlos. Es fundamental verificar que las APIs de las herramientas elegidas son compatibles con tu stack tecnológico actual y que los datos que alimentarán a la IA están disponibles en un formato estructurado y accesible.</p>
+
+<h3>Automatización de flujos de trabajo con agentes de IA</h3>
+<p>Los agentes de IA representan el nivel más avanzado de automatización: son sistemas capaces de ejecutar tareas complejas de forma autónoma, tomando decisiones en función del contexto y coordinándose con otras herramientas. Desde HisfIA diseñamos e implementamos agentes de IA personalizados para empresas españolas, integrando automatización de procesos, generación de contenidos y análisis de datos en flujos de trabajo completamente operativos y adaptados a cada negocio.</p>
+
+<img src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80' alt='Análisis de datos y resultados con IA' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Paso 5: Medición, optimización y escalado</h2>
+
+<p>Implementar la IA no es el final del proceso: es el comienzo de un ciclo continuo de mejora. Los modelos de IA se optimizan con el tiempo a medida que procesan más datos y reciben retroalimentación del equipo humano.</p>
+
+<h3>Revisa los KPIs definidos en la fase inicial</h3>
+<p>A las cuatro semanas del lanzamiento del piloto, revisa en detalle las métricas que definiste en el paso uno. ¿Se ha reducido el tiempo de respuesta al cliente? ¿Ha aumentado la tasa de conversión? ¿Se han reducido los errores manuales en el proceso automatizado? Los datos reales son la única forma objetiva de evaluar si la implementación está funcionando y qué ajustes son necesarios.</p>
+
+<h3>Escala lo que funciona, descarta lo que no</h3>
+<p>No todas las implementaciones de IA funcionan a la primera. Un piloto que no da resultados no es un fracaso: es información valiosa sobre qué no hacer. Documenta los aprendizajes, ajusta el enfoque y prueba nuevas variantes. Cuando una solución demuestre su valor en el piloto, diseña el plan de escalado para extenderla al conjunto de la organización de forma gradual y con soporte técnico continuo.</p>
+
+<h2>Errores frecuentes que debes evitar</h2>
+
+<p>Conocer los errores más habituales en proyectos de IA empresarial puede ahorrarte meses de trabajo y miles de euros. Los más comunes son: implementar IA sin haber ordenado previamente los procesos que se quieren automatizar; elegir herramientas por su popularidad en lugar de por su adecuación al problema concreto; subestimar la importancia de la calidad de los datos; no involucrar al equipo desde el principio; y esperar resultados inmediatos sin dar tiempo suficiente a la fase de aprendizaje y ajuste.</p>
+
+<p>En <b>HisfIA</b> acompañamos a empresas a lo largo de todo este proceso, desde el diagnóstico inicial hasta la implementación y la formación del equipo, con soluciones pensadas específicamente para la realidad de las PYMEs españolas.</p>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+<h2>Preguntas frecuentes sobre la implementación de IA en empresas</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto cuesta implementar inteligencia artificial en una empresa pequeña?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">El coste de implementar IA en una PYME varía enormemente según el alcance del proyecto. Soluciones básicas como chatbots o automatización de correos pueden implementarse desde unos pocos cientos de euros al mes. Proyectos más complejos con agentes de IA personalizados o integración con sistemas internos pueden requerir una inversión inicial de entre 3.000 y 15.000 euros, con costes de mantenimiento mensual variables. Lo importante es empezar con un piloto acotado que permita demostrar el retorno antes de escalar la inversión.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Qué procesos empresariales son los más fáciles de automatizar con IA?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Los procesos más sencillos de automatizar con IA en una primera fase son aquellos repetitivos, basados en reglas claras y con datos estructurados disponibles. Los más habituales son la atención al cliente mediante chatbots, la clasificación y respuesta de correos electrónicos, la generación de informes y reportes periódicos, la extracción de datos de documentos como facturas o contratos, y la publicación y gestión de contenidos en redes sociales.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Necesito un equipo técnico interno para implementar IA en mi empresa?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No es imprescindible contar con un equipo técnico interno para empezar a implementar IA. Muchas herramientas actuales son accesibles sin necesidad de programar, y existen agencias especializadas como HisfIA que se encargan del diseño, la implementación y el mantenimiento de las soluciones. Lo que sí es necesario es designar un responsable interno que coordine el proyecto, entienda las necesidades del negocio y sirva de enlace con el equipo técnico externo.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto tiempo se tarda en ver resultados al implementar IA en una empresa?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Con un enfoque de piloto bien definido, es posible ver primeros resultados medibles en un plazo de cuatro a ocho semanas desde la puesta en marcha. Automatizaciones sencillas como chatbots o flujos de correo pueden mostrar impacto desde la primera semana. Proyectos más complejos con agentes de IA o modelos predictivos requieren entre uno y tres meses para alcanzar un funcionamiento estable y generar datos suficientes para evaluar el retorno de la inversión.</p>
+</div>
+</div>
+
+</div>
+
+</article>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
