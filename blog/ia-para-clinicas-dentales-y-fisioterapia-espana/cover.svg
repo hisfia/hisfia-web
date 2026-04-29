@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050d1a"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <filter id="bl"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <rect width="800" height="420" fill="url(#bg)"/>
+  <circle cx="200" cy="180" r="180" fill="#00b8cc" opacity="0.07" filter="url(#bl)"/>
+  <circle cx="620" cy="280" r="150" fill="#00e5a0" opacity="0.07" filter="url(#bl)"/>
+  <g stroke="#00b8cc" stroke-width="0.4" opacity="0.1"><line x1="0" y1="84" x2="800" y2="84"/><line x1="0" y1="168" x2="800" y2="168"/><line x1="0" y1="252" x2="800" y2="252"/><line x1="0" y1="336" x2="800" y2="336"/><line x1="160" y1="0" x2="160" y2="420"/><line x1="320" y1="0" x2="320" y2="420"/><line x1="480" y1="0" x2="480" y2="420"/><line x1="640" y1="0" x2="640" y2="420"/></g>
+  
+  <circle cx="400" cy="200" r="60" fill="none" stroke="#00b8cc" stroke-width="2" opacity="0.5"/>
+  <circle cx="400" cy="200" r="24" fill="#00b8cc" opacity="0.12"/>
+  <circle cx="400" cy="200" r="24" fill="none" stroke="#00b8cc" stroke-width="2" opacity="0.6"/>
+  <g fill="#00b8cc" opacity="0.5">
+    <rect x="392" y="128" width="16" height="24" rx="4"/>
+    <rect x="392" y="248" width="16" height="24" rx="4"/>
+    <rect x="328" y="192" width="24" height="16" rx="4"/>
+    <rect x="448" y="192" width="24" height="16" rx="4"/>
+    <rect x="343" y="143" width="16" height="24" rx="4" transform="rotate(45 351 155)"/>
+    <rect x="441" y="143" width="16" height="24" rx="4" transform="rotate(-45 449 155)"/>
+    <rect x="343" y="233" width="16" height="24" rx="4" transform="rotate(-45 351 245)"/>
+    <rect x="441" y="233" width="16" height="24" rx="4" transform="rotate(45 449 245)"/>
+  </g>
+  <circle cx="530" cy="290" r="35" fill="none" stroke="#00e5a0" stroke-width="1.5" opacity="0.45"/>
+  <circle cx="530" cy="290" r="14" fill="none" stroke="#00e5a0" stroke-width="1.5" opacity="0.5"/>
+  <line x1="460" y1="240" x2="500" y2="265" stroke="#00b8cc" stroke-width="1.5" opacity="0.35" stroke-dasharray="4 4"/>
+  <text x="400" y="390" font-family="'Space Grotesk',sans-serif" font-size="11" fill="#00b8cc" opacity="0.45" text-anchor="middle" letter-spacing="3">IA PARA EL SECTOR SALUD CLÍNICAS DENTALE</text>
+</svg>
