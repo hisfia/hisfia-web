@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Marketing Digital con IA para Negocios Locales — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo automatizar tu marketing digital con IA si tienes un negocio local en España. Estrategias reales, herramientas y casos prácticos."/>
+  <meta property="og:title" content="Marketing Digital con IA para Negocios Locales"/>
+  <meta property="og:description" content="Descubre cómo automatizar tu marketing digital con IA si tienes un negocio local en España. Estrategias reales, herramientas y casos prácticos."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/marketing-digital-con-ia-para-negocios-locales/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/marketing-digital-con-ia-para-negocios-locales/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Marketing Digital con IA para Negocios Locales", "description": "Descubre cómo automatizar tu marketing digital con IA si tienes un negocio local en España. Estrategias reales, herramientas y casos prácticos.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/BlogPosting">
+
+<h1 itemprop="headline">Marketing digital automatizado con IA para negocios locales</h1>
+
+<p class="intro" itemprop="description">
+El marketing digital ya no es exclusivo de grandes marcas con presupuestos millonarios. Gracias a la inteligencia artificial, cualquier negocio local, ya sea una clínica dental, una peluquería, un restaurante o una tienda de barrio, puede automatizar sus acciones de marketing, llegar a más clientes y competir de tú a tú con las grandes cadenas. En 2025, la IA ha dejado de ser una promesa de futuro para convertirse en una herramienta accesible y rentable para las PYMEs españolas. En este artículo te explicamos cómo funciona el marketing digital automatizado con IA, qué procesos puedes delegar a los algoritmos, qué herramientas existen y cómo dar los primeros pasos para transformar la presencia digital de tu negocio local sin necesitar un equipo de marketing interno.
+</p>
+
+<img src='https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80' alt='Marketing digital y estrategia con IA' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Qué es el marketing digital automatizado con IA y por qué importa a los negocios locales</h2>
+
+<p>
+Cuando hablamos de marketing digital automatizado con IA nos referimos al uso de sistemas inteligentes capaces de ejecutar, optimizar y escalar acciones de marketing sin intervención humana constante. Estos sistemas aprenden del comportamiento de los usuarios, analizan datos en tiempo real y toman decisiones para mejorar los resultados de cada campaña.
+</p>
+
+<h3>De la automatización tradicional a la IA generativa</h3>
+<p>
+Antes, automatizar el marketing significaba programar correos electrónicos o publicaciones en redes sociales. Hoy, la IA va mucho más lejos: genera textos publicitarios adaptados a cada segmento de audiencia, predice qué clientes tienen más probabilidad de comprar, personaliza landing pages en tiempo real y gestiona presupuestos publicitarios de forma autónoma. Para un negocio local, esto se traduce en ahorro de tiempo, reducción de costes y mejora de resultados.
+</p>
+
+<h3>Por qué los negocios locales son los más beneficiados</h3>
+<p>
+Las grandes empresas ya llevan años invirtiendo en tecnología de marketing. Sin embargo, los negocios locales han tenido históricamente acceso limitado a estas capacidades por falta de recursos o conocimiento. La IA democratiza el acceso: hoy un fontanero autónomo, una academia de idiomas o una clínica veterinaria pueden tener un sistema de marketing tan sofisticado como el de una cadena nacional, con una inversión proporcionada a su tamaño.
+</p>
+
+<h2>Procesos de marketing que puedes automatizar con IA hoy mismo</h2>
+
+<p>
+La clave para empezar es identificar qué tareas de marketing consumen más tiempo en tu negocio y cuáles generan más impacto si se optimizan. La IA puede encargarse de la mayoría de ellas.
+</p>
+
+<img src='https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=1200&q=80' alt='Redes sociales y marketing automatizado' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h3>Creación y publicación de contenido en redes sociales</h3>
+<p>
+Los agentes de IA pueden generar textos, seleccionar imágenes, redactar pies de foto y programar publicaciones en todas tus redes sociales de forma automática. Analizan qué tipo de contenido funciona mejor con tu audiencia local y ajustan el tono y el formato según la plataforma. Empresas como HisfIA desarrollan agentes específicos para gestionar la presencia en redes sociales de negocios locales, liberando al propietario de una tarea que puede consumir varias horas semanales.
+</p>
+
+<h3>Email marketing y comunicación con clientes</h3>
+<p>
+Los sistemas de IA segmentan tu base de datos de clientes, redactan correos personalizados según el historial de cada usuario y determinan el mejor momento para enviarlos. Esto aumenta significativamente las tasas de apertura y conversión. Para un negocio local, esto puede significar recordar a un cliente que no visita tu establecimiento en tres meses, o enviar una oferta personalizada en su cumpleaños.
+</p>
+
+<h3>Gestión de campañas de publicidad de pago</h3>
+<p>
+Las plataformas publicitarias como Google Ads o Meta Ads ya incorporan IA nativa, pero existen herramientas especializadas que van más lejos: optimizan pujas en tiempo real, detectan audiencias lookalike locales, pausan anuncios que no rinden y reasignan presupuesto de forma autónoma hacia lo que mejor funciona.
+</p>
+
+<h3>Atención al cliente y captación de leads</h3>
+<p>
+Los chatbots con IA pueden responder preguntas frecuentes en tu web o en WhatsApp Business las 24 horas, calificar leads según su intención de compra y agendar citas o llamadas automáticamente. Para negocios locales con atención limitada, esto supone no perder ninguna oportunidad de negocio fuera del horario comercial.
+</p>
+
+<h2>Cómo construir una estrategia de marketing con IA para tu negocio local</h2>
+
+<p>
+Automatizar sin estrategia es una receta para el fracaso. Antes de implementar cualquier herramienta, necesitas tener claros tus objetivos, tu audiencia y los mensajes que quieres transmitir.
+</p>
+
+<h3>Define tu cliente ideal y tus objetivos locales</h3>
+<p>
+La IA trabaja con datos, y cuanto mejores sean los datos que le proporciones, mejores serán los resultados. Define quién es tu cliente ideal: su edad, su ubicación, sus intereses, sus problemas y cómo tu negocio los resuelve. Establece objetivos concretos: aumentar las visitas a tu local, conseguir más reservas online, crecer tu base de seguidores en Instagram o mejorar tu posicionamiento en Google Maps.
+</p>
+
+<h3>Elige las herramientas adecuadas a tu tamaño y presupuesto</h3>
+<p>
+No todas las herramientas de IA son iguales ni sirven para todos los negocios. Existen soluciones para cada presupuesto: desde plataformas de bajo coste como Canva IA o ChatGPT para la creación de contenido, hasta sistemas más avanzados de automatización de marketing como HubSpot con IA integrada. Agencias especializadas como HisfIA pueden ayudarte a seleccionar e implementar la combinación correcta de herramientas para tu caso concreto, evitando que inviertas en tecnología que no necesitas.
+</p>
+
+<img src='https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80' alt='Análisis de campañas de marketing digital' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Métricas y análisis: el poder de los datos en tiempo real</h2>
+
+<p>
+Una de las mayores ventajas del marketing digital con IA es la capacidad de medir todo y aprender continuamente. Los sistemas inteligentes no solo ejecutan acciones, sino que analizan los resultados y se autocorrigen para mejorar el rendimiento.
+</p>
+
+<h3>KPIs esenciales para negocios locales</h3>
+<p>
+Para un negocio local, las métricas más relevantes suelen ser el coste por lead o cliente adquirido, la tasa de conversión de las visitas al local o a la web, el retorno sobre la inversión publicitaria (ROAS), el alcance local orgánico en redes sociales y las valoraciones y reseñas en Google Business. La IA puede monitorizar todas estas métricas de forma automática y enviarte alertas cuando algo no va bien o cuando una campaña está funcionando especialmente bien.
+</p>
+
+<h3>Informes automatizados y toma de decisiones</h3>
+<p>
+Los sistemas de análisis con IA pueden generar informes semanales o mensuales en lenguaje natural, explicando qué ha funcionado, qué no y qué ajustes recomienda hacer. Esto es especialmente valioso para propietarios de negocios locales que no tienen tiempo ni formación para interpretar datos complejos: la IA traduce los números en acciones concretas.
+</p>
+
+<h2>Errores comunes al automatizar el marketing de un negocio local</h2>
+
+<p>
+La automatización con IA ofrece enormes ventajas, pero también hay trampas frecuentes en las que caen muchas PYMEs cuando se lanzan sin la orientación adecuada.
+</p>
+
+<h3>Automatizar sin personalización</h3>
+<p>
+El mayor riesgo de la automatización es que el marketing pierda el toque humano y local que hace especial a un negocio de barrio. La IA debe usarse para escalar la personalización, no para eliminarla. Un sistema bien configurado puede enviar mensajes que parecen escritos a mano para cada cliente, porque tiene en cuenta su historial y sus preferencias.
+</p>
+
+<h3>Ignorar el SEO local y Google Business</h3>
+<p>
+Muchos negocios locales invierten en publicidad pagada y olvidan el posicionamiento orgánico local. La IA puede ayudarte a optimizar tu ficha de Google Business, a responder reseñas de forma automática y a generar contenido optimizado para búsquedas locales como "fontanero urgente en Madrid" o "mejor restaurante cerca de mí". Este canal es gratuito y tiene un retorno enorme para los negocios locales.
+</p>
+
+<h2>Cómo empezar: primeros pasos con el marketing IA para tu negocio</h2>
+
+<p>
+El camino hacia el marketing automatizado con IA no tiene por qué ser complejo ni costoso. Puedes empezar con pasos pequeños y escalar gradualmente.
+</p>
+
+<h3>Empieza por un solo canal o proceso</h3>
+<p>
+En lugar de intentar automatizarlo todo a la vez, elige el canal que más tiempo te consume o el que más impacto tiene en tu negocio, y empieza por ahí. Si la mayoría de tus clientes llegan por Instagram, automatiza primero la gestión de esa red social. Si pierdes muchos leads porque no puedes atender el teléfono, implementa primero un chatbot de WhatsApp.
+</p>
+
+<h3>Apóyate en expertos para acelerar el proceso</h3>
+<p>
+La curva de aprendizaje de la IA puede ser pronunciada si intentas hacerlo todo por tu cuenta. Trabajar con una agencia especializada como HisfIA te permite implementar soluciones de marketing automatizado en semanas en lugar de meses, con la seguridad de que la tecnología está bien configurada desde el principio y adaptada a las particularidades de tu sector y tu mercado local.
+</p>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+<h2>Preguntas frecuentes sobre marketing digital con IA para negocios locales</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto cuesta implementar marketing digital con IA en un negocio local?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">El coste varía mucho según el nivel de automatización deseado. Existen soluciones desde 50-100€ al mes para automatizaciones básicas de redes sociales y email marketing, hasta proyectos más completos de 500-2.000€ mensuales que incluyen agentes de IA personalizados, gestión de campañas publicitarias y análisis avanzado. La clave es empezar con lo esencial y escalar cuando se vean resultados.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Necesito conocimientos técnicos para usar IA en mi marketing?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No es necesario tener conocimientos técnicos para aprovechar la IA en tu marketing. Las plataformas modernas están diseñadas para ser intuitivas, y existen agencias especializadas que se encargan de toda la configuración técnica. El propietario del negocio solo necesita aportar información sobre su negocio, sus clientes y sus objetivos.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Puede la IA reemplazar completamente a un equipo de marketing?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">La IA puede automatizar entre el 60% y el 80% de las tareas operativas del marketing, pero la supervisión humana y la estrategia siguen siendo necesarias. Para un negocio local sin equipo de marketing, la IA permite tener un nivel de presencia digital que antes requería contratar varios profesionales, funcionando de forma autónoma y solo requiriendo revisiones periódicas.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto tiempo tarda en verse resultados con el marketing automatizado con IA?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Los primeros resultados en campañas de pago pueden verse en días, ya que la IA optimiza rápidamente las audiencias y los presupuestos. Para el posicionamiento orgánico local y el crecimiento de comunidad en redes sociales, los resultados significativos suelen apreciarse entre 2 y 4 meses después de implementar una estrategia consistente y bien configurada.</p>
+</div>
+</div>
+
+</div>
+
+<p>
+<strong>El marketing digital automatizado con IA no es el futuro, es el presente.</strong> Los negocios locales que adopten estas tecnologías ahora tendrán una ventaja competitiva sostenida frente a aquellos que sigan dependiendo de métodos manuales. La buena noticia es que nunca ha sido tan accesible ni tan sencillo empezar. Da el primer paso hoy.
+</p>
+
+</article>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
