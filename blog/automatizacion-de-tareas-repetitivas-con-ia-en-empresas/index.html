@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Automatización de tareas repetitivas con IA en empresas — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo la IA automatiza tareas repetitivas en tu empresa, ahorra tiempo y reduce errores. Guía práctica para PYMEs españolas con ejemplos reales."/>
+  <meta property="og:title" content="Automatización de tareas repetitivas con IA en empresas"/>
+  <meta property="og:description" content="Descubre cómo la IA automatiza tareas repetitivas en tu empresa, ahorra tiempo y reduce errores. Guía práctica para PYMEs españolas con ejemplos reales."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/automatizacion-de-tareas-repetitivas-con-ia-en-empresas/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/automatizacion-de-tareas-repetitivas-con-ia-en-empresas/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Automatización de tareas repetitivas con IA en empresas", "description": "Descubre cómo la IA automatiza tareas repetitivas en tu empresa, ahorra tiempo y reduce errores. Guía práctica para PYMEs españolas con ejemplos reales.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>Automatización de tareas repetitivas en empresas con IA</h1>
+
+<p class="intro">
+Cada día, los equipos de miles de empresas españolas dedican horas a tareas que no aportan valor real: introducir datos en hojas de cálculo, responder correos similares, generar informes semanales o clasificar facturas. Tiempo que se pierde, errores que se acumulan y personas talentosas atrapadas en trabajo mecánico. La <strong>automatización de tareas repetitivas con inteligencia artificial</strong> ha dejado de ser patrimonio exclusivo de las grandes corporaciones. Hoy, una PYME con visión puede implementar soluciones de IA que trabajen 24 horas al día sin fatiga, sin errores de transcripción y sin coste marginal por cada tarea adicional. En esta guía analizamos qué procesos son automatizables, qué tecnologías lo hacen posible, cuánto se puede ahorrar realmente y cómo dar los primeros pasos de forma estructurada. Si quieres que tu empresa compita en eficiencia con organizaciones mucho más grandes, sigue leyendo.
+</p>
+
+<img src='https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=1200&q=80' alt='Automatización de procesos empresariales' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Qué significa realmente automatizar con IA en una empresa</h2>
+
+<h3>Automatización tradicional frente a automatización inteligente</h3>
+<p>
+Durante años, la automatización empresarial se basó en reglas fijas: si pasa X, ejecuta Y. Estos sistemas, conocidos como RPA (Robotic Process Automation) clásico, funcionan bien en entornos perfectamente predecibles. El problema es que el mundo real no lo es. Un correo mal formateado, un documento con un layout diferente o una excepción en el proceso rompían el flujo completamente.
+</p>
+<p>
+La <strong>automatización con IA</strong> introduce capacidad de comprensión. Los modelos de lenguaje natural leen e interpretan texto como lo haría un humano. Los sistemas de visión artificial reconocen documentos con formatos variables. Los agentes de IA toman decisiones encadenadas y gestionan excepciones sin intervención humana. Esto amplía enormemente el abanico de tareas automatizables.
+</p>
+
+<h3>Qué tareas son candidatas ideales para la automatización</h3>
+<p>
+Existe un criterio sencillo para identificar si una tarea merece automatizarse: si un empleado puede describirla paso a paso en menos de diez minutos, probablemente la IA puede ejecutarla. Las categorías más frecuentes en empresas españolas incluyen:
+</p>
+<ul>
+  <li><strong>Gestión documental:</strong> extracción de datos de facturas, contratos y albaranes.</li>
+  <li><strong>Atención al cliente:</strong> respuesta a consultas frecuentes por email o chat.</li>
+  <li><strong>Reporting:</strong> generación automática de informes periódicos con datos actualizados.</li>
+  <li><strong>Cualificación de leads:</strong> análisis y puntuación de prospectos entrantes.</li>
+  <li><strong>Gestión de agendas:</strong> coordinación de reuniones y seguimiento de tareas.</li>
+  <li><strong>Contabilidad básica:</strong> conciliación de cuentas, categorización de gastos.</li>
+</ul>
+
+<h2>Beneficios cuantificables de la automatización con IA</h2>
+
+<h3>Ahorro de tiempo y reducción de costes operativos</h3>
+<p>
+Según datos recientes del McKinsey Global Institute, entre el 60 y el 70 por ciento de las actividades laborales actuales son automatizables con la tecnología disponible hoy. Aplicado a una PYME de veinte personas, eso puede significar recuperar el equivalente a entre tres y cinco jornadas laborales completas cada semana.
+</p>
+<p>
+En términos económicos, el impacto es directo. Una tarea que consume cuarenta minutos de un trabajador con coste horario de veinte euros puede ser ejecutada por un agente de IA en segundos, con un coste de céntimos. El retorno de inversión en proyectos bien ejecutados suele materializarse en un plazo de tres a seis meses.
+</p>
+
+<h3>Reducción de errores y mejora de la calidad</h3>
+<p>
+El error humano en tareas repetitivas no es una cuestión de capacidad, sino de biología. La atención decae, la fatiga acumula fallos microscópicos y las urgencias generan omisiones. Un sistema de automatización inteligente ejecuta el mismo proceso con idéntica precisión la primera vez que la milésima. En sectores como la contabilidad, la logística o la sanidad, esta consistencia tiene un valor incalculable.
+</p>
+
+<img src='https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80' alt='Tecnología y circuitos de automatización' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Los procesos más automatizados en PYMEs españolas</h2>
+
+<h3>Automatización en administración y finanzas</h3>
+<p>
+El departamento administrativo es, históricamente, el gran campo de acumulación de tareas repetitivas. Las empresas que han implementado IA en sus procesos financieros reportan reducciones de hasta el 80 por ciento en el tiempo dedicado a introducción manual de datos. Las aplicaciones más comunes incluyen:
+</p>
+<ul>
+  <li>Lectura y registro automático de facturas recibidas mediante OCR inteligente.</li>
+  <li>Conciliación bancaria automatizada que cruza movimientos con registros contables.</li>
+  <li>Generación de informes de tesorería y previsión de caja sin intervención humana.</li>
+  <li>Alertas automáticas ante vencimientos de pagos o anomalías en gastos.</li>
+</ul>
+
+<h3>Automatización en ventas y atención al cliente</h3>
+<p>
+Los equipos comerciales pierden una media del 64 por ciento de su tiempo en actividades no relacionadas directamente con vender: actualizar el CRM, redactar propuestas estándar, hacer seguimiento de presupuestos o responder preguntas básicas de clientes. La IA puede absorber la mayor parte de esa carga.
+</p>
+<p>
+En <strong>HisfIA</strong> trabajamos con PYMEs que han implementado agentes de IA capaces de gestionar el primer contacto con prospectos, calificarlos según criterios definidos por el equipo comercial y agendar reuniones directamente en el calendario del responsable de ventas, todo ello sin intervención humana y disponible las 24 horas del día.
+</p>
+
+<h2>Cómo implementar la automatización de forma estructurada</h2>
+
+<h3>Fase 1: Auditoría de procesos y detección de oportunidades</h3>
+<p>
+El primer error que cometen las empresas al abordar la automatización es empezar por la tecnología en lugar de por los procesos. Antes de elegir ninguna herramienta, es imprescindible mapear con detalle qué tareas se realizan, con qué frecuencia, cuánto tiempo consumen y qué nivel de variabilidad presentan. Este diagnóstico determina el orden de prioridades y el impacto esperado.
+</p>
+<p>
+Una auditoría bien realizada suele revelar que el 20 por ciento de las tareas concentra el 80 por ciento del tiempo perdido. Atacar ese 20 por ciento primero garantiza resultados visibles rápidamente y genera la confianza interna necesaria para escalar el proyecto.
+</p>
+
+<h3>Fase 2: Selección de tecnología y diseño del flujo automatizado</h3>
+<p>
+Dependiendo del tipo de tarea, las soluciones tecnológicas varían. Para la extracción de documentos, los sistemas OCR combinados con modelos de lenguaje son la opción más robusta. Para la comunicación con clientes, los agentes conversacionales basados en LLMs ofrecen resultados sobresalientes. Para flujos de trabajo complejos que implican múltiples sistemas, las plataformas de orquestación de agentes permiten encadenar acciones con lógica condicional.
+</p>
+<p>
+En <strong>HisfIA</strong> diseñamos cada solución partiendo del proceso real de la empresa, no de plantillas genéricas. Esto garantiza que la automatización encaje con los sistemas existentes (ERP, CRM, herramientas de comunicación) sin necesidad de reemplazar lo que ya funciona.
+</p>
+
+<img src='https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80' alt='Estrategia de negocio con automatización' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Errores frecuentes al automatizar y cómo evitarlos</h2>
+
+<h3>Automatizar procesos rotos o mal definidos</h3>
+<p>
+La automatización amplifica lo que ya existe. Si un proceso tiene ineficiencias o pasos innecesarios, automatizarlo simplemente ejecutará esas ineficiencias más rápido. Antes de automatizar, optimiza. Elimina los pasos redundantes, clarifica las responsabilidades y documenta el flujo ideal. Solo entonces tiene sentido construir la automatización sobre esa base.
+</p>
+
+<h3>No involucrar a los equipos que usan el proceso</h3>
+<p>
+La resistencia al cambio es uno de los mayores obstáculos en proyectos de automatización. Los equipos que sienten que la IA viene a sustituirles se convierten en freno en lugar de aliados. La clave está en comunicar desde el principio que la automatización libera a las personas de lo tedioso para que puedan dedicarse a lo que realmente importa: la creatividad, la relación con clientes y la toma de decisiones. Las empresas que involucran a sus equipos desde la fase de diseño obtienen implantaciones más rápidas y adopción más sólida.
+</p>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+  <h2>Preguntas frecuentes sobre automatización de tareas con IA</h2>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Qué tareas de una empresa se pueden automatizar con IA hoy mismo?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Hoy es posible automatizar con IA la gestión de facturas y documentos, la respuesta a consultas de clientes, la generación de informes, la cualificación de leads comerciales, la coordinación de agendas, la conciliación bancaria y el seguimiento de tareas administrativas. Cualquier tarea que sea repetitiva, basada en reglas y consuma tiempo de forma recurrente es candidata a ser automatizada.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Cuánto cuesta implementar automatización con IA en una PYME?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">El coste varía según la complejidad del proceso y el nivel de integración requerido. Existen soluciones desde unos cientos de euros al mes para casos de uso concretos, hasta proyectos de transformación más amplios. Lo relevante es analizar el retorno de inversión: en la mayoría de los casos documentados, los proyectos de automatización en PYMEs recuperan la inversión en un plazo de tres a seis meses gracias al ahorro de horas y la reducción de errores.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿La automatización con IA sustituye a los empleados?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">En la práctica, la automatización con IA no suele eliminar puestos de trabajo en PYMEs, sino reasignar el tiempo de las personas hacia actividades de mayor valor. En lugar de introducir datos o generar informes, los empleados pueden dedicarse a la atención personalizada, la estrategia y la innovación. La automatización actúa como un asistente que absorbe el trabajo mecánico, no como un sustituto de la inteligencia humana.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Por dónde debe empezar una empresa que quiere automatizar con IA?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">El punto de partida recomendado es una auditoría de procesos para identificar qué tareas consumen más tiempo y presentan menor variabilidad. A partir de ahí, se selecciona el caso de uso con mayor impacto potencial y se implementa un piloto acotado antes de escalar. Contar con un socio especializado como HisfIA permite acelerar este proceso y evitar los errores más comunes en la implantación.</p>
+    </div>
+  </div>
+
+</div>
+
+<section>
+  <h2>Conclusión: la automatización no es el futuro, es el presente</h2>
+  <p>
+  Las empresas que automatizan hoy no solo ahorran dinero. Construyen una ventaja competitiva estructural que se amplía con el tiempo: procesos más rápidos, datos más limpios, equipos más motivados y capacidad de escalar sin aumentar costes fijos de forma proporcional. La pregunta ya no es si una PYME puede permitirse implementar IA, sino si puede permitirse no hacerlo mientras sus competidores sí lo hacen.
+  </p>
+  <p>
+  En <strong>HisfIA</strong> acompañamos a empresas españolas en cada paso de este proceso, desde la identificación de oportunidades hasta la puesta en marcha y optimización continua de sus automatizaciones. Si quieres saber exactamente qué procesos de tu empresa son automatizables y cuánto podrías ahorrar, contacta con nuestro equipo para un diagnóstico sin compromiso.
+  </p>
+</section>
+
+</article>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
