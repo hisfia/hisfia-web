@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Generación de Leads Automática con IA | HisfIA — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo la inteligencia artificial automatiza la generación de leads para PYMEs. Más contactos, menos esfuerzo y mejor conversión."/>
+  <meta property="og:title" content="Generación de Leads Automática con IA | HisfIA"/>
+  <meta property="og:description" content="Descubre cómo la inteligencia artificial automatiza la generación de leads para PYMEs. Más contactos, menos esfuerzo y mejor conversión."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/generacion-de-leads-automatica-con-ia-hisfia/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/generacion-de-leads-automatica-con-ia-hisfia/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Generación de Leads Automática con IA | HisfIA", "description": "Descubre cómo la inteligencia artificial automatiza la generación de leads para PYMEs. Más contactos, menos esfuerzo y mejor conversión.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>Generación de Leads Automática con Inteligencia Artificial</h1>
+
+<p class="intro">
+La <strong>generación de leads automática con inteligencia artificial</strong> ha dejado de ser una ventaja exclusiva de las grandes corporaciones. Hoy, cualquier PYME española puede implementar sistemas que identifican, atraen y cualifican prospectos de forma continua, sin intervención humana constante. Los procesos tradicionales de captación, basados en llamadas en frío, formularios estáticos o ferias sectoriales, tienen un coste elevado y un retorno difícil de medir. La IA cambia las reglas del juego: analiza el comportamiento de los visitantes, personaliza los mensajes en tiempo real y entrega a tu equipo comercial únicamente los contactos con mayor probabilidad de convertir. El resultado es un embudo de ventas más eficiente, un ciclo de venta más corto y un equipo de ventas que dedica su tiempo a cerrar oportunidades reales en lugar de perseguir contactos fríos. En este artículo explicamos qué es exactamente, cómo funciona, qué herramientas existen y cómo puedes empezar a aplicarlo en tu empresa.
+</p>
+
+<img src='https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80' alt='Generación de leads y embudo de ventas' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Qué es la generación de leads con IA y por qué importa</h2>
+
+<p>
+Generar leads con inteligencia artificial significa utilizar algoritmos de aprendizaje automático, procesamiento del lenguaje natural y análisis predictivo para identificar personas o empresas que tienen una necesidad real que tu producto o servicio puede resolver, y captarlas antes de que lleguen a la competencia.
+</p>
+
+<h3>La diferencia entre lead generation tradicional y con IA</h3>
+
+<p>
+En el modelo tradicional, un comercial dedica horas a buscar contactos en LinkedIn, enviar correos genéricos o atender ferias. La tasa de conversión ronda el 2-5 %. Con IA, el sistema analiza miles de señales de intención —búsquedas, visitas a la web, interacciones en redes sociales— y determina qué contactos están listos para comprar ahora. Esto eleva la tasa de conversión de forma significativa y reduce el coste por lead adquirido.
+</p>
+
+<h3>Por qué las PYMEs son las grandes beneficiadas</h3>
+
+<p>
+Una gran empresa puede permitirse un equipo de 20 SDRs prospectando. Una PYME no. La IA actúa como ese equipo de prospección que trabaja las 24 horas, los 7 días de la semana, a una fracción del coste. Además, no se va de vacaciones ni comete errores de fatiga.
+</p>
+
+<h2>Las tecnologías clave detrás de la captación automática</h2>
+
+<p>
+Para entender cómo funciona un sistema de generación de leads con IA, conviene conocer las tecnologías que lo hacen posible. No es magia: es una combinación de herramientas que ya están disponibles y que pueden integrarse con los sistemas que probablemente ya usas.
+</p>
+
+<h3>Lead scoring predictivo</h3>
+
+<p>
+El <strong>lead scoring predictivo</strong> asigna automáticamente una puntuación a cada contacto en función de su similitud con tus mejores clientes actuales. El modelo aprende de tu historial de ventas y ajusta los criterios de forma continua. Así, tu CRM siempre muestra en primer lugar los contactos que más probabilidad tienen de cerrar.
+</p>
+
+<h3>Chatbots conversacionales y agentes de IA</h3>
+
+<p>
+Los agentes conversacionales basados en modelos de lenguaje como GPT-4 pueden mantener conversaciones naturales con los visitantes de tu web, cualificarlos mediante preguntas estratégicas y agendar reuniones directamente en el calendario de tu equipo comercial. Todo sin intervención humana. En <strong>HisfIA</strong> implementamos este tipo de agentes para empresas B2B y B2C con resultados medibles desde la primera semana.
+</p>
+
+<img src='https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80' alt='Equipo de ventas con herramientas IA' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Fases del proceso automatizado de captación de leads</h2>
+
+<p>
+Un sistema de generación de leads con IA bien diseñado opera en fases encadenadas. Cada etapa alimenta a la siguiente, creando un flujo continuo de oportunidades comerciales.
+</p>
+
+<h3>Fase 1: Identificación y atracción</h3>
+
+<p>
+La IA analiza datos de intención de terceros —visitas a webs del sector, búsquedas en Google, descargas de contenido competidor— para identificar empresas o personas que están activamente buscando soluciones como la tuya. Con esta información, lanza campañas hipersegmentadas en el momento de mayor receptividad del prospecto.
+</p>
+
+<h3>Fase 2: Cualificación automática</h3>
+
+<p>
+Una vez el prospecto entra en contacto —rellena un formulario, inicia un chat o abre un correo— el sistema lo cualifica automáticamente cruzando sus datos con el perfil de cliente ideal definido. Solo los leads que superan el umbral de puntuación pasan al equipo de ventas. El resto entra en secuencias de nurturing automatizadas hasta que estén listos.
+</p>
+
+<h3>Fase 3: Nurturing personalizado a escala</h3>
+
+<p>
+El nurturing con IA no envía el mismo email a toda tu lista. Analiza el comportamiento individual de cada contacto —qué páginas visitó, qué emails abrió, en qué punto abandonó— y adapta el contenido, el canal y el momento del envío para maximizar la probabilidad de avanzar en el embudo.
+</p>
+
+<h3>Fase 4: Transferencia al equipo comercial</h3>
+
+<p>
+Cuando el lead alcanza el nivel de madurez suficiente, el sistema notifica al comercial correspondiente con un resumen completo: historial de interacciones, puntuación, necesidades detectadas y sugerencias de argumentario. El vendedor llega a la primera llamada sabiendo exactamente qué necesita el prospecto.
+</p>
+
+<h2>Herramientas más utilizadas para automatizar la generación de leads</h2>
+
+<p>
+El mercado ofrece múltiples plataformas, pero no todas son igual de adecuadas para el tejido empresarial español. Aquí tienes las más relevantes organizadas por función.
+</p>
+
+<h3>Plataformas de automatización de marketing con IA</h3>
+
+<p>
+HubSpot con sus funciones de IA integradas, ActiveCampaign con su motor predictivo y Clay para enriquecimiento de datos son las opciones más utilizadas por PYMEs europeas. Permiten crear flujos de automatización sin necesidad de programación y se integran con los CRMs más comunes.
+</p>
+
+<h3>Agentes de IA personalizados para captación</h3>
+
+<p>
+Más allá de las plataformas estándar, los <strong>agentes de IA personalizados</strong> son la evolución natural. Estos agentes pueden conectarse a tu web, tu WhatsApp Business, tu email y tu CRM para operar de forma autónoma. En <strong>HisfIA</strong> desarrollamos agentes específicos para cada sector, entrenados con el conocimiento de tu empresa y configurados para respetar tu proceso de ventas.
+</p>
+
+<img src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80' alt='Dashboard de métricas y conversiones' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Métricas que debes seguir en tu sistema de leads con IA</h2>
+
+<p>
+Un sistema de generación de leads no se instala y se olvida. Requiere seguimiento y optimización continua basada en datos reales.
+</p>
+
+<h3>Indicadores de rendimiento principales</h3>
+
+<p>
+Los KPIs esenciales son: <strong>coste por lead cualificado</strong> (CPL), <strong>tasa de conversión lead a oportunidad</strong>, <strong>velocidad del ciclo de ventas</strong> y <strong>tasa de precisión del scoring</strong>. Un buen sistema de IA debería reducir el CPL en un 30-50 % respecto al modelo manual en los primeros tres meses.
+</p>
+
+<h3>Cómo interpretar el dashboard de conversiones</h3>
+
+<p>
+El dashboard debe mostrar en tiempo real cuántos leads entran por cada canal, cuántos pasan la cualificación automática, en qué fase del nurturing se encuentran los que aún no están listos y cuál es el revenue atribuido a cada fuente. Esta visibilidad permite tomar decisiones de inversión publicitaria mucho más fundamentadas.
+</p>
+
+<h2>Cómo empezar: pasos prácticos para una PYME</h2>
+
+<p>
+Implementar un sistema de generación de leads con IA no requiere meses de consultoría ni presupuestos de gran empresa. Estos son los pasos recomendados para empezar de forma estructurada.
+</p>
+
+<h3>Paso 1: Define tu perfil de cliente ideal con datos reales</h3>
+
+<p>
+Antes de automatizar nada, analiza tus últimos 20-30 clientes cerrados. Identifica patrones: sector, tamaño de empresa, cargo del decisor, problema que resolviste, tiempo desde primer contacto hasta cierre. Estos datos alimentan el modelo de scoring inicial.
+</p>
+
+<h3>Paso 2: Elige un canal prioritario y automatízalo completamente</h3>
+
+<p>
+No intentes automatizar todo a la vez. Elige el canal donde ya recibes más contactos —web, email, WhatsApp— e implementa primero ahí el sistema de cualificación automática. Cuando funcione, expándelo al resto de canales.
+</p>
+
+<h3>Paso 3: Establece un proceso de revisión mensual</h3>
+
+<p>
+Cada mes, revisa con tu equipo comercial la calidad de los leads entregados por el sistema. Su feedback es el dato más valioso para reentrenar el modelo y mejorar la precisión del scoring.
+</p>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+<h2>Preguntas frecuentes sobre generación de leads con IA</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto tarda en implementarse un sistema de generación de leads con IA?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Un sistema básico con cualificación automática y nurturing puede estar operativo en 2 a 4 semanas. Los sistemas más complejos con agentes conversacionales personalizados e integración con CRM suelen requerir entre 4 y 8 semanas dependiendo de la complejidad del proceso de ventas de la empresa.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿La generación de leads con IA funciona para negocios B2B?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sí, y especialmente bien en B2B. Los modelos de lead scoring predictivo son particularmente eficaces cuando el ciclo de venta es largo y el ticket medio es alto, ya que el ahorro de tiempo del equipo comercial tiene un impacto económico muy significativo. La IA permite priorizar los esfuerzos en las cuentas con mayor potencial real.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Es necesario tener un CRM para implementar generación de leads con IA?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No es imprescindible, pero sí muy recomendable. Un CRM permite almacenar el historial de interacciones que el modelo de IA necesita para aprender y mejorar. Si tu empresa no tiene CRM, muchas soluciones de generación de leads con IA incluyen funcionalidades básicas de gestión de contactos integradas.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Qué presupuesto necesita una PYME para automatizar la captación de leads con IA?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Los rangos varían mucho según la solución elegida. Las plataformas SaaS estándar con funciones de IA parten desde 50-200 euros mensuales. Los sistemas con agentes personalizados desarrollados a medida, como los que implementa HisfIA, tienen un coste de puesta en marcha y una cuota mensual de mantenimiento que se amortiza rápidamente cuando el sistema reduce el coste por lead adquirido.</p>
+</div>
+</div>
+
+</div>
+
+</article>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
