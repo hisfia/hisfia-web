@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Oficina Virtual con Agentes IA para Empresas — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo una oficina virtual con agentes de inteligencia artificial transforma la productividad de tu empresa. Guía completa con casos reales."/>
+  <meta property="og:title" content="Oficina Virtual con Agentes IA para Empresas"/>
+  <meta property="og:description" content="Descubre cómo una oficina virtual con agentes de inteligencia artificial transforma la productividad de tu empresa. Guía completa con casos reales."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/oficina-virtual-con-agentes-ia-para-empresas/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/oficina-virtual-con-agentes-ia-para-empresas/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Oficina Virtual con Agentes IA para Empresas", "description": "Descubre cómo una oficina virtual con agentes de inteligencia artificial transforma la productividad de tu empresa. Guía completa con casos reales.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>Oficina virtual con agentes de inteligencia artificial para empresas</h1>
+
+<p class="intro">
+La forma en que las empresas trabajan ha cambiado radicalmente en los últimos años. La oficina ya no es un lugar físico: es un ecosistema digital donde los equipos colaboran, los procesos se automatizan y la inteligencia artificial actúa como un empleado más. La <strong>oficina virtual con agentes de inteligencia artificial</strong> es hoy la respuesta más eficiente para PYMEs y grandes corporaciones que necesitan escalar sin disparar sus costes operativos. Estos agentes de IA son capaces de gestionar correos, atender clientes, redactar documentos, analizar datos y coordinar tareas de forma autónoma, las 24 horas del día, los 7 días de la semana. En esta guía te explicamos qué es exactamente una oficina virtual con IA, qué funciones puede asumir, cómo implementarla paso a paso y qué beneficios concretos obtendrá tu empresa desde el primer mes de uso.
+</p>
+
+<img src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80' alt='Oficina virtual moderna con agentes IA' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>¿Qué es una oficina virtual con agentes de IA?</h2>
+
+<p>
+Una oficina virtual con agentes de inteligencia artificial es un entorno de trabajo digital donde tareas administrativas, operativas y de comunicación son ejecutadas total o parcialmente por sistemas de IA autónomos. A diferencia de un simple chatbot, un <strong>agente de IA</strong> puede razonar, planificar, tomar decisiones y actuar sobre herramientas externas como calendarios, CRMs, bases de datos o plataformas de comunicación.
+</p>
+
+<h3>Diferencia entre un chatbot y un agente de IA</h3>
+<p>
+Un chatbot responde preguntas según un guion predefinido. Un agente de IA, en cambio, interpreta el contexto, accede a información en tiempo real, ejecuta acciones encadenadas y aprende del comportamiento de tu empresa. La diferencia es comparable a contratar a un recepcionista frente a contratar a un director de operaciones con acceso a todos los sistemas de la compañía.
+</p>
+
+<h3>Componentes clave de una oficina virtual inteligente</h3>
+<p>
+Una oficina virtual con IA bien diseñada integra varios componentes: un <strong>modelo de lenguaje avanzado</strong> como núcleo de razonamiento, conectores con las herramientas de trabajo (correo, CRM, ERP, Slack, Google Workspace), una capa de memoria para mantener el contexto de cada tarea, y un sistema de orquestación que coordina múltiples agentes especializados trabajando en paralelo.
+</p>
+
+<h2>Funciones que los agentes de IA pueden asumir en tu empresa</h2>
+
+<p>
+La pregunta que más hacen los directivos cuando conocen esta tecnología es: ¿qué puede hacer exactamente un agente de IA en mi empresa? La respuesta es más amplia de lo que se imagina. Desde la gestión de la bandeja de entrada hasta el análisis de resultados comerciales, los agentes de IA están preparados para asumir un volumen de trabajo que normalmente requeriría varios empleados a jornada completa.
+</p>
+
+<h3>Gestión administrativa y documental</h3>
+<p>
+Los agentes de IA pueden redactar, revisar y archivar contratos, facturas, informes y presupuestos. Pueden clasificar correos entrantes, responder solicitudes estándar, agendar reuniones según la disponibilidad del equipo y generar resúmenes ejecutivos de documentos largos en segundos. Para una PYME, esto equivale a tener un asistente administrativo de alto nivel disponible en todo momento.
+</p>
+
+<h3>Atención al cliente y soporte automatizado</h3>
+<p>
+Un agente de IA integrado en tu web, WhatsApp o correo electrónico puede resolver el <strong>80% de las consultas frecuentes</strong> sin intervención humana, derivando solo los casos complejos al equipo correspondiente. Esto reduce el tiempo de respuesta de horas a segundos y mejora significativamente la experiencia del cliente. En <strong>HisfIA</strong> hemos implementado este tipo de agentes para empresas de distintos sectores, logrando reducciones del 60% en la carga de trabajo del equipo de soporte en los primeros 30 días.
+</p>
+
+<img src='https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200&q=80' alt='Robot y automatización en oficina virtual' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo implementar una oficina virtual con IA paso a paso</h2>
+
+<p>
+Implementar una oficina virtual con agentes de inteligencia artificial no requiere ser una multinacional ni contar con un departamento de tecnología propio. Con la estrategia correcta, cualquier empresa puede comenzar en semanas y ver resultados medibles en el primer mes.
+</p>
+
+<h3>Fase 1: auditoría de procesos y detección de oportunidades</h3>
+<p>
+El primer paso es mapear todos los procesos repetitivos de tu empresa: ¿qué tareas consume más tiempo a tu equipo? ¿Cuáles no requieren creatividad ni juicio humano? ¿Dónde se pierden más horas en retrabajos o errores manuales? Esta auditoría permite priorizar qué automatizar primero para obtener el mayor retorno de inversión. El equipo de <strong>HisfIA</strong> realiza esta auditoría de forma gratuita como punto de partida de cualquier proyecto de transformación digital.
+</p>
+
+<h3>Fase 2: selección de herramientas y diseño de agentes</h3>
+<p>
+Una vez identificadas las oportunidades, se diseña la arquitectura de agentes: cuántos se necesitan, qué rol tendrá cada uno, con qué sistemas se conectarán y cómo se coordinarán entre sí. En esta fase se definen también los flujos de escalado: qué situaciones debe resolver el agente de forma autónoma y cuándo debe involucrar a una persona.
+</p>
+
+<h3>Fase 3: integración, pruebas y despliegue</h3>
+<p>
+Los agentes se integran con las herramientas existentes de la empresa (sin necesidad de cambiar de plataforma) y se someten a pruebas exhaustivas antes del despliegue. Una vez en producción, se monitorean continuamente para identificar mejoras y ampliar sus capacidades con el tiempo.
+</p>
+
+<h2>Beneficios medibles de una oficina virtual con IA</h2>
+
+<p>
+Más allá de la tecnología, lo que importa son los resultados. Las empresas que adoptan una oficina virtual con agentes de IA reportan beneficios concretos y cuantificables en áreas clave de su operación.
+</p>
+
+<h3>Reducción de costes operativos</h3>
+<p>
+Automatizar tareas administrativas y de atención al cliente puede reducir los costes operativos entre un <strong>30% y un 60%</strong> dependiendo del sector y el volumen de trabajo. Los agentes de IA no se toman vacaciones, no cometen errores por fatiga y pueden escalar sin coste adicional para gestionar picos de demanda.
+</p>
+
+<h3>Mayor velocidad y disponibilidad</h3>
+<p>
+Los agentes de IA trabajan en tiempo real, sin pausas. Esto significa que un cliente puede recibir una propuesta, resolver una duda o completar un proceso a las 3 de la madrugada del domingo con la misma calidad que en horario laboral. Para empresas que operan en múltiples zonas horarias o con clientes internacionales, esto es una ventaja competitiva determinante.
+</p>
+
+<h3>Escalabilidad sin fricción</h3>
+<p>
+Cuando tu empresa crece, los agentes de IA escalan contigo. No necesitas contratar, formar ni gestionar nuevo personal para absorber un aumento del 200% en el volumen de solicitudes. La infraestructura de IA se adapta automáticamente a la demanda.
+</p>
+
+<img src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80' alt='Red digital global para trabajo remoto' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Casos de uso reales en PYMEs españolas</h2>
+
+<p>
+La oficina virtual con IA no es una promesa futura: es una realidad que ya están aprovechando empresas de todos los tamaños en España. Aquí te mostramos algunos de los casos de uso más habituales que el equipo de <strong>HisfIA</strong> ha implementado para clientes en distintos sectores.
+</p>
+
+<h3>Sector legal y consultoría</h3>
+<p>
+Despachos de abogados y consultoras utilizan agentes de IA para revisar contratos, redactar borradores legales, gestionar la agenda de reuniones con clientes y hacer seguimiento de expedientes. El tiempo de respuesta al cliente se reduce drásticamente y los profesionales pueden centrarse en el trabajo de alto valor que realmente requiere su experiencia.
+</p>
+
+<h3>Comercio electrónico y retail</h3>
+<p>
+Tiendas online integran agentes de IA para gestionar el servicio al cliente, procesar devoluciones, hacer seguimiento de pedidos y enviar comunicaciones personalizadas. El resultado es una experiencia de cliente superior con un equipo humano mucho más reducido.
+</p>
+
+<h3>Servicios profesionales y agencias</h3>
+<p>
+Agencias de marketing, diseño o consultoría utilizan agentes de IA para gestionar proyectos, hacer seguimiento de tareas, generar informes de resultados para clientes y automatizar la comunicación interna. Esto permite que los equipos creativos dediquen todo su tiempo a crear, no a administrar.
+</p>
+
+<h2>Consideraciones de seguridad y privacidad en la oficina virtual con IA</h2>
+
+<h3>Protección de datos empresariales</h3>
+<p>
+Uno de los aspectos más importantes al implementar agentes de IA en tu empresa es garantizar que los datos sensibles estén protegidos. Es fundamental trabajar con proveedores que cumplan con el <strong>Reglamento General de Protección de Datos (RGPD)</strong> y que ofrezcan opciones de implementación en entornos privados o en la nube de la propia empresa. Los sistemas bien diseñados nunca envían datos confidenciales a modelos de IA públicos sin las debidas garantías contractuales y técnicas.
+</p>
+
+<h3>Control humano y supervisión</h3>
+<p>
+La automatización no significa pérdida de control. Una oficina virtual con IA bien implementada incluye siempre mecanismos de supervisión humana: dashboards en tiempo real, registros de todas las acciones realizadas por los agentes, alertas ante situaciones inusuales y la posibilidad de pausar o redirigir cualquier proceso en cualquier momento. El humano siempre mantiene la supervisión final.
+</p>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+<h2>Preguntas frecuentes sobre oficinas virtuales con agentes de IA</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Qué es un agente de inteligencia artificial y cómo funciona en una oficina virtual?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Un agente de inteligencia artificial es un sistema de software capaz de percibir su entorno digital, razonar sobre la información disponible, planificar acciones y ejecutarlas de forma autónoma para alcanzar un objetivo. En una oficina virtual, estos agentes se conectan con las herramientas de trabajo de la empresa (correo, CRM, calendarios, documentos) y realizan tareas como responder correos, gestionar agendas, redactar informes o atender clientes sin intervención humana constante.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto cuesta implementar una oficina virtual con IA para una PYME?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">El coste de implementar una oficina virtual con agentes de IA varía según el número de procesos a automatizar y el nivel de integración requerido. Para una PYME española, los proyectos iniciales suelen oscilar entre 2.000 y 15.000 euros, con costes de mantenimiento mensual muy inferiores al salario de un empleado adicional. El retorno de inversión suele alcanzarse en los primeros 3 a 6 meses gracias a la reducción de costes operativos y el aumento de la productividad.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Los agentes de IA pueden reemplazar completamente a los empleados de una empresa?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No. Los agentes de IA están diseñados para complementar y potenciar el trabajo humano, no para reemplazarlo por completo. Asumen las tareas repetitivas, administrativas y de alto volumen, liberando a los empleados para que se concentren en actividades que requieren creatividad, empatía, negociación y juicio estratégico. El modelo más efectivo es el de colaboración humano-IA, donde cada parte aporta lo que mejor sabe hacer.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Es seguro usar agentes de IA con datos confidenciales de mi empresa?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sí, siempre que se implementen con las garantías adecuadas. Es fundamental elegir proveedores que cumplan con el RGPD, que ofrezcan acuerdos de procesamiento de datos claros y que permitan implementaciones en entornos privados cuando sea necesario. Los agentes de IA empresariales bien configurados incluyen cifrado de datos, registros de auditoría y controles de acceso granulares que garantizan la seguridad de la información sensible.</p>
+</div>
+</div>
+
+</div>
+
+<section class="cta-section
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
