@@ -1,147 +1,137 @@
 [
   {
-    "slug": "generacion-de-leads-con-inteligencia-artificial",
-    "title": "Generación de Leads con Inteligencia Artificial",
-    "meta_desc": "Descubre cómo la IA transforma la generación de leads para PYMEs españolas. Más clientes, menos esfuerzo. Guía práctica de HisfIA.",
-    "keyword": "generación de leads con inteligencia artificial",
-    "date": "2026-04-29T17:47:23.914979",
-    "url": "https://hisfia.com/blog/generacion-de-leads-con-inteligencia-artificial/",
-    "image": "/blog/generacion-de-leads-con-inteligencia-artificial/cover.svg"
-  },
-  {
-    "slug": "lo-que-somos-capaces-de-hacer-con-ia-hisfia",
-    "title": "Lo que somos capaces de hacer con IA | HisfIA",
-    "meta_desc": "Descubre todo lo que somos capaces de lograr con inteligencia artificial. HisfIA transforma empresas españolas con soluciones IA reales y medibles.",
-    "keyword": "Lo que somos capaces",
-    "topic": "Lo que somos capaces",
-    "image": "https://hisfia.com/blog/images/b85bbf75_logo1.jpeg",
-    "date": "2026-04-29T16:13:01.133433",
-    "url": "https://hisfia.com/blog/lo-que-somos-capaces-de-hacer-con-ia-hisfia/"
-  },
-  {
-    "slug": "bot-de-whatsapp-para-empresas-guia-completa-2025",
-    "title": "Bot de WhatsApp para empresas: guía completa 2025",
-    "meta_desc": "Descubre cómo un bot de WhatsApp para empresas puede automatizar ventas, atención al cliente y procesos internos. Guía práctica con casos reales.",
-    "keyword": "bot de WhatsApp para empresas",
-    "date": "2026-04-29T06:36:26.059312",
-    "url": "https://hisfia.com/blog/bot-de-whatsapp-para-empresas-guia-completa-2025/",
-    "image": "/blog/bot-de-whatsapp-para-empresas-guia-completa-2025/cover.svg"
-  },
-  {
-    "slug": "inteligencia-artificial-para-autonomos-en-espana-2025",
-    "title": "Inteligencia Artificial para Autónomos en España 2025",
-    "meta_desc": "Descubre cómo la inteligencia artificial puede ayudar a los autónomos en España a ahorrar tiempo, reducir costes y crecer. Guía práctica con herramientas reales.",
-    "keyword": "inteligencia artificial para autónomos España",
-    "date": "2026-04-28T18:36:26.329999",
-    "url": "https://hisfia.com/blog/inteligencia-artificial-para-autonomos-en-espana-2025/",
-    "image": "/blog/inteligencia-artificial-para-autonomos-en-espana-2025/cover.svg"
-  },
-  {
-    "slug": "automatizacion-de-procesos-empresariales-con-ia",
-    "title": "Automatización de Procesos Empresariales con IA",
-    "meta_desc": "Descubre cómo la automatización de procesos con IA transforma las PYMEs españolas. Ahorra tiempo, reduce errores y escala tu negocio con HisfIA.",
-    "keyword": "automatización de procesos empresariales con IA",
-    "date": "2026-04-28T18:06:29.949131",
-    "url": "https://hisfia.com/blog/automatizacion-de-procesos-empresariales-con-ia/",
-    "image": "/blog/automatizacion-de-procesos-empresariales-con-ia/cover.svg"
-  },
-  {
-    "slug": "oficina-virtual-con-agentes-ia-para-pymes",
-    "title": "Oficina Virtual con Agentes IA para PYMEs",
-    "meta_desc": "Descubre cómo crear una oficina virtual con agentes IA que automatiza tareas, reduce costes y multiplica la productividad de tu empresa. Guía completa.",
-    "keyword": "oficina virtual con agentes IA",
-    "date": "2026-04-28T17:02:01.625410",
-    "url": "https://hisfia.com/blog/oficina-virtual-con-agentes-ia-para-pymes/",
-    "image": "/blog/oficina-virtual-con-agentes-ia-para-pymes/cover.svg"
-  },
-  {
-    "slug": "transformacion-digital-pyme-espana-guia-2025",
-    "title": "Transformación Digital PYME España: Guía 2025",
-    "meta_desc": "Descubre cómo la transformación digital ayuda a las PYMEs españolas a crecer con IA, automatización y agentes inteligentes. Guía completa 2025.",
-    "keyword": "transformación digital PYME España",
-    "date": "2026-04-28T17:00:41.405968",
-    "url": "https://hisfia.com/blog/transformacion-digital-pyme-espana-guia-2025/",
-    "image": "/blog/transformacion-digital-pyme-espana-guia-2025/cover.svg"
-  },
-  {
-    "slug": "implementa-la-ia-en-la-contabilidad-hisfia",
-    "title": "Implementa la IA en la Contabilidad | HisfIA",
-    "meta_desc": "Descubre cómo implementar la IA en la contabilidad de tu empresa para automatizar procesos, reducir errores y ahorrar tiempo. Guía completa de HisfIA.",
-    "keyword": "Implementa la ia en la contabilidad",
-    "topic": "Implementa la ia en la contabilidad",
-    "image": "https://hisfia.com/blog/images/bfcb3de4_images.jpeg",
-    "date": "2026-04-28T16:55:35.381864",
-    "url": "https://hisfia.com/blog/implementa-la-ia-en-la-contabilidad-hisfia/"
-  },
-  {
-    "slug": "marketing-digital-con-inteligencia-artificial",
-    "title": "Marketing Digital con Inteligencia Artificial",
-    "meta_desc": "Descubre cómo el marketing digital con inteligencia artificial transforma la estrategia de las empresas españolas. Guía completa para PYMEs.",
-    "keyword": "marketing digital con inteligencia artificial",
-    "date": "2026-04-28T16:55:24.390127",
-    "url": "https://hisfia.com/blog/marketing-digital-con-inteligencia-artificial/",
-    "image": "/blog/marketing-digital-con-inteligencia-artificial/cover.svg"
-  },
-  {
-    "slug": "automatizar-tu-crm-guia-completa-con-ia-hisfia",
-    "title": "Automatizar tu CRM: Guía Completa con IA | HisfIA",
-    "meta_desc": "Aprende a automatizar tu CRM con inteligencia artificial y multiplica la productividad de tu equipo de ventas. Descubre cómo HisfIA puede ayudarte.",
-    "keyword": "Automatizar tu crm",
-    "topic": "Automatizar tu crm",
-    "image": "https://hisfia.com/blog/images/8ba2105b_ias-generadoras-de-imagenes.jpg",
-    "date": "2026-04-28T16:53:11.119809",
-    "url": "https://hisfia.com/blog/automatizar-tu-crm-guia-completa-con-ia-hisfia/"
-  },
-  {
-    "slug": "automatizacion-de-whatsapp-guia-completa-2025",
-    "title": "Automatización de WhatsApp: Guía Completa 2025",
-    "meta_desc": "Descubre cómo la automatización de WhatsApp puede transformar tu negocio. Chatbots, respuestas automáticas y más con IA. Soluciones de HisfIA.",
-    "keyword": "Automatizacion de whatsapp",
-    "topic": "Automatizacion de whatsapp",
-    "image": "https://hisfia.com/blog/images/74309d3e_dall-e_3_jan_24_artificial_intelligence_.png",
-    "date": "2026-04-28T16:42:09.333911",
-    "url": "https://hisfia.com/blog/automatizacion-de-whatsapp-guia-completa-2025/"
-  },
-  {
-    "slug": "la-ia-te-quita-el-estres-asi-funciona-en-2025",
-    "title": "La IA te quita el estrés: así funciona en 2025",
-    "meta_desc": "Descubre cómo la inteligencia artificial reduce el estrés laboral y personal. HisfIA te explica las claves para vivir mejor con ayuda de la IA.",
-    "keyword": "La IA te quita el estres",
-    "topic": "La IA te quita el estres",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80",
-    "date": "2026-04-28T16:27:01.088634",
-    "url": "https://hisfia.com/blog/la-ia-te-quita-el-estres-asi-funciona-en-2025/"
-  },
-  {
-    "slug": "ia-para-ninos-guia-completa-para-padres-y-educadores",
-    "title": "IA para niños: guía completa para padres y educadores",
-    "meta_desc": "Descubre cómo la IA para niños puede transformar el aprendizaje. Herramientas seguras, beneficios educativos y consejos prácticos para familias y docentes.",
-    "date": "2026-04-28T11:21:02.264264",
-    "url": "https://hisfia.com/blog/ia-para-ninos-guia-completa-para-padres-y-educadores/",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80"
-  },
-  {
-    "slug": "ia-aplicada-al-marketing-guia-completa-2025",
-    "title": "IA aplicada al marketing: guía completa 2025",
-    "meta_desc": "Descubre cómo la IA aplicada al marketing transforma estrategias, automatiza campañas y multiplica resultados. Guía práctica con HisfIA.",
-    "date": "2026-04-28T10:27:13.727626",
-    "url": "https://hisfia.com/blog/ia-aplicada-al-marketing-guia-completa-2025/",
-    "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80"
-  },
-  {
-    "slug": "ia-en-concesionarios-de-coches-hisfia",
-    "title": "IA en concesionarios de coches | HisfIA",
-    "meta_desc": "Descubre cómo la IA en concesionarios de coches mejora ventas, atención al cliente y gestión de inventario. Soluciones reales de HisfIA para tu negocio.",
-    "date": "2026-04-28T10:20:17.680706",
-    "url": "https://hisfia.com/blog/ia-en-concesionarios-de-coches-hisfia/",
+    "slug": "como-implementar-ia-en-tu-empresa-paso-a-paso",
+    "title": "Cómo implementar IA en tu empresa paso a paso",
+    "meta_desc": "Guía práctica para implementar inteligencia artificial en tu empresa. Descubre los pasos clave, herramientas y errores a evitar para transformar tu negocio con IA.",
+    "keyword": "cómo implementar inteligencia artificial en tu empresa paso a paso",
+    "date": "2026-04-29T17:42:40.135224",
+    "url": "https://hisfia.com/blog/como-implementar-ia-en-tu-empresa-paso-a-paso/",
     "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200&q=80"
   },
   {
-    "slug": "ia-en-clinicas-dentales-guia-completa-2025",
-    "title": "IA en clínicas dentales: guía completa 2025",
-    "meta_desc": "Descubre cómo la IA en clínicas dentales mejora el diagnóstico, la gestión y la experiencia del paciente. Soluciones reales con HisfIA.",
-    "date": "2026-04-28T10:16:47.354964",
-    "url": "https://hisfia.com/blog/ia-en-clinicas-dentales-guia-completa-2025/",
-    "image": "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=1200&q=80"
+    "slug": "agentes-de-ia-para-atencion-al-cliente-24-horas",
+    "title": "Agentes de IA para Atención al Cliente 24 Horas",
+    "meta_desc": "Descubre cómo los agentes de IA transforman la atención al cliente con disponibilidad 24/7. Reduce costes y mejora la satisfacción con HisfIA.",
+    "keyword": "agentes de IA para atención al cliente 24 horas",
+    "date": "2026-04-29T17:43:41.121439",
+    "url": "https://hisfia.com/blog/agentes-de-ia-para-atencion-al-cliente-24-horas/",
+    "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80"
+  },
+  {
+    "slug": "automatizacion-de-tareas-repetitivas-con-ia-en-empresas",
+    "title": "Automatización de tareas repetitivas con IA en empresas",
+    "meta_desc": "Descubre cómo la IA automatiza tareas repetitivas en tu empresa, ahorra tiempo y reduce errores. Guía práctica para PYMEs españolas con ejemplos reales.",
+    "keyword": "automatización de tareas repetitivas en empresas con IA",
+    "date": "2026-04-29T17:44:56.304542",
+    "url": "https://hisfia.com/blog/automatizacion-de-tareas-repetitivas-con-ia-en-empresas/",
+    "image": "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=1200&q=80"
+  },
+  {
+    "slug": "chatbot-para-whatsapp-business-en-pequenas-empresas",
+    "title": "Chatbot para WhatsApp Business en pequeñas empresas",
+    "meta_desc": "Descubre cómo un chatbot para WhatsApp Business puede automatizar ventas y atención al cliente en tu PYME española. Guía práctica 2025.",
+    "keyword": "chatbot para WhatsApp Business en pequeñas empresas España",
+    "date": "2026-04-29T17:46:09.772529",
+    "url": "https://hisfia.com/blog/chatbot-para-whatsapp-business-en-pequenas-empresas/",
+    "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200&q=80"
+  },
+  {
+    "slug": "agente-de-voz-con-ia-para-clinicas-medicas",
+    "title": "Agente de Voz con IA para Clínicas Médicas",
+    "meta_desc": "Descubre cómo un agente de voz con IA transforma la gestión de clínicas y consultorios: citas, recordatorios y atención 24/7 sin coste adicional.",
+    "keyword": "agente de voz con IA para clínicas y consultorios médicos",
+    "date": "2026-04-29T17:47:25.276880",
+    "url": "https://hisfia.com/blog/agente-de-voz-con-ia-para-clinicas-medicas/",
+    "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80"
+  },
+  {
+    "slug": "crm-inteligente-con-ia-para-pymes-espanolas",
+    "title": "CRM inteligente con IA para PYMEs españolas",
+    "meta_desc": "Descubre cómo un CRM con inteligencia artificial transforma la gestión de clientes en PYMEs españolas. Automatización, predicción y más ventas.",
+    "keyword": "CRM inteligente con inteligencia artificial para PYMEs españolas",
+    "date": "2026-04-29T17:48:28.629340",
+    "url": "https://hisfia.com/blog/crm-inteligente-con-ia-para-pymes-espanolas/",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80"
+  },
+  {
+    "slug": "marketing-digital-con-ia-para-negocios-locales",
+    "title": "Marketing Digital con IA para Negocios Locales",
+    "meta_desc": "Descubre cómo automatizar tu marketing digital con IA si tienes un negocio local en España. Estrategias reales, herramientas y casos prácticos.",
+    "keyword": "marketing digital automatizado con IA para negocios locales",
+    "date": "2026-04-29T17:49:46.583041",
+    "url": "https://hisfia.com/blog/marketing-digital-con-ia-para-negocios-locales/",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80"
+  },
+  {
+    "slug": "inteligencia-artificial-para-inmobiliarias-en-espana",
+    "title": "Inteligencia Artificial para Inmobiliarias en España",
+    "meta_desc": "Descubre cómo la IA transforma las inmobiliarias españolas: automatización, captación de leads, valoración de propiedades y atención 24/7. Guía completa 2025.",
+    "keyword": "inteligencia artificial para inmobiliarias en España",
+    "date": "2026-04-29T17:50:54.063395",
+    "url": "https://hisfia.com/blog/inteligencia-artificial-para-inmobiliarias-en-espana/",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80"
+  },
+  {
+    "slug": "oficina-virtual-con-agentes-ia-para-empresas",
+    "title": "Oficina Virtual con Agentes IA para Empresas",
+    "meta_desc": "Descubre cómo una oficina virtual con agentes de inteligencia artificial transforma la productividad de tu empresa. Guía completa con casos reales.",
+    "keyword": "oficina virtual con agentes de inteligencia artificial para empresas",
+    "date": "2026-04-29T17:51:57.354922",
+    "url": "https://hisfia.com/blog/oficina-virtual-con-agentes-ia-para-empresas/",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
+  },
+  {
+    "slug": "generacion-de-leads-automatica-con-ia-hisfia",
+    "title": "Generación de Leads Automática con IA | HisfIA",
+    "meta_desc": "Descubre cómo la inteligencia artificial automatiza la generación de leads para PYMEs. Más contactos, menos esfuerzo y mejor conversión.",
+    "keyword": "generación de leads automática con inteligencia artificial",
+    "date": "2026-04-29T17:53:07.687463",
+    "url": "https://hisfia.com/blog/generacion-de-leads-automatica-con-ia-hisfia/",
+    "image": "https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1200&q=80"
+  },
+  {
+    "slug": "ia-para-restaurantes-y-hosteleria-en-espana-2025",
+    "title": "IA para Restaurantes y Hostelería en España 2025",
+    "meta_desc": "Descubre cómo la inteligencia artificial transforma restaurantes y hoteles en España: reservas, cocina, atención al cliente y rentabilidad con IA.",
+    "keyword": "inteligencia artificial para restaurantes y hostelería en España",
+    "date": "2026-04-29T17:54:09.328543",
+    "url": "https://hisfia.com/blog/ia-para-restaurantes-y-hosteleria-en-espana-2025/",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80"
+  },
+  {
+    "slug": "automatizar-procesos-con-ia-ahorra-tiempo-y-dinero",
+    "title": "Automatizar procesos con IA: ahorra tiempo y dinero",
+    "meta_desc": "Descubre cómo la automatización con IA reduce costes y libera horas en tu empresa. Guía práctica para PYMEs con ejemplos reales y resultados medibles.",
+    "keyword": "cómo ahorrar tiempo y dinero automatizando procesos con IA",
+    "date": "2026-04-29T17:55:22.536169",
+    "url": "https://hisfia.com/blog/automatizar-procesos-con-ia-ahorra-tiempo-y-dinero/",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80"
+  },
+  {
+    "slug": "ia-para-despachos-de-abogados-y-asesorias-2025",
+    "title": "IA para Despachos de Abogados y Asesorías 2025",
+    "meta_desc": "Descubre cómo la inteligencia artificial transforma despachos de abogados y asesorías en España. Automatiza tareas, reduce errores y aumenta rentabilidad.",
+    "keyword": "inteligencia artificial para despachos de abogados y asesorías",
+    "date": "2026-04-29T17:56:26.312383",
+    "url": "https://hisfia.com/blog/ia-para-despachos-de-abogados-y-asesorias-2025/",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80"
+  },
+  {
+    "slug": "que-es-un-agente-de-ia-y-como-transforma-tu-negocio",
+    "title": "Qué es un agente de IA y cómo transforma tu negocio",
+    "meta_desc": "Descubre qué es un agente de IA, cómo funciona y por qué las PYMEs españolas lo usan para automatizar, crecer y competir. Guía completa de HisfIA.",
+    "keyword": "qué es un agente de IA y cómo puede transformar tu negocio",
+    "date": "2026-04-29T17:57:30.947549",
+    "url": "https://hisfia.com/blog/que-es-un-agente-de-ia-y-como-transforma-tu-negocio/",
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80"
+  },
+  {
+    "slug": "ia-para-clinicas-dentales-y-fisioterapia-espana",
+    "title": "IA para clínicas dentales y fisioterapia España",
+    "meta_desc": "Descubre cómo la inteligencia artificial transforma clínicas dentales y centros de fisioterapia en España. Automatización, gestión y más pacientes.",
+    "keyword": "IA para el sector salud clínicas dentales y fisioterapia España",
+    "date": "2026-04-29T17:58:35.963841",
+    "url": "https://hisfia.com/blog/ia-para-clinicas-dentales-y-fisioterapia-espana/",
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffbb43d89a5?w=1200&q=80"
   }
 ]
