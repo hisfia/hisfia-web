@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Chatbot para WhatsApp Business en pequeñas empresas — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo un chatbot para WhatsApp Business puede automatizar ventas y atención al cliente en tu PYME española. Guía práctica 2025."/>
+  <meta property="og:title" content="Chatbot para WhatsApp Business en pequeñas empresas"/>
+  <meta property="og:description" content="Descubre cómo un chatbot para WhatsApp Business puede automatizar ventas y atención al cliente en tu PYME española. Guía práctica 2025."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/chatbot-para-whatsapp-business-en-pequenas-empresas/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/chatbot-para-whatsapp-business-en-pequenas-empresas/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Chatbot para WhatsApp Business en pequeñas empresas", "description": "Descubre cómo un chatbot para WhatsApp Business puede automatizar ventas y atención al cliente en tu PYME española. Guía práctica 2025.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>Chatbot para WhatsApp Business en pequeñas empresas España</h1>
+
+<p class="intro">
+WhatsApp es el canal de comunicación favorito de los españoles: más de 33 millones de usuarios activos lo usan cada día. Para las pequeñas y medianas empresas, esto representa una oportunidad enorme de conectar con sus clientes donde ya están. Sin embargo, gestionar conversaciones de forma manual supone una carga inasumible para equipos pequeños. Aquí es donde entra el <strong>chatbot para WhatsApp Business</strong>: un asistente virtual capaz de responder preguntas frecuentes, cualificar leads, gestionar pedidos y agendar citas de forma completamente automática, las 24 horas del día. En esta guía vas a conocer qué es exactamente un chatbot para WhatsApp Business, por qué las PYMEs españolas lo necesitan hoy, qué funcionalidades debe tener y cómo implantarlo paso a paso sin necesidad de conocimientos técnicos. Al final entenderás por qué cada vez más negocios en España están haciendo de WhatsApp su canal de ventas y soporte más rentable.
+</p>
+
+<img src='https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1200&q=80' alt='WhatsApp Business con chatbot IA' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Qué es un chatbot para WhatsApp Business y cómo funciona</h2>
+
+<h3>Definición y tecnología detrás del chatbot</h3>
+<p>
+Un chatbot para WhatsApp Business es un programa de inteligencia artificial que se conecta a tu cuenta de WhatsApp Business API y mantiene conversaciones automáticas con tus clientes. A diferencia de los bots de menú rígidos del pasado, los chatbots modernos basados en IA generativa entienden el lenguaje natural: el cliente escribe como hablaría con una persona y el bot interpreta la intención, busca la respuesta correcta y responde de forma coherente y contextual.
+</p>
+<p>
+La tecnología que hay detrás combina la <strong>API oficial de WhatsApp Business</strong> (gestionada por Meta), modelos de lenguaje como GPT-4 o Claude, y plataformas de orquestación que integran el bot con tu CRM, tu base de datos de productos o tu sistema de citas.
+</p>
+
+<h3>Diferencia entre WhatsApp Business App y WhatsApp Business API</h3>
+<p>
+Muchas PYMEs confunden ambos productos. La <strong>App de WhatsApp Business</strong> es la aplicación gratuita que cualquier autónomo puede descargar en su móvil. Permite respuestas rápidas y horario de ausencia, pero no soporta automatizaciones avanzadas ni múltiples agentes.
+</p>
+<p>
+La <strong>WhatsApp Business API</strong>, en cambio, es la versión para empresas que permite conectar chatbots, gestionar miles de conversaciones simultáneas, integrar herramientas externas y asignar tickets a diferentes agentes. Es la que necesitas si quieres automatización real. Proveedores como HisfIA facilitan el acceso a esta API sin que tu equipo tenga que lidiar con tecnicismos.
+</p>
+
+<h2>Por qué las PYMEs españolas necesitan un chatbot en WhatsApp ahora</h2>
+
+<img src='https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&q=80' alt='Marketing digital y mensajería empresarial' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h3>El coste de ignorar WhatsApp como canal de negocio</h3>
+<p>
+Según datos de Meta, el <strong>80% de los adultos en España</strong> prefiere contactar con una empresa por mensajería antes que por teléfono o email. Cuando un cliente envía un WhatsApp y tarda horas en recibir respuesta, la probabilidad de que compre cae drásticamente. Las grandes marcas ya tienen bots que responden en segundos. Si tu PYME no lo hace, estás perdiendo ventas frente a competidores que sí han dado el paso.
+</p>
+<p>
+Además, el coste de atender manualmente cada conversación se dispara cuando el volumen crece. Un solo empleado puede gestionar 4 o 5 chats simultáneos con dificultad; un chatbot bien configurado puede manejar miles sin coste adicional.
+</p>
+
+<h3>Casos de uso más habituales en negocios pequeños</h3>
+<p>
+Los casos de uso más frecuentes en PYMEs españolas incluyen:
+</p>
+<ul>
+  <li><strong>Respuesta automática a preguntas frecuentes</strong> (horario, precios, ubicación, disponibilidad).</li>
+  <li><strong>Captación y cualificación de leads</strong> antes de pasarlos a un comercial humano.</li>
+  <li><strong>Reservas y citas</strong> en clínicas, peluquerías, talleres o consultorías.</li>
+  <li><strong>Seguimiento de pedidos</strong> en e-commerce y tiendas físicas con venta online.</li>
+  <li><strong>Campañas de marketing</strong> mediante envíos masivos segmentados con mensajes personalizados.</li>
+  <li><strong>Recuperación de carritos abandonados</strong> con mensajes proactivos en tiendas online.</li>
+</ul>
+
+<h2>Funcionalidades clave que debe tener un buen chatbot para WhatsApp</h2>
+
+<h3>IA conversacional y comprensión del lenguaje natural</h3>
+<p>
+Un chatbot útil no es el que muestra un menú de opciones numeradas. Debe entender frases como "¿tenéis talla L en azul?" o "quiero cancelar mi pedido del martes" sin que el cliente tenga que adaptarse a un formato rígido. Los chatbots actuales basados en modelos de lenguaje de última generación lo consiguen con una tasa de resolución automática que supera el 70% en la mayoría de sectores.
+</p>
+
+<h3>Integración con herramientas empresariales</h3>
+<p>
+El chatbot vale poco si vive en un silo. Necesita conectarse con tu <strong>CRM</strong> (HubSpot, Salesforce, Zoho), con tu plataforma de e-commerce (Shopify, PrestaShop, WooCommerce), con tu calendario o con tu software de gestión. Estas integraciones permiten, por ejemplo, que el bot consulte en tiempo real el stock de un producto o cree automáticamente una ficha de cliente en tu CRM cuando alguien hace una consulta.
+</p>
+<p>
+En HisfIA diseñamos agentes de IA para WhatsApp que se integran con las herramientas que ya usa tu empresa, sin necesidad de cambiar tus procesos actuales.
+</p>
+
+<h3>Transferencia fluida a agente humano</h3>
+<p>
+La automatización no significa eliminar el trato humano. Un buen chatbot detecta cuándo una conversación supera sus capacidades (reclamaciones complejas, negociaciones, situaciones emocionales) y transfiere el chat a un agente con todo el contexto de la conversación ya cargado. Esto evita que el cliente tenga que repetir lo que ha dicho y mejora la experiencia de forma notable.
+</p>
+
+<img src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80' alt='Smartphone con aplicaciones de comunicación' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo implantar un chatbot en WhatsApp Business paso a paso</h2>
+
+<h3>Fase 1: Definir objetivos y mapear los flujos de conversación</h3>
+<p>
+Antes de programar nada, debes responder a tres preguntas: ¿qué preguntas recibe tu empresa con más frecuencia?, ¿qué procesos consumen más tiempo a tu equipo?, y ¿cuál es el recorrido típico de un cliente desde que contacta hasta que compra? Con estas respuestas trazas los <strong>flujos de conversación</strong> que el bot debe gestionar.
+</p>
+
+<h3>Fase 2: Elegir la plataforma y el proveedor adecuado</h3>
+<p>
+Necesitas un <strong>proveedor de soluciones empresariales de Meta</strong> (BSP, por sus siglas en inglés) para acceder a la API oficial. Luego puedes usar una plataforma de gestión conversacional (Manychat, Landbot, Wati) o contar con un partner tecnológico como HisfIA que desarrolle un agente a medida con IA generativa integrada. La elección depende de la complejidad de tus procesos y del nivel de personalización que necesites.
+</p>
+
+<h3>Fase 3: Entrenamiento, pruebas y optimización continua</h3>
+<p>
+Una vez lanzado, el chatbot necesita un período de ajuste. Analiza las conversaciones donde el bot no supo responder, incorpora esas preguntas a su base de conocimiento y mide las métricas clave: tasa de resolución automática, tiempo medio de respuesta, tasa de transferencia a humano y satisfacción del cliente (CSAT). La optimización continua es lo que convierte un chatbot mediocre en uno realmente rentable.
+</p>
+
+<h2>Rentabilidad y retorno de inversión para pequeñas empresas</h2>
+
+<h3>Cuánto cuesta implementar un chatbot en WhatsApp</h3>
+<p>
+Los costes varían según el enfoque. Las plataformas de autoservicio tienen planes desde 30-80 euros al mes, aunque requieren tiempo de configuración interno. Los proyectos de agentes de IA a medida, como los que desarrolla HisfIA para PYMEs españolas, tienen una inversión inicial de implantación y una cuota mensual de mantenimiento. En la mayoría de casos, el ahorro en horas de atención al cliente amortiza la inversión en menos de tres meses.
+</p>
+
+<h3>Métricas que demuestran el ROI</h3>
+<p>
+Las empresas que implantan chatbots en WhatsApp Business reportan de media:
+</p>
+<ul>
+  <li>Reducción del <strong>60-80% en tiempo dedicado a consultas repetitivas</strong>.</li>
+  <li>Aumento del <strong>25-40% en tasa de conversión</strong> de leads al responder de forma inmediata.</li>
+  <li>Mejora del <strong>NPS y satisfacción del cliente</strong> por disponibilidad 24/7.</li>
+  <li>Incremento del <strong>ticket medio</strong> gracias a recomendaciones personalizadas del bot.</li>
+</ul>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+  <h2>Preguntas frecuentes sobre chatbots para WhatsApp Business</h2>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Necesito conocimientos técnicos para tener un chatbot en WhatsApp Business?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">No necesariamente. Existen plataformas con interfaces visuales que permiten configurar flujos básicos sin programar. Para automatizaciones avanzadas con IA generativa e integraciones con CRM o e-commerce, lo más eficiente es contar con un partner tecnológico especializado que gestione la parte técnica mientras tú te centras en definir los objetivos de negocio.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Es legal usar un chatbot para contactar clientes por WhatsApp en España?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Sí, siempre que cumplas con el RGPD y la LSSI. Para enviar mensajes proactivos (campañas o notificaciones), el cliente debe haber dado su consentimiento expreso. Los mensajes en respuesta a consultas iniciadas por el propio cliente son siempre legales. Es fundamental informar al usuario de que puede estar hablando con un sistema automatizado.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Un chatbot de WhatsApp puede reemplazar a mi equipo de atención al cliente?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">No debería ser el objetivo. El chatbot se encarga de las consultas repetitivas y rutinarias (que suelen representar el 70-80% del volumen total), liberando a tu equipo humano para atender los casos que realmente requieren empatía, criterio o negociación. El resultado es un servicio más rápido, disponible 24/7 y con mayor calidad en las interacciones complejas.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Cuánto tiempo se tarda en implementar un chatbot para WhatsApp Business en una PYME?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Con una plataforma de autoservicio, puedes tener un bot básico funcionando en 1-2 semanas. Un agente de IA personalizado con integraciones complejas requiere entre 3 y 6 semanas de desarrollo, pruebas y ajuste. En HisfIA trabajamos con metodologías ágiles que permiten lanzar una primera versión funcional en pocas semanas y mejorarla de forma iterativa con datos reales de conversaciones.</p>
+    </div>
+  </div>
+
+</div>
+
+<h2>Conclusión: el chatbot de WhatsApp ya no es una ventaja competitiva, es una necesidad</h2>
+<p>
+Las pequeñas empresas españolas que adoptan chatbots para WhatsApp Business hoy no solo ahorran tiempo y dinero: construyen relaciones más rápidas, más personales y más escalables con sus clientes. El coste de entrada nunca ha sido tan bajo ni la tecnología tan accesible. La pregunta ya no es si puedes permitirte un chatbot, sino si puedes permitirte no tenerlo mientras tu competencia sí lo usa.
+</p>
+<p>
+Si quieres explorar cómo un agente de IA en WhatsApp puede
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
