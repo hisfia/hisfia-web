@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>IA para clínicas dentales y fisioterapia España — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo la inteligencia artificial transforma clínicas dentales y centros de fisioterapia en España. Automatización, gestión y más pacientes."/>
+  <meta property="og:title" content="IA para clínicas dentales y fisioterapia España"/>
+  <meta property="og:description" content="Descubre cómo la inteligencia artificial transforma clínicas dentales y centros de fisioterapia en España. Automatización, gestión y más pacientes."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/ia-para-clinicas-dentales-y-fisioterapia-espana/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/ia-para-clinicas-dentales-y-fisioterapia-espana/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "IA para clínicas dentales y fisioterapia España", "description": "Descubre cómo la inteligencia artificial transforma clínicas dentales y centros de fisioterapia en España. Automatización, gestión y más pacientes.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>IA para el sector salud: clínicas dentales y fisioterapia en España</h1>
+
+<p class='intro'>
+La inteligencia artificial ha dejado de ser una promesa tecnológica para convertirse en una herramienta real y accesible para las pequeñas y medianas clínicas de salud en España. Desde consultas de fisioterapia en Valencia hasta clínicas dentales en Sevilla, los centros sanitarios que adoptan soluciones de IA están logrando reducir su carga administrativa, mejorar la experiencia del paciente y aumentar sus ingresos sin necesidad de contratar más personal. En este artículo te explicamos en qué áreas concretas puede aplicarse la inteligencia artificial en tu clínica dental o centro de fisioterapia, qué beneficios reales están obteniendo otros profesionales del sector y cómo dar el primer paso hacia la transformación digital de tu negocio sanitario en 2025.
+</p>
+
+<img src='https://images.unsplash.com/photo-1588776814546-1ffbb43d89a5?w=1200&q=80' alt='Clínica dental con inteligencia artificial' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<section>
+<h2>Por qué el sector sanitario de proximidad necesita la IA ahora mismo</h2>
+
+<h3>El problema real de las clínicas españolas en 2025</h3>
+<p>
+La mayoría de clínicas dentales y centros de fisioterapia en España comparten los mismos cuellos de botella: recepcionistas desbordadas gestionando citas por teléfono, pacientes que no reciben seguimiento después de su visita, presupuestos que se entregan y nunca se convierten en tratamiento y una agenda que nunca está perfectamente optimizada. Estos problemas no son de talento humano, son de capacidad. Ningún equipo pequeño puede atender el teléfono, gestionar las redes sociales, hacer seguimiento de cada paciente y llevar la administración al mismo tiempo. Aquí es donde la IA aporta un valor inmediato y medible.
+</p>
+
+<h3>El momento es ahora: coste accesible y ROI demostrable</h3>
+<p>
+Hasta hace pocos años, implementar soluciones de IA requería grandes inversiones tecnológicas reservadas a hospitales privados o grandes grupos dentales. En 2025, agencias especializadas como <b>HisfIA</b> han desarrollado soluciones modulares pensadas específicamente para PYMEs del sector salud, con costes mensuales comparables a contratar un auxiliar administrativo a tiempo parcial pero con una disponibilidad de 24 horas los 7 días de la semana.
+</p>
+</section>
+
+<section>
+<h2>Automatización de citas y gestión de agenda en clínicas</h2>
+
+<h3>Chatbots y asistentes virtuales para reserva de citas</h3>
+<p>
+Un asistente de IA integrado en tu web, en WhatsApp Business o en Instagram puede atender las solicitudes de cita de tus pacientes a cualquier hora, recoger sus datos, consultar la disponibilidad en tiempo real y confirmar la reserva automáticamente. Esto elimina el 60-70% de las llamadas administrativas rutinarias que colapsan la recepción durante las primeras horas de la mañana. El paciente recibe una respuesta inmediata y la clínica gana tiempo para dedicarse a lo que realmente importa: la atención clínica.
+</p>
+
+<h3>Recordatorios automáticos y reducción de ausencias</h3>
+<p>
+Las ausencias no avisadas son uno de los mayores problemas económicos de las clínicas de fisioterapia y los gabinetes dentales. Un sistema de IA puede enviar recordatorios personalizados por SMS, WhatsApp o correo electrónico 48 y 24 horas antes de la cita, permitir la confirmación o cancelación con un solo clic y rellenar automáticamente los huecos libres con pacientes en lista de espera. Clínicas que han implementado este sistema reportan reducciones de ausencias del 35% en los primeros tres meses.
+</p>
+</section>
+
+<img src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80' alt='Tecnología sanitaria y automatización médica' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<section>
+<h2>IA para captación y fidelización de pacientes</h2>
+
+<h3>Marketing automatizado con IA para clínicas dentales</h3>
+<p>
+La IA no solo optimiza los procesos internos, también transforma la manera en que una clínica dental atrae nuevos pacientes. Los sistemas de marketing conversacional con IA pueden cualificar automáticamente a los usuarios que llegan a tu web tras buscar en Google términos como "clínica dental económica Madrid" o "ortodoncia invisible Bilbao", responder sus dudas sobre precios y tratamientos, y guiarlos hacia la solicitud de una primera visita gratuita. Todo esto sin intervención humana y en tiempo real.
+</p>
+
+<h3>Seguimiento postratamiento y reactivación de pacientes dormidos</h3>
+<p>
+Una de las mayores fuentes de ingresos no aprovechadas en las clínicas es la base de datos de pacientes que hace meses o años que no vuelven. Un agente de IA puede analizar automáticamente qué pacientes no han tenido visita reciente, redactar mensajes personalizados basados en su historial y lanzar campañas de reactivación por WhatsApp o email de forma completamente automatizada. <b>HisfIA</b> implementa este tipo de agentes de reactivación para centros de salud consiguiendo retornos de entre 3 y 8 veces la inversión en los primeros 60 días.
+</p>
+</section>
+
+<section>
+<h2>Aplicaciones específicas de IA en fisioterapia</h2>
+
+<h3>Gestión de tratamientos y evolución del paciente</h3>
+<p>
+En un centro de fisioterapia, el seguimiento continuo del progreso del paciente es clave tanto para el resultado clínico como para la fidelización. La IA puede ayudar a generar informes de evolución de forma automática a partir de las notas del fisioterapeuta, recordar al paciente sus ejercicios entre sesiones mediante mensajes programados y detectar patrones en los datos de evolución que indiquen cuándo el paciente podría estar listo para dar el alta o para intensificar el tratamiento.
+</p>
+
+<h3>Optimización de sesiones y rentabilidad del centro</h3>
+<p>
+Los centros de fisioterapia tienen una casuística particular: sesiones de duración variable, múltiples especialistas con agendas distintas y pacientes con tratamientos de frecuencia semanal. Los sistemas de IA para gestión de agenda en fisioterapia pueden optimizar la distribución de sesiones para maximizar la ocupación, sugerir horarios alternativos cuando hay cancelaciones y generar automáticamente las facturas o presupuestos de seguimiento de tratamientos prolongados.
+</p>
+</section>
+
+<img src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80' alt='Fisioterapia y gestión digital de pacientes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<section>
+<h2>Cómo implementar IA en tu clínica paso a paso</h2>
+
+<h3>Auditoría de procesos: el primer paso imprescindible</h3>
+<p>
+Antes de implementar ninguna herramienta, es fundamental identificar qué tareas consumen más tiempo en tu clínica, dónde se pierden más pacientes y qué procesos se repiten de forma mecánica. Una auditoría de procesos con enfoque de automatización permite priorizar qué soluciones de IA aportarán mayor retorno en menos tiempo. En <b>HisfIA</b> realizamos esta auditoría como primer paso de todos nuestros proyectos para clínicas del sector salud, garantizando que la inversión esté siempre justificada desde el primer día.
+</p>
+
+<h3>Integración con el software clínico existente</h3>
+<p>
+Una preocupación habitual de los propietarios de clínicas es si la IA se integrará con su software de gestión actual: Gesden, Clinic Cloud, ClinicPoint, Nubedent u otros. La buena noticia es que la mayoría de soluciones modernas de IA se integran mediante APIs con los principales programas de gestión clínica, por lo que no es necesario cambiar el sistema que ya usas. La IA actúa como una capa adicional que automatiza las comunicaciones, el marketing y la gestión sin alterar los flujos clínicos ya establecidos.
+</p>
+</section>
+
+<section>
+<h2>Casos de uso reales y resultados medibles</h2>
+
+<h3>Clínica dental que duplicó sus consultas en 4 meses</h3>
+<p>
+Una clínica dental en el área metropolitana de Barcelona implementó un chatbot de cualificación en su web y una campaña de reactivación de pacientes inactivos mediante IA conversacional. En los primeros cuatro meses, las solicitudes de primera visita aumentaron un 110%, las ausencias cayeron un 40% y el equipo de recepción redujo las llamadas administrativas en dos horas diarias. El coste de implementación se recuperó en el segundo mes.
+</p>
+
+<h3>Centro de fisioterapia que redujo su carga administrativa un 50%</h3>
+<p>
+Un centro de fisioterapia deportiva en Madrid automatizó los recordatorios de cita, el envío de rutinas de ejercicios entre sesiones y la gestión de las reseñas en Google. El resultado fue una mejora notable en la satisfacción del paciente, un aumento de reseñas positivas del 200% en seis meses y la liberación de más de 10 horas semanales del equipo administrativo que se pudieron dedicar a la atención directa.
+</p>
+</section>
+
+<div class='faq' itemscope itemtype="https://schema.org/FAQPage">
+
+<h2>Preguntas frecuentes sobre IA para clínicas dentales y fisioterapia</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Puede una clínica dental pequeña permitirse implementar inteligencia artificial?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sí. En 2025 existen soluciones de IA modulares diseñadas específicamente para PYMEs del sector salud con costes mensuales muy accesibles. Una clínica dental con un solo sillón o un centro de fisioterapia unipersonal puede implementar automatización de citas, recordatorios y seguimiento de pacientes por un coste equivalente al de una herramienta de software estándar, con retorno de inversión medible desde el primer o segundo mes.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Qué procesos de una clínica de fisioterapia se pueden automatizar con IA?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Los procesos más automatizables en fisioterapia son: gestión y confirmación de citas, recordatorios de sesión por WhatsApp o SMS, envío de rutinas de ejercicios entre sesiones, seguimiento del progreso del paciente, reactivación de pacientes inactivos, solicitud automática de reseñas en Google y generación de presupuestos de tratamientos prolongados.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿La IA en clínicas dentales cumple con el RGPD y la normativa sanitaria española?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sí, siempre que se implementen correctamente. Las soluciones de IA para el sector sanitario deben cumplir con el Reglamento General de Protección de Datos (RGPD), la Ley Orgánica de Protección de Datos española (LOPDGDD) y las directrices específicas para datos de salud. Es fundamental trabajar con proveedores que ofrezcan contratos de encargado del tratamiento y que almacenen los datos en servidores dentro del Espacio Económico Europeo.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto tiempo tarda en implementarse un sistema de IA en una clínica dental?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Dependiendo de la complejidad y de las integraciones necesarias con el software de gestión existente, la implementación de una solución básica de IA para clínicas dentales puede estar operativa en entre 2 y 4 semanas. Soluciones más completas que incluyen agentes de captación, marketing automatizado y análisis de datos pueden requerir entre 4 y 8 semanas de configuración y formación del equipo.</p>
+</div>
+</div>
+
+</div>
+
+<section>
+<h2>Conclusión: la IA no es el futuro del sector salud, es el presente</h2>
+<p>
+Las clínicas dentales y los centros de fisioterapia que están adoptando la inteligencia artificial en España no lo hacen porque sea una tendencia tecnológica, sino porque les está generando resultados concretos: más pacientes, menos ausencias, equipos más eficientes y mayor fidelización. La ventaja competitiva para quienes se mueven ahora es real y medible. Si tu clínica todavía gestiona la agenda por teléfono, no hace seguimiento sistemático de pacientes inactivos o no tiene presencia conversacional en WhatsApp, ya está perdiendo oportunidades cada día. El momento de actuar es ahora, y el coste de no hacerlo es mayor que el de empezar.
+</p>
+</section>
+
+</article>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
