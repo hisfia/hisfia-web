@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>CRM inteligente con IA para PYMEs españolas — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo un CRM con inteligencia artificial transforma la gestión de clientes en PYMEs españolas. Automatización, predicción y más ventas."/>
+  <meta property="og:title" content="CRM inteligente con IA para PYMEs españolas"/>
+  <meta property="og:description" content="Descubre cómo un CRM con inteligencia artificial transforma la gestión de clientes en PYMEs españolas. Automatización, predicción y más ventas."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/crm-inteligente-con-ia-para-pymes-espanolas/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/crm-inteligente-con-ia-para-pymes-espanolas/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "CRM inteligente con IA para PYMEs españolas", "description": "Descubre cómo un CRM con inteligencia artificial transforma la gestión de clientes en PYMEs españolas. Automatización, predicción y más ventas.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>CRM inteligente con inteligencia artificial para PYMEs españolas</h1>
+
+<p class="intro">La gestión de clientes ha cambiado radicalmente en los últimos años. Las PYMEs españolas ya no pueden competir solo con precio o producto: la diferencia la marca quien conoce mejor a su cliente, quien responde más rápido y quien anticipa sus necesidades antes de que las exprese. Un <strong>CRM inteligente con inteligencia artificial</strong> es hoy la herramienta que hace posible todo eso, sin necesidad de un departamento tecnológico propio ni de una inversión desorbitada. En este artículo explicamos qué es un CRM con IA, cómo funciona en la práctica para una empresa mediana o pequeña en España, qué ventajas reales aporta y cómo puedes implementarlo en tu negocio de forma ágil. Si gestionas clientes, tienes un equipo comercial o quieres crecer de forma ordenada, este artículo es para ti.</p>
+
+<img src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80' alt='Dashboard CRM con inteligencia artificial' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Qué es un CRM con inteligencia artificial y por qué es diferente al CRM tradicional</h2>
+
+<p>Un CRM (<em>Customer Relationship Management</em>) es un sistema que centraliza toda la información de tus clientes: contactos, historial de compras, interacciones, oportunidades de venta y comunicaciones. El CRM tradicional hace eso bien, pero requiere que los equipos introduzcan datos manualmente, que los comerciales actualicen fichas y que los directivos interpreten los informes ellos mismos.</p>
+
+<p>El <strong>CRM con inteligencia artificial</strong> va un paso más allá. Automatiza la captura de datos, interpreta patrones de comportamiento, predice qué clientes tienen más probabilidad de comprar o de abandonar, y sugiere acciones concretas en el momento adecuado. No es un almacén de información: es un sistema que piensa junto a tu equipo.</p>
+
+<h3>De los datos a las decisiones: el salto cualitativo de la IA</h3>
+
+<p>El valor real de la IA en un CRM no está en acumular más datos, sino en convertirlos en decisiones accionables. Mientras que un CRM clásico te dice cuántas llamadas hizo tu comercial la semana pasada, un CRM inteligente te dice a cuál de tus 200 leads debes llamar hoy primero porque tiene un 78% de probabilidad de cerrar en los próximos cinco días.</p>
+
+<h3>Automatización conversacional integrada en el CRM</h3>
+
+<p>Uno de los elementos que más impacto tienen en las PYMEs es la integración de <strong>agentes conversacionales con IA</strong> directamente en el CRM. Estos agentes pueden responder consultas de clientes por WhatsApp, email o chat, registrar automáticamente la interacción en la ficha del cliente y escalar al comercial humano solo cuando el contexto lo requiere. Tiempo ahorrado, datos completos, cliente atendido.</p>
+
+<h2>Beneficios concretos de un CRM inteligente para una PYME española</h2>
+
+<p>Las PYMEs en España enfrentan retos muy específicos: equipos comerciales pequeños, recursos tecnológicos limitados, alta dependencia de relaciones personales y una competencia creciente tanto local como digital. El CRM con IA está diseñado para resolver exactamente esos problemas, no para crear nuevos.</p>
+
+<img src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80' alt='Análisis de datos de clientes con IA' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h3>Segmentación automática y personalización a escala</h3>
+
+<p>Un CRM inteligente analiza el comportamiento de cada cliente y lo agrupa en segmentos dinámicos: clientes de alto valor en riesgo de abandono, leads fríos que han vuelto a mostrar interés, compradores recurrentes que podrían escalar a un ticket mayor. Esta segmentación ocurre de forma automática y se actualiza en tiempo real, permitiendo que campañas de marketing y acciones comerciales lleguen al cliente correcto con el mensaje correcto.</p>
+
+<h3>Predicción de ventas y gestión del pipeline</h3>
+
+<p>La incertidumbre en el pipeline de ventas es uno de los mayores dolores de los directivos de PYMEs. El CRM con IA analiza el historial de oportunidades cerradas, el comportamiento actual de cada prospecto y variables externas para <strong>predecir con precisión qué operaciones cerrarán y en qué plazo</strong>. Eso permite planificar recursos, ajustar previsiones y tomar decisiones financieras con datos reales, no con intuiciones.</p>
+
+<h3>Reducción del trabajo administrativo del equipo comercial</h3>
+
+<p>Se estima que los comerciales dedican entre el 30% y el 40% de su tiempo a tareas administrativas: actualizar fichas, redactar correos de seguimiento, registrar llamadas. Un CRM con IA automatiza todo eso. El sistema transcribe llamadas, genera resúmenes, actualiza el estado de la oportunidad y programa el próximo paso. El comercial solo tiene que vender.</p>
+
+<h2>Cómo implementar un CRM con IA en tu PYME paso a paso</h2>
+
+<p>La implementación de un CRM inteligente no tiene por qué ser un proyecto de meses ni requerir un equipo de IT. Con la metodología adecuada, una PYME española puede tener su CRM funcionando con IA en semanas.</p>
+
+<h3>Auditoría de procesos y datos existentes</h3>
+
+<p>El primer paso es entender cómo gestiona actualmente la empresa sus clientes: dónde viven los datos de contacto, cómo se registran las interacciones, qué herramientas usa el equipo comercial y qué información se pierde en el proceso. Esta auditoría define qué hay que automatizar, qué hay que integrar y qué hay que construir desde cero.</p>
+
+<h3>Selección de la plataforma y configuración de agentes de IA</h3>
+
+<p>Existen plataformas CRM con capacidades nativas de IA, como HubSpot con sus módulos de IA, Salesforce Einstein o soluciones más accesibles para PYMEs. Sin embargo, en muchos casos la diferencia real la hace la capa de IA que se construye sobre el CRM: los agentes de automatización, los modelos predictivos y las integraciones con canales de comunicación. Desde <strong>HisfIA</strong> diseñamos e implementamos exactamente esa capa de inteligencia adaptada a las necesidades de cada PYME española, conectando el CRM con WhatsApp, email, ERP y los procesos comerciales específicos de cada negocio.</p>
+
+<h3>Formación del equipo y adopción progresiva</h3>
+
+<p>La tecnología más potente falla si el equipo no la adopta. La implementación exitosa de un CRM inteligente incluye formación práctica, no teórica: que el comercial entienda por qué el sistema le sugiere llamar a ese cliente hoy, que el director vea en su panel cómo la IA mejora la previsión. La adopción progresiva, empezando por los procesos de mayor impacto, garantiza resultados rápidos y equipos comprometidos.</p>
+
+<img src='https://images.unsplash.com/photo-1553028826-f4804a6dba3b?w=1200&q=80' alt='Transformación digital en gestión empresarial' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Integración del CRM inteligente con el resto de la empresa</h2>
+
+<p>Un CRM con IA no es una isla. Su potencia se multiplica cuando está conectado con el resto de sistemas y procesos de la empresa: marketing, atención al cliente, facturación y logística.</p>
+
+<h3>Conexión con herramientas de marketing automatizado</h3>
+
+<p>Cuando el CRM y las herramientas de email marketing o publicidad digital comparten datos en tiempo real, los resultados cambian de forma radical. El comportamiento de un lead en el CRM activa automáticamente una secuencia de correos, una audiencia personalizada en Meta Ads o una alerta para el comercial. El marketing deja de ser masivo y se convierte en personalizado y oportuno.</p>
+
+<h3>Atención al cliente con IA conectada al historial del CRM</h3>
+
+<p>Cuando un cliente llama o escribe, el agente de atención tiene acceso instantáneo a todo su historial: compras, incidencias, comunicaciones, segmento de valor. La IA puede resolver consultas frecuentes de forma autónoma y, cuando escala al humano, le entrega un resumen completo del contexto. El cliente no tiene que repetir nada. Esa experiencia, en España, todavía diferencia a las empresas que la ofrecen.</p>
+
+<h2>Casos de uso reales de CRM con IA en PYMEs españolas</h2>
+
+<p>La teoría es útil, pero los casos concretos son los que demuestran el impacto real. Estos son algunos escenarios que reflejan cómo las PYMEs en España están aplicando CRM inteligente hoy:</p>
+
+<h3>Empresa de servicios profesionales: de la hoja de Excel al pipeline predictivo</h3>
+
+<p>Una consultoría de 15 personas gestionaba sus clientes y oportunidades en hojas de cálculo. Tras implementar un CRM con IA integrado con su email y calendario, el tiempo dedicado a actualizar la información cayó un 60%. La IA comenzó a identificar qué clientes actuales tenían perfil para contratar servicios adicionales, generando un incremento del 22% en la facturación por cliente en seis meses.</p>
+
+<h3>Empresa de comercio B2B: alertas tempranas de abandono de clientes</h3>
+
+<p>Un distribuidor con más de 300 clientes activos no podía monitorizar individualmente el comportamiento de compra de cada uno. Con el CRM inteligente, el sistema detecta automáticamente patrones de riesgo: clientes que han reducido la frecuencia de pedido, que no han respondido a las últimas comunicaciones o cuya facturación ha caído respecto al mes anterior. El comercial recibe una alerta y actúa antes de que el cliente se vaya. La tasa de retención mejoró un 18% en el primer año.</p>
+
+<p>En <strong>HisfIA</strong> hemos acompañado a PYMEs en procesos similares, diseñando la arquitectura de datos y los agentes de IA que hacen posible este nivel de inteligencia comercial sin necesidad de un equipo tecnológico interno.</p>
+
+<h2>Preguntas frecuentes sobre CRM con inteligencia artificial para PYMEs</h2>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Cuánto cuesta implementar un CRM con inteligencia artificial en una PYME española?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">El coste varía según el tamaño de la empresa, los procesos a automatizar y la plataforma elegida. Una PYME puede empezar con soluciones desde 200-500 euros mensuales en licencias, más la inversión inicial de implementación y configuración de la capa de IA. El retorno de inversión suele materializarse en los primeros tres a seis meses gracias al ahorro en tiempo administrativo y al incremento en la eficacia comercial.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Qué diferencia hay entre un CRM tradicional y un CRM con IA?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Un CRM tradicional almacena y organiza información de clientes, pero requiere que los usuarios la introduzcan y la interpreten manualmente. Un CRM con inteligencia artificial automatiza la captura de datos, detecta patrones de comportamiento, predice resultados de ventas, sugiere acciones concretas y puede interactuar de forma autónoma con clientes a través de agentes conversacionales. La diferencia es que uno informa y el otro actúa.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Necesita una PYME un equipo técnico propio para usar un CRM con inteligencia artificial?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">No. Hoy existen plataformas CRM con IA diseñadas para que equipos no técnicos las gestionen de forma autónoma. Lo importante es contar con un socio de implementación que configure correctamente los agentes de IA, las integraciones y los flujos de automatización al inicio. Una vez en marcha, el equipo comercial o de marketing puede operar el sistema sin conocimientos tecnológicos avanzados.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Qué datos necesita un CRM con IA para funcionar bien desde el principio?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Cuanto más historial exista, mejor funcionarán los modelos predictivos. Sin embargo, un CRM con IA puede empezar a generar valor desde el primer día con datos básicos: contactos, historial de comunicaciones y operaciones cerradas. Con tres a seis meses de datos reales, los modelos de predicción de ventas y detección de riesgo de abandono alcanzan una precisión significativa. No hace falta esperar a tener años de datos para comenzar.</p>
+    </div>
+  </div>
+
+</div>
+
+<p>La inteligencia artificial no es una promesa de futuro para las PYMEs españolas: es una ventaja competitiva disponible hoy. Un CRM inteligente permite que equipos pequeños compitan con la personalización y la precisión de grandes empresas, sin necesidad de más recursos humanos ni de complejos proyectos tecnológicos. Si quieres saber cómo un CRM con IA puede transformar la gestión comercial de tu empresa, en <strong>HisfIA</strong> podemos ayudarte a dar ese paso con
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
