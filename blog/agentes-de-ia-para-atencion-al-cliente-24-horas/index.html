@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Agentes de IA para Atención al Cliente 24 Horas — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo los agentes de IA transforman la atención al cliente con disponibilidad 24/7. Reduce costes y mejora la satisfacción con HisfIA."/>
+  <meta property="og:title" content="Agentes de IA para Atención al Cliente 24 Horas"/>
+  <meta property="og:description" content="Descubre cómo los agentes de IA transforman la atención al cliente con disponibilidad 24/7. Reduce costes y mejora la satisfacción con HisfIA."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/agentes-de-ia-para-atencion-al-cliente-24-horas/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/agentes-de-ia-para-atencion-al-cliente-24-horas/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Agentes de IA para Atención al Cliente 24 Horas", "description": "Descubre cómo los agentes de IA transforman la atención al cliente con disponibilidad 24/7. Reduce costes y mejora la satisfacción con HisfIA.", "datePublished": "2026-04-29", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 29 de abril de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>Agentes de IA para Atención al Cliente 24 Horas</h1>
+
+<p class="intro">
+La atención al cliente ha cambiado para siempre. Hoy, los consumidores esperan respuestas inmediatas a cualquier hora del día, incluso a las tres de la madrugada de un domingo festivo. Cumplir esa expectativa con un equipo humano resulta prohibitivamente caro para la mayoría de las PYMEs españolas. Los <strong>agentes de IA para atención al cliente 24 horas</strong> resuelven exactamente ese problema: sistemas autónomos capaces de responder preguntas, gestionar incidencias, cualificar leads y escalar conversaciones complejas a personas reales, todo ello sin pausas, sin bajas por enfermedad y con una consistencia de respuesta imposible de mantener de forma manual. En este artículo explicamos qué son, cómo funcionan, qué ventajas ofrecen y cómo una PYME española puede implantarlos de forma realista y rentable.
+</p>
+
+<img src='https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200&q=80' alt='Agente de IA atendiendo clientes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>¿Qué es un agente de IA para atención al cliente?</h2>
+
+<p>
+Un agente de IA no es un simple chatbot con respuestas predefinidas. Es un sistema de inteligencia artificial capaz de comprender el lenguaje natural, razonar sobre el contexto de la conversación, consultar bases de datos en tiempo real y tomar decisiones autónomas para resolver la solicitud del usuario. La diferencia es sustancial: donde un chatbot tradicional falla ante cualquier variación en la pregunta, un agente de IA entiende la intención detrás de las palabras.
+</p>
+
+<h3>Componentes clave de un agente de IA</h3>
+<p>
+Un agente de IA moderno combina varios componentes que trabajan en coordinación. El <strong>módulo de comprensión del lenguaje natural (NLU)</strong> interpreta lo que el cliente escribe o dice. El <strong>motor de razonamiento</strong>, basado en modelos de lenguaje de gran escala como GPT-4 o Claude, elabora una respuesta coherente. Las <strong>herramientas externas</strong> (APIs, CRMs, bases de datos) permiten al agente consultar el estado de un pedido, crear un ticket o actualizar datos del cliente en tiempo real. Finalmente, la <strong>lógica de escalado</strong> determina cuándo es necesario transferir la conversación a un agente humano.
+</p>
+
+<h3>Diferencias entre chatbot clásico y agente de IA</h3>
+<p>
+El chatbot clásico sigue árboles de decisión predefinidos: si el usuario escribe exactamente "estado de mi pedido", funciona; si escribe "dónde está mi paquete", falla. El agente de IA entiende ambas formulaciones como la misma intención y responde de forma personalizada con los datos reales del pedido. Además, el agente mantiene el contexto a lo largo de toda la conversación, recuerda lo que el cliente mencionó al principio y adapta sus respuestas en consecuencia.
+</p>
+
+<h2>Ventajas de implementar atención al cliente con IA las 24 horas</h2>
+
+<img src='https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&q=80' alt='Colaboración digital y atención al cliente' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h3>Disponibilidad total sin coste de personal nocturno</h3>
+<p>
+El beneficio más evidente es la disponibilidad continua. Un agente de IA atiende a los clientes a las 23:47 de un sábado con la misma calidad que a las 10:00 de un lunes. Para una PYME que vende en toda España o con clientes en Latinoamérica, esto supone capturar ventas y resolver dudas que antes se perdían por fuera de horario. El coste incremental de atender la consulta número mil es prácticamente cero una vez el agente está desplegado.
+</p>
+
+<h3>Reducción de costes operativos y mejora de la satisfacción</h3>
+<p>
+Estudios de Gartner y McKinsey indican que los agentes de IA pueden resolver de forma autónoma entre el 60 % y el 80 % de las consultas entrantes en sectores como el comercio electrónico, los servicios financieros y la hostelería. Esto libera al equipo humano para centrarse en casos complejos, reclamaciones delicadas o ventas consultivas de alto valor. El resultado combinado es una reducción significativa del coste por interacción y un aumento medible del <abbr title="Net Promoter Score">NPS</abbr>, dado que los clientes obtienen respuesta inmediata en lugar de esperar en una cola.
+</p>
+
+<h3>Escalabilidad instantánea ante picos de demanda</h3>
+<p>
+El Black Friday, una campaña viral o una incidencia técnica pueden multiplicar por diez el volumen de consultas en cuestión de minutos. Un equipo humano no puede escalar así; un agente de IA sí. Sin contratar personal temporal, sin formación de urgencia y sin que la calidad de respuesta se deteriore por el estrés operativo.
+</p>
+
+<h2>Casos de uso reales para PYMEs españolas</h2>
+
+<h3>E-commerce: seguimiento de pedidos y devoluciones</h3>
+<p>
+Las consultas más frecuentes en una tienda online son "¿dónde está mi pedido?" y "¿cómo hago una devolución?". Un agente de IA integrado con la plataforma logística y el sistema de gestión responde ambas preguntas en segundos, con datos actualizados, en cualquier canal: web, WhatsApp o Instagram. Esto elimina una carga enorme del equipo de soporte sin reducir la experiencia del cliente.
+</p>
+
+<h3>Hostelería y restauración: reservas y FAQ</h3>
+<p>
+Un restaurante o un hotel recibe docenas de llamadas y mensajes al día con preguntas sobre disponibilidad, menús, alérgenos o políticas de cancelación. Un agente de IA gestiona esas consultas, consulta la disponibilidad en tiempo real y puede incluso formalizar la reserva directamente, reduciendo la carga telefónica del personal de sala o recepción.
+</p>
+
+<h3>Servicios profesionales: cualificación de leads</h3>
+<p>
+Para una gestoría, una clínica o una agencia de marketing, el agente puede actuar como primer filtro: recoge los datos del potencial cliente, identifica qué servicio necesita, evalúa su nivel de urgencia y agenda una reunión con el profesional adecuado, todo de forma automática y fuera del horario de oficina. En <strong>HisfIA</strong> hemos implementado este modelo para varios clientes de servicios profesionales con resultados de cualificación superiores al 70 %.
+</p>
+
+<img src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80' alt='Oficina moderna con tecnología avanzada' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo implementar un agente de IA en tu empresa paso a paso</h2>
+
+<h3>Fase 1: mapeo de consultas y definición del alcance</h3>
+<p>
+El primer paso es analizar el volumen y la tipología de las consultas que recibe tu negocio. ¿Qué preguntas se repiten? ¿Qué acciones puede tomar el agente de forma autónoma y cuáles requieren siempre intervención humana? Este mapeo inicial determina el alcance del proyecto y permite estimar el retorno de la inversión antes de escribir una sola línea de código.
+</p>
+
+<h3>Fase 2: integración con tus sistemas actuales</h3>
+<p>
+Un agente de IA eficaz necesita acceso a los datos que hacen útil su respuesta: el CRM, el ERP, la plataforma de e-commerce, el calendario de reservas. La integración técnica es el núcleo de cualquier proyecto serio. En <strong>HisfIA</strong> trabajamos con APIs estándar y conectores preconstruidos para los sistemas más habituales en el mercado español, lo que reduce el tiempo de despliegue y el riesgo técnico para el cliente.
+</p>
+
+<h3>Fase 3: entrenamiento, pruebas y mejora continua</h3>
+<p>
+El lanzamiento no es el final del proyecto, sino el comienzo de la fase más valiosa. Los registros de conversación revelan dónde falla el agente, qué preguntas no sabe responder y qué escalados son innecesarios. Un ciclo de revisión mensual, con ajustes en los prompts, en la base de conocimiento y en las reglas de escalado, eleva progresivamente la tasa de resolución autónoma y la satisfacción del cliente.
+</p>
+
+<h2>Consideraciones éticas y de privacidad</h2>
+
+<h3>Transparencia con el usuario</h3>
+<p>
+La normativa europea y las buenas prácticas del sector recomiendan que el usuario sepa siempre que está interactuando con un sistema de IA. Esto no perjudica la experiencia; al contrario, genera confianza y establece expectativas correctas. El agente debe identificarse como tal y ofrecer siempre la opción de hablar con una persona.
+</p>
+
+<h3>Protección de datos y cumplimiento del RGPD</h3>
+<p>
+Cualquier agente de IA que procese datos de clientes en España debe cumplir el Reglamento General de Protección de Datos. Esto implica una base legal clara para el tratamiento, minimización de datos, plazos de conservación definidos y medidas técnicas de seguridad adecuadas. Trabajar con un proveedor especializado que conozca el marco regulatorio europeo, como <strong>HisfIA</strong>, es fundamental para evitar sanciones y proteger la reputación de la empresa.
+</p>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+<h2>Preguntas frecuentes sobre agentes de IA para atención al cliente</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Un agente de IA puede sustituir completamente a un equipo humano de atención al cliente?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">No completamente, ni es el objetivo recomendable. Los agentes de IA resuelven de forma autónoma entre el 60 % y el 80 % de las consultas habituales, pero los casos complejos, las reclamaciones emocionales o las negociaciones de alto valor requieren la empatía y el juicio de una persona. El modelo óptimo combina IA para el volumen rutinario y equipo humano para los casos que realmente lo necesitan, logrando así mayor eficiencia sin sacrificar calidad en los momentos críticos.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Cuánto tiempo tarda en implementarse un agente de IA para atención al cliente?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">El tiempo de implementación varía según la complejidad del proyecto. Una solución básica con preguntas frecuentes y sin integraciones externas puede estar operativa en dos o tres semanas. Un agente con acceso al CRM, al sistema logístico y a múltiples canales requiere entre seis y doce semanas de desarrollo, integración y pruebas. La fase de optimización continúa durante los meses siguientes al lanzamiento para mejorar la tasa de resolución autónoma.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿Es viable económicamente para una PYME española implementar un agente de IA?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Sí. Los costes de implantación han bajado drásticamente en los últimos dos años gracias a la democratización de los modelos de lenguaje. Una PYME con un volumen medio de consultas puede recuperar la inversión inicial en menos de seis meses si el agente resuelve autónomamente más del 50 % de las interacciones. El ahorro en horas de personal, errores de gestión y pérdida de ventas por falta de respuesta fuera de horario justifica la inversión en la mayoría de los sectores.</p>
+</div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<h3 itemprop="name">¿En qué canales puede operar un agente de IA de atención al cliente?</h3>
+<div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Un agente de IA moderno puede desplegarse simultáneamente en múltiples canales: el chat de la web corporativa, WhatsApp Business, Instagram Direct, Telegram, correo electrónico e incluso llamadas telefónicas mediante síntesis y reconocimiento de voz. La ventaja del enfoque multicanal es que el cliente elige el canal que prefiere y recibe la misma calidad de atención en todos ellos, con el contexto compartido entre canales para no tener que repetir información.</p>
+</div>
+</div>
+
+</div>
+
+<h2>Conclusión: el momento de actuar es ahora</h2>
+
+<p>
+Los <strong>agentes de IA para atención al cliente 24 horas</strong> han dejado de ser una tecnología experimental reservada a grandes corporaciones. Son hoy una ventaja competitiva accesible para cualquier PYME que quiera crecer sin disparar sus costes operativos. La combinación de disponibilidad continua, escalabilidad instantánea y mejora progresiva convierte a estos sistemas en una de las inversiones con mayor retorno en el ámbito de la transformación digital.
+</p>
+
+<p>
+Si quieres evaluar cómo un agente de IA puede encajar en la operativa de tu empresa, el equipo de <strong>HisfIA</strong> realiza un diagnóstico inicial sin compromiso para identificar los casos de uso con mayor impacto en tu negocio concreto. La tecnología está lista; la pregunta es si tu empresa está dispuesta a
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
