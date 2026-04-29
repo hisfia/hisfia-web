@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hisfia.com/sitemap.xml
