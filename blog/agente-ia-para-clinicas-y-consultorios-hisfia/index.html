@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Agente IA para Clínicas y Consultorios | HisfIA — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo un agente IA para clínicas automatiza citas, responde pacientes 24/7 y reduce costes. Guía completa con casos reales para España 2025."/>
+  <meta property="og:title" content="Agente IA para Clínicas y Consultorios | HisfIA"/>
+  <meta property="og:description" content="Descubre cómo un agente IA para clínicas automatiza citas, responde pacientes 24/7 y reduce costes. Guía completa con casos reales para España 2025."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/agente-ia-para-clinicas-y-consultorios-hisfia/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/agente-ia-para-clinicas-y-consultorios-hisfia/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Agente IA para Clínicas y Consultorios | HisfIA", "description": "Descubre cómo un agente IA para clínicas automatiza citas, responde pacientes 24/7 y reduce costes. Guía completa con casos reales para España 2025.", "datePublished": "2026-05-01", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 1 de mayo de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agente IA para Clínicas y Consultorios | HisfIA</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; line-height: 1.8; max-width: 860px; margin: 0 auto; padding: 24px 20px; background: #fafaf8; }
+  h1 { font-size: 2.1em; color: #1a1a2e; margin-bottom: 0.3em; line-height: 1.25; }
+  h2 { font-size: 1.45em; color: #1a1a2e; margin-top: 2.2em; border-left: 4px solid #4f46e5; padding-left: 14px; }
+  h3 { font-size: 1.13em; color: #3730a3; margin-top: 1.5em; }
+  p { margin: 1em 0; }
+  p.intro { font-size: 1.08em; background: #f0efff; border-left: 5px solid #4f46e5; padding: 18px 22px; border-radius: 10px; }
+  ul, ol { padding-left: 1.5em; margin: 0.8em 0; }
+  li { margin-bottom: 0.45em; }
+  .faq { background: #f9f8ff; border: 1px solid #ddd8ff; border-radius: 14px; padding: 28px 30px; margin-top: 2.5em; }
+  .faq h2 { border-left: 4px solid #7c3aed; color: #3730a3; }
+  .faq details { margin: 1.1em 0; border-bottom: 1px solid #e5e3ff; padding-bottom: 1em; }
+  .faq summary { font-weight: 700; cursor: pointer; color: #1a1a2e; font-size: 1.04em; list-style: none; padding-left: 4px; }
+  .faq summary:hover { color: #4f46e5; }
+  .faq p { margin: 0.6em 0 0 0; color: #3d3d5c; font-size: 0.97em; }
+  .cta-box { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%); color: #fff; border-radius: 16px; padding: 30px 32px; margin: 2.5em 0; text-align: center; }
+  .cta-box h2 { color: #fff; border: none; padding: 0; margin-top: 0; }
+  .cta-box p { color: #e0dfff; margin: 0.7em 0; }
+  .cta-box a { display: inline-block; background: #fff; color: #4f46e5; font-weight: 700; padding: 13px 30px; border-radius: 8px; text-decoration: none; margin-top: 12px; font-size: 1.05em; }
+  .cta-box a:hover { background: #f0efff; }
+  table { width: 100%; border-collapse: collapse; margin: 1.4em 0; font-size: 0.97em; }
+  th { background: #4f46e5; color: #fff; padding: 11px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid #e5e3f0; }
+  tr:nth-child(even) td { background: #f4f3ff; }
+  .tag { display: inline-block; background: #ede9fe; color: #5b21b6; border-radius: 6px; padding: 2px 10px; font-size: 0.85em; margin: 2px; font-weight: 600; }
+  .highlight { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 14px 18px; border-radius: 8px; margin: 1.2em 0; }
+</style>
+</head>
+<body>
+
+<h1>Agente IA para Clínicas y Consultorios</h1>
+
+<p class="intro">
+Las clínicas y consultorios médicos en España afrontan un reto diario que consume recursos y genera frustración: gestionar el volumen de llamadas, citas, recordatorios y consultas de pacientes con un equipo administrativo limitado. El <strong>agente IA para clínicas</strong> es la solución que está transformando este escenario en 2025. Se trata de un sistema de inteligencia artificial conversacional capaz de atender pacientes las 24 horas del día, agendar citas automáticamente, responder preguntas frecuentes, enviar recordatorios y liberar a tu equipo humano para tareas de mayor valor. En esta guía encontrarás todo lo que necesitas saber para implementar un agente de IA en tu clínica o consultorio: qué es, qué funciones cubre, cuánto ahorra, cómo elegir al proveedor adecuado y qué resultados puedes esperar desde el primer mes.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/8ba2105b_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>¿Qué es un agente IA para clínicas y cómo funciona?</h2>
+
+<p>
+Un <strong>agente IA para clínicas</strong> es un software de inteligencia artificial diseñado específicamente para el entorno sanitario. A diferencia de un chatbot genérico, este tipo de agente combina procesamiento del lenguaje natural (PLN), integración con tu sistema de gestión de citas y una base de conocimiento entrenada con la información de tu clínica: especialidades, horarios, médicos, tarifas y protocolos de atención.
+</p>
+
+<h3>Modalidades: voz, chat y omnicanal</h3>
+<p>
+Los agentes IA para clínicas pueden operar en tres formatos principales:
+</p>
+<ul>
+  <li><strong>Agente de voz:</strong> atiende llamadas telefónicas entrantes de forma autónoma, conversa con el paciente y gestiona su solicitud sin esperas.</li>
+  <li><strong>Agente de chat:</strong> responde en tiempo real a través de la web de la clínica, WhatsApp o redes sociales.</li>
+  <li><strong>Agente omnicanal:</strong> combina ambos canales con una memoria unificada del paciente, ofreciendo continuidad en la conversación sea cual sea el canal utilizado.</li>
+</ul>
+
+<h3>Integración con el software de gestión clínica</h3>
+<p>
+La clave diferencial de un agente IA profesional es su capacidad de conectarse con tu software de gestión (Doctoralia, Top Doctors, Gestor Clínico, Gacela, etc.) mediante API. Esto permite que el agente consulte disponibilidad real, cree citas, modifique reservas y envíe confirmaciones sin intervención humana. En HisfIA desarrollamos integraciones a medida para que el agente se adapte a tu flujo de trabajo actual, no al revés.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/87e59298_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Principales funciones de un agente IA en clínicas y consultorios</h2>
+
+<p>
+Un agente bien configurado no se limita a responder preguntas. Actúa como un miembro más de tu equipo administrativo, ejecutando tareas completas de principio a fin.
+</p>
+
+<h3>Gestión automatizada de citas y recordatorios</h3>
+<p>
+Esta es la función estrella. El agente puede:
+</p>
+<ul>
+  <li>Recibir solicitudes de cita nuevas por teléfono, chat o WhatsApp.</li>
+  <li>Comprobar la disponibilidad en tiempo real y ofrecer huecos disponibles.</li>
+  <li>Confirmar, modificar o cancelar citas existentes.</li>
+  <li>Enviar recordatorios automáticos 24 y 2 horas antes de la cita, reduciendo el índice de ausencias (no-shows) hasta un 35%.</li>
+</ul>
+
+<h3>Atención al paciente 24/7 y resolución de FAQs</h3>
+<p>
+Preguntas sobre precios, especialidades, formas de pago, ubicación o preparación para pruebas diagnósticas representan más del 60% del volumen de contacto de una clínica. El agente responde a todas ellas de forma instantánea, cualquier día y a cualquier hora, con la precisión y el tono que tú definas. Además, cuando la consulta supera su capacidad, escala la conversación a un agente humano sin fricciones.
+</p>
+
+<h3>Cualificación y captación de nuevos pacientes</h3>
+<p>
+El agente puede actuar como primer punto de contacto para pacientes que llegan desde campañas de publicidad o redes sociales. Recoge datos relevantes, detecta la urgencia de la consulta y dirige al paciente al especialista o canal adecuado, mejorando la tasa de conversión de leads en hasta un 40% respecto a formularios estáticos.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/5285a1fe_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Beneficios concretos y ahorro de costes en clínicas españolas</h2>
+
+<p>
+Más allá de la tecnología, lo que importa son los resultados. Aquí te detallamos los beneficios más medibles que obtienen las clínicas y consultorios que implementan un agente IA en España.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Indicador</th>
+      <th>Sin agente IA</th>
+      <th>Con agente IA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Llamadas atendidas fuera de horario</td>
+      <td>0%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Tiempo medio de espera del paciente</td>
+      <td>3-7 minutos</td>
+      <td>&lt;10 segundos</td>
+    </tr>
+    <tr>
+      <td>No-shows (ausencias a citas)</td>
+      <td>18-25%</td>
+      <td>10-14%</td>
+    </tr>
+    <tr>
+      <td>Carga administrativa del equipo</td>
+      <td>Alta</td>
+      <td>Reducida en un 60%</td>
+    </tr>
+    <tr>
+      <td>Coste por gestión de cita</td>
+      <td>4-8 €</td>
+      <td>0,40-1,20 €</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Reducción del gasto en personal administrativo</h3>
+<p>
+No se trata de sustituir a las personas, sino de redistribuir su trabajo. Con un agente IA gestionando el 70-80% de las interacciones rutinarias, tu recepcionista puede centrarse en la acogida presencial, la gestión de casos complejos y la experiencia del paciente en sala. Muchas clínicas evitan contratar una segunda administrativa al crecer, ahorrando entre 18.000 y 25.000 euros anuales en costes laborales.
+</p>
+
+<h3>Cumplimiento del RGPD y seguridad de datos sanitarios</h3>
+<p>
+Un aspecto crítico en el entorno sanitario español. Los agentes IA diseñados para clínicas deben cumplir con el Reglamento General de Protección de Datos (RGPD) y la normativa española de protección de datos de salud. En HisfIA todos nuestros agentes operan bajo estrictos protocolos de seguridad, con almacenamiento en servidores europeos, cifrado de extremo a extremo y acuerdos de tratamiento de datos (DPA) firmados con cada cliente.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/19941709_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Casos de uso por especialidad médica</h2>
+
+<p>
+El agente IA no es una solución genérica. Se puede personalizar y entrenar según la especialidad de tu clínica, con vocabulario, protocolos y flujos adaptados a cada contexto.
+</p>
+
+<h3>Clínicas dentales y odontología</h3>
+<p>
+Son uno de los sectores que más rápido adoptan la IA en España. El agente gestiona la agenda de varios dentistas en paralelo, responde sobre tratamientos (ortodoncia, implantes, blanqueamiento), envía recordatorios de revisiones periódicas y recaptura pacientes que no han vuelto en más de seis meses mediante campañas de reactivación automatizadas.
+</p>
+
+<h3>Clínicas de estética, fisioterapia y salud mental</h3>
+<p>
+En estética y fisioterapia, el volumen de consultas sobre precios y disponibilidad es muy alto. El agente atiende esas consultas al instante y convierte el interés en cita de forma directa. En salud mental, el agente se configura con un tono especialmente empático, garantiza la confidencialidad y permite al paciente iniciar el contacto con menos barreras emocionales que una llamada telefónica.
+</p>
+
+<h3>Consultorios de medicina general y especializada</h3>
+<p>
+En consultorios con varios especialistas, el agente actúa como centralita inteligente: identifica la especialidad que necesita el paciente, comprueba la agenda del médico correspondiente y completa la reserva en segundos. También puede gestionar peticiones de informes, renovaciones de recetas (en los casos que la normativa lo permita) y derivaciones entre especialidades.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/45ed16a1_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
