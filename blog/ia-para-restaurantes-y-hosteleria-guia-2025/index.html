@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>IA para Restaurantes y Hostelería | Guía 2025 — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo la IA transforma restaurantes y hostelería en España: reservas automáticas, gestión de stock, marketing y atención al cliente con IA."/>
+  <meta property="og:title" content="IA para Restaurantes y Hostelería | Guía 2025"/>
+  <meta property="og:description" content="Descubre cómo la IA transforma restaurantes y hostelería en España: reservas automáticas, gestión de stock, marketing y atención al cliente con IA."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/ia-para-restaurantes-y-hosteleria-guia-2025/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/ia-para-restaurantes-y-hosteleria-guia-2025/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "IA para Restaurantes y Hostelería | Guía 2025", "description": "Descubre cómo la IA transforma restaurantes y hostelería en España: reservas automáticas, gestión de stock, marketing y atención al cliente con IA.", "datePublished": "2026-05-02", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 2 de mayo de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA para Restaurantes y Hostelería | Guía 2025</title>
+<style>
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #2d2d2d; max-width: 860px; margin: 0 auto; padding: 24px; line-height: 1.75; background: #fff; }
+  h1 { font-size: 2.1rem; color: #1a1a1a; margin-bottom: 12px; }
+  h2 { font-size: 1.45rem; color: #1a1a1a; margin-top: 48px; border-left: 4px solid #c8a96e; padding-left: 14px; }
+  h3 { font-size: 1.1rem; color: #3a3a3a; margin-top: 28px; }
+  p.intro { font-size: 1.08rem; background: #f9f6f0; border-left: 4px solid #c8a96e; padding: 18px 22px; border-radius: 8px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .faq { background: #f4f1eb; border-radius: 14px; padding: 28px 32px; margin-top: 48px; }
+  .faq h2 { border-left: 4px solid #c8a96e; font-size: 1.3rem; }
+  .faq details { margin-bottom: 18px; border-bottom: 1px solid #ddd8ce; padding-bottom: 14px; }
+  .faq summary { font-weight: 700; cursor: pointer; font-size: 1rem; color: #1a1a1a; list-style: none; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::before { content: "▶ "; color: #c8a96e; }
+  details[open] summary::before { content: "▼ "; }
+  .faq p { margin: 10px 0 0 22px; font-size: 0.97rem; }
+  .cta-box { background: #1a1a1a; color: #fff; border-radius: 14px; padding: 28px 32px; margin-top: 48px; text-align: center; }
+  .cta-box a { display: inline-block; margin-top: 14px; background: #c8a96e; color: #1a1a1a; font-weight: 700; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-size: 1rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 22px; }
+  th { background: #1a1a1a; color: #fff; padding: 10px 14px; text-align: left; font-size: 0.95rem; }
+  td { padding: 10px 14px; border-bottom: 1px solid #e8e4db; font-size: 0.95rem; }
+  tr:nth-child(even) td { background: #f9f6f0; }
+</style>
+</head>
+<body>
+
+<h1>IA para Restaurantes y Hostelería: Guía Completa 2025</h1>
+
+<p class='intro'>
+La inteligencia artificial ha dejado de ser una tecnología exclusiva de grandes cadenas para convertirse en una herramienta al alcance de cualquier restaurante, bar u hotel en España. Desde la gestión automática de reservas hasta la predicción de la demanda o la atención al cliente las 24 horas, la IA para restaurantes y hostelería está redefiniendo cómo operan los negocios del sector. En esta guía completa encontrarás las aplicaciones más relevantes, casos de uso reales y cómo empezar a implementar inteligencia artificial en tu negocio de hostelería hoy mismo, sin necesidad de grandes inversiones ni conocimientos técnicos.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/8ba2105b_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Por qué el sector hostelero necesita la IA ahora mismo</h2>
+
+<h3>Un sector bajo presión constante</h3>
+<p>
+La hostelería española es uno de los sectores más competitivos y con mayores desafíos operativos: márgenes estrechos, alta rotación de personal, estacionalidad pronunciada y clientes cada vez más exigentes. Según datos del INE, España cuenta con más de 300.000 establecimientos de restauración activos, y la mayoría son PYMEs que gestionan su operativa de forma manual o con herramientas poco integradas entre sí.
+</p>
+<p>
+La IA no pretende sustituir al equipo humano, sino eliminar las tareas repetitivas y de bajo valor para que cocineros, camareros y gestores puedan centrarse en lo que realmente importa: la experiencia del cliente y la calidad del producto.
+</p>
+
+<h3>El punto de inflexión de 2025</h3>
+<p>
+Los modelos de inteligencia artificial generativa y los agentes de IA autónomos han alcanzado en 2025 un nivel de madurez que permite integrarlos en el día a día de cualquier restaurante con costes razonables. Herramientas que antes requerían desarrollos a medida de decenas de miles de euros están ahora disponibles como servicios modulares que se conectan al TPV, al sistema de reservas o al canal de WhatsApp del negocio.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/87e59298_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Las 5 aplicaciones de IA más importantes para restaurantes</h2>
+
+<h3>1. Gestión automática de reservas y lista de espera</h3>
+<p>
+Un agente de IA puede gestionar el canal de reservas de tu restaurante a través de WhatsApp, Instagram o el formulario web las 24 horas del día. Confirma disponibilidad en tiempo real, envía recordatorios automáticos para reducir los no-shows y gestiona cancelaciones sin que ningún empleado tenga que intervenir. Según distintos operadores del sector, esta automatización reduce los no-shows entre un 30 % y un 45 %.
+</p>
+
+<h3>2. Predicción de demanda y control de stock</h3>
+<p>
+Los sistemas de IA analizan históricos de ventas, eventos locales, clima y estacionalidad para predecir cuántos comensales tendrás cada día y qué platos van a rotar más. Esto permite:
+</p>
+<ul>
+  <li>Reducir el desperdicio alimentario hasta un 25 %.</li>
+  <li>Optimizar los pedidos a proveedores y evitar roturas de stock.</li>
+  <li>Ajustar la plantilla de sala y cocina según la demanda esperada.</li>
+</ul>
+
+<h3>3. Atención al cliente automatizada y personalización</h3>
+<p>
+Los chatbots y agentes conversacionales de IA responden preguntas frecuentes (horarios, alérgenos, carta, parking), recogen valoraciones post-visita y generan recomendaciones personalizadas basadas en visitas anteriores. Este nivel de personalización, hasta ahora reservado a grandes cadenas hoteleras, está ya disponible para cualquier restaurante independiente.
+</p>
+
+<h3>4. Marketing y gestión de reputación online</h3>
+<p>
+La IA puede generar contenido para redes sociales, redactar respuestas a reseñas de Google y TripAdvisor, crear campañas de email marketing segmentadas y analizar el sentimiento de las opiniones online para detectar áreas de mejora. Desde HisfIA, por ejemplo, ayudamos a negocios de hostelería a implementar flujos automatizados de marketing que generan contenido semana a semana sin intervención manual.
+</p>
+
+<h3>5. Optimización de la carta y precios dinámicos</h3>
+<p>
+Los sistemas de IA analizan qué platos tienen mayor margen, cuáles generan más satisfacción y cómo varía la demanda por franja horaria o día de la semana. Con esa información puedes tomar decisiones de ingeniería de menú basadas en datos reales y no en intuición, y aplicar estrategias de precios dinámicos similares a las que utilizan las aerolíneas o los hoteles.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/5285a1fe_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Casos de uso reales en hostelería española</h2>
+
+<h3>Restaurantes independientes que ya usan agentes de IA</h3>
+<p>
+Un restaurante de cocina mediterránea en Valencia implementó un agente de WhatsApp para gestionar reservas y consultas. En los primeros tres meses, el tiempo que el equipo dedicaba a atender el teléfono se redujo en un 70 % y las reservas completadas aumentaron un 18 % gracias a la disponibilidad continua del agente.
+</p>
+<p>
+Un hotel boutique en Sevilla comenzó a utilizar IA para generar respuestas personalizadas a las reseñas de Booking y Google en menos de dos horas desde su publicación. Su puntuación media pasó de 4,1 a 4,6 en seis meses, lo que se tradujo en un incremento directo del RevPAR.
+</p>
+
+<h3>Cadenas y grupos de restauración</h3>
+<p>
+Los grupos con varios establecimientos obtienen un retorno especialmente alto, ya que pueden centralizar la gestión de la IA y replicarla en todos sus locales con un coste marginal mínimo. La predicción de demanda agregada, la generación automatizada de informes de ventas y la gestión centralizada de la reputación online son los casos de uso con mayor impacto en este segmento.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aplicación de IA</th>
+      <th>Ahorro estimado de tiempo</th>
+      <th>Impacto en ingresos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gestión de reservas automatizada</td>
+      <td>5-8 horas/semana</td>
+      <td>+15-20 % reservas completadas</td>
+    </tr>
+    <tr>
+      <td>Control de stock con IA</td>
+      <td>3-5 horas/semana</td>
+      <td>-20-25 % desperdicio</td>
+    </tr>
+    <tr>
+      <td>Marketing automatizado</td>
+      <td>6-10 horas/semana</td>
+      <td>+10-30 % engagement redes</td>
+    </tr>
+    <tr>
+      <td>Respuesta a reseñas</td>
+      <td>2-4 horas/semana</td>
+      <td>+0,3-0,5 puntos valoración media</td>
+    </tr>
+  </tbody>
+</table>
+
+<img src='https://office.hisfia.com/seo-images/19941709_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo implementar IA en tu restaurante paso a paso</h2>
+
+<h3>Fase 1: Diagnóstico y priorización</h3>
+<p>
+Antes de implementar cualquier herramienta, es fundamental identificar cuáles son los cuellos de botella más costosos en tiempo y dinero. Las preguntas clave son: ¿Cuántas horas a la semana se destinan a gestionar reservas y consultas? ¿Cuánto producto se tira por semana? ¿Con qué frecuencia se publican contenidos en redes sociales? Las respuestas marcarán por dónde empezar.
+</p>
+
+<h3>Fase 2: Selección de herramientas e integración</h3>
+<p>
+No existe una solución única para todo el sector. Es necesario evaluar qué herramientas de IA se integran bien con el sistema de reservas ya existente (TheFork, Cover Manager, Restobook), con el TPV (Mapal, Revo, Lightspeed) y con los canales de comunicación del negocio. En HisfIA diseñamos arquitecturas de automatización a medida para PYMEs de hostelería que conectan todas estas piezas sin que el equipo del restaurante tenga que gestionar múltiples plataformas.
+</p>
+
+<h3>Fase 3: Formación del equipo y medición de resultados</h3>
+<p>
+La implementación de la IA solo tiene éxito si el equipo confía en las herramientas y entiende cómo aprovecharlas. Es recomendable definir desde el inicio los KPIs que se van a medir: tasa de no-shows, tiempo de respuesta a consultas, coste de merma, puntuación media en Google. Con esos datos, la mejora continua se convierte en un proceso natural.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/45ed16a1_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Errores comunes al aplicar IA en hostelería</h2>
+
+<h3>Automatizar sin estrategia clara</h3>
+<p>
+Uno de los errores más frecuentes es implementar una herramienta de IA porque está de moda, sin tener claro qué problema concreto va a resolver y cómo se va a medir su impacto. La IA es un medio, no un fin. Cada automatización debe responder a un objetivo de negocio específico: reducir costes, aumentar ingresos o mejorar la experiencia del cliente.
+</p>
+
+<h3>Descuidar la experiencia humana</h3>
+<p>
+La hostelería es, por definición, un sector de personas. La IA debe potenciar la calidez humana del servicio, no sustituirla. Un agente de IA que gestiona reservas libera al equipo para dedicar más atención al cliente durante la visita. Cuando la automatización resta humanidad al trato, el efecto suele ser contraproducente en términos de fidelización.
+</p>
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
