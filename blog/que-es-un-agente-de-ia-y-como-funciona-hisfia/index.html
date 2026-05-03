@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Qué es un agente de IA y cómo funciona | HisfIA — HisfIA Blog</title>
+  <meta name="description" content="Descubre qué es un agente de IA, cómo funciona paso a paso y cómo puede automatizar procesos en tu empresa. Guía completa de HisfIA."/>
+  <meta property="og:title" content="Qué es un agente de IA y cómo funciona | HisfIA"/>
+  <meta property="og:description" content="Descubre qué es un agente de IA, cómo funciona paso a paso y cómo puede automatizar procesos en tu empresa. Guía completa de HisfIA."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/que-es-un-agente-de-ia-y-como-funciona-hisfia/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/que-es-un-agente-de-ia-y-como-funciona-hisfia/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Qué es un agente de IA y cómo funciona | HisfIA", "description": "Descubre qué es un agente de IA, cómo funciona paso a paso y cómo puede automatizar procesos en tu empresa. Guía completa de HisfIA.", "datePublished": "2026-05-03", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 3 de mayo de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1 itemprop="headline">Qué es un agente de IA y cómo funciona</h1>
+
+<p class="intro" itemprop="description">
+Los <strong>agentes de IA</strong> están transformando la forma en que las empresas operan. Ya no hablamos de simples chatbots que responden preguntas predefinidas: un agente de inteligencia artificial es un sistema autónomo capaz de percibir su entorno, razonar sobre la información disponible, tomar decisiones y ejecutar acciones para alcanzar un objetivo concreto. En otras palabras, actúa como un empleado digital que trabaja de forma continua, sin descanso y con una precisión difícil de igualar. Para las PYMEs españolas, entender qué es un agente de IA y cómo funciona ya no es una curiosidad tecnológica: es una ventaja competitiva real. En esta guía completa, desde <strong>HisfIA</strong>, te explicamos desde cero cómo funcionan estos sistemas, cuáles son sus componentes clave, qué tipos existen y cómo puedes aplicarlos en tu negocio para automatizar procesos, reducir costes y escalar sin contratar más personal.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/74309d3e_dall-e_3_jan_24_artificial_intelligence_.png' alt='Dall e 3 (jan 24) artificial intelligence icon' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Definición de agente de IA: mucho más que un chatbot</h2>
+
+<p>
+Un <strong>agente de inteligencia artificial</strong> es un programa informático que percibe señales de su entorno —datos, mensajes, resultados de herramientas externas— y actúa de manera autónoma para alcanzar un objetivo previamente definido. A diferencia de un chatbot convencional, que simplemente sigue un árbol de respuestas, un agente de IA razona, planifica y ejecuta secuencias complejas de acciones.
+</p>
+
+<h3>Características fundamentales de un agente de IA</h3>
+<p>
+Para que un sistema pueda considerarse un verdadero agente de IA debe reunir al menos tres características esenciales:
+</p>
+<ul>
+  <li><strong>Autonomía:</strong> opera sin intervención humana constante, tomando decisiones en tiempo real.</li>
+  <li><strong>Reactividad:</strong> percibe cambios en su entorno y adapta su comportamiento de forma dinámica.</li>
+  <li><strong>Orientación a objetivos:</strong> todas sus acciones apuntan a cumplir una meta específica, ya sea enviar un correo, actualizar una base de datos o generar un informe.</li>
+</ul>
+
+<h3>Diferencia entre un agente de IA y un modelo de lenguaje (LLM)</h3>
+<p>
+Un modelo de lenguaje como GPT-4 es el "cerebro" del agente: procesa texto y genera respuestas. Pero un agente de IA va un paso más allá: envuelve ese cerebro con una capa de planificación, memoria y acceso a herramientas externas (APIs, bases de datos, navegadores web). El resultado es un sistema que no solo responde, sino que <em>hace cosas en el mundo real</em>.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/8ba2105b_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo funciona un agente de IA paso a paso</h2>
+
+<p>
+Comprender el ciclo de funcionamiento de un agente de IA es clave para evaluar si puede resolver un problema de negocio concreto. El proceso se puede resumir en cuatro fases que se repiten en bucle hasta que se alcanza el objetivo.
+</p>
+
+<h3>Fase 1: Percepción del entorno</h3>
+<p>
+El agente recibe una entrada inicial: puede ser un mensaje del usuario, una alerta del sistema, un correo electrónico entrante o los datos de una hoja de cálculo. Esta información se convierte en el punto de partida del razonamiento.
+</p>
+
+<h3>Fase 2: Razonamiento y planificación</h3>
+<p>
+Aquí entra en juego el modelo de lenguaje o el motor de razonamiento. El agente analiza la tarea, la descompone en subtareas y decide qué herramientas necesita usar y en qué orden. Esta capacidad de <strong>planificación encadenada</strong> (conocida técnicamente como <em>chain-of-thought</em>) es lo que distingue a un agente sofisticado de uno básico.
+</p>
+
+<h3>Fase 3: Ejecución de acciones</h3>
+<p>
+El agente llama a herramientas externas: busca información en internet, consulta una base de datos CRM, envía un email a través de una API, actualiza un registro o genera un documento. Cada acción produce un resultado que retroalimenta el ciclo.
+</p>
+
+<h3>Fase 4: Evaluación y memoria</h3>
+<p>
+El agente revisa si el resultado obtenido se acerca al objetivo. Si no es así, ajusta la estrategia. Además, los agentes más avanzados almacenan información en una <strong>memoria a largo plazo</strong>, lo que les permite aprender del contexto y mejorar con el tiempo.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/87e59298_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Componentes clave de un agente de IA</h2>
+
+<p>
+Detrás de cada agente de IA funcional hay una arquitectura compuesta por varios módulos que trabajan en conjunto. Conocerlos te ayudará a entender qué es posible construir y qué recursos necesita tu empresa para implementarlo.
+</p>
+
+<h3>El modelo de lenguaje o motor de razonamiento</h3>
+<p>
+Es el núcleo del agente. Puede ser GPT-4o, Claude 3.5, Gemini o cualquier otro LLM. Su capacidad de comprensión del lenguaje natural determina la calidad del razonamiento y la naturalidad de las respuestas.
+</p>
+
+<h3>Las herramientas o "tools"</h3>
+<p>
+Son las capacidades de acción del agente: búsqueda web, ejecución de código, lectura de archivos, llamadas a APIs externas, acceso a bases de datos vectoriales. Cuantas más herramientas integre, más versátil y potente será el agente.
+</p>
+
+<h3>La memoria del agente</h3>
+<p>
+Existen dos tipos principales: la <strong>memoria de trabajo</strong> (contexto de la conversación actual) y la <strong>memoria a largo plazo</strong> (información almacenada en bases de datos vectoriales que el agente puede recuperar cuando la necesita). Esta última es especialmente útil para agentes que gestionan relaciones con clientes o proyectos continuados.
+</p>
+
+<h3>El orquestador o framework</h3>
+<p>
+Es el sistema que coordina todos los componentes anteriores. Frameworks populares como LangChain, LlamaIndex, AutoGen o CrewAI permiten construir agentes complejos con múltiples herramientas y flujos de trabajo ramificados. En <strong>HisfIA</strong> utilizamos estos frameworks para diseñar agentes a medida adaptados a los procesos específicos de cada empresa cliente.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/5285a1fe_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Tipos de agentes de IA y sus aplicaciones empresariales</h2>
+
+<p>
+No todos los agentes de IA son iguales ni sirven para los mismos fines. Según su arquitectura y autonomía, podemos distinguir varios tipos con casos de uso muy distintos en el entorno empresarial.
+</p>
+
+<h3>Agentes reactivos simples</h3>
+<p>
+Responden a estímulos concretos sin planificación compleja. Son ideales para <strong>atención al cliente automatizada</strong>, respuesta a FAQs o clasificación de tickets de soporte. Son rápidos de implementar y tienen un coste bajo.
+</p>
+
+<h3>Agentes basados en objetivos</h3>
+<p>
+Planifican una secuencia de pasos para alcanzar una meta. Son perfectos para <strong>automatización de procesos de ventas</strong> (lead qualification, seguimiento automático de propuestas), gestión de agendas o generación de informes periódicos.
+</p>
+
+<h3>Agentes multi-agente (sistemas MAS)</h3>
+<p>
+Son redes de agentes especializados que colaboran entre sí. Un agente se encarga de investigar, otro de redactar y otro de publicar. Este enfoque es especialmente potente para <strong>automatización de marketing de contenidos</strong>, procesos de onboarding o auditorías internas. Desde <strong>HisfIA</strong> diseñamos sistemas multi-agente para empresas que necesitan automatizar flujos de trabajo completos de principio a fin.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/19941709_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Ventajas de implementar agentes de IA en tu empresa</h2>
+
+<p>
+La pregunta que se hace cualquier empresario o directivo no es "¿qué es un agente de IA?" sino "¿qué me aporta implementar uno en mi empresa?". Las ventajas son concretas y medibles.
+</p>
+
+<h3>Reducción de costes operativos</h3>
+<p>
+Un agente de IA puede realizar en minutos tareas que a un equipo humano le llevarían horas: recopilar datos de múltiples fuentes, redactar propuestas personalizadas, procesar pedidos o responder consultas. Esto se traduce directamente en una reducción del coste por operación y en la posibilidad de reasignar el talento humano a tareas de mayor valor.
+</p>
+
+<h3>Escalabilidad sin fricciones</h3>
+<p>
+A diferencia de una persona, un agente de IA puede gestionar mil tareas simultáneas sin degradar su rendimiento. Para una PYME en crecimiento, esto significa poder escalar operaciones sin el coste y la complejidad de nuevas contrataciones.
+</p>
+
+<h3>Disponibilidad 24/7 y consistencia</h3>
+<p>
+Los agentes no se cansan, no se van de vacaciones y no cometen errores por fatiga. Responden con la misma calidad a las 3 de la madrugada que a las 10 de la mañana, lo que mejora significativamente la experiencia del cliente y la fiabilidad de los procesos internos.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/92ac9946_dall-e_3_jan_24_artificial_intelligence_.png' alt='Dall e 3 (jan 24) artificial intelligence icon' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo empezar a implementar agentes de IA en tu negocio</h2>
+
+<p>
+El mayor error que cometen las empresas al acercarse a los agentes de IA es querer automatizarlo todo a la vez. La clave está en identificar un proceso con dolor claro, coste medible y datos disponibles, e implementar un primer agente piloto que demuestre valor rápidamente.
+</p>
+
+<h3>Paso 1: Identifica el caso de uso correcto</h3>
+<p>
+Busca procesos repetitivos, basados en reglas, que consuman tiempo de personas cualificadas. Ejemplos comunes en PYMEs: respuesta a consultas comerciales, generación de propuestas, actualización del CRM, seguimiento de impagos o publicación de contenido en redes sociales.
+</p>
+
+<h3>Paso 2: Define el objetivo y las métricas de éxito</h3>
+<p>
+Un agente sin objetivo claro es un agente inútil. Define exactamente qué debe lograr (reducir el tiempo de respuesta a leads de 24 horas a 5 minutos, por ejemplo) y cómo medirás el éxito antes de construir nada.
+</p>
+
+<h3>Paso 3: Trabaja con expertos en implementación</h3>
+<p>
+La tecnología de agentes de IA evoluciona muy rápido y su implementación correcta requiere conocimientos técnicos especializados. Contar con un partner como <strong>HisfIA</strong>, con experiencia en la implementación de agentes de IA para empresas españolas, te permitirá evitar los errores más comunes y obtener resultados en semanas, no en meses.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/b85bbf75_logo1.jpeg' alt='logo1' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+  <h2>Preguntas frecuentes sobre agentes de IA</h2>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Cuál es la diferencia entre un agente de IA y un chatbot?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Un chatbot sigue guiones predefinidos y responde preguntas concretas dentro de un flujo cerrado. Un agente de IA, en cambio, razona de forma autónoma, planifica secuencias de acciones, utiliza herramientas externas y ejecuta tareas complejas en el mundo real sin supervisión humana constante. La diferencia clave es la capacidad de acción y adaptación.</p>
+    </div>
+  </div>
+
+  <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 itemprop="name">¿Qué necesita una empresa para implementar un agente de IA?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p itemprop="text">Para implementar un agente de
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
