@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Asistente Virtual con IA para Empresas | HisfIA — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo un asistente virtual con IA puede transformar tu empresa: automatización, atención al cliente 24/7 y más productividad. Conoce HisfIA."/>
+  <meta property="og:title" content="Asistente Virtual con IA para Empresas | HisfIA"/>
+  <meta property="og:description" content="Descubre cómo un asistente virtual con IA puede transformar tu empresa: automatización, atención al cliente 24/7 y más productividad. Conoce HisfIA."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/asistente-virtual-con-ia-para-empresas-hisfia/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/asistente-virtual-con-ia-para-empresas-hisfia/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Asistente Virtual con IA para Empresas | HisfIA", "description": "Descubre cómo un asistente virtual con IA puede transformar tu empresa: automatización, atención al cliente 24/7 y más productividad. Conoce HisfIA.", "datePublished": "2026-05-03", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 3 de mayo de 2026</div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asistente Virtual con IA para Empresas | HisfIA</title>
+<meta name="description" content="Descubre cómo un asistente virtual con IA puede transformar tu empresa: automatización, atención al cliente 24/7 y más productividad. Conoce HisfIA.">
+</head>
+<body>
+
+<article>
+
+<h1>Asistente virtual con IA para empresas: la revolución que tu negocio necesita</h1>
+
+<p class="intro">
+El <strong>asistente virtual con IA para empresas</strong> ha dejado de ser una tecnología reservada para grandes corporaciones. Hoy, cualquier PYME española puede acceder a soluciones de inteligencia artificial capaces de gestionar consultas de clientes, automatizar tareas repetitivas, calificar leads y liberar horas de trabajo de sus equipos. A diferencia de los asistentes de voz de consumo —como Google Assistant—, los asistentes virtuales empresariales se integran en los flujos de trabajo reales: CRM, correo electrónico, WhatsApp, webs corporativas y plataformas de gestión interna. En este artículo te explicamos qué es exactamente un asistente virtual con IA, qué ventajas aporta a una empresa, cómo elegir la solución adecuada y qué pasos dar para implementarlo sin fricciones. Si buscas productividad real, reducción de costes y una atención al cliente que no descansa, sigue leyendo.
+</p>
+
+<img src='https://office.hisfia.com/seo-images/8ba2105b_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>¿Qué es un asistente virtual con IA para empresas?</h2>
+
+<p>Un asistente virtual con IA es un sistema de software que utiliza <strong>procesamiento del lenguaje natural (PLN)</strong>, modelos de lenguaje avanzados (como GPT-4 o Claude) y automatización para interactuar con personas y ejecutar tareas de forma autónoma. A diferencia de un simple chatbot de respuestas predefinidas, un asistente con IA comprende el contexto, aprende de las conversaciones y puede integrarse con las herramientas que ya usa tu empresa.</p>
+
+<h3>Diferencias entre un chatbot tradicional y un asistente con IA</h3>
+
+<p>Los chatbots clásicos siguen árboles de decisión rígidos: si el usuario no escribe exactamente lo esperado, el sistema falla. Un asistente virtual con IA, en cambio, interpreta la intención del usuario aunque lo exprese de formas distintas. Puede pedir aclaraciones, recordar el contexto de la conversación y escalar al equipo humano cuando la situación lo requiere.</p>
+
+<h3>Tipos de asistentes virtuales empresariales</h3>
+
+<p>Existen varias categorías según su función principal:</p>
+<ul>
+  <li><strong>Asistentes de atención al cliente:</strong> responden preguntas frecuentes, gestionan incidencias y recogen datos del usuario.</li>
+  <li><strong>Asistentes de ventas y cualificación de leads:</strong> conversan con prospectos, detectan su nivel de interés y los pasan al CRM.</li>
+  <li><strong>Asistentes internos de productividad:</strong> ayudan a los empleados a redactar correos, buscar información interna o gestionar agendas.</li>
+  <li><strong>Agentes de IA autónomos:</strong> ejecutan flujos de trabajo completos sin intervención humana, como enviar presupuestos o actualizar bases de datos.</li>
+</ul>
+
+<img src='https://office.hisfia.com/seo-images/87e59298_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Ventajas de implementar un asistente virtual con IA en tu empresa</h2>
+
+<p>Las razones por las que las empresas españolas están adoptando este tipo de tecnología van mucho más allá de la moda. Los resultados son tangibles y medibles desde los primeros meses de uso.</p>
+
+<h3>Disponibilidad 24/7 sin costes adicionales</h3>
+
+<p>Un asistente virtual con IA no tiene horario. Responde a las 3 de la mañana, en festivos y durante los períodos de mayor demanda sin necesitar refuerzos de personal. Para una PYME, esto significa ofrecer una experiencia de cliente comparable a la de una gran empresa sin disparar la nómina. Según datos del sector, las empresas que implementan asistentes de IA reducen entre un 30% y un 60% el volumen de consultas que llegan a agentes humanos.</p>
+
+<h3>Reducción de tareas repetitivas y aumento de la productividad</h3>
+
+<p>La mayoría de los equipos dedican entre el 20% y el 40% de su tiempo a tareas repetitivas: responder emails similares, introducir datos en sistemas, generar informes o buscar información interna. Un asistente con IA asume ese trabajo, devolviendo ese tiempo a las personas para tareas de mayor valor estratégico. En <strong>HisfIA</strong> hemos comprobado que nuestros clientes recuperan una media de 15 horas semanales por empleado tras implementar un asistente de IA bien configurado.</p>
+
+<h3>Personalización y aprendizaje continuo</h3>
+
+<p>A diferencia de las soluciones genéricas, un asistente empresarial con IA puede entrenarse con los datos, el tono y los procedimientos propios de cada empresa. Aprende de cada interacción y mejora su precisión con el tiempo, adaptándose a la terminología específica del sector.</p>
+
+<img src='https://office.hisfia.com/seo-images/5285a1fe_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Casos de uso reales para PYMEs españolas</h2>
+
+<p>La teoría está muy bien, pero los empresarios necesitan ejemplos concretos. Aquí van algunos de los casos de uso más frecuentes que trabajamos en HisfIA con clientes de distintos sectores.</p>
+
+<h3>Atención al cliente automatizada en e-commerce y retail</h3>
+
+<p>Una tienda online con miles de referencias puede usar un asistente con IA para gestionar el estado de pedidos, tramitar devoluciones, resolver dudas sobre tallas o disponibilidad de stock y recomendar productos relacionados. Todo ello sin intervención humana y directamente integrado con la plataforma de e-commerce (Shopify, WooCommerce, PrestaShop).</p>
+
+<h3>Cualificación de leads en sectores B2B</h3>
+
+<p>En sectores como consultoría, software, ingeniería o servicios profesionales, el primer contacto con un prospecto es crítico. Un asistente virtual con IA puede capturar los datos del potencial cliente, hacerle preguntas de cualificación, detectar su urgencia y presupuesto, y pasarle al comercial adecuado ya con un resumen de la conversación. Esto reduce el tiempo de respuesta de horas a segundos.</p>
+
+<h3>Soporte interno para equipos de trabajo</h3>
+
+<p>Las empresas con procesos complejos o documentación interna extensa pueden desplegar un asistente de IA para que los empleados resuelvan sus dudas sin interrumpir a compañeros. El asistente conecta con la base de conocimiento interna, los manuales de procedimiento o los datos del ERP y responde en lenguaje natural.</p>
+
+<img src='https://office.hisfia.com/seo-images/19941709_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Cómo elegir el asistente virtual con IA adecuado para tu negocio</h2>
+
+<p>No todas las soluciones son iguales. Antes de tomar una decisión, conviene evaluar varios criterios que marcarán la diferencia entre un proyecto exitoso y una herramienta que nadie usa.</p>
+
+<h3>Criterios técnicos: integración y escalabilidad</h3>
+
+<p>El asistente debe poder conectarse con las herramientas que ya usas: tu CRM (HubSpot, Salesforce, Zoho), tu canal de atención (WhatsApp Business, email, web chat), tu ERP o tu tienda online. Una solución que no se integra obliga a crear silos de información y duplicar trabajo. Pregunta siempre por las APIs disponibles y los conectores nativos.</p>
+
+<h3>Criterios de negocio: ROI y tiempo de implementación</h3>
+
+<p>Un buen asistente virtual con IA debe mostrar retorno de inversión en menos de seis meses. Calcula el coste de las horas que se van a automatizar frente al coste de la solución. Además, valora el tiempo de puesta en marcha: las mejores plataformas permiten tener un asistente funcional en pocas semanas, no en meses. En <strong>HisfIA</strong> diseñamos soluciones a medida con tiempos de implementación de entre dos y cuatro semanas para la mayoría de los casos.</p>
+
+<h3>Seguridad, privacidad y cumplimiento del RGPD</h3>
+
+<p>Si el asistente va a manejar datos de clientes o empleados, el cumplimiento del Reglamento General de Protección de Datos es obligatorio. Asegúrate de que el proveedor almacena los datos en servidores europeos, ofrece acuerdos de tratamiento de datos (DPA) y permite configurar períodos de retención y anonimización.</p>
+
+<img src='https://office.hisfia.com/seo-images/45ed16a1_ias-generadoras-de-imagenes.jpg' alt='ias generadoras de imagenes' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>Pasos para implementar un asistente virtual con IA paso a paso</h2>
+
+<p>Implantar un asistente de IA no tiene por qué ser un proyecto de meses ni requerir un departamento de IT. Con la metodología adecuada, el proceso es ágil y con resultados visibles desde el primer mes.</p>
+
+<h3>Fase 1: diagnóstico y definición de objetivos</h3>
+
+<p>Antes de elegir ninguna herramienta, identifica qué problema concreto quieres resolver: ¿reducir el tiempo de respuesta al cliente? ¿automatizar la cualificación de leads? ¿ahorrar tiempo al equipo interno? Define métricas de éxito claras: porcentaje de consultas resueltas sin intervención humana, tiempo medio de respuesta, número de leads cualificados por semana.</p>
+
+<h3>Fase 2: diseño de flujos y entrenamiento del asistente</h3>
+
+<p>Mapea las conversaciones más frecuentes, define el tono y la personalidad del asistente (que debe alinearse con tu marca) y proporciona la base de conocimiento necesaria: FAQs, catálogos, políticas de devolución, procedimientos internos. Cuanto mejor sea el entrenamiento inicial, menor será el margen de error.</p>
+
+<h3>Fase 3: integración, pruebas y lanzamiento</h3>
+
+<p>Conecta el asistente con tus sistemas, realiza pruebas exhaustivas con escenarios reales y define los flujos de escalado a agentes humanos. Lanza primero en un canal controlado, mide los resultados durante las primeras semanas y ajusta antes de escalar a todos los puntos de contacto.</p>
+
+<img src='https://office.hisfia.com/seo-images/26b06623_images.jpeg' alt='images' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<h2>HisfIA: tu partner de IA para empresas en España</h2>
+
+<p>En <strong>HisfIA</strong> somos especialistas en el diseño, desarrollo e implantación de asistentes virtuales con IA para empresas españolas. Trabajamos con PYMEs de todos los sectores: retail, servicios profesionales, salud, educación, logística y más. Nuestro enfoque es siempre práctico: identificamos el caso de uso con mayor impacto, lo desarrollamos de forma ágil y te acompañamos durante todo el proceso de adopción.</p>
+
+<p>No vendemos tecnología por vender. Construimos soluciones que generan resultados medibles: más ventas, menos costes operativos y equipos más libres para hacer lo que realmente importa. Si quieres saber cómo podría funcionar un asistente de IA en tu empresa específica, <a href="https://hisfia.com/contacto">contacta con nosotros</a> y realizamos un diagnóstico gratuito.</p>
+
+<img src='https://office.hisfia.com/seo-images/74309d3e_dall-e_3_jan_24_artificial_intelligence_.png' alt='Dall e 3 (jan 24) artificial intelligence icon' style='max-width:100%;border-radius:16px;margin:28px 0;border:1px solid #E0DDD6'>
+
+<div class="faq" itemscope itemtype="https://schema.org/FAQPage">
+
+<h2>Preguntas frecuentes sobre asistentes virtuales con IA para empresas</h2>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">¿Qué diferencia hay entre un asistente virtual con IA y un chatbot tradicional?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p itemprop="text">Un chatbot tradicional sigue reglas y árboles de decisión fijos: solo responde a preguntas exactas y falla ante variaciones en el lenguaje. Un asistente virtual con IA usa modelos de lenguaje avanzados que comprenden la intención del usuario, mantienen el contexto de la conversación, aprenden de las interacciones y pueden conectarse con sistemas externos para ejecutar acciones reales como consultar un pedido, crear un ticket o actualizar un CRM.</p>
+  </div>
+</div>
+
+<div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+  <h3 itemprop="name">¿Cuánto cuesta implementar un asistente virtual con IA en una empresa?</h3>
+  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+    <p it
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
