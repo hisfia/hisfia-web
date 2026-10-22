@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Atención al cliente con IA: guía para PYMEs 2025 — HisfIA Blog</title>
+  <meta name="description" content="Descubre cómo la IA transforma la atención al cliente: chatbots, agentes virtuales y automatización para PYMEs españolas. Casos reales y herramientas clave."/>
+  <meta property="og:title" content="Atención al cliente con IA: guía para PYMEs 2025"/>
+  <meta property="og:description" content="Descubre cómo la IA transforma la atención al cliente: chatbots, agentes virtuales y automatización para PYMEs españolas. Casos reales y herramientas clave."/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://hisfia.com/blog/atencion-al-cliente-con-ia-guia-para-pymes-2025/"/>
+  <link rel="canonical" href="https://hisfia.com/blog/atencion-al-cliente-con-ia-guia-para-pymes-2025/"/>
+  <meta name="robots" content="index,follow"/>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Atención al cliente con IA: guía para PYMEs 2025", "description": "Descubre cómo la IA transforma la atención al cliente: chatbots, agentes virtuales y automatización para PYMEs españolas. Casos reales y herramientas clave.", "datePublished": "2026-10-22", "author": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}, "publisher": {"@type": "Organization", "name": "HisfIA", "url": "https://hisfia.com"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#F7F5F0;--card:#FFFFFF;--card-alt:#F0EDE6;
+      --border:#E0DDD6;--border-strong:#C8C4BA;
+      --text:#0E0D0B;--sub:#5C5A56;--muted:#9E9B94;
+      --dark:#0A0908;--dark2:#020617;
+      --c:#00B8CC;--c-bg:rgba(0,184,204,.09);--c-border:rgba(0,184,204,.25);
+      --r:10px;--r-lg:16px;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1160px;margin:0 auto;padding:0 40px}
+    /* NAV */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid transparent;background:rgba(247,245,240,.97);border-color:var(--border);backdrop-filter:blur(24px);box-shadow:0 1px 0 var(--border),0 4px 24px rgba(14,13,11,.05)}
+    .nav-brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+    .nav-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;letter-spacing:-.06em;color:var(--text)}
+    .nav-brand-name span{color:var(--c)}
+    .nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+    .nav-links a{font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--sub);transition:color .2s;position:relative}
+    .nav-links a:hover{color:var(--text)}
+    .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--c);transition:width .25s}
+    .nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:10px}
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;letter-spacing:-.01em;padding:13px 24px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:all .2s ease;white-space:nowrap;text-decoration:none}
+    .btn-primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+    .btn-primary:hover{background:var(--c);border-color:var(--c);color:#000;transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,184,204,.25)}
+    .btn-sm{padding:9px 18px;font-size:.85rem}
+    /* FOOTER */
+    footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.06);padding:48px 0 32px}
+    .foot-inner{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:32px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .foot-brand-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;letter-spacing:-.04em;color:rgba(247,245,240,.9);margin-bottom:8px}
+    .foot-brand-name span{color:var(--c)}
+    .foot-tagline{font-size:.85rem;color:rgba(247,245,240,.3);max-width:220px;line-height:1.6}
+    .foot-links{display:flex;gap:48px;flex-wrap:wrap}
+    .foot-col{display:flex;flex-direction:column;gap:10px}
+    .foot-col h4{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,245,240,.25);margin-bottom:4px}
+    .foot-col a{font-size:.85rem;color:rgba(247,245,240,.4);transition:color .2s}
+    .foot-col a:hover{color:rgba(247,245,240,.8)}
+    .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-copy{font-size:.78rem;color:rgba(247,245,240,.2);font-family:'JetBrains Mono',monospace}
+    @media(max-width:768px){#nav{padding:0 20px}.nav-links{display:none}.container{padding:0 20px}.foot-inner{flex-direction:column}.foot-links{gap:28px}}
+
+    /* ARTICLE */
+    .article-wrap{max-width:760px;margin:0 auto;padding:116px 40px 96px}
+    .breadcrumb{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+    .breadcrumb a{color:var(--c)}
+    .breadcrumb a:hover{text-decoration:underline}
+    .pub-date{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin-bottom:16px}
+    h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,3rem);letter-spacing:-.05em;line-height:.95;color:var(--text);margin-bottom:20px}
+    .article-intro{font-size:1.1rem;color:var(--sub);line-height:1.75;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+    h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;color:var(--text);margin:48px 0 16px}
+    h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:-.02em;color:var(--text);margin:28px 0 10px}
+    p{color:var(--sub);margin-bottom:18px;font-size:1rem;line-height:1.8}
+    ul,ol{color:var(--sub);margin:0 0 18px 20px;font-size:1rem;line-height:1.8}
+    li{margin-bottom:8px}
+    strong,b{color:var(--text);font-weight:600}
+    a{color:var(--c)}
+    a:hover{text-decoration:underline}
+    img{max-width:100%;border-radius:var(--r-lg);margin:24px 0;border:1px solid var(--border)}
+    blockquote{border-left:3px solid var(--c);padding:16px 24px;background:var(--c-bg);border-radius:0 var(--r) var(--r) 0;margin:28px 0;color:var(--sub);font-style:italic}
+    .faq{background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;margin:36px 0;box-shadow:0 1px 4px rgba(14,13,11,.06)}
+    .faq h3{color:var(--text);margin-top:0;margin-bottom:16px}
+    .faq-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+    .faq-item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+    .faq-q{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);margin-bottom:6px}
+    .faq-a{color:var(--sub);font-size:.95rem}
+    /* CTA */
+    .article-cta{background:var(--dark);border-radius:var(--r-lg);padding:48px;text-align:center;margin-top:64px}
+    .article-cta .label{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--c);display:block;margin-bottom:14px}
+    .article-cta h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.8rem;letter-spacing:-.05em;color:#F7F5F0;margin-bottom:12px}
+    .article-cta p{color:rgba(247,245,240,.5);margin-bottom:28px}
+    .article-cta .btn-primary{background:var(--c);border-color:var(--c);color:#000}
+    .article-cta .btn-primary:hover{background:#00d4ea;border-color:#00d4ea}
+    @media(max-width:768px){.article-wrap{padding:96px 20px 64px}.article-cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://hisfia.com" class="nav-brand">
+    <span class="nav-brand-name">Hisf<span>IA</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://hisfia.com/#capacidades">Tu equipo</a></li>
+    <li><a href="https://hisfia.com/#sectores">Sectores</a></li>
+    <li><a href="https://hisfia.com/blog/">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://booking.hisfia.com" class="btn btn-primary btn-sm">Hablar con nosotros →</a>
+  </div>
+</nav>
+<main class="article-wrap">
+  <div class="breadcrumb"><a href="https://hisfia.com">HisfIA</a> › <a href="https://hisfia.com/blog/">Blog</a> › Artículo</div>
+  <div class="pub-date">Publicado el 22 de octubre de 2026</div>
+  <article itemscope itemtype="https://schema.org/Article">
+
+<h1>Atención al cliente con IA: cómo las PYMEs españolas pueden ofrecer un servicio 24/7 sin disparar costes</h1>
+
+<p class="intro">La atención al cliente es, hoy más que nunca, el campo de batalla donde se gana o se pierde la fidelidad de un consumidor. Los clientes esperan respuestas inmediatas, personalizadas y disponibles a cualquier hora. El problema es que mantener ese nivel de servicio con equipos humanos resulta inasumible para la mayoría de las pequeñas y medianas empresas españolas. La inteligencia artificial ha cambiado las reglas del juego: chatbots conversacionales, agentes de IA, análisis de sentimiento y automatización de tickets permiten ofrecer una experiencia de cliente de primer nivel sin necesitar una plantilla de decenas de personas. En este artículo te explicamos qué es la atención al cliente con IA, cómo funciona en la práctica, qué herramientas existen, cuáles son los casos de uso más rentables para una PYME y cómo dar el primer paso para implementarla en tu empresa con la ayuda de especialistas como <strong>HisfIA</strong>.</p>
+
+<figure style="margin:36px 0;">
+  <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=80" alt="Segmentación de mercado y análisis de clientes potenciales B2B" style="width:100%;border-radius:14px;border:1px solid #E0DDD6;display:block;" loading="lazy"/>
+  <figcaption style="font-size:12px;color:#5C5A56;text-align:center;margin-top:8px;font-style:italic;">Segmentación precisa del público objetivo con modelos de IA para maximizar el ROI en atención al cliente.</figcaption>
+</figure>
+
+<h2>¿Qué es la atención al cliente con inteligencia artificial?</h2>
+
+<p>La atención al cliente con IA engloba todas las tecnologías basadas en inteligencia artificial que intervienen en la interacción entre una empresa y sus clientes: desde el primer contacto hasta la resolución del problema, pasando por el seguimiento postventa. No se trata únicamente de un chatbot que responde preguntas frecuentes; el ecosistema es mucho más rico y sofisticado.</p>
+
+<h3>Diferencia entre chatbot tradicional y agente de IA</h3>
+
+<p>Un chatbot tradicional sigue árboles de decisión predefinidos: si el usuario escribe "X", la herramienta responde "Y". Funciona bien para preguntas muy acotadas, pero se rompe en cuanto la conversación se desvía del guión. Un <strong>agente de IA</strong>, en cambio, comprende el lenguaje natural, razona sobre el contexto de la conversación, accede a sistemas externos como el CRM o el ERP, y ejecuta acciones reales: crear un pedido, gestionar una devolución o escalar la incidencia al departamento correcto. La diferencia en experiencia de usuario es abismal.</p>
+
+<h3>Canales donde la IA puede actuar hoy</h3>
+
+<ul>
+  <li><strong>Web y app:</strong> widgets de chat en tiempo real integrados en la página de producto o de soporte.</li>
+  <li><strong>WhatsApp Business:</strong> el canal preferido de los consumidores españoles, con tasas de apertura superiores al 90 %.</li>
+  <li><strong>Correo electrónico:</strong> clasificación automática de consultas, redacción de borradores y priorización de tickets.</li>
+  <li><strong>Redes sociales:</strong> respuesta automática a menciones y mensajes directos en Instagram, Facebook o LinkedIn.</li>
+  <li><strong>Teléfono:</strong> IVR inteligente y transcripción en tiempo real con análisis de sentimiento.</li>
+</ul>
+
+<h2>Beneficios reales de la IA en el servicio al cliente para PYMEs</h2>
+
+<p>Las grandes corporaciones llevan años cosechando los frutos de la IA en atención al cliente: reducción de costes operativos, mayor satisfacción del cliente y equipos humanos liberados para tareas de alto valor. Ahora, gracias a la democratización de los modelos de lenguaje y a agencias especializadas como <strong>HisfIA</strong>, las PYMEs pueden acceder a las mismas ventajas con inversiones iniciales razonables.</p>
+
+<h3>Impacto en métricas clave de negocio</h3>
+
+<table style="width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;">
+  <thead>
+    <tr style="background:#F5F3EE;">
+      <th style="padding:12px;text-align:left;border-bottom:2px solid #E0DDD6;">Métrica</th>
+      <th style="padding:12px;text-align:left;border-bottom:2px solid #E0DDD6;">Sin IA</th>
+      <th style="padding:12px;text-align:left;border-bottom:2px solid #E0DDD6;">Con IA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">Tiempo de primera respuesta</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">4-8 horas (email)</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">Menos de 30 segundos</td>
+    </tr>
+    <tr style="background:#F9F8F5;">
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">Disponibilidad del servicio</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">Horario laboral</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">24/7/365</td>
+    </tr>
+    <tr>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">Coste por interacción</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">5-15 €</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">0,10-0,50 €</td>
+    </tr>
+    <tr style="background:#F9F8F5;">
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">Resolución en primer contacto</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">60-65 %</td>
+      <td style="padding:12px;border-bottom:1px solid #E0DDD6;">75-85 %</td>
+    </tr>
+    <tr>
+      <td style="padding:12px;">Satisfacción del cliente (CSAT)</td>
+      <td style="padding:12px;">Variable</td>
+      <td style="padding:12px;">Mejora media del 15-20 %</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Beneficios cualitativos igual de importantes</h3>
+
+<ul>
+  <li>Consistencia en las respuestas: el agente de IA nunca tiene un mal día ni olvida la política de devoluciones.</li>
+  <li>Aprendizaje continuo: los modelos mejoran con cada conversación, ajustando tono y precisión.</li>
+  <li>Datos accionables: cada interacción genera información valiosa sobre las dudas, frustraciones y necesidades reales de tus clientes.</li>
+</ul>
+
+<figure style="margin:36px 0;">
+  <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=1200&q=80" alt="Flujos de trabajo y procesos automatizados en la empresa" style="width:100%;border-radius:14px;border:1px solid #E0DDD6;display:block;" loading="lazy"/>
+  <figcaption style="font-size:12px;color:#5C5A56;text-align:center;margin-top:8px;font-stil:italic;">Automatización de flujos de trabajo repetitivos en atención al cliente para ahorrar decenas de horas al mes.</figcaption>
+</figure>
+
+<h2>Casos de uso prácticos: qué puede hacer la IA por tu equipo de soporte hoy mismo</h2>
+
+<p>La teoría está bien, pero lo que de verdad convence a un empresario es ver aplicaciones concretas y resultados medibles. Estos son los casos de uso con mayor retorno de inversión para PYMEs en España:</p>
+
+<h3>Gestión automática de consultas frecuentes</h3>
+
+<p>En la mayoría de los negocios, entre el 60 y el 70 % de los tickets de soporte son consultas repetitivas: estado del pedido, horarios, política de devoluciones, compatibilidad de productos. Un agente de IA entrenado con tu base de conocimiento y conectado a tu plataforma de ecommerce o tu ERP puede resolver estas consultas al instante, sin intervención humana, y derivar solo los casos complejos o sensibles al equipo de personas.</p>
+
+<h3>Análisis de sentimiento y priorización de incidencias</h3>
+
+<p>No todos los clientes insatisfechos expresan su frustración de la misma manera. Los modelos de IA pueden analizar el tono emocional de cada mensaje y priorizar automáticamente los tickets con mayor riesgo de churn o de impacto reputacional. De esta forma, tu equipo humano dedica su atención y energía donde de verdad importa.</p>
+
+<h3>Resumen automático de conversaciones largas</h3>
+
+<p>Cuando un cliente llama después de haber enviado varios correos y hablado con dos agentes distintos, el equipo pierde minutos preciosos leyendo el historial. La IA genera un resumen contextual al instante, mejorando la experiencia del cliente y la productividad del agente.</p>
+
+<figure style="margin:36px 0;">
+  <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80" alt="Integración de software empresarial y herramientas en la nube" style="width:100%;border-radius:14px;border:1px solid #E0DDD6;display:block;" loading="lazy"/>
+  <figcaption style="font-size:12px;color:#5C5A56;text-align:center;margin-top:8px;font-style:italic;">Conexión integral entre ERP, CRM, correo y bases de datos corporativas para una atención al cliente sin fricciones.</figcaption>
+</figure>
+
+<h2>Herramientas de IA para atención al cliente: comparativa para PYMEs</h2>
+
+<p>El mercado de herramientas crece a gran velocidad. Aquí te dejamos una selección de las soluciones más relevantes para empresas de tamaño mediano en España, junto con sus puntos fuertes y sus limitaciones más habituales.</p>
+
+<h3>Plataformas generalistas con IA integrada</h3>
+
+<ul>
+  <li><strong>Zendesk AI:</strong> líder en helpdesk con IA nativa para clasificación de tickets, respuestas sugeridas y análisis de conversaciones. Precio elevado para PYMEs pequeñas.</li>
+  <li><strong>Freshdesk con Freddy AI:</strong> alternativa más asequible con automatización de tickets y chatbot integrado. Buena relación calidad-precio.</li>
+  <li><strong>Intercom:</strong> orientado a SaaS y ecommerce, con agentes de IA muy capaces para flujos de onboarding y soporte técnico.</li>
+</ul>
+
+<h3>Soluciones a medida con agentes de IA</h3>
+
+<p>Para empresas con flujos de trabajo específicos, integraciones con sistemas propietarios o necesidades de personalización avanzada, las plataformas genéricas se quedan cortas. En estos casos, contar con una agencia especializada como <strong>HisfIA</strong> permite diseñar agentes de IA entrenados con los datos, el tono y los procesos propios de cada empresa, integrados directamente con el CRM, el ERP o la plataforma de ecommerce que ya se utiliza. El resultado es un sistema que actúa como un miembro más del equipo, no como un software externo ajeno a la operación.</p>
+
+<h2>Cómo implementar IA en tu atención al cliente paso a paso</h2>
+
+<p>La implementación de IA en el servicio al cliente no tiene por qué ser un proyecto de meses ni requerir un departamento técnico interno. Con la metodología adecuada, una PYME puede tener su primer agente operativo en pocas semanas.</p>
+
+<h3>Fase 1: auditoría y definición de casos de uso prioritarios</h3>
+
+<p>El primer paso es analizar los datos actuales de soporte: ¿cuáles son las consultas más frecuentes?, ¿dónde se producen los mayores cuellos de botella?, ¿qué canales concentran más volumen? Con esta información se priorizan los casos de uso con mayor impacto y menor complejidad técnica, lo que permite obtener resultados visibles rápidamente.</p>
+
+<h3>Fase 2: entrenamiento, integración y pruebas</h3>
+
+<p>Se entrena el agente con la base de conocimiento de la empresa, se conecta a los sistemas existentes y se realizan pruebas exhaustivas antes del lanzamiento. Esta fase incluye definir cuándo y cómo el agente escala a un humano, garantizando que ningún cliente queda sin respuesta adecuada.</p>
+
+<h3>Fase 3: lanzamiento, monitorización y mejora continua</h3>
+
+<p>La IA mejora con el uso. Una vez en producción, se monitoriza el rendimiento, se identifican los patrones de conversación que generan más fricción y se ajusta el modelo de forma periódica. Este ciclo de mejora continua es lo que marca la diferencia entre una implementación mediocre y un activo estratégico de largo plazo.</p>
+
+<figure style="margin:36px 0;">
+  <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=1200&q=80" alt="Optimización operativa y reducción de tareas repetitivas con IA" style="width:100%;border-radius:14px;border:1px solid #E0DDD6;display:block;" loading="lazy"/>
+  <figcaption style="font-size:12px;color:#5C5A56;text-align:center;margin-top:8px;font-style:italic;">Reducción drástica de errores operativos y mayor agilidad en la gestión diaria del servicio al cliente.</figcaption>
+</figure>
+
+<div class="
+  <div class="article-cta">
+    <span class="label">¿Listo para empezar?</span>
+    <h2>Automatiza tu negocio con IA</h2>
+    <p>HisfIA monta una oficina virtual con agentes IA adaptados a tu empresa. Sin complicaciones técnicas. Sin cambiar tus herramientas.</p>
+    <a href="https://booking.hisfia.com" class="btn btn-primary">Hablar con el equipo →</a>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="foot-inner">
+      <div>
+        <div class="foot-brand-name">Hisf<span>IA</span></div>
+        <p class="foot-tagline">Tu oficina virtual con agentes IA. 24/7, sin que toques nada.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Producto</h4>
+          <a href="https://hisfia.com/#capacidades">Tu equipo</a>
+          <a href="https://hisfia.com/#como">Proceso</a>
+          <a href="https://hisfia.com/#resultados">Resultados</a>
+        </div>
+        <div class="foot-col">
+          <h4>Empresa</h4>
+          <a href="https://hisfia.com/#sectores">Sectores</a>
+          <a href="https://hisfia.com/#faq">FAQ</a>
+          <a href="https://hisfia.com/blog/">Blog</a>
+        </div>
+        <div class="foot-col">
+          <h4>Legal</h4>
+          <a href="https://hisfia.com/privacidad">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-copy">© 2026 HisfIA · Construido con Claude AI</span>
+      <span class="foot-copy">hisfia.com</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
